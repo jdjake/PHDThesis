@@ -1,0 +1,562 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{Cladek}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=30cbb66f1b3de17f6d85650b0054bf69}{%
+           family={Cladek},
+           familyi={C\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{fullhash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{fullhashraw}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{bibnamehash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{authorbibnamehash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{authornamehash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{authorfullhash}{30cbb66f1b3de17f6d85650b0054bf69}
+      \strng{authorfullhashraw}{30cbb66f1b3de17f6d85650b0054bf69}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Anal. PDE}
+      \field{number}{2}
+      \field{title}{Radial {F}ourier Multipliers in {$\mathbb{R}^3$} and {$\mathbb{R}^4$}}
+      \field{volume}{11}
+      \field{year}{2018 (arXiv 2016)}
+      \field{pages}{467\bibrangedash 498}
+      \range{pages}{32}
+    \endentry
+    \entry{Fefferman}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2c3e233dc770920f785d9e94fc94140}{%
+           family={Fefferman},
+           familyi={F\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{fullhash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{fullhashraw}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{bibnamehash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{authorbibnamehash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{authornamehash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{authorfullhash}{c2c3e233dc770920f785d9e94fc94140}
+      \strng{authorfullhashraw}{c2c3e233dc770920f785d9e94fc94140}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{2}
+      \field{title}{The Multiplier Problem for the Ball}
+      \field{volume}{94}
+      \field{year}{1971}
+      \field{pages}{330\bibrangedash 336}
+      \range{pages}{7}
+    \endentry
+    \entry{GarrigosandSeeger}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=389f5d61a9eaf30b5ebd9abae79f90f8}{%
+           family={Garrigós},
+           familyi={G\bibinitperiod},
+           given={Gustavo},
+           giveni={G\bibinitperiod}}}%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{fullhash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{fullhashraw}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{bibnamehash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{authorbibnamehash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{authornamehash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{authorfullhash}{ca35f50a882329cce2980a66f4b641c6}
+      \strng{authorfullhashraw}{ca35f50a882329cce2980a66f4b641c6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Math. Ann.}
+      \field{number}{1}
+      \field{title}{Characterizations of {H}ankel Multipliers}
+      \field{volume}{342}
+      \field{year}{2008 (ArXiv 2007)}
+      \field{pages}{31\bibrangedash 68}
+      \range{pages}{38}
+    \endentry
+    \entry{Grafakos}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d75ea9c673adff92b3c4257d2a70a85b}{%
+           family={Grafakos},
+           familyi={G\bibinitperiod},
+           given={Loukas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{fullhash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{fullhashraw}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{bibnamehash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{authorbibnamehash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{authornamehash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{authorfullhash}{d75ea9c673adff92b3c4257d2a70a85b}
+      \strng{authorfullhashraw}{d75ea9c673adff92b3c4257d2a70a85b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Classical {F}ourier Analysis}
+      \field{year}{2014}
+    \endentry
+    \entry{HeoandNazarovandSeeger2}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=96c59dd7add5f93e9f0ed1944c4d704d}{%
+           family={Heo},
+           familyi={H\bibinitperiod},
+           given={Yaryong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5168e795cbd8c58579776b950889dcad}{%
+           family={Nazarov},
+           familyi={N\bibinitperiod},
+           given={Fdor},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{fullhash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{fullhashraw}{75dfb509902c5ec2aca98c4036691051}
+      \strng{bibnamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorbibnamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authornamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorfullhash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorfullhashraw}{75dfb509902c5ec2aca98c4036691051}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Geom. Anal.}
+      \field{number}{1}
+      \field{title}{On Radial and Conical {F}ourier Multipliers}
+      \field{volume}{21}
+      \field{year}{2011}
+      \field{pages}{96\bibrangedash 117}
+      \range{pages}{22}
+    \endentry
+    \entry{HeoandNazarovandSeeger}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=96c59dd7add5f93e9f0ed1944c4d704d}{%
+           family={Heo},
+           familyi={H\bibinitperiod},
+           given={Yaryong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5168e795cbd8c58579776b950889dcad}{%
+           family={Nazarov},
+           familyi={N\bibinitperiod},
+           given={Fdor},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{fullhash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{fullhashraw}{75dfb509902c5ec2aca98c4036691051}
+      \strng{bibnamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorbibnamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authornamehash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorfullhash}{75dfb509902c5ec2aca98c4036691051}
+      \strng{authorfullhashraw}{75dfb509902c5ec2aca98c4036691051}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Math.}
+      \field{number}{1}
+      \field{title}{Radial {F}ourier Multipliers in High Dimensions}
+      \field{volume}{206}
+      \field{year}{2011 (ArXiv 2009)}
+      \field{pages}{55\bibrangedash 92}
+      \range{pages}{38}
+    \endentry
+    \entry{Hormander1}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2553b671df63eec279a1059ab372509}{%
+           family={Hörmander},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2553b671df63eec279a1059ab372509}
+      \strng{fullhash}{c2553b671df63eec279a1059ab372509}
+      \strng{fullhashraw}{c2553b671df63eec279a1059ab372509}
+      \strng{bibnamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorbibnamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authornamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorfullhash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorfullhashraw}{c2553b671df63eec279a1059ab372509}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Math.}
+      \field{number}{1-2}
+      \field{title}{Estimates for translation invariant operators in {$L^p$} spaces}
+      \field{volume}{104}
+      \field{year}{1960}
+      \field{pages}{93\bibrangedash 140}
+      \range{pages}{48}
+    \endentry
+    \entry{KenigStantonTomas}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=63916c5f9dcb302349c8ea095c153629}{%
+           family={Kenig},
+           familyi={K\bibinitperiod},
+           given={Carlos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=80d5c9fcc5e42723a96110bb3d6ca8be}{%
+           family={Stanton},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0cfd36f10a04ddffb395bad156d9051e}{%
+           family={Tomas},
+           familyi={T\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{fullhash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{fullhashraw}{d650948fc52b54432b91a06f0404fdde}
+      \strng{bibnamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorbibnamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authornamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorfullhash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorfullhashraw}{d650948fc52b54432b91a06f0404fdde}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Funct. Anal.}
+      \field{number}{1}
+      \field{title}{Divergence of Eigenfunction Expansions}
+      \field{volume}{46}
+      \field{year}{1982}
+      \field{pages}{28\bibrangedash 44}
+      \range{pages}{17}
+    \endentry
+    \entry{KimSpectral}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8ad3b8dd4aa87c9e9b94cb373420a32}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jongchon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{fullhash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{fullhashraw}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{bibnamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorbibnamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authornamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorfullhash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorfullhashraw}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Indiana Univ. Math. J.}
+      \field{number}{2}
+      \field{title}{Endpoint Bounds for a Class of Spectral Multipliers on Compact Manifolds}
+      \field{volume}{67}
+      \field{year}{2018 (ArXiv 2016)}
+      \field{pages}{937\bibrangedash 969}
+      \range{pages}{33}
+    \endentry
+    \entry{KimQuasiradial}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=e8ad3b8dd4aa87c9e9b94cb373420a32}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jongchon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{fullhash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{fullhashraw}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{bibnamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorbibnamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authornamehash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorfullhash}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \strng{authorfullhashraw}{e8ad3b8dd4aa87c9e9b94cb373420a32}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. Mat. Pura Appl. (4)}
+      \field{title}{Endpoint bounds for quasiradial {F}ourier multipliers}
+      \field{volume}{196}
+      \field{year}{2017 (ArXiv 2015)}
+      \field{pages}{773\bibrangedash 789}
+      \range{pages}{17}
+    \endentry
+    \entry{LeeSeeger}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=62f49abf38b3c26f9c4d51c0ba9f530e}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sanghyuk},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{fullhash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{fullhashraw}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{bibnamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorbibnamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authornamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorfullhash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorfullhashraw}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Math. Nachr.}
+      \field{number}{7}
+      \field{title}{{L}ebesgue Space Estimates for a class of {F}ourier Integral Operators Associated With Wave Propogation}
+      \field{volume}{286}
+      \field{year}{2013}
+      \field{pages}{745\bibrangedash 755}
+      \range{pages}{11}
+    \endentry
+    \entry{deLeeuw}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=475455b1ccd3c4b9381becc8087579d4}{%
+           family={Leeuw},
+           familyi={L\bibinitperiod},
+           given={Karel},
+           giveni={K\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{fullhash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{fullhashraw}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{bibnamehash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{authorbibnamehash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{authornamehash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{authorfullhash}{475455b1ccd3c4b9381becc8087579d4}
+      \strng{authorfullhashraw}{475455b1ccd3c4b9381becc8087579d4}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{2}
+      \field{title}{On $L_p$ Multipliers}
+      \field{volume}{81}
+      \field{year}{1965}
+      \field{pages}{364\bibrangedash 379}
+      \range{pages}{16}
+    \endentry
+    \entry{Minicozzi}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=55e5a50c5d90a36cdf969d47e9b3653f}{%
+           family={Minicozzi},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=857509a762fe055e7ea1fc3bfe5cd0c8}{%
+           family={Sogge},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{fullhash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{fullhashraw}{02517087a2c219193b572863ad4fe5a2}
+      \strng{bibnamehash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{authorbibnamehash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{authornamehash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{authorfullhash}{02517087a2c219193b572863ad4fe5a2}
+      \strng{authorfullhashraw}{02517087a2c219193b572863ad4fe5a2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Math. Res. Lett.}
+      \field{number}{2}
+      \field{title}{Negative Results for {N}ikodym Maximal Functions and Related Oscillatory Integrals in Curved Spaces}
+      \field{volume}{4}
+      \field{year}{2000 (ArXiv 1999)}
+      \field{pages}{221\bibrangedash 237}
+      \range{pages}{17}
+    \endentry
+    \entry{Mitjagin}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=42865c5f05103435b0e48f334658d458}{%
+           family={Mitjagin},
+           familyi={M\bibinitperiod},
+           given={Boris\bibnamedelima S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{42865c5f05103435b0e48f334658d458}
+      \strng{fullhash}{42865c5f05103435b0e48f334658d458}
+      \strng{fullhashraw}{42865c5f05103435b0e48f334658d458}
+      \strng{bibnamehash}{42865c5f05103435b0e48f334658d458}
+      \strng{authorbibnamehash}{42865c5f05103435b0e48f334658d458}
+      \strng{authornamehash}{42865c5f05103435b0e48f334658d458}
+      \strng{authorfullhash}{42865c5f05103435b0e48f334658d458}
+      \strng{authorfullhashraw}{42865c5f05103435b0e48f334658d458}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Internat. Ser. Numer. Math.}
+      \field{title}{Divergenz von Spektralentwicklungen in {$L_p$}-Räumen}
+      \field{volume}{25}
+      \field{year}{1974}
+      \field{pages}{521\bibrangedash 530}
+      \range{pages}{10}
+    \endentry
+    \entry{SeegerSoggeStein}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=857509a762fe055e7ea1fc3bfe5cd0c8}{%
+           family={Sogge},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=1e432a4cd42a48f08962229276035a77}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Elias\bibnamedelima M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{fullhash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{fullhashraw}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{bibnamehash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{authorbibnamehash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{authornamehash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{authorfullhash}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \strng{authorfullhashraw}{1f80e3036a1f72a6a81a6b9d2a495aec}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{2}
+      \field{title}{Regularity Properties of {F}ourier Integral Operators}
+      \field{volume}{134}
+      \field{year}{1991}
+      \field{pages}{231\bibrangedash 251}
+      \range{pages}{21}
+    \endentry
+    \entry{Seeley}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=17459b9a56ee64b233183cd873ed6bd4}{%
+           family={Seeley},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima Thomas},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{fullhash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{fullhashraw}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{bibnamehash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{authorbibnamehash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{authornamehash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{authorfullhash}{17459b9a56ee64b233183cd873ed6bd4}
+      \strng{authorfullhashraw}{17459b9a56ee64b233183cd873ed6bd4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc.Symp.Pure Math.}
+      \field{title}{Complex powers of an elliptic operator}
+      \field{volume}{10}
+      \field{year}{1967}
+      \field{pages}{288\bibrangedash 307}
+      \range{pages}{20}
+    \endentry
+    \entry{Sogge}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=857509a762fe055e7ea1fc3bfe5cd0c8}{%
+           family={Sogge},
+           familyi={S\bibinitperiod},
+           given={Christopher\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{fullhash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{fullhashraw}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{bibnamehash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{authorbibnamehash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{authornamehash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{authorfullhash}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \strng{authorfullhashraw}{857509a762fe055e7ea1fc3bfe5cd0c8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fourier Integrals in Classical Analysis}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+  \missing{BaoChern}
+  \missing{HeinzHopf}
+  \missing{Hormander2}
+  \missing{Treves2}
+  \missing{einstein}
+  \missing{knuthwebsite}
+  \missing{latexcompanion}
+\endrefsection
+\endinput
+

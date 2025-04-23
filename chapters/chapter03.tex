@@ -1,0 +1,135 @@
+%!TEX root = ../main.tex
+
+\begin{comment}
+
+\chapter[BHS: Decoupling for FIOs]{Beltran, Hickman, and Sogge: Decoupling for Fourier Integral Operators}
+
+The paper we now discuss extends the theory of decoupling, which was originally used to establish local smoothing for the wave equation on Euclidean space, to the setting of more general FIOs. Here we attempt to study $L^p$ to $L^p$ estimates  for Fourier integral operators given by
+%
+\[ Tf(x,t) = \int_{\RR^d} e^{2 \pi i \phi(x,t;\xi)} b(x,t;\xi) (1 + |\xi|^2)^{\mu/2} \widehat{f}(\xi)\; d\xi \]
+%
+where $b$ is a compactly supported symbol of order zero, compactly supported in $x$ and $t$, and $\phi$ is a phase function, homogeneous of degree one in the $\xi$ variable. We let
+%
+\[ K(x,t;y) = \int e^{2 \pi i [\phi(x,t;\xi) - y \cdot \xi]} b(x,t;\xi) (1 + |\xi|^2)^{\mu/2}\; d\xi \]
+%
+denote the kernel. Since $\nabla_\xi \phi(x,t;\xi)$ is homogeneous of degree zero in $\phi$, the sets
+%
+\[ \Sigma_{(x,t)} = \{ \nabla_\xi \phi(x,t,\xi) : \xi \in \RR^n \} \subset \RR^n_y \]
+%
+are usually manifolds of dimension $n-1$. They are related to the singular support of $K$.
+
+%Let us for simplicity assume the phase function is nondegenerate, and also, that the resulting Lagrangian manifold $\Sigma \subset T^*(\RR^n_x \times \RR_t \times \RR^n_y)$, the natural projection maps $\Sigma \to T^* \RR^n_y$ and $\Sigma \to \RR^n_{x,t}$ are submersions. It follows that for an open set of $x$ and $t$ we can find a hypersurface $\Sigma_{x,t}$ in the cotangent space of $(x,t)$ upon which the operator behaves
+
+To study the $L^p$ behaviour of $T$, we break up the behaviour of the operator dyadically in the $\xi$ variable, thus setting
+%
+\[ T = T_{\leq 1} + \sum_{n = 1}^\infty T_n, \]
+%
+where, for a given $\lambda > 0$, we let $T^\lambda$ be an operator with kernel $K^\lambda$ given by
+%
+\[ K^\lambda(x,t;\xi) = \int e^{2 \pi i [\phi(x,t;\xi) - y \cdot \xi]} b(x,t;\xi) (1 + |\xi|^2)^{\mu/2} \beta(\xi / \lambda)\; d\xi. \]
+%
+It can be verified that $T_{\leq 1}$ is a pseudo-differential operator of order 0, and is therefore bound on $L^p$ for all $1 < p < \infty$. It therefore suffices to show that as $\lambda \to \infty$,
+%
+\[ \| T^\lambda f \|_{L^p(\RR^d)} \lesssim \lambda^{- \varepsilon} \| f \|_{L^p(\RR^d)} \]
+%
+so that we may sum in $n$ in the expansion of $T$ via the triangle inequality to obtain an $L^p$ bound for the original operator.
+
+For large $\lambda$, the principle of stationary phase tells us we should expect $K^\lambda$ to be concentrated in the set
+%
+\[ \{ (x,t;y) : |\nabla_\xi \phi(x,t;\xi) - y| \leq 1/\lambda\ \text{for some $\xi$} \}, \]
+%
+since the phase oscillates to a significant degree for $|\nabla \phi(x,t;\xi) - y| \gtrsim 1/\lambda$, roughly a $1/\lambda$ neighborhood of the singular support of $K$. Also we have $\| K^\lambda \|_{L^\infty_x L^\infty_y} \lesssim \lambda^{\mu + d}$ trivially by taking in absolute values. This gives the crude estimate that $\| K_n \|_{L^\infty_x L^1_y} \lesssim \lambda^{\mu + d - 1}$. Thus we obtain by Schur's Lemma that
+%
+\[ \| T^\lambda f \|_{L^1(\RR^{d+1})} \lesssim \lambda^{\mu + d - 1} \| f \|_{L^1(\RR^d)}. \]
+%
+We will get a much better bound by a more sophisticated decomposition of the kernels $\{ K^\lambda \}$.
+
+For a given $\lambda$, let $\{ \xi_\nu^\lambda \}$ be a maximal, $\lambda^{-1/2}$ separated subset of the unit sphere in $\RR^n$, where $\nu$ ranges over some set $\Theta^\lambda$ with $\#(\Theta^\lambda) \sim \lambda^{(d-1)/2}$. Let
+%
+\[ \Gamma^\lambda_\nu = \{ \xi \in \RR^d_\xi : |\xi \cdot \xi^\lambda_\nu| \geq (1 - c \lambda^{-1/2}) \cdot |\xi| \} \]
+%
+for some suitably small constant $c > 0$. Let $\{ \chi^\lambda_\nu \}$ be a smooth partition of unity, homogeneous of degree zero, adapted to the $\Gamma^\lambda_\nu$. We thus have
+%
+\[ |D^\alpha \chi^\lambda_\nu(\xi)| \lesssim_\alpha \lambda^{|\alpha|/2} |\xi|^{1 - \alpha}. \]
+%
+We thus consider operators $T^\lambda_\nu$ with kernels $K^\lambda_\nu$ given by
+%
+\[ K^\lambda_\nu(x,t;y) = \int e^{2 \pi i (\phi(x,t;\xi) - y \cdot \xi)} b^\lambda_\nu(x,t;\xi) ( 1 + |\xi|^2 )^{\mu/2} \]
+%
+where
+%
+\[ b^\lambda_\nu(x,t;\xi) = b(x,t;\xi) \beta(\xi / \lambda) \chi^\lambda_\nu(\xi). \]
+%
+Stationary phase again tell us that $K^\lambda_\nu(x,t;y)$ satisfies the bounds
+%
+\[ |K^\lambda_\nu(x,t;y)| \lesssim_N \frac{\lambda^{\mu + (d+1)/2}}{\langle \lambda | \pi_{\xi^\lambda_\nu} (y - \nabla_\xi \phi(x,t,\xi^\lambda_\nu)| + \lambda^{1/2} | \pi_{\xi^\lambda_\nu}^\perp (y - \nabla_\xi \phi(x,t,\xi^\lambda_\nu)) | \rangle^N}. \]
+%
+This bound immediately yields via Schur's Lemma that for all $1 \leq p \leq \infty$,
+%
+\[ \| K^\lambda_\nu \|_{L^\infty_{x,t} L^1_y} \lesssim \lambda^\mu, \]
+%
+and thus that
+%
+\[ \| T^\lambda_\nu f \|_{L^\infty(\RR^{d+1})} \lesssim \lambda^\mu \| f \|_{L^\infty(\RR^d)}, \]
+%
+a much better bound than was obtained trivially than from the global sum.
+
+We might hope to then combine this still fairly trivial bound with a square function estimate of the form
+%
+\[ \| T^\lambda_\nu f \|_{L^p(\RR^{d+1})} \lesssim_\varepsilon \lambda^\varepsilon \| S^\lambda f \|_{L^p(\RR^{d+1})} \]
+%
+where
+%
+\[ S^\lambda f = \left( \sum_\nu | T^\lambda_\nu f |^2 \right)^{1/2}, \]
+%
+which in some sense, captures the orthogonality of the operators $\{ T^\lambda_\nu \}$. This then yields that for $p \geq 2$, that
+%
+\begin{align*}
+    \| T^\lambda_\nu f \|_{L^p_{x,t}} &\lesssim_\varepsilon \lambda^\varepsilon \| T^\lambda_\nu f \|_{L^p_{x,t} l^2_\nu}\\
+    &\leq \lambda^\varepsilon \| T^\lambda_\nu f \|_{L^p_{x,t} l^p_\nu}\\
+    &= \lambda^\varepsilon \| T^\lambda_\nu f \|_{l^p_\nu L^p_{x,t})}\\
+    &\lesssim \lambda^\varepsilon \lambda^{\mu + (d-1)/2} \#(\Theta^\lambda)^{1/p}\\
+    &= \lambda^{\varepsilon + \mu + (d-1) / p},
+\end{align*}
+%
+thus giving bounds for $\mu > (d-1)/2$, i.e., the non-endpoint local smoothing.
+
+Wolff noticed that the non-endpoint local smoothing results could be obtained with a weaker bound than a square function estimate, namely, an \emph{$l^p$ decoupling inequality} of the form
+%
+\[ \| T^\lambda f \|_{L^p(\RR^{d+1})} \lesssim \lambda^{\alpha(p) + \varepsilon} \| T^\lambda_\nu f \|_{l^p_\nu L^p_{x,t}}, \]
+%
+where if $2 \leq p \leq 2(d+1)/(d-1)$, then
+%
+\[ \alpha(p) = (d-1)|1/p - 1/2|, \] 
+%
+and for $2(d+1)/(d-1) \leq p < \infty$,
+%
+\[ \alpha(p) = (d-1)|1/p - 1/2| - 1/p. \]
+%
+The $L^p$ norm of the localized pieces is much easier to estimate. For instance, we have
+%
+\[ \| T^\lambda_\nu f \|_{L^\infty_{x,t}} \lesssim \lambda^\mu \| f \|_{L^\infty}, \]
+%
+and thus
+%
+\[ \| T^\lambda_\nu f \|_{l^\infty_\nu L^\infty_{x,t}} \lesssim \lambda^\mu \| f \|_{L^\infty}. \]
+%
+On the other hand, we have an $L^2$ energy conservation estimate of the form
+%
+\[ \| T^\lambda_\nu f \|_{L^2_{x,t}} \lesssim \| T^\lambda_\nu f \|_{L^\infty_t L^2_x} \lesssim \lambda^\mu \| f^\lambda_\nu \|_{L^2} \]
+%
+where $f^\lambda_\nu$ is the localization of $f^\lambda_\nu$ on the Fourier side to the support of $\chi^\lambda_\nu$. This immediately yields via Parseval's inequality and orthogonality that
+%
+\[ \| T^\lambda_\nu f \|_{l^2_\nu L^2_{x,t}} \lesssim \lambda^\mu \| f^\lambda_\nu \|_{l^2_\nu L^2_x} \lesssim \lambda^\mu \| f \|_{L^2_x}. \]
+%
+Interpolation thus yields that for $2 \leq p \leq \infty$,
+%
+\[ \| T^\lambda_\nu f \|_{l^p_\nu L^p_{x,t}} \lesssim \lambda^\mu \| f \|_{L^p}, \]
+%
+and thus that, together with Wolff's decoupling inequality,
+%
+\[ \| T^\lambda f \|_{L^p(\RR^{d+1})} \lesssim_\varepsilon \lambda^{\alpha(p) + \mu + \varepsilon} \| f \|_{L^p(\RR^d)}, \]
+%
+and thus we get boundedness of $T$ for $\mu < \alpha(p)$, which gives $1/p$ degrees of local smoothing.
+
+\end{comment}

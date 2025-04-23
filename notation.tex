@@ -1,0 +1,41 @@
+%!TEX root = main.tex
+
+\chapter*{Notation}
+
+\begin{itemize}
+    \item We use the normalization of the Fourier transform
+    %
+    \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx \]
+    %
+    which is standard in classical analysis.
+
+    \item Let $\text{Trans}_y$ be the translation operator by $y$, i.e. so that $\text{Trans}_y f(x) = f(x - y)$.
+
+    \item We let $\text{Dil}_t$ be the $L^\infty$-normalized dilation operator on functions, i.e.
+    %
+    \[ \text{Dil}_t f(x) \coloneqq f(x/t). \]
+    %
+    Overloading notation, we also consider dyadic dilations
+    %
+    \[ \text{Dil}_j f(x) \coloneqq f(x/2^j). \]
+    %
+    The dyadic dilation operator will only be used along with symbols that stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so which dilation we use should be clear from the context.
+
+    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators, and $D_j$ to denote the self-adjoint normalization $D_j f \coloneqq (2 \pi i)^{-1} \partial_j$. This notation has the convenience that for a polynomial $P$,
+    %
+    \[ P(D_j) \{ f \} = \int P(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
+    %
+    and simplifies many formulas associated with Fourier integral operators.
+
+    \item We will often use the Japanese bracket $\langle x \rangle \coloneqq (1 + |x|^2)^{1/2}$ for $x \in \RR^d$.
+
+    \item A function $f: \RR^n \times \RR^p \to \RR$ is a \emph{symbol of order $s$} if it satisfies bounds of the form
+    %
+    \[ | \partial_x^\alpha \partial_\theta^\beta f (x,\theta) | \lesssim_{\alpha,\beta} \langle \theta \rangle^{s - |\beta|} \]
+    %
+    for all multi-indices $\alpha$ and $\beta$.
+
+    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$.
+
+%    \item For integers $n$ and $m$, we let $\llbracket n,m \rrbracket \coloneqq \{ n, n+1, \dots, m \}$.
+\end{itemize}

@@ -1,0 +1,35 @@
+\contentsline {part}{I\hspace {1em}Background}{2}{}%
+\contentsline {chapter}{\numberline {1}Multipliers of an Elliptic Operator}{3}{}%
+\contentsline {chapter}{\numberline {2}Radial Multipliers on Euclidean Space}{6}{}%
+\contentsline {section}{\numberline {2.1}Convolution Kernels of Fourier Multipliers}{7}{}%
+\contentsline {section}{\numberline {2.2}Multipliers on Euclidean Space}{8}{}%
+\contentsline {section}{\numberline {2.3}The Radial Multiplier Conjecture}{8}{}%
+\contentsline {section}{\numberline {2.4}Radial-Multiplier Bounds By Density Decompositions}{10}{}%
+\contentsline {section}{\numberline {2.5}Combining Scales With Atomic Decompositions}{18}{}%
+\contentsline {section}{\numberline {2.6}Exploiting Tangency Bounds in $\RR ^3$ and $\RR ^4$}{19}{}%
+\contentsline {subsection}{\numberline {2.6.1}Result in 3 Dimensions}{19}{}%
+\contentsline {subsection}{\numberline {2.6.2}Results in 4 Dimensions}{20}{}%
+\contentsline {chapter}{\numberline {3}The Radial Multiplier Conjecture on Compact Manifolds}{21}{}%
+\contentsline {section}{\numberline {3.1}Connections to Local Smoothing Bounds}{22}{}%
+\contentsline {section}{\numberline {3.2}Fourier Integral Operator Techniques}{22}{}%
+\contentsline {section}{\numberline {3.3}Mockenhaupt Seeger Sogge: Exploiting Periodicity}{22}{}%
+\contentsline {section}{\numberline {3.4}Lee Seeger: Decomposition Arguments for FIOs with Cinematic Curvature}{26}{}%
+\contentsline {subsection}{\numberline {3.4.1}Frequency Localization and Discretization}{29}{}%
+\contentsline {subsection}{\numberline {3.4.2}Discretizing the Problem}{30}{}%
+\contentsline {subsection}{\numberline {3.4.3}Interactions of Discretized Operators}{32}{}%
+\contentsline {section}{\numberline {3.5}Kim: $L^2$-Based Multiplier Bounds Using Sogge's Eigenfunction Bounds}{34}{}%
+\contentsline {subsection}{\numberline {3.5.1}Quasi-Radial Multipliers}{35}{}%
+\contentsline {subsection}{\numberline {3.5.2}Spectral Multipliers}{38}{}%
+\contentsline {part}{II\hspace {1em}New Results}{42}{}%
+\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{43}{}%
+\contentsline {subsection}{\numberline {4.0.1}Summary of Proof}{43}{}%
+\contentsline {section}{\numberline {4.1}Preliminary Setup}{44}{}%
+\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Solutions to the Half-Wave Equation Obtained From High-Frequency Wave Packets}{48}{}%
+\contentsline {subsection}{\numberline {4.2.1}Some Facts About Finsler geometry}{54}{}%
+\contentsline {subsection}{\numberline {4.2.2}Analysis of Critical Points}{56}{}%
+\contentsline {subsection}{\numberline {4.2.3}\boldmath $L^p$ Estimates Via Density Decompositions}{61}{}%
+\contentsline {section}{\numberline {4.3}Analysis of Regime II via Local Smoothing}{65}{}%
+\contentsline {section}{\numberline {4.4}Appendix}{66}{}%
+\contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{71}{}%
+\contentsline {chapter}{\numberline {6}Future Work}{72}{}%
+\contentsline {chapter}{\numberline {A}Appendix Title}{73}{}%
