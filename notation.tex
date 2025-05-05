@@ -3,25 +3,13 @@
 \chapter*{Notation}
 
 \begin{itemize}
-    \item We use the normalization of the Fourier transform
+    \item We use the normalization of the Fourier transform given by the formula
     %
-    \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx \]
-    %
-    which is standard in classical analysis.
+    \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx. \]
 
-    \item Let $\text{Trans}_y$ be the translation operator by $y$, i.e. so that $\text{Trans}_y f(x) = f(x - y)$.
+    \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$. Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
 
-    \item We let $\text{Dil}_t$ be the $L^\infty$-normalized dilation operator on functions, i.e.
-    %
-    \[ \text{Dil}_t f(x) \coloneqq f(x/t). \]
-    %
-    Overloading notation, we also consider dyadic dilations
-    %
-    \[ \text{Dil}_j f(x) \coloneqq f(x/2^j). \]
-    %
-    The dyadic dilation operator will only be used along with symbols that stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so which dilation we use should be clear from the context.
-
-    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators, and $D_j$ to denote the self-adjoint normalization $D_j f \coloneqq (2 \pi i)^{-1} \partial_j$. This notation has the convenience that for a polynomial $P$,
+    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators, and $D_j$ to denote the self-adjoint normalization $D_j f = (2 \pi i)^{-1} \partial_j$. This notation has the convenience that for a polynomial $P$,
     %
     \[ P(D_j) \{ f \} = \int P(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
     %
@@ -35,7 +23,11 @@
     %
     for all multi-indices $\alpha$ and $\beta$.
 
-    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$.
+    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere.
+
+    \item All operators we consider are Schwartz operators between manifolds equipped with a canonical measure. Abusing notation, we thus identify an operator with the distribution that gives it's Schwartz kernel. Thus, for a Schwartz operator $A$ from a manifold $Y$ to a manifold $X$, we might write
+    %
+    \[ A f(x) = \int_Y A(x,y) f(y)\; dy. \]
 
 %    \item For integers $n$ and $m$, we let $\llbracket n,m \rrbracket \coloneqq \{ n, n+1, \dots, m \}$.
 \end{itemize}

@@ -1,7 +1,63 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+%!TEX root = ../main.tex
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \parencite[see][p10]{latexcompanion}.
+\section{Exploiting Tangency Bounds in $\RR^3$ and $\RR^4$}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \parencite[compare][]{knuthwebsite}.
+The results of Heo, Nazarov, and Seeger only apply when $d \geq 4$. Cladek found a method to get an initial radial multiplier conjecture result in $\RR^3$, and an improvmeent of the bounds obtained by Heo, Nazarov, and Seeger when $d = 3$. The idea is to exploit the fact that one need only prove a version of \ref{lemma2} for a set $\mathcal{E} = \mathcal{E}_X \times \mathcal{E}_R$, where $\mathcal{E}_X$ is a one-separated family of points, and $\mathcal{E}_R$ are a family of radii. One can then exploit this Cartesian product structure when analyzing functions of the form
+%
+\[ F = \sum_{(x,r) \in \mathcal{E}} \chi_{x,r}, \]
+%
+in particular, improving upon the result of \cite{HeoandNazarovandSeeger}.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \parencite[e.g.][page 300]{einstein}.
+\subsection{Result in 3 Dimensions}
+
+As in \cite{HeoandNazarovandSeeger}, Cladek first performs a density decomposition, i.e. writing
+%
+\[ F = \sum F_k^m \]
+%
+where
+%
+\[ F_k^m = \sum_{(x,r) \in \mathcal{E}_k(2^m)} \chi_{x,r}. \]
+%
+Cladek then interpolates between an $L^0$ bound and an $L^2$ bound on the resulting functions. The $L^0$ bound is exactly the same bound used in \cite{HeoandNazarovandSeeger}.
+
+\begin{theorem}
+    For the function $F$, we have
+    %
+    \[ |\text{supp}(F_k^m)| \lesssim 2^{-m} 4^k \# \mathcal{E}_k \]
+    %
+    and thus
+    %
+    \[ |\text{supp}(F^m)| \lesssim \sum_k 2^{-m} 4^k \# \mathcal{E}_k. \]
+\end{theorem}
+
+The $L^2$ bound is improved upon, which is what allows us to obtain a new result in three dimensions.
+
+\begin{lemma} \label{cladeksl2}
+    Suppose $\mathcal{E} = \bigcup_k \mathcal{E}_k$ is a one-separated set, where $\mathcal{E}_k \subset \RR^d \times [2^k,2^{k+1})$ is a set of density type $(2^m, 2^k)$. Then
+    %
+    \[ \left\| \sum_{(x,r) \in \mathcal{E}} \chi_{x,r} \right\|_{L^2(\RR^d)} \lesssim_\varepsilon 2^{[(11/13) + \varepsilon] m} \sum_k 4^k \# \mathcal{E}_k. \]
+\end{lemma}
+
+Interpolation thus yields that for a set of density type $2^m$ as in this Lemma,
+%
+\[ \| \sum_{(x,r) \in \mathcal{E}} \chi_{x,r} \|_{L^p(\RR^d)} \lesssim_\varepsilon 2^{-m(1/p - 12/13 - \varepsilon)} ( \sum_k 4^k \# \mathcal{E}_k )^{1/p}. \]
+%
+If $1 < p < 13/12$, this sum is favorable in $m$, and may be summed without harm to prove the radial multiplier conjecture for unit scale radial multipliers in this range.
+
+\begin{proof} [Proof of Lemma \ref{cladeksl2}]
+    Write
+    %
+    \[ F_k = \sum_{(x,r) \in \mathcal{E}_k} \chi_{x,r}. \]
+    %
+    As before, we can throw away terms for $k \leq 10 m$, i.e. obtaining that
+    %
+    \[ \| \sum F_k \|_{L^2(\RR^d)} \lesssim m^{1/2} \left( \sum_k \| F_k \|_{L^2(\RR^d)}^2 + \sum_{10m < k < k'} |\langle F_k, F_{k'} \rangle| \right)^{1/2}. \]
+    %
+    Our proof thus splits into two cases: where the radii are incomparable, and where the radii are comparable.
+
+    TODO:
+\end{proof}
+
+\subsection{Results in 4 Dimensions}
+
+TODO

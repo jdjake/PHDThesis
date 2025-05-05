@@ -19,6 +19,44 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{BaoChern}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=deacd93b76ce7621005854769db4f5da}{%
+           family={Bao},
+           familyi={B\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8e549cee4506cb9d2cd910f28f75ab0b}{%
+           family={S.-S.},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={Chern},
+           giveni={C\bibinitperiod}}}%
+        {{hash=359a1206463517d592edb7415e458011}{%
+           family={Z.},
+           familyi={Z\bibinitperiod},
+           given={Shen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{fullhash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{fullhashraw}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{bibnamehash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{authorbibnamehash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{authornamehash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{authorfullhash}{089aaf34170491e9848d8d7439dd8b0b}
+      \strng{authorfullhashraw}{089aaf34170491e9848d8d7439dd8b0b}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Graduate Texts in Mathematics}
+      \field{title}{An Introduction to {R}iemann-{F}insler Geometry}
+      \field{volume}{200}
+      \field{year}{2000}
+    \endentry
     \entry{Cladek}{article}{}{}
       \name{author}{1}{}{%
         {{hash=30cbb66f1b3de17f6d85650b0054bf69}{%
@@ -212,6 +250,34 @@
       \field{pages}{55\bibrangedash 92}
       \range{pages}{38}
     \endentry
+    \entry{HeinzHopf}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=646cca1bc38021eebd8cb55af29f7edc}{%
+           family={Hopf},
+           familyi={H\bibinitperiod},
+           given={Heinz},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{fullhash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{fullhashraw}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{bibnamehash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{authorbibnamehash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{authornamehash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{authorfullhash}{646cca1bc38021eebd8cb55af29f7edc}
+      \strng{authorfullhashraw}{646cca1bc38021eebd8cb55af29f7edc}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Lectures Notes in Mathematics}
+      \field{title}{Differential Geometry in the Large}
+      \field{volume}{1000}
+      \field{year}{1989}
+    \endentry
     \entry{Hormander1}{article}{}{}
       \name{author}{1}{}{%
         {{hash=c2553b671df63eec279a1059ab372509}{%
@@ -356,6 +422,7 @@
       \strng{authornamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
       \strng{authorfullhash}{47f76c6a2d6c6aff73aa4f09c63d6467}
       \strng{authorfullhashraw}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \field{extraname}{1}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -367,6 +434,40 @@
       \field{year}{2013}
       \field{pages}{745\bibrangedash 755}
       \range{pages}{11}
+    \endentry
+    \entry{LeeSeeger2}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=62f49abf38b3c26f9c4d51c0ba9f530e}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Sanghyuk},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{fullhash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{fullhashraw}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{bibnamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorbibnamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authornamehash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorfullhash}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \strng{authorfullhashraw}{47f76c6a2d6c6aff73aa4f09c63d6467}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Lond. Math. Soc.}
+      \field{number}{2}
+      \field{title}{On radial {F}ourier multipliers and almost everywhere convergence}
+      \field{volume}{91}
+      \field{year}{2015}
+      \field{pages}{105\bibrangedash 126}
+      \range{pages}{22}
     \endentry
     \entry{deLeeuw}{article}{}{}
       \name{author}{1}{}{%
@@ -457,6 +558,34 @@
       \field{year}{1974}
       \field{pages}{521\bibrangedash 530}
       \range{pages}{10}
+    \endentry
+    \entry{SeegerSingular}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0195343a0188ad73fea77d9a848cbaf6}{%
+           family={Seeger},
+           familyi={S\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{fullhash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{fullhashraw}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{bibnamehash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{authorbibnamehash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{authornamehash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{authorfullhash}{0195343a0188ad73fea77d9a848cbaf6}
+      \strng{authorfullhashraw}{0195343a0188ad73fea77d9a848cbaf6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trans. Amer. Math. Soc.}
+      \field{number}{1}
+      \field{title}{Some Inequalities For Singular Convolution Operators In $L^p$-Spaces}
+      \field{volume}{308}
+      \field{year}{1988}
+      \field{pages}{259\bibrangedash 272}
+      \range{pages}{14}
     \endentry
     \entry{SeegerSoggeStein}{article}{}{}
       \name{author}{3}{}{%
@@ -550,13 +679,8 @@
       \field{year}{2017}
     \endentry
   \enddatalist
-  \missing{BaoChern}
-  \missing{HeinzHopf}
   \missing{Hormander2}
   \missing{Treves2}
-  \missing{einstein}
-  \missing{knuthwebsite}
-  \missing{latexcompanion}
 \endrefsection
 \endinput
 
