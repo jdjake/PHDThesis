@@ -1,31 +1,32 @@
 \contentsline {part}{I\hspace {1em}Background}{2}{}%
 \contentsline {chapter}{\numberline {1}Multipliers of an Elliptic Operator}{3}{}%
-\contentsline {chapter}{\numberline {2}Radial Multipliers on Euclidean Space}{6}{}%
-\contentsline {section}{\numberline {2.1}Convolution Kernels of Fourier Multipliers}{7}{}%
-\contentsline {section}{\numberline {2.2}Multipliers on Euclidean Space}{8}{}%
-\contentsline {section}{\numberline {2.3}The Radial Multiplier Conjecture}{8}{}%
-\contentsline {section}{\numberline {2.4}Radial-Multiplier Bounds by Density Decompositions}{10}{}%
-\contentsline {section}{\numberline {2.5}Combining Scales with Atomic Decompositions}{18}{}%
-\contentsline {section}{\numberline {2.6}Boundedness of Quasi-Radial Multipliers}{20}{}%
-\contentsline {section}{\numberline {2.7}Connections to Local Smoothing Bounds}{21}{}%
-\contentsline {chapter}{\numberline {3}Wave Equations on Compact Manifolds}{22}{}%
-\contentsline {section}{\numberline {3.1}Geometries Induced by Elliptic Operators}{22}{}%
-\contentsline {section}{\numberline {3.2}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{24}{}%
-\contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{25}{}%
-\contentsline {section}{\numberline {3.4}Relation Between Assumption B and Periodic Geodesics}{26}{}%
-\contentsline {section}{\numberline {3.5}Relation to Previous Work}{26}{}%
-\contentsline {part}{II\hspace {1em}New Results}{28}{}%
-\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{29}{}%
-\contentsline {section}{\numberline {4.1}Preliminary Setup}{30}{}%
-\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{32}{}%
-\contentsline {subsection}{\numberline {4.2.1}Analysis of Critical Points}{38}{}%
-\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{43}{}%
-\contentsline {subsection}{\numberline {4.3.1}$L^2$ Estimates For Bounded Density Inputs}{43}{}%
-\contentsline {subsection}{\numberline {4.3.2}$L^p$ Estimates Via Density Decompositions}{50}{}%
-\contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{53}{}%
-\contentsline {section}{\numberline {4.5}Appendix}{55}{}%
-\contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{60}{}%
-\contentsline {chapter}{\numberline {6}Future Work}{61}{}%
-\contentsline {section}{\numberline {6.1}Exploiting Tangency Bounds in $\RR ^3$ and $\RR ^4$}{61}{}%
-\contentsline {subsection}{\numberline {6.1.1}Result in 3 Dimensions}{61}{}%
-\contentsline {subsection}{\numberline {6.1.2}Results in 4 Dimensions}{62}{}%
+\contentsline {chapter}{\numberline {2}Radial Multipliers on Euclidean Space}{7}{}%
+\contentsline {section}{\numberline {2.1}Convolution Kernels of Fourier Multipliers}{8}{}%
+\contentsline {section}{\numberline {2.2}The Radial Multiplier Conjecture}{9}{}%
+\contentsline {section}{\numberline {2.3}Radial-Multiplier Bounds by Density Decompositions}{10}{}%
+\contentsline {section}{\numberline {2.4}Combining Scales with Atomic Decompositions}{19}{}%
+\contentsline {section}{\numberline {2.5}Boundedness of Quasi-Radial Multipliers and Local Smoothing Inequalities}{21}{}%
+\contentsline {chapter}{\numberline {3}Wave Equations on Compact Manifolds}{24}{}%
+\contentsline {section}{\numberline {3.1}Geometries Induced by Elliptic Operators}{24}{}%
+\contentsline {section}{\numberline {3.2}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{26}{}%
+\contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{27}{}%
+\contentsline {section}{\numberline {3.4}BLEH}{28}{}%
+\contentsline {section}{\numberline {3.5}Periodic Geodesics and Assumption B}{29}{}%
+\contentsline {section}{\numberline {3.6}Relation to Previous Work}{29}{}%
+\contentsline {part}{II\hspace {1em}New Results}{30}{}%
+\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{31}{}%
+\contentsline {section}{\numberline {4.1}Preliminary Setup}{32}{}%
+\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{34}{}%
+\contentsline {subsection}{\numberline {4.2.1}Analysis of Critical Points}{40}{}%
+\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{45}{}%
+\contentsline {subsection}{\numberline {4.3.1}$L^2$ Estimates For Bounded Density Inputs}{45}{}%
+\contentsline {subsection}{\numberline {4.3.2}$L^p$ Estimates Via Density Decompositions}{52}{}%
+\contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{55}{}%
+\contentsline {section}{\numberline {4.5}Appendix}{57}{}%
+\contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{62}{}%
+\contentsline {chapter}{\numberline {6}Future Work}{63}{}%
+\contentsline {section}{\numberline {6.1}Exploiting Tangency Bounds in $\RR ^3$ and $\RR ^4$}{63}{}%
+\contentsline {subsection}{\numberline {6.1.1}Result in 3 Dimensions}{63}{}%
+\contentsline {subsection}{\numberline {6.1.2}Results in 4 Dimensions}{64}{}%
+\contentsline {section}{\numberline {6.2}Manifolds With Periodic Geodesic Flow}{64}{}%
+\contentsline {section}{\numberline {6.3}Abstract Reductions In Manifolds With Constant Sectional Curvature}{64}{}%

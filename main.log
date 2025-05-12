@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  5 MAY 2025 02:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  12 MAY 2025 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -962,7 +962,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 .
  (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-))
+)
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -973,7 +973,16 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [9
 
-] (chapters/0-introduction.tex
+])
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[10] (chapters/0-introduction.tex
 Overfull \hbox (11.8207pt too wide) in paragraph at lines 15--16
 \OT1/txr/m/n/12 ter-i-za-tions of bound-ed-ness were known on any com-pact man-
 i-fold, aside from the translation-
@@ -1004,6 +1013,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 ] (chapters/1-background.tex
 Chapter 1.
 
+Overfull \hbox (4.84552pt too wide) in paragraph at lines 29--30
+[]\OT1/txr/m/n/12 The pri-mary ex-am-ple of el-lip-tic op-er-a-tors for our pur
+-poses are ob-tained from a Laplace-
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1015,22 +1030,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 [3
 
 ]
-Overfull \hbox (4.84552pt too wide) in paragraph at lines 35--36
-[]\OT1/txr/m/n/12 The pri-mary ex-am-ple of el-lip-tic op-er-a-tors for our pur
--poses are ob-tained from a Laplace-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 59--64
-[] 
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 67--68
-[] 
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1040,6 +1039,16 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [4]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 82--87
+[] 
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 90--91
+[] 
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1049,6 +1058,15 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [5]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[6]
 Chapter 2.
 
 
@@ -1059,18 +1077,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[6
+[7
 
 ]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[7]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1089,7 +1098,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9]
-Overfull \hbox (1.5795pt too wide) in paragraph at lines 413--413
+
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 297.
+
+
+Overfull \hbox (1.5795pt too wide) in paragraph at lines 462--462
 []\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
  []
 
@@ -1120,7 +1133,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[12] Excluding 'comment' comment.
+[12]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1129,7 +1142,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[13]
+[13] Excluding 'comment' comment.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1184,6 +1197,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [19]
+Overfull \hbox (9.71071pt too wide) detected at line 997
+[][] \U/txsya/m/n/12 . \OT1/txr/m/n/12 2[] [][] \OML/txmi/m/it/12 ;
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1202,6 +1220,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [21]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[22]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[23]
 Chapter 3.
 
 
@@ -1212,7 +1248,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[22
+[24
 
 ]
 
@@ -1223,38 +1259,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[23]
-Overfull \hbox (4.86716pt too wide) in paragraph at lines 1062--1065
-\OT1/txr/m/n/12 quency wave packet so-lu-tions to the equa-tion $\OML/txmi/m/it
-/12 @[]u \OT1/txr/m/n/12 = 2\OML/txmi/m/it/12 ^^YiP$ \OT1/txr/m/n/12 ap-prox-i-
-mately travel on geodesics
- []
-
-
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[24]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [25]
-Overfull \hbox (18.32274pt too wide) in paragraph at lines 1123--1123
-[]\OT1/txr/bx/n/17.28 Relation Be-tween As-sump-tion B and Pe-ri-odic Geodesics
- 
- []
-
-)
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1273,6 +1278,14 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [27]
+Overfull \hbox (9.41785pt too wide) in paragraph at lines 1238--1239
+\OT1/txr/m/n/12 early in-de-pen-dent, $\OMS/txsy/m/n/12 C[]$ \OT1/txr/m/n/12 is
+ a smooth, $\OML/txmi/m/it/12 n \OT1/txr/m/n/12 + \OML/txmi/m/it/12 m$ \OT1/txr
+/m/n/12 di-men-sional man-i-fold[], and then for $(\OML/txmi/m/it/12 x[]; ^^X[]
+; y[]; ^^Q[]\OT1/txr/m/n/12 ) \OMS/txsy/m/n/12 2
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1281,7 +1294,25 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[28
+[28])
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[29]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[30
 
 ]
 Chapter 4.
@@ -1294,27 +1325,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[29
+[31
 
 ]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[30]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[31] Excluding 'comment' comment.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1332,7 +1345,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[33]
+[33] Excluding 'comment' comment.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1379,10 +1392,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [38]
 
-LaTeX Warning: Citation 'Treves2' on page 39 undefined on input line 754.
-
-
-
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1391,11 +1400,6 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [39]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 918--919
-[]\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
- []
-
-
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1406,6 +1410,10 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [40]
 
+LaTeX Warning: Citation 'Treves2' on page 41 undefined on input line 754.
+
+
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1414,6 +1422,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [41]
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 918--919
+[]\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1512,7 +1525,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[52] Excluding 'comment' comment.
+[52]
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1530,7 +1543,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[54]
+[54] Excluding 'comment' comment.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1549,6 +1562,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [56]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[57]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[58]
 Overfull \hbox (4.16039pt too wide) in paragraph at lines 2294--2298
 \OT1/txr/m/n/12 The rapid de-cay of $[]$ im-plies that the func-tion $\OML/txmi
 /m/it/12  \OT1/txr/m/n/12 (\OML/txmi/m/it/12 t\OT1/txr/m/n/12 ) = \OML/txmi/m/i
@@ -1567,25 +1598,25 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[57]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[58] Excluding 'comment' comment.)
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [59]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[60] Excluding 'comment' comment.)
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[61]
 Chapter 5.
 (chapters/atomicdecompositions.tex)
 
@@ -1596,7 +1627,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[60
+[62
 
 ]
 Chapter 6.
@@ -1609,27 +1640,32 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[61
-
-])
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[62]
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [63
+
+]
+Overfull \hbox (4.48254pt too wide) in paragraph at lines 67--67
+[]\OT1/txr/bx/n/17.28 Abstract Re-duc-tions In Man-i-folds With Con-stant Sec-
+ []
+
+)
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[64]
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[65
 
 ]
 Overfull \hbox (10.59874pt too wide) in paragraph at lines 157--157
@@ -1646,30 +1682,21 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[64] (main.aux)
+[66] (main.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15682 strings out of 473682
- 287788 string characters out of 5718739
- 1107962 words of memory out of 5000000
- 38508 multiletter control sequences out of 15000+600000
- 620426 words of font info for 180 fonts, out of 8000000 for 9000
+ 15686 strings out of 473682
+ 287855 string characters out of 5718739
+ 1107993 words of memory out of 5000000
+ 38511 multiletter control sequences out of 15000+600000
+ 620664 words of font info for 181 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,20n,81p,1441b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtc
@@ -1686,9 +1713,9 @@ ams/MiKTeX/fonts/type1/public/txfonts/txsyc.pfb><C:/Users/Patron/AppData/Local/
 Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppData/Local
 /Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/AppData/Loca
 l/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (74 pages, 351308 bytes).
+Output written on main.pdf (77 pages, 358949 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
+ 316 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
