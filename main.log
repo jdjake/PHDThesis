@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  12 MAY 2025 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.12.11)  13 MAY 2025 00:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,7 +1278,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [27]
-Overfull \hbox (9.41785pt too wide) in paragraph at lines 1238--1239
+Overfull \hbox (9.41785pt too wide) in paragraph at lines 1238--1283
 \OT1/txr/m/n/12 early in-de-pen-dent, $\OMS/txsy/m/n/12 C[]$ \OT1/txr/m/n/12 is
  a smooth, $\OML/txmi/m/it/12 n \OT1/txr/m/n/12 + \OML/txmi/m/it/12 m$ \OT1/txr
 /m/n/12 di-men-sional man-i-fold[], and then for $(\OML/txmi/m/it/12 x[]; ^^X[]

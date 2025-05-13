@@ -1237,8 +1237,18 @@ unless $(x_0,\xi_0,y_0,\eta_0) \in \mathcal{C}_\Phi$. The canonical relation of 
 
 Under the assumption that the vectors $\partial_{\theta_1} \{ \nabla_{x,y,\xi} \Phi \}, \dots \partial_{\theta_N} \{ \nabla_{x,y,\xi} \Phi \}$ are everywhere linearly independent, $\mathcal{C}_\Phi$ is a smooth, $n + m$ dimensional manifold\footnote{It is actually a \emph{Lagrangian submanifold} of $T^* \RR^n \times T^* \RR^m$. Thus the canonical relation of any Fourier integral operator must be a Lagrangian submanifold, though we will only use this fact implicitly}, and then for $(x_0,\xi_0,y_0,\eta_0) \in \mathcal{C}_\Phi$ the principle of stationary phase implies that $|\langle g_{x_0}, Af_{y_0} \rangle| \lesssim R^{\mu + p/2 - (n+m)/2}$.
 %
-% R^{mu + p/2 - (n + m)/2} int chi(x,y,theta) e^{iR[ Phi(x,y,theta) + xi * x - y * eta ]}
-% R^{mu +}
+% R^{mu + p} int chi(x,y,theta) e^{iR[ Phi(x,y,theta) + xi * x - eta * y ]}
+% Nabla_theta Phi(x,y,theta) = 0
+% x = y and theta = -xi = -eta
+% Integration in theta gives chi^(x,y, R(x - y)), and integration in y for
+% each fixed x yields a R^{-d} factor, which gives a R^mu factor.
+%
+% 
+% 
+% 
+% 
+%
+%
 % Lambda = { (H'(xi), xi) }
 % int chi(x,y,theta) e^{iR[ (x - y) * theta + xi * x - y * eta ]}
 %
