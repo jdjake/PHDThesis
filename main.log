@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.6)  16 MAY 2025 02:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.6)  16 MAY 2025 02:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -863,7 +863,34 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 16.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 2
+2.
+
+(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
 )
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 2
+2.
+
+(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 2
+2.
+
+(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 2
+2.
+
+(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
+2.
+
+(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd))
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -875,39 +902,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 [1] (main.toc
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 2.
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 4
-.
-
-(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 4
-.
-
-(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 4
-.
-
-(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 4
-.
-
-(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 4
-.
-
-(C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-
-(chapters/0-notation.tex
+ (chapters/0-notation.tex
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1676,6 +1675,11 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [71]
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+153.
+ (C:\Users\sirsa\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1704,16 +1708,21 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 LaTeX Warning: There were undefined references.
 
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16746 strings out of 476339
- 315748 string characters out of 5788120
+ 16787 strings out of 476339
+ 316508 string characters out of 5788120
  1874340 words of memory out of 5000000
- 36868 multiletter control sequences out of 15000+600000
- 568958 words of font info for 159 fonts, out of 8000000 for 9000
+ 36905 multiletter control sequences out of 15000+600000
+ 569234 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,21n,63p,2044b,1343s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/sirsa/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
@@ -1729,12 +1738,13 @@ lic/txfonts/txmia.pfb><C:/Users/sirsa/AppData/Local/Programs/MiKTeX/fonts/type1
 pe1/public/txfonts/txsya.pfb><C:/Users/sirsa/AppData/Local/Programs/MiKTeX/font
 s/type1/public/txfonts/txsyb.pfb><C:/Users/sirsa/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/txfonts/txsyc.pfb><C:/Users/sirsa/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sirsa/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sirsa/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (78 pages, 396616 bytes).
+TeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/sirsa/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/sirsa/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/sirsa/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (78 pages, 403222 bytes).
 PDF statistics:
- 324 PDF objects out of 1000 (max. 8388607)
+ 329 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -107,6 +107,29 @@
       \field{pages}{467\bibrangedash 498}
       \range{pages}{32}
     \endentry
+    \entry{Denson}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=e63095f1a47bff1d227c325cc9a3b81e}{%
+           family={Denson},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \strng{fullhash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \strng{bibnamehash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \strng{authorbibnamehash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \strng{authornamehash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \strng{authorfullhash}{e63095f1a47bff1d227c325cc9a3b81e}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{"\url{https://arxiv.org/abs/2410.23505}"}
+      \field{note}{ArXiv Preprint}
+      \field{title}{Multipliers for Spherical Harmonic Expansions}
+      \field{year}{(ArXiv 2024)}
+    \endentry
     \entry{GarrigosandSeeger}{article}{}
       \name{author}{2}{}{%
         {{hash=389f5d61a9eaf30b5ebd9abae79f90f8}{%
