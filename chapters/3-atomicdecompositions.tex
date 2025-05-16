@@ -1,0 +1,311 @@
+%!TEX root = ../main.tex
+
+In this chapter, we discuss a prospective method of combining frequency scales for spectral multipliers. We take an operator $P$ satisfying Assumptions A and B, and suppose $P$ satisfies a third assumption, which is still sufficient to prove Theorem \ref{maintheoremsphere}.
+
+\vspace{0.5em}
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption C}: The operator
+%
+\[ \cos(2 \pi t P) = \frac{e^{2 \pi i t P} + e^{-2 \pi i t P}}{2} \]
+%
+which is a propogator for the wave equation $\partial_t^2 u = - 4 \pi^2 P^2$, has \emph{finite propogation speed}, i.e. the kernel of $\cos(2\pi tP)$ is supported on $\{ (x,y): d(x,y) \leq C t \}$ for some $C > 0$.}}
+\vspace{0.4em}
+
+ Under these assumptions, we obtain an analogue of the results of \cite{HeoandNazarovandSeeger2}, proving that we can combine frequency scales under an assumption which is \emph{slightly stronger} than controlling each part of the operator separately. We adapt the techniques from the study of Fourier multipliers introduced in Section \ref{sec:combining_scales_with_atomic_decompositions}.
+
+Consider a pair of maximal $2^{-k}$ separated subsets $\mathcal{X}_k$ and $\mathcal{T}_k$ of $X$ and of $[0,1]$. Fix a family of functions $\mathfrak{b} = \{ b_{t_0} \}$ and $\mathfrak{u} = \{ u_{x_0} \}$ with $\| b_{t_0} \|_{L^1(\RR)} \leq 1$ and $\| u_{x_0} \|_{L^1(X)} \leq 1$ for each $x_0 \in \mathcal{X}_k$ and $t_0 \in \mathcal{T}_k$. Also fix a bump function $q \in C_c^\infty(\RR)$ with $\supp(q) \subset [1/4,4]$ and $q(\lambda) = 1$ for $\lambda \in [1/2,2]$, and define $Q_k = q(P/2^k)$. For each $(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k$, define the function
+%
+\[ f_{x_0,t_0} = \int b_{t_0}(t) (Q_k \circ \cos(2 \pi i t P) \circ Q_k) \{ u_{x_0} \}. \]
+%
+Finally, define an operator $A_k$ from functions on $\mathcal{X}_k \times \mathcal{T}_k$ to functions on $X$ by
+%
+\[ A_k \{ c \} = \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0}. \]
+%
+We assume uniform bounds on such operators.\\
+
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}(p,d)$:
+There exists a constant $C > 0$ such that
+%
+\begin{align*}
+    \left\| A_k \{ c \} \right\|_{L^p(X)} \leq C\; 2^{k \left( \frac{d+1}{p} \right)} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} |c(x_0,t_0)|^p \langle 2^k t_0 \rangle^{d-1} \right)^{1/p}.
+\end{align*}
+%
+uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$.
+%
+%\begin{align*}
+%    \left\| A_k \{ c \} \right\|_{L^{p_*}(X)} \leq C\; 2^{kd} \left( 2^{-k(2d+1)} \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} |c(x_0,t_0)|^{p_*} \langle 2^k t_0 \rangle^{d-1} \right)^{1/p_*}.
+%\end{align*}
+% 2^{kd/p'} BUT PICK UP 2^{-k(d+1)}
+% SO 2^{- k(1 + d/p)}
+}}\\
+
+As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}(p,d)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then
+%
+\begin{equation}
+    \| a_k(P/2^k) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \quad\text{for $s = (d-1)(1/p - 1/2)$},
+\end{equation}
+%
+uniformly in $k$. The main result of this paper is that one can also `sum these bounds' to bound $a(P) = \sum a_k(P/2^k)$.
+
+\begin{theorem} \label{mainatomictheorem}
+    Let $X$ be a manifold, and let $P$ be an elliptic operator on $X$ satisfying Assumptions A, B, and C. Suppose $1 \leq p \leq q$, with $1/q - 1/2 > 1/2d$ and $\text{Wave-Bound}(q,d)$ is true for $P$. Then for any regulated function $a$, if $s = (d-1)(1/p - 1/2)$,
+    %
+    \[ \| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}. \]
+\end{theorem}
+
+Before we prove this theorem, let us see how it implies Theorem \ref{maintheoremsphere}, restated below.
+
+\thmmaintheoremsphere*
+
+\begin{proof}
+    Lemma \ref{TjbLemma} implies 
+\end{proof}
+
+%Such a theorem implies a characterization of $L^p$ boundedness for rescaled spectral multipliers. Since $\text{Wave-Bound}(p,d)$ has been proved for $1/p - 1/2 > 1/2d$, in this range, this paper completes the proof of the characterization of $L^p$ boundedness for general multipliers.
+
+%In order to study the behaviour of the multipliers $T_k = m_k(P/2^k)$, it is natural to represent the operator in terms of the wave equation on $M$, so that we can exploit geometric information about the behaviour of waves on $M$. We thus write
+%
+%\[ T_k = \int_0^\infty a_k(t) \cos(2 \pi t P), \]
+%
+%where $2^{-k} a_k(\cdot / 2^k)$ is the cosine transform of $m_k$. Given that $T_k$ is supported on the union of eigenspaces in the eigenband $[2^{k-1}, 2^{k+1}]$, so that the operator, and all inputs are `frequency localized' at a scale $2^k$, uncertainty principle heuristics suggest that it might be profitable to consider a further decomposition in spacetime at a scale $2^{-k}$; consider maximal $2^{-k}$ separated discrete subsets $\mathcal{X}_k$ and $\mathcal{T}_k$ of $M$ and $[0,\infty)$ respectively,  and consider an associated pair of partitions of unity $\{ \chi_{x_0} \}$ and $\{ \eta_{t_0} \}$ adapted to the balls of radius $2^{1-k}$ centered at the points in $\mathcal{X}_k$ and $\mathcal{T}_k$. Then given $u \in L^p(M)$, we can write
+%
+%\[ T_k u = \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} c(x_0,t_0) f_{x_0,t_0}, \]
+%
+%where
+%
+%\[ f_{x_0,t_0} = \int_0^\infty a_{t_0} \cos(2 \pi t P) \{ u_{x_0} \}\; dt, \]
+%
+%where $a_{t_0}$ and $u_{x_0}$ are $L^1$-normalized multiples of $\eta_{t_0} a_k$ and $\chi_{x_0} u$ respectively, and $c(x_0,t_0) = \| \chi_{x_0} u \|_{L^1(M)} \| \eta_{t_0} a_k \|_{L^1(\RR)}$. One can verify that uniform bounds of the form
+%
+%\[ \| T_k \|_{L^p(M) \to L^p(M)} \lesssim C_p(m) \]
+%
+%follow if we could show an `$L^p$-cancellation' inequality of the form
+%
+%\[ \left\| \sum\nolimits_{x_0,t_0} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(M)} \lesssim 2^{k \beta(p,d)} \left( \sum\nolimits_{x_0,t_0} |c(x_0,t_0)|^p \langle 2^k t_0 \rangle^{d-1} \right)^{1/p}, \]
+% ( Sum |chi_{x_0} u|_{L^1}^p )^{1/p} << 2^{-kd/p^*} |u|_{L^p}
+% 
+% ( Sum H^p W )^{1/p}
+% ( (H W)^p W^{1 - p} )^{1/p}
+%
+% We have bounds on
+%   int |m_k^(t)|^p <t>^{(d-1)(1 - p/2)}
+%     = int |a_k(t)|^p <2^k t>^{(d-1)(1 - p/2)}
+%     = Sum int |a_{t_0}(t)|^p <2^k t>^{(d-1)(1 - p/2)}
+%     = Sum < 2^k t_0 >^{(d-1)(1 - p/2)} |a_{t_0}|_{L^p}^p
+%     = Sum < 2^k t_0 >^{(d-1)(1 - p/2)} |a_{t_0}|_{L^1}^p 2^{k(p - 1)}
+%   Thus (Sum |a_{t_0}|_{L^1}^p < 2^k t_0 >^{(d-1)(1 - p/2)} )^{1/p} << 2^{-k/p^*} C_p(m)
+%
+%
+% ( Sum |a_{t_0}|^p < 2^k t_0 >^{d-1} )^{1/p}
+%
+%where $\beta(p,d) = (d + 1)/p^*$. In this paper, we will establish general bounds for multipliers, under an assumption that such a bound holds uniformly in $k$.
+
+%\[ Tu = \sum\nolimits_k m_k( P / 2^k ) \{ u \}, \]
+%
+%where $\sup_k C_p(m_k) < \infty$, and $\text{supp}(m_k) \subset (1/2,2)$. It is conjectured that under these assumptions, for $|1/p - 1/2| > 1/2d$, the operator $T$ is bounded on $L^p(S^d)$. The goal of this paper is to obtain such bounds, under the assumption that certain bounds associated with the wave equation on $S^d$ hold uniformly at each frequency scale. The novelty in this paper is thus in obtaining a general method to efficiently combine bounds on operators at each frequency scale together.
+
+% The finiteness of $C_p(m)$ is also necessary to control `the high frequency behaviour' of the function, in a certain sense. Namely, if the functions $\{ \chi_k \}$ are adapted to $(1/2,2)$, uniformly in $k$, then one can show that for $1/p - 1/2 > 1/2d$,
+%
+%\[ C_p(\text{Dil}_\rho m) \lesssim C_p(m). \]
+%
+%It is a result of Mitjagin that
+%
+%\[ \limsup\nolimits_{\rho \to \infty} \| (\text{Dil}_\rho m)(P) \|_{L^p(M) \to L^p(M)} \gtrsim C_p(m). \]
+%
+%Thus we conclude that
+%
+%\[ \limsup\nolimits_{\rho \to \infty} \| (\text{Dil}_\rho m)(P) \|_{L^p(M) \to L^p(M)} \sim \sup C_p(m). \]
+%
+%Thus we obtain necessary and sufficient conditions for $L^p$ boundedness `in the high frequency regime' (as $\rho \to \infty$).
+
+Since the right hand side of the inequality in the theorem is invariant under dilations of $a$, it suffices to prove a bound of the form $\| a(P) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,q}[0,\infty)}$. To prove Theorem \ref{mainatomictheorem}, we use an analogue of the technique of atomic decompositions introduced in Section \ref{sec:combining_scales_with_atomic_decompositions}. The following lemma describes the properties of this atomic decomposition useful to us, and is proved in an appendix.
+
+\begin{lemma} \label{atomicdecompositionlemma}
+    Consider coordinate charts $\{ U_\alpha \}$ covering $X$. Then, for any measurable function $u: X \to \CC$, if we consider the dyadic decomposition $u = \sum u_k$, where $u_k = Q_k u$ is a quasimode with eigenvalue $2^k$, then we have a further decomposition
+    %
+    \[ u_k = \sum\nolimits_\alpha \sum\nolimits_H \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} a_{\alpha,k,H,W}, \]
+    %
+    where $H$ ranges over powers of $2$. For each $\alpha$ and $H$, $\mathcal{W}_{\alpha,H}$ is a family of almost disjoint dyadic cubes in the coordinate system $U_\alpha$ whose union is a set $\Omega_{\alpha,H}$, such that the following properties hold:
+    %
+    \begin{itemize}
+        \item The 10-fold dilates $\{ W^* : W \in \mathcal{W}_{\alpha,H} \}$ have the bounded overlap property.
+
+        \item If $l(W) = 2^l$, then $a_{\alpha,k,H,W} = 0$ for $k < -l$.
+
+        \item For each $W$, $\text{supp}(a_{\alpha,k,H,W}) \subset W$, but as $H$ varies, the functions $\{ a_{\alpha,k,H,W} \}$ have disjoint support.
+
+        \item For each $H$,
+        %
+        \[ \left( \sum\nolimits_k \sum\nolimits_\alpha \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} \| a_{\alpha,k,H,W} \|_{L^2(X)}^2 \right)^{1/2} \lesssim H |\Omega_{\alpha,H}|, \]
+
+        \item For any choice of indices $k(\alpha,W)$ for each $\alpha$ and $W$, we have
+        %
+        \[ \left( \sum\nolimits_\alpha \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} |W| \| a_{\alpha,k(\alpha,W),H,W} \|_{L^\infty(X)}^p \right)^{1/p} \lesssim H |\Omega_{\alpha,H}|. \]
+
+        \item For each $\alpha$,
+        %
+        \[ \left( \sum\nolimits_H H^p |\Omega_{\alpha,H}| \right)^{1/p} \lesssim \| u \|_{L^p(X)}. \]
+    \end{itemize}
+\end{lemma}
+
+To exploit this atomic decomposition, we write
+%
+\[ a(P) u = \sum\nolimits_k m_k(P/2^k) \{ u_k \} = \sum\nolimits_\alpha \sum\nolimits_k \sum\nolimits_H \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} m_k(P/2^k) \{ a_{\alpha,k,H,W} \}. \]
+%
+We regroup this sum as
+%
+\[ \sum\nolimits_\alpha \sum\nolimits_k \sum\nolimits_H \sum\nolimits_{l \geq 0} \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} a_k(P/2^k) \{ a_{\alpha,k,H,W} \}. \]
+%
+For each $k$ and $l$, we write $a_k(P/2^k) = T_{k,l,\text{Short}} + T_{k,l,\text{Long}}$, where
+%
+\[ T_{k,l,\text{Short}} = \int_0^\infty \chi( 2^{k-l} t ) 2^k\;\! \widehat{a}_k(2^k t) \cos(2 \pi i t P) \]
+%
+and
+%
+\[ T_{k,l,\text{Long}} = \int_0^\infty (1 - \chi(2^{k-l} t )) 2^k\;\! \widehat{a}_k(2^k t) \cos(2 \pi i t P).  \]
+%
+For $f = Tu$, we thus write $f = f_{\text{Short}} + f_{\text{Long}}$, where
+%
+\[ f_{\text{Short}} = \sum\nolimits_\alpha \sum\nolimits_k \sum\nolimits_H \sum\nolimits_{l \geq 0} \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Short}} \{ a_{\alpha,k,H,W} \} = \sum f_{\alpha,k,H,W,\text{Short}}. \]
+%
+and
+%
+\[ f_{\text{Long}} = \sum\nolimits_\alpha \sum\nolimits_k \sum\nolimits_H \sum\nolimits_{l \geq 0} \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Long}} \{ a_{\alpha,k,H,W} \} = \sum f_{\alpha,k,H,W,\text{Long}}, \]
+%
+and analyze each part using separate techniques.
+
+\section{Short Range Bounds}
+
+To obtain short range bounds, we exploit the propogation speed of the operators $\cos(2 \pi i t P)$, and the bounded overlap of the sets $W_{\alpha,H}$ for a fixed $H$. To obtain an $L^q$ bound for $f_{\text{Short}}$, we interpolate between an $L^2$ bound and an $L^1$ bound, at a fixed quantity $H$. So write $f_{\text{Short}} = \sum_\alpha \sum_k \sum_H f_{\alpha,k,H}$.
+%To obtain $L^2$ estimates, it becomes necessary to estimate the inner products $\langle f_{\alpha,k,H,W}, f_{\alpha,k,H,W'} \rangle$.
+%
+%\[ \sum\nolimits_{W' \cap W^* = \emptyset} \langle f_{\alpha,k,H,W}, f_{\alpha,k,H,W'} \rangle \]
+In $L^2$, different frequencies are orthogonal, so that
+%
+\begin{align*}
+    \| f_{H,\text{Short}} \|_{L^2(X)} \lesssim \left( \sum\nolimits_k \left\| \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} f_{\alpha,k,H,W,\text{Short}} \right\|_{L^2(X)}^2 \right)^{1/2}.
+\end{align*}
+%
+We note that by the finite propogation speed of $\cos(2 \pi t P)$, $\langle f_{\alpha,k,H,W,\text{Short}}, f_{\alpha,k,H,W',\text{Short}} \rangle = 0$ if $W^* \cap (W')^* = \emptyset$. By the bounded overlap property of the sets $\{ W^* \}$, these functions are almost orthogonal, and so we conclude that
+%
+\[ \| f_{H,\text{Short}} \|_{L^2(X)} \lesssim \left( \sum\nolimits_k \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} \left\| f_{\alpha,k,H,W,\text{Short}} \right\|_{L^2(X)}^2 \right)^{1/2}. \]
+%
+We can write $T_{k,l,\text{Short}} = a_{k,l}(P / 2^k)$, where
+%
+\[ a_{k,l}(t) = [2^l \widehat{\chi}(2^l \cdot) * a_k]. \]
+%
+Now
+%
+\[ \| a_{k,l}(P/2^k) \|_{L^2(X) \to L^2(X)} = \| a_{k,l} \|_{L^\infty(\RR)} \lesssim \| a_k \|_{L^\infty(\RR)} \lesssim \| a \|_{R^{s,p}[0,\infty)}, \]
+%
+and so
+%
+\[ \| f_{\alpha,k,H,W} \|_{L^2(X)} = \| T_{k,l,\text{Short}} \{ a_{\alpha,k,H,W} \} \|_{L^2(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \| a_{\alpha,k,H,W} \|_{L^2(X)}. \]
+%
+But we thus conclude that
+%
+\[ \| f_{H,\text{Short}} \|_{L^2(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} 2^H |\Omega_H|^{1/2}. \]
+%
+For any $r \in [1,2]$, we can then use H\"{o}lder's inequality, since (again by finite propogation speed) that $f_{H,\text{Short}}$ is supported on a set $\{ x: (M \chi_{\Omega_H})(x) \geq 1/10^d \}$, which by the weak $L^1$ boundedness of $M$ has measure $O(|\Omega_H|)$, to concclude that
+%
+\[ \| f_{H,\text{Short}} \|_{L^1(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} |\Omega_H|^{1/2} 2^H |\Omega_H|^{1/2} = \| a \|_{R^{s,p}[0,\infty)} 2^H |\Omega_H|. \]
+%
+Performing a real interpolation between $r = 1$ and $r = 2$, which allows us to sum over the dyadic height scales $H$, we conclude that
+%
+\[ \| f_{\text{Short}} \|_{L^p(X)} \lesssim \left( \sum H^p |\Omega_H| \right)^{1/p} \lesssim \| u \|_{L^p(X)}. \]
+%
+This completes the analysis of the short range interactions.
+
+\section{Long Range Bounds}
+
+The long range interactions require slightly more work. Define an operator
+%
+\begin{align*}
+    S_{l,k} C = \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} C(z_0,t_0) \sum\nolimits_{x_0 \in Q(z_0)} F_{x_0,t_0},
+\end{align*}
+%
+where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} \cos(2 \pi t P) \{ U_{z_0} \}$. The bound $\text{Wave-Bound}(q,d)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
+
+\begin{lemma}
+    Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q,d)$ is true. Then
+    % |b_{t_0}|_{L^1} << 2^{-k/q}
+    \begin{align*}
+        &\| S_{l,k} \{ C \} \|_{L^p(X)}\\
+        &\quad \lesssim 2^{k \frac{d+1}{p'}} 2^{- l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^p \big[ 2^{(l-k)d} \| U_{z_0,t_0} \|_{L^\infty(X)}^p \big] \langle 2^k t_0 \rangle^{d-1} \right)^{1/p},
+    \end{align*}
+    %
+    where
+    %
+    \[ \varepsilon = - \left( \frac{d-1}{2} \right) \left( \frac{1/p - 1/q}{1 - 1/q} \right), \]
+    %
+    which, in particular, is positive for $p < q$.
+\end{lemma}
+\begin{proof}
+    By applying the triangle inequality, we may assume that the function $C$ is $10$-separated in the $z_0$ variable. Thus each $x_0$ is contained in a unique sidelength cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^q(X)}$, then $S_{l,k} \{ C \} = A_k \{ c \}$, we can apply $\text{Wave-Bound}(q,d)$ to conclude that
+    %
+    \begin{align*}
+      \| S_{l,k} C \|_{L^q(X)} \lesssim 2^{k \frac{d+1}{q^*}} \left( \sum\nolimits_{x_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z(x_0),t_0)|^q \| u_{x_0} \|_{L^q(X)}^q \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}
+    \end{align*}
+    %
+    Since the supports of the functions $\{ u_{x_0} \}$ are almost disjoint, and since $U_{z_0}$ is supported on a set of measure $2^{(l-k)d}$,
+    %
+    \[ \sum\nolimits_{z(x_0) = z_0} \| u_{x_0} \|_{L^q(X)}^q \lesssim \| U_{z_0} \|_{L^q(X)}^q \lesssim 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q. \]
+    %
+    %
+    Substituting this bound into BLAH yields that
+    %
+    \begin{align*}
+        \| S_{l,k} C \|_{L^q(X)} &\lesssim 2^{k \frac{d+1}{q'}} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^q \left[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q \right] \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}.
+    \end{align*}
+    % H^p W^{p/2}
+    % vs. H^p W
+    % 2^{k(d - (2d+1)/p)}
+    % Provided that epsilon(q) <= -1/q' we're fine
+    %       epsilon(1) = 0 WHICH IS GOOD
+    %       epsilon(p_*) = d - (2d+1)/p_*
+    % d - (2d+1)/p_* <= -1/p_*'
+    % Holds iff
+    %   d - (2d+1)/p_* <= -1 + 1/p_*
+    % p_* <= 2
+    We will interpolate this bound with an $L^1$ bound with exponential decay, which will yield the result. By finite propogation speed, $F_{t_0,z_0}$ is supported on a set of measure $O( 2^{l-k} t_0^{d-1})$, an annulus of width $O(2^{l-k})$ based upon on a sphere of radius $t_0$. Thus
+    % Xaybe use F = T^I_{x_0} U_{z_0} = \sum f_{x_0,t_0}
+    \begin{align*}
+        \| F_{t_0,z_0} \|_{L^1(X)} &\lesssim \left( 2^{l-k} t_0^{d-1} \right)^{1/2} \| F_{t_0,z_0} \|_{L^2(X)}\\
+        &\lesssim 2^{\frac{l-k}{2}} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^2(X)}\\
+        &\lesssim 2^{(l-k) \left( \frac{d+1}{2}\right)} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^\infty(X)}.
+    \end{align*}
+    %
+    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( Q_k \circ e^{2 \pi i t P} \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that by energy conservation $\| Q_k \circ e^{2 \pi i t P} \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. Substituting this bound into BLAH we conclude that
+    %
+    \begin{align*}
+        &\| S_{l,k} C \|_{L^1(X)}\\
+        &\quad \lesssim 2^{(l-k) \left( \frac{d+1}{2}\right)} \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} t_0^{\frac{d-1}{2}} |C(z_0,t_0)| \| U_{z_0} \|_{L^\infty(X)} \langle 2^k t_0 \rangle^{\frac{d-1}{2}}\\
+        &\quad \lesssim 2^{-l \left( \frac{d-1}{2} \right)} \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)| \left[  2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}\right] \langle 2^k t_0 \rangle^{d-1}.
+    \end{align*}
+    %
+    % 2^{k (d-1)(2)}
+    %
+    The argument is concluded by interpolation.
+    % -l(d-1)/2
+    %
+\end{proof}
+
+We now use this lemma to control the function $f_{\text{Long}}$. Because of the exponential decay in $l$ given by the lemma above, we may sum in $l$ trivially using the triangle inequality for $1 \leq q < p$. Interpolating $L^2$ orthogonality and the triangle inequality, we find that if $f_{\text{Long}} = \sum_k f_{\text{Long},k}$, then
+%
+\[ \left\| \sum\nolimits_k f_{\text{Long},k} \right\|_{L^p(X)} = \left( \sum \| f_{\text{Long},k} \|_{L^p(X)}^p \right)^{1/p}. \]
+%
+Now write $f_{\text{Long},k} = \sum f_{\text{Long},\alpha,l,k}$ with
+%
+\[ f_{\text{Long},\alpha,l,k} = \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Long}} \{ a_{\alpha,k,H,W} \}. \]
+%
+Applying Lemma BLAH with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^q(X)}$, and $U_{z_0} = \sum\nolimits_H a_{\alpha,k,H,W}$, where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
+%
+\begin{align*}
+    \| f_{\text{Long},\alpha,l,k} \|_{L^p(X)} &\lesssim 2^{-l \varepsilon} 2^{-k/p'} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} \langle 2^k t_0 \rangle^{(d-1)(1 - p/2)} \| b_{t_0} \|_{L^p(X)}^p \big[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \big] \right)^{1/p}\\
+    &\lesssim \| a \|_{R^{s,p}[0,\infty)} 2^{-l \varepsilon} \left( \sum\nolimits_{z_0} 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \right)^{1/p}.
+\end{align*}
+%
+Summing in $k$ using the $L^p$ orthogonality above, using BLAH to obtain $L^p$ orthogonality since each Whitney cube contributes a single frequency for a fixed $l$, and summing over $\alpha$ trivially, we conclude that
+%
+\[ \| f_{\text{Long},l} \|_{L^p(X)} \lesssim C_p 2^{-l \varepsilon} \| u \|_{L^p(X)}. \]
+%
+Summing in $l$ trivially gives $\| f_{\text{Long}} \|_{L^p(X)} \lesssim C_p \| u \|_{L^p(X)}$, completing the proof of the long range estimates, and thus the proof.

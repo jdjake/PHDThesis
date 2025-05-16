@@ -14,6 +14,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{14pt}
 
+\usepackage{enumitem}
+
 \usepackage{xfrac}
 
 \usepackage{amsmath}
@@ -24,31 +26,27 @@
 \usepackage{txfonts}
 \usepackage{tensor}
 \usepackage{stmaryrd}
+\usepackage{thmtools}
+\usepackage{thm-restate}
 
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
 
 \usepackage{amsthm}
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{axiom}{Axiom}
+\declaretheorem[name=Theorem,numberwithin=chapter]{theorem}
+
+%\newtheorem{theorem}{Theorem}[chapter]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{prop}[theorem]{Proposition}
-\newtheorem{exercise}{Exercise}[chapter]
-\newtheorem{fact}{Fact}[chapter]
-\newtheorem{definition}{Definition}[chapter]
 
 \newtheorem*{example}{Example}
-\newtheorem*{proof*}{Proof}
 
 \theoremstyle{remark}
 \newtheorem*{exposition}{Exposition}
 \newtheorem*{remark}{Remark}
 \newtheorem*{remarks}{Remarks}
-
-\theoremstyle{definition}
-\newtheorem*{defi}{Definition}
 
 \usepackage{comment}
 
@@ -56,7 +54,7 @@
 \usepackage[style=numeric]{biblatex}
 \addbibresource{references.bib}
 
-
+\usepackage[perpage, symbol*]{footmisc}
 
 
 
@@ -90,7 +88,7 @@
 \DeclareMathOperator{\supp}{\text{supp}}
 
 
-
+\numberwithin{equation}{section}
 
 \title{Multipliers of Spherical Harmonic Expansions}
 \author{Jacob Denson}
@@ -104,27 +102,26 @@
 
 \input{abstract}
 
-\chapter*{Dedication}
+%\chapter*{Dedication}
 
-To mum and dad
+%To mum and dad
 
-\chapter*{Declaration}
+%\chapter*{Declaration}
 
-I declare that..
+%I declare that..
 
-\chapter*{Acknowledgements}
+%\chapter*{Acknowledgements}
 
-I want to thank...
+%I want to thank...
 
-Supported by grant numbers...
+%Supported by grant numbers...
 
 \tableofcontents
 
+%\listoffigures
+%\listoftables
 
-\listoffigures
-\listoftables
-
-\input{notation}
+\input{chapters/0-notation}
 
 %\doublespacing
 \chapter*{Introduction}
@@ -140,13 +137,13 @@ Supported by grant numbers...
 
 \part{New Results}
 \chapter{The Boundedness of Spectral Multipliers with Compact Support}
-\input{chapters/chapter04}
+\input{chapters/2-singlescalemultipliers}
 
 \chapter{Combining Scales Via Atomic Decompositions}
-\input{chapters/atomicdecompositions}
+\input{chapters/3-atomicdecompositions}
 
-\chapter{Future Work}
-\input{chapters/conclusion}
+%\chapter{Future Work}
+%\input{chapters/4-futurework}
 
 %\appendix
 %\chapter{Appendix Title}
