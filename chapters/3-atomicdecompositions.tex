@@ -1,18 +1,8 @@
 %!TEX root = ../main.tex
 
-In this chapter, we discuss a prospective method of combining frequency scales for spectral multipliers. We take an operator $P$ satisfying Assumptions A and B, and suppose $P$ satisfies a third assumption, which is still sufficient to prove Theorem \ref{maintheoremsphere}.
+In this chapter, we discuss a prospective method of combining frequency scales for spectral multipliers, proving theorem \ref{atomicscalestheorem}. We take an operator $P$ satisfying Assumptions A, B, and C, and show we can combine estimates between frequency scales under an assumption which is \emph{slightly stronger} than controlling each part of the operator separately. We adapt the techniques from \cite{HeoandNazarovandSeeger2} introduced in Section \ref{sec:combiningscaleswithatomicdecompositions}. We now restate the setup to that theorem.
 
-\vspace{0.5em}
-\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption C}: The operator
-%
-\[ \cos(2 \pi t P) = \frac{e^{2 \pi i t P} + e^{-2 \pi i t P}}{2} \]
-%
-which is a propogator for the wave equation $\partial_t^2 u = - 4 \pi^2 P^2$, has \emph{finite propogation speed}, i.e. the kernel of $\cos(2\pi tP)$ is supported on $\{ (x,y): d(x,y) \leq C t \}$ for some $C > 0$.}}
-\vspace{0.4em}
-
- Under these assumptions, we obtain an analogue of the results of \cite{HeoandNazarovandSeeger2}, proving that we can combine frequency scales under an assumption which is \emph{slightly stronger} than controlling each part of the operator separately. We adapt the techniques from the study of Fourier multipliers introduced in Section \ref{sec:combining_scales_with_atomic_decompositions}.
-
-Consider a pair of maximal $2^{-k}$ separated subsets $\mathcal{X}_k$ and $\mathcal{T}_k$ of $X$ and of $[0,1]$. Fix a family of functions $\mathfrak{b} = \{ b_{t_0} \}$ and $\mathfrak{u} = \{ u_{x_0} \}$ with $\| b_{t_0} \|_{L^1(\RR)} \leq 1$ and $\| u_{x_0} \|_{L^1(X)} \leq 1$ for each $x_0 \in \mathcal{X}_k$ and $t_0 \in \mathcal{T}_k$. Also fix a bump function $q \in C_c^\infty(\RR)$ with $\supp(q) \subset [1/4,4]$ and $q(\lambda) = 1$ for $\lambda \in [1/2,2]$, and define $Q_k = q(P/2^k)$. For each $(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k$, define the function
+Consider a pair of maximal $2^{-k}$ separated subsets $\mathcal{X}_k$ and $\mathcal{T}_k$ of $X$ and of $[0,1]$. Fix a family of functions $\mathfrak{b} = \{ b_{t_0} \}$ and $\mathfrak{u} = \{ u_{x_0} \}$ with $\| b_{t_0} \|_{L^1(\RR)} \leq 1$ and $\| u_{x_0} \|_{L^1(X)} \leq 1$ for each $x_0 \in \mathcal{X}_k$ and $t_0 \in \mathcal{T}_k$. Also fix a bump function $q \in C_c^\infty(\RR)$ with $\supp(q) \subset [1/4,4]$ and $q(\lambda) = 1$ for $\lambda \in [1/2,2]$, and define $Q_k = q(P/2^k)$. For each $(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k$, define
 %
 \[ f_{x_0,t_0} = \int b_{t_0}(t) (Q_k \circ \cos(2 \pi i t P) \circ Q_k) \{ u_{x_0} \}. \]
 %
@@ -44,13 +34,9 @@ As we have seen in the previous chapter, such a bound naturally arises in the st
     \| a_k(P/2^k) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \quad\text{for $s = (d-1)(1/p - 1/2)$},
 \end{equation}
 %
-uniformly in $k$. The main result of this paper is that one can also `sum these bounds' to bound $a(P) = \sum a_k(P/2^k)$.
+uniformly in $k$. The main result of this section is that one can also `sum these bounds' to bound $a(P) = \sum a_k(P/2^k)$.
 
-\begin{theorem} \label{mainatomictheorem}
-    Let $X$ be a manifold, and let $P$ be an elliptic operator on $X$ satisfying Assumptions A, B, and C. Suppose $1 \leq p \leq q$, with $1/q - 1/2 > 1/2d$ and $\text{Wave-Bound}(q,d)$ is true for $P$. Then for any regulated function $a$, if $s = (d-1)(1/p - 1/2)$,
-    %
-    \[ \| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}. \]
-\end{theorem}
+\thmatomicscalestheorem*
 
 Before we prove this theorem, let us see how it implies Theorem \ref{maintheoremsphere}, restated below.
 
@@ -117,7 +103,7 @@ Before we prove this theorem, let us see how it implies Theorem \ref{maintheorem
 %
 %Thus we obtain necessary and sufficient conditions for $L^p$ boundedness `in the high frequency regime' (as $\rho \to \infty$).
 
-Since the right hand side of the inequality in the theorem is invariant under dilations of $a$, it suffices to prove a bound of the form $\| a(P) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,q}[0,\infty)}$. To prove Theorem \ref{mainatomictheorem}, we use an analogue of the technique of atomic decompositions introduced in Section \ref{sec:combining_scales_with_atomic_decompositions}. The following lemma describes the properties of this atomic decomposition useful to us, and is proved in an appendix.
+Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem} is invariant under dilations of $a$, it suffices to prove a bound of the form $\| a(P) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,q}[0,\infty)}$. To prove Theorem \ref{atomicscalestheorem}, we use an analogue of the technique of atomic decompositions introduced in Section \ref{sec:combiningscaleswithatomicdecompositions}. The following lemma describes the properties of this atomic decomposition useful to us, and is proved in an appendix.
 
 \begin{lemma} \label{atomicdecompositionlemma}
     Consider coordinate charts $\{ U_\alpha \}$ covering $X$. Then, for any measurable function $u: X \to \CC$, if we consider the dyadic decomposition $u = \sum u_k$, where $u_k = Q_k u$ is a quasimode with eigenvalue $2^k$, then we have a further decomposition
@@ -225,7 +211,7 @@ The long range interactions require slightly more work. Define an operator
 %
 where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} \cos(2 \pi t P) \{ U_{z_0} \}$. The bound $\text{Wave-Bound}(q,d)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
 
-\begin{lemma}
+\begin{lemma} \label{lemma:scaleupbound}
     Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q,d)$ is true. Then
     % |b_{t_0}|_{L^1} << 2^{-k/q}
     \begin{align*}
@@ -251,7 +237,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     \[ \sum\nolimits_{z(x_0) = z_0} \| u_{x_0} \|_{L^q(X)}^q \lesssim \| U_{z_0} \|_{L^q(X)}^q \lesssim 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q. \]
     %
     %
-    Substituting this bound into BLAH yields that
+    Substituting this bound into the prior bound yields that
     %
     \begin{align*}
         \| S_{l,k} C \|_{L^q(X)} &\lesssim 2^{k \frac{d+1}{q'}} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^q \left[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q \right] \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}.
@@ -274,7 +260,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
         &\lesssim 2^{(l-k) \left( \frac{d+1}{2}\right)} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^\infty(X)}.
     \end{align*}
     %
-    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( Q_k \circ e^{2 \pi i t P} \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that by energy conservation $\| Q_k \circ e^{2 \pi i t P} \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. Substituting this bound into BLAH we conclude that
+    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( Q_k \circ e^{2 \pi i t P} \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that by energy conservation $\| Q_k \circ e^{2 \pi i t P} \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. Summing in $t_0$ and $z_0$ using the triangle inequality gives that
     %
     \begin{align*}
         &\| S_{l,k} C \|_{L^1(X)}\\
@@ -297,14 +283,14 @@ Now write $f_{\text{Long},k} = \sum f_{\text{Long},\alpha,l,k}$ with
 %
 \[ f_{\text{Long},\alpha,l,k} = \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Long}} \{ a_{\alpha,k,H,W} \}. \]
 %
-Applying Lemma BLAH with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^q(X)}$, and $U_{z_0} = \sum\nolimits_H a_{\alpha,k,H,W}$, where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
+Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^q(X)}$, and $U_{z_0} = \sum\nolimits_H a_{\alpha,k,H,W}$, we conclude that %where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
 %
 \begin{align*}
     \| f_{\text{Long},\alpha,l,k} \|_{L^p(X)} &\lesssim 2^{-l \varepsilon} 2^{-k/p'} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} \langle 2^k t_0 \rangle^{(d-1)(1 - p/2)} \| b_{t_0} \|_{L^p(X)}^p \big[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \big] \right)^{1/p}\\
     &\lesssim \| a \|_{R^{s,p}[0,\infty)} 2^{-l \varepsilon} \left( \sum\nolimits_{z_0} 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \right)^{1/p}.
 \end{align*}
 %
-Summing in $k$ using the $L^p$ orthogonality above, using BLAH to obtain $L^p$ orthogonality since each Whitney cube contributes a single frequency for a fixed $l$, and summing over $\alpha$ trivially, we conclude that
+Summing in $k$ using $L^p$ orthogonality, and summing over $\alpha$ trivially, we find that
 %
 \[ \| f_{\text{Long},l} \|_{L^p(X)} \lesssim C_p 2^{-l \varepsilon} \| u \|_{L^p(X)}. \]
 %
