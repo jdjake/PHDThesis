@@ -293,140 +293,22 @@ The quasi-orthogonality estimate tells us that the two functions $S_0$ and $S_1$
 
 To simplify notation, in the following proof we will suppress the use of $R$ as an index, for instance, writing $Q$ for $Q_R$. For both the pointwise and quasi-orthogonality estimates, we want to consider the operators in coordinates, so we can use Theorem \ref{thm:equivalenceofphase} to understand the wave propagators in terms of various oscillatory integrals.
 
-Start by covering $M$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. It will be convenient to define $V_\alpha^* = N(V_\alpha, 0.01 \varepsilon_X )$ for each $\alpha$. The next lemma allows us to approximate the operator $Q$, and the propagators $e^{2\pi i t P}$ with operators which have more explicit representations in the coordinate system $\{ U_\alpha \}$, with an error negligible to the results of Proposition \ref{theMainEstimatesForWave}.
-
-% TODO: Diagram Here?
-
-\pagebreak[3]
-
-\begin{lemma} \label{pseudodifferentialCoordinateLemma}
-    Suppose $\varepsilon_X$ is suitably small, depending on $M$ and $P$. For each $\alpha$, and $|t| \leq \varepsilon_X$, there exists Schwartz operators $Q_\alpha$ and $W_\alpha(t)$, each with kernels supported on $U_\alpha \times V^*_\alpha$, such that the following holds:
-    %
-    \begin{itemize}%[leftmargin=8mm]
-    \setlength\itemsep{0.5em}
-        \item For any $u: M \to \CC$ with $\| u \|_{L^1(M)} \leq 1$ and $\text{supp}(u) \subset V_\alpha^*$,
-        %
-        \[ \text{supp}(Q_{\alpha} u) \subset N(\text{supp}(u), 0.01 \varepsilon_X), \]
-        %
-        \[ \supp(W_{\alpha}(t) u) \subset N(\supp(u), 1.01 \varepsilon_X ), \]
-        %
-        %
-        \[ \| (Q - Q_{\alpha}) u \|_{L^\infty(M)} \lesssim_N R^{-N} \quad\text{for all $N \geq 0$}, \]
-        %
-        and
-        %
-        \[ \left\| \big( Q_{\alpha} \circ ( e^{2 \pi i t P} - W_{\alpha}(t) ) \circ Q_{\alpha} \big) \{ u \} \right\|_{L^\infty(M)} \lesssim_N R^{-N} \quad\text{for all $N \geq 0$}. \]
-
-        \item In the coordinate system of $U_\alpha$, the operator $Q_{\alpha}$ is a pseudo-differential operator of order zero given by a symbol $\sigma_{\alpha}(x,\xi)$, where
-        %
-        \[ \supp(\sigma_{\alpha}) \subset \{ \xi \in \RR^d: R/8 \leq |\xi| \leq 8R \}, \]
-        %
-        and $\sigma_{\alpha}$ satisfies derivative estimates of the form
-        %
-        \[ |\partial^\lambda_x \partial^\kappa_\xi \sigma_{\alpha}(x,\xi)| \lesssim_{\lambda,\kappa} R^{-|\kappa|}. \]
-
-        \item In the coordinate system $U_\alpha$, the operator $W_\alpha(t)$ has a kernel $W_\alpha(t,x,y)$ with an oscillatory integral representation
-        %
-        \[ W_\alpha(t,x,y) = \int s(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \]
-        %
-        where the function $s$ is compactly supported in $U_\alpha$, such that
-        %
-        \[ \supp_{t,x,y}(s) \subset \{ (t,x,y) : |x - y| \leq C |t| \} \]
-        %
-        for some constant $C > 0$, such that
-        %
-        \[ \supp_\xi(s) \subset \{ \xi \in \RR^d : R/8 \leq |\xi| \leq 8R \}, \]
-        %
-        and such that the function $s$ satisfies derivative estimates of the form
-        %
-        \[ | \partial_{t,x,y}^\lambda \partial_\xi^\kappa s | \lesssim_{\lambda, \kappa} R^{- |\kappa|}. \]
-        %
-        The phase function $\phi$ is smooth and homogeneous of degree one in the $\xi$ variable, and solves the \emph{eikonal equation}
-        %
-        \[ p \left( x, \nabla_x \phi(x,y,\xi) \right) = p(y,\xi), \]
-        %
-        subject to the constraint that $\phi(x,y,\xi) = 0$ if $\xi \cdot (x - y) = 0$.
-        % \in \Sigma(y,\xi)$, where
-        %
-        %\[ \Sigma(y,\xi) = \{ \exp_y(t \eta) : \eta \in T_y^* M\ \text{and}\ \langle \xi, \eta \rangle_g = 0 \}. \]
-    \end{itemize}
-\end{lemma}
-\begin{proof}
-    For each $\alpha$, given our choice of $\varepsilon_X$, Theorems \ref{thm:equivalenceofphase} and \ref{waveisanFIOTheorem} guarantee that we can find operators $\tilde{W}_\alpha(t)$ and $\tilde{R}_\alpha(t)$ for $|t| \leq \varepsilon_X$, such that for $u \in L^1(M)$ with $\text{supp}(u) \subset V_\alpha^*$,
-    %
-    \begin{equation}
-        e^{2 \pi i t P} u = \tilde{W}_\alpha(t) u + \tilde{R}_\alpha(t) u,
-    \end{equation}
-    %
-    where $\tilde{R}_\alpha(t)$ has a smooth kernel, and the kernel of $\tilde{W}_\alpha(t)$ is given in coordinates by
-    %
-    \begin{equation}
-        \tilde{W}_\alpha(t)(x,y) = \int s_0(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi,
-    \end{equation}
-    %
-    for an order zero symbol $s_0$ with
-    %
-    \begin{equation}
-        \text{supp}_{x,y,\xi}(s_0) \subset \{ (x,y,\xi) \in U_\alpha \times V_\alpha^* \times \RR^d : d_X(x,y) \leq 1.01\varepsilon_X\ \text{and}\ |\xi| \leq 1 \},
-    \end{equation}
-    %
-    and an order one symbol $\phi$, homogeneous in $\xi$ of order one, solving the Eikonal equation \eqref{awiodjawoidhjioq23412341234234} and vanishing for $x \in \Sigma_\alpha(y,\xi)$ as required by the lemma. In the remainder of the proof it will be convenient to fix a orthonormal basis $\{ e_k \}$ of eigenfunctions for $P$, such that $\Delta e_k = \lambda_k e_k$ for a non-decreasing sequence $\{ \lambda_k \}$. We fix $u \in L^1(M)$ with $\text{supp}(u) \subset V_\alpha^*$ and $\| u \|_{L^1(M)} \leq 1$.
-
-    
-
-    Using the bounds on $Q - Q_\alpha$ obtained above, we see that
-    %
-    \begin{equation} \big\| [(Q \circ e^{2 \pi i t P} \circ Q) - (Q_\alpha \circ e^{2 \pi i t P} \circ Q_\alpha)] \{ u \} \big\|_{L^\infty(M)} \lesssim_N R^{-N}. \end{equation}
-    %
-    Since $\tilde{R}_\alpha(t)$ has a smooth kernel, we also see that
-    %
-    \begin{equation}
-    \begin{split}
-        &\big\| (Q_\alpha \circ (e^{2 \pi i t P} - \tilde{W}_\alpha(t)) \circ Q_\alpha) \{ u \} \big\|_{L^\infty(M)}\\
-        &\quad\quad = \big\| (Q_\alpha \circ \tilde{R}_\alpha(t) \circ Q_\alpha) \{ u \} \big\|_{L^\infty(M)} \lesssim_N R^{-N}.
-    \end{split}
-    \end{equation}
-    %
-    We now write
-    %
-    \begin{equation}
-    \begin{split}
-        &(Q_\alpha \circ \tilde{W}_\alpha(T))(x,y)\\
-        &\quad = \int \sigma_\alpha(x,\xi) s_0(t,z,y,\eta) e^{2 \pi i [\phi(x,z,\xi) + \phi(z,y,\eta) + t p(y,\eta) ]}\; d\xi\; d\eta\; dz.
-    \end{split}
-    \end{equation}
-    %
-    The phase of this equation has gradient in the $z$ variable with magnitude $\gtrsim R$ for $|\eta| \ll R$, and $\gtrsim R |\xi|$ if $|\eta| \gg R$. Thus, if we define $s(t,x,y,\xi) = s_0(t,x,y,\xi) \chi(\xi / R)$ where $\text{supp}(\chi) \subset [1/8,8]$, and then define
-    %
-    \begin{equation} W_\alpha(t)(x,y) = \int s(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \end{equation}
-    %
-    then we may integrate by parts in the $z$ variable to conclude that
-    %
-    \begin{equation} \Big|\big(Q_R \circ (\tilde{W}_\alpha(t) - W_\alpha(t)) \big)(x,y) \Big| \lesssim_N R^{-N}, \end{equation}
-    %
-    and thus
-    %
-    \begin{equation} \| (Q_R \circ (\tilde{W}_\alpha(t) - W_\alpha(t)) \circ Q_R) u \|_{L^\infty(M)} \lesssim R^{-N}. \end{equation}
-    %
-    This proves the required estimates for the operators $W_\alpha$.
-\end{proof}
-
-Let us now proceed with the proof of the pointwise bounds in Proposition \ref{theMainEstimatesForWave} using Lemma \ref{pseudodifferentialCoordinateLemma}. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$. Lemma \ref{pseudodifferentialCoordinateLemma} implies that if we define
+Start by covering $X$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. It will be convenient to define $V_\alpha^* = N(V_\alpha, 0.01 \varepsilon_X )$ for each $\alpha$. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$. Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} imply that if we define
 %
 \begin{equation}
-    S_\alpha = \int c(t) (Q_{j,\alpha} \circ W_{j,\alpha}(t) \circ Q_{j,\alpha}) \{ u_\alpha \}\; dt,
+    S_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
 \end{equation}
 %
 then for all $N \geq 0$,
 %
 \begin{equation} \label{parametrixerrroestimate}
-    \left\| S - \textstyle\sum\nolimits_\alpha S_\alpha \right\|_{L^\infty(M)} \lesssim_N R^{-N}.
+    \left\| S - \textstyle\sum\nolimits_\alpha S_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
 \end{equation}
 %
 This error is negligible to the pointwise bounds we want to obtain in Proposition \ref{theMainEstimatesForWave} if we choose $N \geq K - \frac{d+1}{2}$, since the compactness of $M$ implies that $d_X(x,x_0) \lesssim 1$ for all $x \in M$, and so
 %
 \begin{equation}
-    R^{-N} \lesssim R^{\left( \frac{d+1}{2} - K \right)} \lesssim \frac{R^{d}}{\langle R d_X(x,x_0) \rangle^{\frac{d-1}{2}}} \big\langle R \big| |t_0| \pm d_X^\pm(x,x_0) \big| \big\rangle^{-K}.
+    R^{-N} \lesssim R^{\left( \frac{d+1}{2} - K \right)} \lesssim \frac{R^{d}}{\langle R d_X(x,x_0) \rangle^{\frac{d-1}{2}}} \Big\langle R \big| |t_0| \pm d_X^\pm(x,x_0) \big| \Big\rangle^{-K}.
 \end{equation}
 %
 We bound each of the functions $\{ S_\alpha \}$ separately, combining the estimates using the triangle inequality. We continue by expanding out the implicit integrals in the definition of $S_\alpha$. In the coordinate system $U_\alpha$, we can write
@@ -684,7 +566,7 @@ and $\supp(c) \subset [ (t_0 - t_1) - 4/R, (t_0 - t_1) + 4/R]$. After this, one 
     \sum\nolimits_\alpha \int c(t) \big\langle (Q^2 \circ e^{2 \pi i t P} \circ Q^2) \{ \eta_\alpha u_0 \}, u_1 \big\rangle.
 \end{equation}
 %
-Then we use Lemma \ref{pseudodifferentialCoordinateLemma} to replace $Q^2 \circ e^{2 \pi i tP} \circ Q^2$ with $Q_{\alpha}^2 \circ W_{\alpha}(t) \circ Q_{\alpha}^2$ using Lemma \ref{pseudodifferentialCoordinateLemma}, modulo a negligible error. The integral
+Then we use Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} to replace $Q^2 \circ e^{2 \pi i tP} \circ Q^2$ with $Q_{\alpha}^2 \circ W_{\alpha}(t) \circ Q_{\alpha}^2$, modulo a negligible error. The integral
 %
 \begin{equation}
     \sum\nolimits_\alpha \int c(t) \big\langle (Q_{\alpha}^2 \circ W_{\alpha}(t) \circ Q_{\alpha}^2) \{ \eta_\alpha u_0 \}, u_1 \big\rangle

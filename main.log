@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.16)  17 MAY 2025 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.16)  19 MAY 2025 12:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1308,7 +1308,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[37])
+[37]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1324,7 +1324,23 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[39
+[39])
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[40]
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[41
 
 ]
 Chapter 4.
@@ -1336,7 +1352,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[40
+[42
 
 ]
 
@@ -1346,23 +1362,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[41]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[42]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[43] Excluding 'comment' comment.
+[43]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1378,7 +1378,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[45]
+[45] Excluding 'comment' comment.
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1427,7 +1427,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [51]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 947--948
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 829--830
 []\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
  []
 
@@ -1441,7 +1441,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 [52]
 
 LaTeX Warning: Reference `FirstVariationFormula2' on page 53 undefined on input
- line 1010.
+ line 892.
 
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1668,10 +1668,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16956 strings out of 474486
- 317422 string characters out of 5743283
- 1949542 words of memory out of 5000000
- 38934 multiletter control sequences out of 15000+600000
+ 16957 strings out of 474486
+ 317442 string characters out of 5743283
+ 1947542 words of memory out of 5000000
+ 38935 multiletter control sequences out of 15000+600000
  615016 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,21n,79p,2067b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1691,7 +1691,7 @@ ocal/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (79 pages, 412647 bytes).
+Output written on main.pdf (79 pages, 411176 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

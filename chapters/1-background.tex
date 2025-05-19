@@ -107,7 +107,7 @@ When $P = \sqrt{-\Delta}$ on a Riemannian manifold $M$, Assumption A always hold
 
 More generally, we will see in Section \ref{sec:geometriesinduced} that if an operator $P$ satisfies Assumption A then it gives $X$ a geometry, and Assumption B is closely related to this geometry, in particular, that geodesics with respect to this geometry are all closed and have commensurable lengths. If $P$ satisfies Assumption A, and the geometry on $X$ is such that all geodesics of $X$ are closed, and the lengths of these closed geodesics all divide a common period, then there exists\footnote{See Lemma 29.2.1 of \cite{Hormander4}, discussed in slightly more detail (but not proved) in Section \ref{sec:PeriodicGeodesics}.} an elliptic operator $\tilde{P}$ on $X$ satisfying Assumptions A and B, and such that $P - \tilde{P}$ is a pseudodifferential operator of order $-1$, so we can view $\tilde{P}$ as a pertubation of $P$. We can study the regularity of a subfamily of multipliers of $P$ by representing them as multipliers of $\tilde{P}$.
 
-Under Assumption A and Assumption B, in Chapter \ref{chap:boundedsinglefrequencyscale} we find necessary and sufficient conditions for a compactly supported function to be contained in $M^p_{\text{Dil}}(M)$ for $1/p - 1/2 > 1/(d-1)$. Fix $\chi \in C_c^\infty(\RR^d)$. For $s \geq 0$ and $1 \leq p \leq \infty$, define the norm
+Under Assumption A and Assumption B, in Chapter \ref{chap:boundedsinglefrequencyscale} we find necessary and sufficient conditions for a compactly supported function to be contained in $M^p_{\text{Dil}}(X)$ for $1/p - 1/2 > 1/(d-1)$. Fix $\chi \in C_c^\infty(\RR^d)$. For $s \geq 0$ and $1 \leq p \leq \infty$, define the norm
 %
 \begin{equation}
   \| a \|_{R^{s,p}[0,\infty)} = \sup\nolimits_{R > 0} \left( \int_0^\infty \left|\;\! \widehat{a}_R(t) \langle t \rangle^s \right|^p\; dt \right)^{1/p} \quad\text{where}\quad a_R(\lambda) = \chi(\lambda) a(R \lambda).
@@ -1772,26 +1772,34 @@ Given this theorem, the equivalence of phase theorem implies multiple useful osc
 %
 We will primarily use the first and second representations in what follows.
 
-We conclude this section with some technical calculations, that result in some highly useful estimates for certain Fourier integral operators that will arise later in the thesis. Our first calculation concerns `Littlewood-Paley projections' on a manifold.
+We conclude this section with some technical calculations, that result in some useful estimates for certain Fourier integral operators that will arise later in the thesis. Our first calculation concerns `Littlewood-Paley projections' on a manifold.
 
-\begin{theorem}
-  Let $X$ be a compact manifold, and let $P$ be an elliptic operator on $X$. Consider a coordinate system $V$, with a set $U$ compactly contained in $V$. Fix $q \in C_c^\infty[0,\infty)$ and $R > 0$, and define $Q = q(P/R)$. Then we can find an operator $Q_\alpha$ such that for any function $u$ supported on $U$, $\| Qu - Q_\alpha u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}$ for arbitarily large $M$ and $N$, such that $Q_\alpha u$ is supported on $V$ for any input $u$, and in the coordinate system $U$, $Q_\alpha$ is a pseudodifferential operator whose symbol $\sigma_\alpha$ is supported on $\{ (x,\xi): R/4 \leq \xi \leq 4R \}$.
+\begin{theorem} \label{PseudoOsicllatoryLemma}
+  Let $X$ be a compact manifold, and let $P$ be an elliptic operator on $X$. Consider a coordinate system $V$, with a set $U$ compactly contained in $V$. Fix $q \in C_c^\infty(0,\infty)$ and $R > 0$, and define $Q = q(P/R)$. Then we can find an operator $Q_\alpha$ such that for any function $u$ supported on $U$, $\| Qu - Q_\alpha u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}$ for arbitarily large $M$ and $N$, such that $Q_\alpha u$ is supported on $V$ for any input $u$, and in the coordinate system $U$, $Q_\alpha$ is a pseudodifferential operator whose symbol $\sigma_\alpha$ is supported on $\{ (x,\xi): R/4 \leq \xi \leq 4R \}$.
 \end{theorem}
 \begin{proof}
-  We proceed with a similar approach to Theorem 4.3.1 of \cite{Sogge}. We fix $\rho \in C_c^\infty(\RR)$ equal to one in a neighborhood of the origin and with $\rho(t) = 0$ for $|t| \geq \varepsilon_X / 2$. Also fix $\| u \|_{L^1(X)} = 1$, supported on $U$. Using the Fourier inversion formula, we write
+  We proceed with a similar approach to Theorem 4.3.1 of \cite{Sogge}. It will be helpful to introduce a basis $\{ e_k \}$ for $L^2(X)$, with $e_k \in C^\infty(X)$ for each $k$ and $Pe_k = \lambda_k e_k$. Using \ref{waveisanFIOTheorem}, there exists $\varepsilon > 0$ such that for any function $u$ supported on $U$, for $|t| < \varepsilon$ and $u$ supported on $U$, we can write
+  %
+  \[ e^{2 \pi i t P} u = W_\alpha(t) u + R_\alpha(t) u, \]
+  %
+  where the kernel of $R_\alpha$ is smooth, and in coordinates, we can write
+  %
+  \[ W_\alpha(t,x,y) = \int s_0(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]} \]
+  %
+  for an order zero symbol $s_0$ with $(x,y)$ supported on $V_\alpha \times U_\alpha$. We fix $\rho \in C_c^\infty(\RR)$ equal to one in a neighborhood of the origin and with $\rho(t) = 0$ for $|t| \geq \varepsilon / 2$. Using the Fourier inversion formula, we write
     %
     \begin{equation}
     \begin{split}
-        Q &= \int R\;\! \widehat{q}(R t) e^{2 \pi i t P}\; dt\\
-        &= \int R\;\! \widehat{q}(Rt) \Big\{ \rho(t) \tilde{W}(t) + \rho(t) \tilde{R}(t) + (1 - \rho(t)) e^{2 \pi i t P} \Big\}\; dt\\
-        &= Q_I + Q_{II} + Q_{III}.
+        Qu &= \int R\;\! \widehat{q}(R t) e^{2 \pi i t P}u\; dt\\
+        &= \int R\;\! \widehat{q}(Rt) \Big\{ \rho(t) \tilde{W}_\alpha(t) + \rho(t) \tilde{R}(t) + (1 - \rho(t)) e^{2 \pi i t P} \Big\} u\; dt\\
+        &= Q_I u + Q_{II} u + Q_{III} u.
     \end{split}
     \end{equation}
     %
     The rapid decay of $\widehat{q}$ implies that the function $\psi(t) = R \widehat{q}(Rt) (1 - \rho(t))$ satisfies bounds of the form $\| \partial_t^N \psi \|_{L^1(\RR)} \lesssim_X R^{-M}$, and so
     %
     \begin{equation} \label{psidecaybound}
-        |\widehat{\psi}(\lambda)| \lesssim_{N,M} R^{-M} \lambda^{-N}.
+        |\widehat{\psi}(\lambda)| \lesssim_{N,M} R^{-N} \lambda^{-M}.
     \end{equation}
     %
     Since $Q_{III} = \widehat{\psi}(-P)$, we can write the kernel of $Q_{III}$ as
@@ -1800,14 +1808,29 @@ We conclude this section with some technical calculations, that result in some h
         Q_{III}(x,y) = \sum\nolimits_\lambda \widehat{\psi}(-\lambda_k) e_k(x) \overline{e_k(y)},
     \end{equation}
     %
-    Sobolev embedding and \eqref{psidecaybound} imply that
+    Now
     %
-    \begin{equation} \label{QThreeBound}
-        \| Q_{III} u \|_{C^M(X)} \lesssim_{N,M} R^{-N}.
+    \begin{equation}
+    \begin{split}
+      P^L Q_{III}u &= \sum\nolimits_\lambda \widehat{\psi}(-\lambda_k) (P^L e_k)(x) \langle e_k, u \rangle\\
+      &= \sum\nolimits_\lambda \lambda_k^L \widehat{\psi}(-\lambda_k) e_k(x) \langle e_k, u \rangle.
+      \end{split}
+      \end{equation}
+    %
+    The bounds for $\widehat{\psi}$, and the bound
+    %
+    \begin{equation}
+      |\langle e_k, u \rangle| \leq \| e_k \|_{L^\infty(X)} \| u \|_{L^1(X)} \leq \lambda_k^{d/2 + 1} \| u \|_{L^1(X)}
     \end{equation}
     %
-    Integration by parts, using the fact that $q$ vanishes near the origin, yields that
+    imply that
     %
+    \begin{equation} \label{QThreeBound}
+        \| Q_{III} u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}.
+    \end{equation}
+    %
+    Since $q$ vanishes near the origin, integration by parts yields that
+    % xi^{-N} q(. / R)
     \begin{equation}
         \left| \int R \widehat{q}(Rt) \rho(t) \partial_x^\alpha \partial_y^\beta \tilde{R}(t,x,y) \right| \lesssim_N R^{-N},
     \end{equation}
@@ -1815,7 +1838,7 @@ We conclude this section with some technical calculations, that result in some h
     and thus
     %
     \begin{equation} \label{QTwoBound}
-        \| Q_{II} u \|_{C^M(X)} \lesssim_N R^{-N}.
+        \| Q_{II} u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}.
     \end{equation}
     %
     Now we expand
@@ -1846,22 +1869,18 @@ We conclude this section with some technical calculations, that result in some h
     %
     \begin{equation} \tilde{\sigma}_\alpha(x,y,\xi) = \sum_{n \in \ZZ} q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi). \end{equation}
     %
-    The $n$th term of this sum is supported on $R/4 - n \leq p(y,\xi) \leq 4R - n$, so in particular, if $n > 4R$ then the term vanishes. For $n \leq 4R$, we have estimates of the form
+    The $n$th term of this sum is supported on $R/4 - n \leq p(y,\xi) \leq 4R - n$, so in particular, if $n > 4R$ then the term vanishes. For $-\infty < n \leq 4R$, we have estimates of the form
     %
     % Good range is R/4 - n >= R/8 and 4R - n <= 8R
     % so n <= R/8 and n >= -4R
     %
-    \begin{equation} \left| \partial_{x,y}^\alpha \partial_\xi^\beta \left\{ q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi) \right\} \right| \lesssim_{\alpha,\beta,N} |n|^{-N}. \end{equation}
+    \begin{equation} \left| \partial_{x,y}^\alpha \partial_\xi^\beta \left\{ q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi) \right\} \right| \lesssim_{\alpha,\beta,N} |n|^{-N} \langle \xi \rangle^{-\beta}. \end{equation}
     %
-    and for $-4R \leq n \leq R/8$,
+    For $n \geq R/8$ and $n \leq -4R$, $|\xi| \sim n$ on the support of $q( (n + p(y,\xi)) / R )$, and so the rapid decay of $n$ implies that 
     %
-    \begin{equation}
-    \begin{split}
-        \left| \partial_{x,y}^\alpha \partial_\xi^\beta \left\{ q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi) \right\} \right| &\lesssim_{\alpha,\beta,N} |n|^{-N} R^{-\beta}.
-    \end{split}
-    \end{equation}
+    \begin{equation} \left| \partial_{x,y}^\alpha \partial_\xi^\beta \left\{ q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi) \right\} \right| \lesssim_{\alpha,\beta,N,M} |n|^{-N} \langle \xi \rangle^{-M}. \end{equation}
     %
-    But this means that if we define
+    This means that if we define
     %
     \begin{equation} \sigma_\alpha(x,y,\xi) = \sum\nolimits_{-4R \leq n \leq R/8} q \left( \frac{n + p(y,\xi)}{R} \right) c_n(x,y,\xi). \end{equation}
     %
@@ -1876,16 +1895,73 @@ We conclude this section with some technical calculations, that result in some h
     and so
     %
     \begin{equation} \label{QalphaApproximation}
-        \| ( Q_I - Q_\alpha ) u \|_{L^\infty(M)} \lesssim_N R^{-N}.
+        \| ( Q_I - Q_\alpha ) u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}.
     \end{equation}
     %
     Combining \eqref{QThreeBound}, \eqref{QTwoBound}, and \eqref{QalphaApproximation}, we conclude that
     %
     \begin{equation} \label{QApproximationTheorem}
-        \| (Q - Q_\alpha) u \|_{L^\infty(M)} \lesssim_N R^{-N}.
+        \| (Q - Q_\alpha) u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}.
     \end{equation}
     %
-    Since $\sigma_\alpha$ is supported on $|\xi| \sim R$, we have verified the required properties of $Q_\alpha$.
+    We have thus verified the required properties of $Q_\alpha$.
+\end{proof}
+
+We can use the Littlewood-Paley projections to localize the phase support of oscillatory integrals for general Fourier integral operators.
+
+\begin{lemma} \label{lemma:WaveOscillatoryLemmaddw}
+  Let $X$ be a compact manifold, let $P$ be an elliptic operator on $X$, and let $U_\alpha$ be a precompact subset of a coordinate system $V_\alpha$. Then if $Q = q(P/R)$ is as in the previous lemma, then we can write
+  %
+  \[ e^{2 \pi i t P} \circ Q = W_\alpha(t) \circ Q + R_\alpha(t), \]
+  %
+  where for $u$ supported on $U_\alpha$, $\| R_\alpha \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}$, and the operator $W_\alpha(t)$ has a kernel $W_\alpha(t,x,y)$ with an oscillatory integral representation
+        %
+        \[ W_\alpha(t,x,y) = \int s(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \]
+        %
+        where the function $s$ is compactly supported in $U_\alpha$, such that
+        %
+        \[ \supp_{t,x,y}(s) \subset \{ (t,x,y) : |x - y| \leq C |t| \} \]f
+        %
+        for some constant $C > 0$, such that
+        %
+        \[ \supp_\xi(s) \subset \{ \xi \in \RR^d : R/8 \leq |\xi| \leq 8R \}, \]
+        %
+        and such that the function $s$ satisfies derivative estimates of the form
+        %
+        \[ | \partial_{t,x,y}^\lambda \partial_\xi^\kappa s | \lesssim_{\lambda, \kappa} R^{- |\kappa|}. \]
+        %
+        The phase function $\phi$ is smooth and homogeneous of degree one in the $\xi$ variable, and solves the \emph{eikonal equation}
+        %
+        \[ p \left( x, \nabla_x \phi(x,y,\xi) \right) = p(y,\xi), \]
+        %
+        subject to the constraint that $\phi(x,y,\xi) = 0$ if $\xi \cdot (x - y) = 0$.
+\end{lemma}
+\begin{proof}
+    Using the bounds on $Q - Q_\alpha$ obtained above, we see that
+    %
+    \begin{equation} \big\| [e^{2 \pi i t P} \circ (Q- Q_\alpha)] \{ u \} \big\|_{L^\infty(X)} \lesssim_N R^{-N} \| u \|_{L^1(X)}. \end{equation}
+    %
+    Similarily, if we write $e^{2 \pi i t P} = W(t) + R(t)$, where $W$ has an oscillatory integral representation and $R$ has a smooth kernel, then
+    %
+    \begin{equation}
+        \big\| [(e^{2 \pi i t P} - W_\alpha(t)) \circ Q_\alpha] \{ u \} \big\|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}.
+    \end{equation}
+    %
+    We now write
+    %
+    \begin{equation}
+        (W_\alpha(t) \circ Q_\alpha)(x,y) = \int s_0(t,x,y,\xi) \sigma_\alpha(y,\eta) e^{2 \pi i [\phi(x,z,\xi) + t p(z,\xi) + \phi(z,y,\eta) ]}\; d\xi\; d\eta\; dz,
+    \end{equation}
+    %
+    where $\{ R/8 \leq |\eta| \leq 8R \}$ on the support of the integral. If $|\xi| \ll R$, the phase of this equation has gradient in the $z$-variable with magnitude $\gtrsim R$, and $\gtrsim |\xi|$ if $|\xi| \gg R$. Thus, if we define $s(t,x,y,\xi) = s_0(t,x,y,\xi) \chi(\xi / R)$ where $\text{supp}(\chi) \subset [1/L,L]$ for suitably large $L$, and then define
+    %
+    \begin{equation} W_\alpha(t)(x,y) = \int s(t,x,y,\xi) e^{2 \pi i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \end{equation}
+    %
+    then we may integrate by parts in the $z$ variable to conclude that
+    %
+    \begin{equation} \Big| \partial_x^\alpha \partial_y^\beta \big( (W(t) - W_\alpha(t)) \circ Q \big)(x,y) \Big| \lesssim_{\alpha,\beta} R^{-N}. \end{equation}
+    %
+    This proves the required estimates for the operators $W_\alpha$.
 \end{proof}
 
 
