@@ -11,7 +11,6 @@
 \contentsline {section}{\numberline {3.2}Geometries Induced by Elliptic Operators}{27}{}%
 \contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{32}{}%
 \contentsline {section}{\numberline {3.4}Periodic Geodesics and Assumption B}{39}{}%
-\contentsline {section}{\numberline {3.5}Relation to Previous Work}{40}{}%
 \contentsline {part}{II\hspace {1em}New Results}{41}{}%
 \contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{42}{}%
 \contentsline {section}{\numberline {4.1}Preliminary Setup}{43}{}%

@@ -4,7 +4,7 @@ In this chapter, we prove Theorem \ref{maintheorem}, which we restate below:
 
 \thmmaintheorem*
 
-In Section \ref{sec:AnAnalogueOf} we saw that for operators $P$ satisfying Assumption A, $\| a \|_{M^p_{\text{Dil}}(X)} \gtrsim \| a \|_{R^{s,p}[0,\infty)}$, and so it suffices to prove that $\| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}$. In Section \ref{PrelimSetup}, we will see from elementary functional analysis that
+In Section \ref{sec:AnAnalogueOf} we saw that for operators $P$ satisfying Assumption A, $\| a \|_{M^p_{\text{Dil}}(X)} \gtrsim \| a \|_{R^{s,p}[0,\infty)}$, and so it suffices to prove that $\| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}$. Define $a_R(\lambda) = a(\lambda / R)$. In Section \ref{PrelimSetup}, we will see from elementary functional analysis that
 %
 \begin{equation} \label{TrivialLowFrequencyBound}
     \sup\nolimits_{R \leq 1} \left\| a_R \right\|_{M^p(X)} \lesssim \| a \|_{l^\infty[0,\infty)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
@@ -293,11 +293,15 @@ The quasi-orthogonality estimate tells us that the two functions $S_0$ and $S_1$
 
 To simplify notation, in the following proof we will suppress the use of $R$ as an index, for instance, writing $Q$ for $Q_R$. For both the pointwise and quasi-orthogonality estimates, we want to consider the operators in coordinates, so we can use Theorem \ref{thm:equivalenceofphase} to understand the wave propagators in terms of various oscillatory integrals.
 
-Start by covering $X$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. It will be convenient to define $V_\alpha^* = N(V_\alpha, 0.01 \varepsilon_X )$ for each $\alpha$. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$. Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} imply that if we define
+Start by covering $X$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$. Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} imply that if we define
 %
 \begin{equation}
     S_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
 \end{equation}
+%
+where $Q_\alpha$ is a pseudo-differential operator whose symbol in the coordinate system $U_\alpha$ is supported on $\{ R/4 \leq |\xi| \leq 4R \}$, and
+%
+\[ W_\alpha(x,y) = R^d \int s(t,x,y,\theta) e^{i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \]
 %
 then for all $N \geq 0$,
 %
@@ -373,7 +377,7 @@ Using the bounds in \eqref{ioqejfoieqjf13412} with the fact that $\text{supp}(c)
 %\end{align*}
 %
 
-We now account for angular oscillation of the integral by working in a kind of 'polar coordinate' system. First we find $\lambda: V_\alpha^* \times S^{d-1} \to (0,\infty)$ such that for all $|\xi| = 1$,
+We now account for angular oscillation of the integral by working in a kind of 'polar coordinate' system. First we find $\lambda: V_\alpha \times S^{d-1} \to (0,\infty)$ such that for all $|\xi| = 1$,
 %
 \begin{equation}
     p(x_0, \lambda(x_0,\xi) \xi) = 1.
@@ -889,7 +893,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
 %        T(s) = (\partial_t A)(s,1) = \sum\nolimits_{i,j} \frac{\partial E^i}{\partial y^j}( y(s) ) y^j(s) e_i \quad\text{and}\quad V(s) = (\partial_s A)(s,1) = u(a).
 %    \end{equation}
     %
-    Then \eqref{FirstVariationFormula2} implies
+    Then the first variation formula for geodesics implies
     %
     \begin{equation} \label{RSFirstDerivativeEquation}
         R(s) R'(s) = \sum\nolimits_{i,j} g_{ij}( x(s), T(s) ) V^i(s) T^j(s).

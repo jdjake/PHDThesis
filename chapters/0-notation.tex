@@ -1,4 +1,4 @@
-%!TEX root = main.tex
+%!TEX root = ../main.tex
 
 \chapter*{Notation}
 
@@ -6,6 +6,12 @@
     \item We use the normalization of the Fourier transform given by the formula
     %
     \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx. \]
+    %
+    Overloading notation, for a function $f: [0,\infty) \to \CC$, we also use the same notation to denote the cosine transform
+    %
+    \[ \widehat{f}(\lambda) = \int_0^\infty f(t) \cos(2 \pi \lambda t)\; dt, \]
+    %
+    which is the Fourier transform of the even extension of $f$ to a function on $(-\infty,\infty)$.
 
     \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$. Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
 
@@ -23,27 +29,71 @@
     %
     for all multi-indices $\alpha$ and $\beta$.
 
-    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere.
+    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere. We also used mixed norm spaces; for a function $f(x,y)$ of two variables, we write
+    %
+    \[ \| f \|_{L^p_x L^q_y} = \left( \int \left( \int |f(x,y)|^q\; dy \right)^{p/q}\; dx \right)^{1/p}. \]
+    %
+    Similarily, we can define the interchanged norm $L^q_y L^p_x$.
 
     \item All operators we consider are Schwartz operators between manifolds equipped with a canonical measure. Abusing notation, we thus identify an operator with the distribution that gives it's Schwartz kernel. Thus, for a Schwartz operator $A$ from a manifold $Y$ to a manifold $X$, we might write
     %
-    \[ A f(x) = \int_Y A(x,y) f(y)\; dy. \]
+    \[ A f(x) = \int_Y A(x,y) f(y)\; dy, \]
+    %
+    where $A$ on the left hand side denotes the operator $A$, and the $A$ on the right hand side denotes the kernel.
 
-    \item For $1 \leq p \leq \infty$ and $s \in \RR$, we consider the Sobolev spaces
+    \item For $1 \leq p \leq \infty$ and $s \in \RR$, we consider the Sobolev spaces $W^{s,p}(\RR^d)$ with norm
     %
-    \[ \| f \|_{W^{s,p}(\RR^d)} = \| (-\Delta)^{s/2} f \|_{L^p(\RR^d)}, \]
+    \[ \| f \|_{W^{s,p}(\RR^d)} = \| (1-\Delta)^{s/2} f \|_{L^p(\RR^d)}, \]
     %
-    and for $1 \leq r \leq \infty$, we consider the Besov spaces
+    and for $1 \leq r \leq \infty$, we consider the (homogeneous) Besov spaces
     %
-    \[ \| f \|_{B^{s,p}_r(\RR^d)} = \| P_k f \|_{l^r_k L^p(\RR^d)}, \]
+    \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k = -\infty}^\infty \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}, \]
     %
-    where $\{ P_k \}$ are Littlewood-Paley projections.
+    where $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( \cdot / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev and Besov spaces $W^{s,p}(X)$ and $\dot{B}^{s,p}_r(X)$ on compact manifolds. We will often use the \emph{Sobolev embedding inequality}, which states that for $1 \leq p \leq q < \infty$, if $r = d(1/p - 1/q)$, then for any $s \in \RR$, $W^{s,q}(X) \subset W^{s - r, p}(X)$, and that if $s > d/p$, then $W^{s,p}(X) \subset C_b(X)$, the space of continuous, bounded functions. We also use \emph{Bernstein's inequality}, that if a function $f$ has a Fourier transform supported on $\{ \xi : R/2 \leq |\xi| \leq 2R \}$, then $\| f \|_{W^{s,p}(\RR^d)} \sim R^s \| f \|_{L^p(\RR^d)}$.
 
-    \item For $1/p + 1/p' = 1$, we can identify $f \in L^{p'}(X)$ as an element of $(L^p(X))^*$ either via the pairing $\langle f, g \rangle = \int f(x) g(x)$, or via the pairing $\langle f,g \rangle = \int \overline{f(x)} g(x)\; dx$. Given an operator $A$ from $L^p(Y)$ to $L^q(X)$, we can take the dual to obtain an operator from $L^q(X)^*$ to $L^p(Y)^*$, and the two pairings above give two possibly different linear maps from $L^{q'}(X)$ to $L^{p'}(X)$. We denote the first by $A^t$, and the second by $A^*$. As examples, for a Fourier multiplier on $\RR^d$ given by the integral expression
+    \item We use \emph{Schur's test} for integral kernels. If $T$ is an operator, then
     %
-    \[ Af(x) = \int m(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
+    \[ \| T \|_{L^1(Y) \to L^p(X)} \lesssim \| T \|_{L^\infty_x L^p_y}, \]
     %
-    we have
+    and
     %
-    \[ A^t f(x) = \int m(-\xi)\; \widehat{f}(x) e^{2 \pi i \xi \cdot x}\; d\xi \quad\text{and}\quad A^* f(x) = \int \overline{m(\xi)}\; \widehat{f}(x) e^{2 \pi i \xi \cdot x}\; d\xi. \]
+    \[ \| T \|_{L^p(X) \to L^\infty(X)} \lesssim \| T \|_{L^\infty_x L^{p'}_y}, \]
+    %
+    which follow by H\"{o}lder and Minkowski's inequality.
+
+    \item We will implicitly rely on the following real interpolation result: Consider a family of functions $\{ f_H: H\ \text{dyadic} \}$, and fix $0 < p_0 < p_1 < \infty$. If for $i \in \{ 0,1 \}$ we have $\| f_H \|_{L^{p_i}(X)} \lesssim H W_j^{1/p_i}$, then for any $p_0 < p < p_1$,
+    %
+    \[ \left\| \sum\nolimits_H f_H \right\|_{L^p(X)} \lesssim \left( \sum\nolimits_H H^p W_j \right)^{1/p}. \]
+    %
+    The quantities $H$ normally stand for the `height' of a given input, and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for a fixed `height scale'. See Lemma 2.2 of \cite{HeoandNazarovandSeeger} for a rigorous proof.
+
+    \item Suppose $f_1,\dots,f_N$ are pairwise orthogonal in $L^2(X)$. Then for $1 \leq p \leq 2$,
+    %
+    \[ \left\| f_1 + \dots + f_N \right\|_{L^p(X)} \lesssim \left( \| f_1 \|_{L^p(X)}^p + \cdots + \| f_N \|_{L^p(X)}^p \right)^{1/p}. \]
+    %
+    The proof follows from interpolation between the triangle inequality
+    %
+    \[ \left\| \sum f_j \right\|_{L^1(X)} \leq \sum \| f_j \|_{L^1(X)} \]
+    %
+    and Parseval's inequality
+    %
+    \[ \left\| \sum f_j \right\|_{L^2(X)} \leq \left( \sum \| f_j \|_{L^2(X)}^2 \right)^{1/2}. \]
+    %
+    We will call such a bounded a use of the `$L^2$ orthogonality' of the $\{ f_j \}$. More generally, the bound holds if we assume that for each $j$, $\langle f_j, f_k \rangle = 0$ holds for all but $O(1)$ many $k$, uniformly in $j$.
+
+    % Normalize L^2
+    %
+    % { |Sum f_j| >= t } << ( sum |f_j| ) t^{-1}
+    %                    << ( sum |f_j|^2 ) t^{-2}
+    % [ int A(x)^z ] / ( Sum C_j^z ) <= 1
+    % 
+
+
+%    \item For $1/p + 1/p' = 1$, we can identify $f \in L^{p'}(X)$ as an element of $(L^p(X))^*$ either via the pairing $\langle f, g \rangle = \int f(x) g(x)$, or via the pairing $\langle f,g \rangle = \int \overline{f(x)} g(x)\; dx$. Given an operator $A$ from $L^p(Y)$ to $L^q(X)$, we can take the dual to obtain an operator from $L^q(X)^*$ to $L^p(Y)^*$, and the two pairings above give two possibly different linear maps from $L^{q'}(X)$ to $L^{p'}(X)$. We denote the first by $A^t$, and the second by $A^*$. As examples, for a Fourier multiplier on $\RR^d$ given by the integral expression
+    %
+%    \[ Af(x) = \int m(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
+    %
+%    we have
+    %
+%    \[ A^t f(x) = \int m(-\xi)\; \widehat{f}(x) e^{2 \pi i \xi \cdot x}\; d\xi \quad\text{and}\quad A^* f(x) = \int \overline{m(\xi)}\; \widehat{f}(x) e^{2 \pi i \xi \cdot x}\; d\xi. \]
 \end{itemize}

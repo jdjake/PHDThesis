@@ -1,31 +1,31 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.5.16)  19 MAY 2025 12:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  20 MAY 2025 01:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **C:/Users/Patron/Documents/ActualDocuments/PHDThesis/main.tex
 (C:/Users/Patron/Documents/ActualDocuments/PHDThesis/main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-14>
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
-Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+Document Class: report 2024/06/29 v1.4n Standard LaTeX document class
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count187
-\c@chapter=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\c@part=\count272
+\c@chapter=\count273
+\c@section=\count274
+\c@subsection=\count275
+\c@subsubsection=\count276
+\c@paragraph=\count277
+\c@subparagraph=\count278
+\c@figure=\count279
+\c@table=\count280
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
+Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 )
@@ -37,55 +37,55 @@ Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
 cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 106.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
 f
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen141
-\Gin@req@width=\dimen142
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen143
-\captionmargin=\dimen144
-\caption@leftmargin=\dimen145
-\caption@rightmargin=\dimen146
-\caption@width=\dimen147
-\caption@indent=\dimen148
-\caption@parindent=\dimen149
-\caption@hangindent=\dimen150
+\caption@tempdima=\dimen149
+\captionmargin=\dimen150
+\caption@leftmargin=\dimen151
+\caption@rightmargin=\dimen152
+\caption@width=\dimen153
+\caption@indent=\dimen154
+\caption@parindent=\dimen155
+\caption@hangindent=\dimen156
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count196
-\c@continuedfloat=\count197
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count198
+\c@subfigure=\count283
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count199
+\c@subtable=\count284
 ) (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count266
+\c@float@type=\count285
 \float@exts=\toks20
-\float@box=\box51
+\float@box=\box53
 \@float@everytoks=\toks21
-\@floatcapt=\box52
+\@floatcapt=\box54
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -94,19 +94,19 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count267
-\Gm@cntv=\count268
-\c@Gm@tempcnt=\count269
-\Gm@bindingoffset=\dimen151
-\Gm@wd@mp=\dimen152
-\Gm@odd@mp=\dimen153
-\Gm@even@mp=\dimen154
-\Gm@layoutwidth=\dimen155
-\Gm@layoutheight=\dimen156
-\Gm@layouthoffset=\dimen157
-\Gm@layoutvoffset=\dimen158
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
 \Gm@dimlist=\toks22
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
@@ -114,20 +114,20 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip50
-\f@nch@offset@elh=\skip51
-\f@nch@offset@erh=\skip52
-\f@nch@offset@olh=\skip53
-\f@nch@offset@orh=\skip54
-\f@nch@offset@elf=\skip55
-\f@nch@offset@erf=\skip56
-\f@nch@offset@olf=\skip57
-\f@nch@offset@orf=\skip58
-\f@nch@height=\skip59
-\f@nch@footalignment=\skip60
-\f@nch@widthL=\skip61
-\f@nch@widthC=\skip62
-\f@nch@widthR=\skip63
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
 \@temptokenb=\toks23
 ) (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.st
 y
@@ -135,119 +135,98 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\labelindent=\skip64
-\enit@outerparindent=\dimen159
+\labelindent=\skip65
+\enit@outerparindent=\dimen165
 \enit@toks=\toks24
-\enit@inbox=\box53
-\enit@count@id=\count270
-\enitdp@description=\count271
-)
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfrac\xfrac
-.sty
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-01-04 L3 programming layer (loader) 
-
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
-ftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count272
-\l__pdf_internal_box=\box54
-))
+\enit@inbox=\box55
+\enit@count@id=\count289
+\enitdp@description=\count290
+) (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/xfrac\xfrac.sty
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
-\ex@=\dimen160
+\ex@=\dimen166
 ))
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3
-keys2e.sty
-Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
-)
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
-se.sty
-Package: xparse 2023-10-10 L3 Experimental document command parser
-)
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\x
-template.sty
-Package: xtemplate 2023-10-10 L3 Experimental prototype document functions
-\l__xtemplate_tmp_dim=\dimen161
-\l__xtemplate_tmp_int=\count273
-\l__xtemplate_tmp_muskip=\muskip16
-\l__xtemplate_tmp_skip=\skip65
-)
-Package: xfrac 2023-10-10 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box55
-\l__xfrac_tmp_box=\box56
-\l__xfrac_denominator_bot_sep_dim=\dimen162
-\l__xfrac_numerator_bot_sep_dim=\dimen163
-\l__xfrac_numerator_top_sep_dim=\dimen164
-\l__xfrac_slash_left_sep_dim=\dimen165
-\l__xfrac_slash_right_sep_dim=\dimen166
+Package: xfrac 2024-06-04 Split-level fractions
+\l__xfrac_slash_box=\box56
+\l__xfrac_tmp_box=\box57
+\l__xfrac_denominator_bot_sep_dim=\dimen167
+\l__xfrac_numerator_bot_sep_dim=\dimen168
+\l__xfrac_numerator_top_sep_dim=\dimen169
+\l__xfrac_slash_left_sep_dim=\dimen170
+\l__xfrac_slash_right_sep_dim=\dimen171
 \l__xfrac_slash_left_muskip=\muskip17
 \l__xfrac_slash_right_muskip=\muskip18
 
-Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
-(xtemplate)             line 80.
+LaTeX template Info: Declaring template type 'xfrac' taking 3 argument(s) on
+(template)           line 100.
+
+
+LaTeX template Info: Declaring instance 'cmr' of type xfrac on line 392.
+
+
+LaTeX template Info: Declaring instance 'cmss' of type xfrac on line 392.
+
+
+LaTeX template Info: Declaring instance 'cmtt' of type xfrac on line 392.
 
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
+Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip66
 
 For additional information on amsmath, use the `?' option.
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen167
+\pmbraise@=\dimen172
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count274
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count275
-\leftroot@=\count276
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count277
-\DOTSCASE@=\count278
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box57
-\strutbox@=\box58
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen168
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count279
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count280
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box58
+\strutbox@=\box59
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen173
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
 \dotsspace@=\muskip19
-\c@parentequation=\count281
-\dspbrk@lvl=\count282
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
 \tag@help=\toks26
-\row@=\count283
-\column@=\count284
-\maxfields@=\count285
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
 \andhelp@=\toks27
-\eqnshift@=\dimen169
-\alignsep@=\dimen170
-\tagshift@=\dimen171
-\tagwidth@=\dimen172
-\totwidth@=\dimen173
-\lineht@=\dimen174
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
 \@envbody=\toks28
 \multlinegap=\skip67
 \multlinetaggap=\skip68
@@ -282,31 +261,31 @@ y
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
  (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count286
-\calc@Bcount=\count287
-\calc@Adimen=\dimen175
-\calc@Bdimen=\dimen176
+\calc@Acount=\count303
+\calc@Bcount=\count304
+\calc@Adimen=\dimen180
+\calc@Bdimen=\dimen181
 \calc@Askip=\skip72
 \calc@Bskip=\skip73
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count288
+\calc@Ccount=\count305
 \calc@Cskip=\skip74
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count289
-\l_MT_multwidth_dim=\dimen177
+\g_MT_multlinerow_int=\count306
+\l_MT_multwidth_dim=\dimen182
 \origjot=\skip75
-\l_MT_shortvdotswithinadjustabove_dim=\dimen178
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen179
-\l_MT_above_intertext_sep=\dimen180
-\l_MT_below_intertext_sep=\dimen181
-\l_MT_above_shortintertext_sep=\dimen182
-\l_MT_below_shortintertext_sep=\dimen183
-\xmathstrut@box=\box59
-\xmathstrut@dim=\dimen184
+\l_MT_shortvdotswithinadjustabove_dim=\dimen183
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen184
+\l_MT_above_intertext_sep=\dimen185
+\l_MT_below_intertext_sep=\dimen186
+\l_MT_above_shortintertext_sep=\dimen187
+\l_MT_below_shortintertext_sep=\dimen188
+\xmathstrut@box=\box60
+\xmathstrut@dim=\dimen189
 ) (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\txfonts.sty
 Package: txfonts 2008/01/22 v3.2.1
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
@@ -411,7 +390,7 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 y
 Package: thmtools 2023/05/04 v0.76
 \thmt@toks=\toks41
-\c@thmt@dummyctr=\count290
+\c@thmt@dummyctr=\count307
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/thmtools\thm-patch.sty
 Package: thm-patch 2023/05/04 v0.76
@@ -449,14 +428,14 @@ y
 Package: thm-amsthm 2023/05/04 v0.76
 \thmt@style@headstyle=\toks43
 ))
-\c@theorem=\count291
+\c@theorem=\count308
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
 \CommentStream=\write3
 
 Excluding comment 'comment')
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
-Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
 s.sty
@@ -475,69 +454,69 @@ Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count292
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
 y
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ) (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count293
+\lrq@indent=\count310
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip20
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count294
-\c@listtotal=\count295
-\c@listcount=\count296
-\c@liststart=\count297
-\c@liststop=\count298
-\c@citecount=\count299
-\c@citetotal=\count300
-\c@multicitecount=\count301
-\c@multicitetotal=\count302
-\c@instcount=\count303
-\c@maxnames=\count304
-\c@minnames=\count305
-\c@maxitems=\count306
-\c@minitems=\count307
-\c@citecounter=\count308
-\c@maxcitecounter=\count309
-\c@savedcitecounter=\count310
-\c@uniquelist=\count311
-\c@uniquename=\count312
-\c@refsection=\count313
-\c@refsegment=\count314
-\c@maxextratitle=\count315
-\c@maxextratitleyear=\count316
-\c@maxextraname=\count317
-\c@maxextradate=\count318
-\c@maxextraalpha=\count319
-\c@abbrvpenalty=\count320
-\c@highnamepenalty=\count321
-\c@lownamepenalty=\count322
-\c@maxparens=\count323
-\c@parenlevel=\count324
-\blx@tempcnta=\count325
-\blx@tempcntb=\count326
-\blx@tempcntc=\count327
-\c@blx@maxsection=\count328
-\blx@maxsegment@0=\count329
-\blx@notetype=\count330
-\blx@parenlevel@text=\count331
-\blx@parenlevel@foot=\count332
-\blx@sectionciteorder@0=\count333
-\blx@sectionciteorderinternal@0=\count334
-\blx@entrysetcounter=\count335
-\blx@biblioinstance=\count336
+\c@tabx@nest=\count311
+\c@listtotal=\count312
+\c@listcount=\count313
+\c@liststart=\count314
+\c@liststop=\count315
+\c@citecount=\count316
+\c@citetotal=\count317
+\c@multicitecount=\count318
+\c@multicitetotal=\count319
+\c@instcount=\count320
+\c@maxnames=\count321
+\c@minnames=\count322
+\c@maxitems=\count323
+\c@minitems=\count324
+\c@citecounter=\count325
+\c@maxcitecounter=\count326
+\c@savedcitecounter=\count327
+\c@uniquelist=\count328
+\c@uniquename=\count329
+\c@refsection=\count330
+\c@refsegment=\count331
+\c@maxextratitle=\count332
+\c@maxextratitleyear=\count333
+\c@maxextraname=\count334
+\c@maxextradate=\count335
+\c@maxextraalpha=\count336
+\c@abbrvpenalty=\count337
+\c@highnamepenalty=\count338
+\c@lownamepenalty=\count339
+\c@maxparens=\count340
+\c@parenlevel=\count341
+\blx@tempcnta=\count342
+\blx@tempcntb=\count343
+\blx@tempcntc=\count344
+\c@blx@maxsection=\count345
+\blx@maxsegment@0=\count346
+\blx@notetype=\count347
+\blx@parenlevel@text=\count348
+\blx@parenlevel@foot=\count349
+\blx@sectionciteorder@0=\count350
+\blx@sectionciteorderinternal@0=\count351
+\blx@entrysetcounter=\count352
+\blx@biblioinstance=\count353
 \labelnumberwidth=\skip76
 \labelalphawidth=\skip77
 \biblabelsep=\skip78
@@ -549,87 +528,87 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read2
 \blx@bcfout=\write4
 \blx@langwohyphens=\language79
-\c@mincomprange=\count337
-\c@maxcomprange=\count338
-\c@mincompwidth=\count339
+\c@mincomprange=\count354
+\c@maxcomprange=\count355
+\c@mincompwidth=\count356
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-dm.def
-File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count340
-\c@savedafterword=\count341
-\c@annotator=\count342
-\c@savedannotator=\count343
-\c@author=\count344
-\c@savedauthor=\count345
-\c@bookauthor=\count346
-\c@savedbookauthor=\count347
-\c@commentator=\count348
-\c@savedcommentator=\count349
-\c@editor=\count350
-\c@savededitor=\count351
-\c@editora=\count352
-\c@savededitora=\count353
-\c@editorb=\count354
-\c@savededitorb=\count355
-\c@editorc=\count356
-\c@savededitorc=\count357
-\c@foreword=\count358
-\c@savedforeword=\count359
-\c@holder=\count360
-\c@savedholder=\count361
-\c@introduction=\count362
-\c@savedintroduction=\count363
-\c@namea=\count364
-\c@savednamea=\count365
-\c@nameb=\count366
-\c@savednameb=\count367
-\c@namec=\count368
-\c@savednamec=\count369
-\c@translator=\count370
-\c@savedtranslator=\count371
-\c@shortauthor=\count372
-\c@savedshortauthor=\count373
-\c@shorteditor=\count374
-\c@savedshorteditor=\count375
-\c@labelname=\count376
-\c@savedlabelname=\count377
-\c@institution=\count378
-\c@savedinstitution=\count379
-\c@lista=\count380
-\c@savedlista=\count381
-\c@listb=\count382
-\c@savedlistb=\count383
-\c@listc=\count384
-\c@savedlistc=\count385
-\c@listd=\count386
-\c@savedlistd=\count387
-\c@liste=\count388
-\c@savedliste=\count389
-\c@listf=\count390
-\c@savedlistf=\count391
-\c@location=\count392
-\c@savedlocation=\count393
-\c@organization=\count394
-\c@savedorganization=\count395
-\c@origlocation=\count396
-\c@savedoriglocation=\count397
-\c@origpublisher=\count398
-\c@savedorigpublisher=\count399
-\c@publisher=\count400
-\c@savedpublisher=\count401
-\c@language=\count402
-\c@savedlanguage=\count403
-\c@origlanguage=\count404
-\c@savedoriglanguage=\count405
-\c@pageref=\count406
-\c@savedpageref=\count407
+\c@afterword=\count357
+\c@savedafterword=\count358
+\c@annotator=\count359
+\c@savedannotator=\count360
+\c@author=\count361
+\c@savedauthor=\count362
+\c@bookauthor=\count363
+\c@savedbookauthor=\count364
+\c@commentator=\count365
+\c@savedcommentator=\count366
+\c@editor=\count367
+\c@savededitor=\count368
+\c@editora=\count369
+\c@savededitora=\count370
+\c@editorb=\count371
+\c@savededitorb=\count372
+\c@editorc=\count373
+\c@savededitorc=\count374
+\c@foreword=\count375
+\c@savedforeword=\count376
+\c@holder=\count377
+\c@savedholder=\count378
+\c@introduction=\count379
+\c@savedintroduction=\count380
+\c@namea=\count381
+\c@savednamea=\count382
+\c@nameb=\count383
+\c@savednameb=\count384
+\c@namec=\count385
+\c@savednamec=\count386
+\c@translator=\count387
+\c@savedtranslator=\count388
+\c@shortauthor=\count389
+\c@savedshortauthor=\count390
+\c@shorteditor=\count391
+\c@savedshorteditor=\count392
+\c@labelname=\count393
+\c@savedlabelname=\count394
+\c@institution=\count395
+\c@savedinstitution=\count396
+\c@lista=\count397
+\c@savedlista=\count398
+\c@listb=\count399
+\c@savedlistb=\count400
+\c@listc=\count401
+\c@savedlistc=\count402
+\c@listd=\count403
+\c@savedlistd=\count404
+\c@liste=\count405
+\c@savedliste=\count406
+\c@listf=\count407
+\c@savedlistf=\count408
+\c@location=\count409
+\c@savedlocation=\count410
+\c@organization=\count411
+\c@savedorganization=\count412
+\c@origlocation=\count413
+\c@savedoriglocation=\count414
+\c@origpublisher=\count415
+\c@savedorigpublisher=\count416
+\c@publisher=\count417
+\c@savedpublisher=\count418
+\c@language=\count419
+\c@savedlanguage=\count420
+\c@origlanguage=\count421
+\c@savedoriglanguage=\count422
+\c@pageref=\count423
+\c@savedpageref=\count424
 \shorthandwidth=\skip84
 \shortjournalwidth=\skip85
 \shortserieswidth=\skip86
@@ -649,48 +628,48 @@ Package biblatex Info: ... file 'blx-compat.def' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-compat.de
 f
-File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
-File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count408
-\c@textcitetotal=\count409
-\c@textcitemaxnames=\count410
-\c@biburlbigbreakpenalty=\count411
-\c@biburlbreakpenalty=\count412
-\c@biburlnumpenalty=\count413
-\c@biburlucpenalty=\count414
-\c@biburllcpenalty=\count415
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count425
+\c@textcitetotal=\count426
+\c@textcitemaxnames=\count427
+\c@biburlbigbreakpenalty=\count428
+\c@biburlbreakpenalty=\count429
+\c@biburlnumpenalty=\count430
+\c@biburlucpenalty=\count431
+\c@biburllcpenalty=\count432
 \biburlbigskip=\muskip21
 \biburlnumskip=\muskip22
 \biburlucskip=\muskip23
 \biburllcskip=\muskip24
-\c@smartand=\count416
+\c@smartand=\count433
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\numeric.b
 bx
-File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.
 bbx
-File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count417
-\c@bbx:relatedtotal=\count418
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count434
+\c@bbx:relatedtotal=\count435
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/cbx\numeric.c
 bx
-File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -711,14 +690,26 @@ File: biblatex.cfg
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
+(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-04-14 L3 programming layer (loader) 
+
+(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count436
+))
 Package biblatex Info: ... and expl3
-(biblatex)             2024-01-04 L3 programming layer (loader) 
+(biblatex)             2025-04-14 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\blx-case-expl
 3.sty
-Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpar
+se.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
 Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
@@ -727,14 +718,14 @@ Package: footmisc 2025/05/09 v7.0b a miscellany of footnote facilities
 -02-14.sty
 Package: footmisc 2024/12/24 v6.0g a miscellany of footnote facilities
 \FN@temptoken=\toks44
-\footnotemargin=\dimen185
-\@outputbox@depth=\dimen186
+\footnotemargin=\dimen190
+\@outputbox@depth=\dimen191
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\perpage.sty
 Package: perpage 2014/10/25 2.0 Reset/sort counters per page
-\c@abspage=\count419
+\c@abspage=\count437
 )
-\c@pp@a@footnote=\count420
+\c@pp@a@footnote=\count438
 Package footmisc Info: Declaring symbol style bringhurst on input line 699.
 Package footmisc Info: Declaring symbol style chicago on input line 707.
 Package footmisc Info: Declaring symbol style wiley on input line 716.
@@ -744,8 +735,8 @@ Package footmisc Info: Declaring symbol style lamport* on input line 747.
 Package footmisc Info: Declaring symbol style lamport*-robust on input line 768
 .
 ))
-\@quotelevel=\count421
-\@quotereset=\count422
+\@quotelevel=\count439
+\@quotereset=\count440
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
 7.
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
@@ -796,16 +787,16 @@ LaTeX Font Info:    ... okay on input line 97.
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen187
-\scratchbox=\box60
-\nofMPsegments=\count424
-\nofMParguments=\count425
+\scratchcounter=\count441
+\scratchdimen=\dimen192
+\scratchbox=\box61
+\nofMPsegments=\count442
+\nofMParguments=\count443
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen188
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
+\MPscratchCnt=\count444
+\MPscratchDim=\dimen193
+\MPnumerator=\count445
+\makeMPintoPDFobject=\count446
 \everyMPtoPDFconversion=\toks46
 )
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -840,7 +831,7 @@ Package caption Info: End \AtBeginDocument code.
 * \oddsidemargin=30.01765pt
 * \evensidemargin=12.94601pt
 * \topmargin=-9.68535pt
-* \headheight=14.0pt
+* \headheight=14.5pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -862,7 +853,7 @@ Package biblatex Info: ... file 'english.lbx' found.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/lbx\english.l
 bx
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -879,10 +870,13 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20.74> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 16.
- [1
+
+
+[1
 
 {C:/Users/Patron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Pat
-ron/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]) (abstract.tex
+ron/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}])
+(abstract.tex
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
@@ -916,12 +910,6 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd))
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [1] (main.toc
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 2.
@@ -930,12 +918,6 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 \openout5 = `main.toc'.
 
  (chapters/0-notation.tex
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2
 
@@ -946,399 +928,140 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [3
 
-])
+]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+[4])
 
-[4] (chapters/0-introduction.tex
-Overfull \hbox (11.8207pt too wide) in paragraph at lines 15--16
-\OT1/txr/m/n/12 ter-i-za-tions of bound-ed-ness were known on any com-pact man-
-i-fold, aside from the translation-
- []
-
-)
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+[5] (chapters/0-introduction.tex)
 
 [1
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [2
 
 ] (chapters/1-background.tex
 Chapter 1.
 
-Overfull \hbox (4.84552pt too wide) in paragraph at lines 27--28
+Overfull \hbox (4.84552pt too wide) in paragraph at lines 21--22
 []\OT1/txr/m/n/12 The pri-mary ex-am-ple of el-lip-tic op-er-a-tors for our pur
 -poses are ob-tained from a Laplace-
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [3
 
 ]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [4]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 94--99
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 88--93
 [] 
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 102--103
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 96--97
 [] 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [5]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 149--150
-[] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [6]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
-[7]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 191--206
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 150--151
 [] 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
+
+[7]
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--207
+[] 
+ []
+
+
 
 [8]
 Chapter 2.
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [9
 
 ]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [10]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [11]
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 395.
-
-
-Overfull \hbox (1.5795pt too wide) in paragraph at lines 560--560
+Overfull \hbox (1.5795pt too wide) in paragraph at lines 568--568
 []\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [12]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [13] Excluding 'comment' comment.
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [14]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [15] Excluding 'comment' comment.
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [16]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [17]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [18]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [19]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [20]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [21]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [22]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [23]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [24]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [25]
 Chapter 3.
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [26
 
 ]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [27]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [28]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [29]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [30]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [31]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [32]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [33]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [34]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [35]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [36]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [37]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [38]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [39])
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [40]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [41
 
@@ -1346,213 +1069,60 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 Chapter 4.
 (chapters/2-singlescalemultipliers.tex
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [42
 
 ]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [43]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [44]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [45] Excluding 'comment' comment.
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [46]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [47]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [48]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [49]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [50]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [51]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 829--830
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 833--834
 []\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [52]
 
-LaTeX Warning: Reference `FirstVariationFormula2' on page 53 undefined on input
- line 892.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [53]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [54]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [55]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [56]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [57]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [58]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [59]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [60]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [61]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [62]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [63]
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [64] Excluding 'comment' comment.
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [65] Excluding 'comment' comment.)
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [66]
 Chapter 5.
@@ -1572,58 +1142,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--30
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [67
 
 ]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [68]
-Overfull \hbox (3.86464pt too wide) in paragraph at lines 164--170
+Overfull \hbox (3.86464pt too wide) in paragraph at lines 161--167
 \OT1/txr/m/n/12 To ob-tain short range bounds, we ex-ploit the pro-poga-tion sp
 eed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [69]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [70]
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
-
 [71])
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [72]
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
@@ -1632,12 +1168,6 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [73
 
@@ -1648,33 +1178,24 @@ Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
  []
 
 
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
 [74] (main.aux)
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-14>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16957 strings out of 474486
- 317442 string characters out of 5743283
- 1947542 words of memory out of 5000000
- 38935 multiletter control sequences out of 15000+600000
- 615016 words of font info for 164 fonts, out of 8000000 for 9000
+ 16805 strings out of 469941
+ 310710 string characters out of 5468946
+ 1120102 words of memory out of 5000000
+ 43317 multiletter control sequences out of 15000+600000
+ 683772 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,21n,79p,2067b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,21n,66p,2075b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtc
 xr.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfont
 s/rtxi.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/tx
@@ -1691,9 +1212,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (79 pages, 411176 bytes).
+Output written on main.pdf (80 pages, 413922 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
+ 336 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -28,6 +28,8 @@ uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$.
 % SO 2^{- k(1 + d/p)}
 }}\\
 
+When an operator $P$ satisfies Assumption B, we may always assume that the support of $c$ is contained in $|t_0| \leq 1$ in this inequality because of the periodicity of the wave equation. When $P = P_{\text{SH}} + (d-1)/2$ and $1/p - 1/2 > 1/(d-1)$, $\text{Wave-Bound}(p,d)$ holds. Indeed, the arguments of the previous chapter imply the bounds restricted to $c$ with support on $|t_0| \leq \varepsilon_{S^d}$. In fact, they imply the bounds for $c$ with support on $|t_0| \leq 0.49 $; the only modification required is to obtain the $L^1$ and $L^2$ bounds on this greater time interval, but this is easily obtained by using the parametrix $e^{2 \pi i t P} = \int s(x,y,\tau) e^{i [\tau - d(x,y)]}\; d\tau$ which holds for $\varepsilon_{S^d} \leq |t| \leq 0.5 - \varepsilon_{S^d}$ (up to the injectivity radius of the manifold). And to obtain the bounds for $0.5 - \varepsilon{S^d} \leq |t| \leq 0.5 + \varepsilon_{S^d}$, we simply apply a reflection symmetry which allows us to write $e^{2 \pi i (0.5 + t) P} = \int s(t,x,y,\xi) e^{i [ \phi(-x,-y,\xi) + t p(-y,\xi) ]}\; d\xi$, which allows us to treat this case as like the time $|t| \leq \varepsilon_{S^d}$ case.
+
 As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}(p,d)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then
 %
 \begin{equation}
@@ -37,14 +39,6 @@ As we have seen in the previous chapter, such a bound naturally arises in the st
 uniformly in $k$. The main result of this section is that one can also `sum these bounds' to bound $a(P) = \sum a_k(P/2^k)$.
 
 \thmatomicscalestheorem*
-
-Before we prove this theorem, let us see how it implies Theorem \ref{maintheoremsphere}, restated below.
-
-\thmmaintheoremsphere*
-
-\begin{proof}
-    Lemma \ref{TjbLemma} implies 
-\end{proof}
 
 %Such a theorem implies a characterization of $L^p$ boundedness for rescaled spectral multipliers. Since $\text{Wave-Bound}(p,d)$ has been proved for $1/p - 1/2 > 1/2d$, in this range, this paper completes the proof of the characterization of $L^p$ boundedness for general multipliers.
 
@@ -132,6 +126,9 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
         \[ \left( \sum\nolimits_H H^p |\Omega_{\alpha,H}| \right)^{1/p} \lesssim \| u \|_{L^p(X)}. \]
     \end{itemize}
 \end{lemma}
+\begin{proof}
+    TODO
+\end{proof}
 
 To exploit this atomic decomposition, we write
 %
@@ -252,15 +249,25 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     % Holds iff
     %   d - (2d+1)/p_* <= -1 + 1/p_*
     % p_* <= 2
-    We will interpolate this bound with an $L^1$ bound with exponential decay, which will yield the result. By finite propogation speed, $F_{t_0,z_0}$ is supported on a set of measure $O( 2^{l-k} t_0^{d-1})$, an annulus of width $O(2^{l-k})$ based upon on a sphere of radius $t_0$. Thus
+    We will interpolate this bound with an $L^1$ bound with exponential decay, which will yield the result. We should expect $F_{t_0,z_0}$ to be concentrated on a set of measure $O( 2^{l-k} t_0^{d-1} )$, namely, the annulus $A_{t_0,z_0}$ of width $O(2^{l-k})$ upon a sphere of radius $t_0$ centered at $z_0$. By H\"{o}lder's inequality, we find that
     % Xaybe use F = T^I_{x_0} U_{z_0} = \sum f_{x_0,t_0}
     \begin{align*}
-        \| F_{t_0,z_0} \|_{L^1(X)} &\lesssim \left( 2^{l-k} t_0^{d-1} \right)^{1/2} \| F_{t_0,z_0} \|_{L^2(X)}\\
+        \| F_{t_0,z_0} \|_{L^1(A_{t_0,z_0})} &\lesssim \left( 2^{l-k} t_0^{d-1} \right)^{1/2} \| F_{t_0,z_0} \|_{L^2(X)}\\
         &\lesssim 2^{\frac{l-k}{2}} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^2(X)}\\
         &\lesssim 2^{(l-k) \left( \frac{d+1}{2}\right)} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^\infty(X)}.
     \end{align*}
     %
-    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( Q_k \circ e^{2 \pi i t P} \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that by energy conservation $\| Q_k \circ e^{2 \pi i t P} \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. Summing in $t_0$ and $z_0$ using the triangle inequality gives that
+    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( Q_k \circ \cos(2 \pi t P) \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that by energy conservation $\| Q_k \circ e^{2 \pi i t P} \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. On the other hand, we can use Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} to prove that $(Q_k \circ \cos(2 \pi t P) \circ Q_k)(x,y) \lesssim_N [2^k |d(x,y) - t|]^{-N}$, uniformly for $|t| \lesssim 1$, and thus that
+    %
+    \[ \| F_{t_0,z_0} \|_{L^1(A_{t_0,z_0}^c)} \lesssim_N 2^{-lN} 2^{-k} t_0^{d-1} \| U_{z_0} \|_{L^1(X)} \lesssim 2^{-lN} 2^{-k(d+1)} t_0^{d-1} \| U_{z_0} \|_{L^\infty(X)}. \]
+    %
+    Since $t_0 \geq 2^{l-k}$, we have
+    %
+    \[ \| F_{t_0,z_0} \|_{L^1(A_{t_0,z_0}^c)} \lesssim_N 2^{-lN} 2^{-k \left( \frac{d+3}{2} \right)} t_0^{\frac{d-1}{2}} \| U_{z_0} \|_{L^\infty(X)}, \]
+    %
+    which is smaller than the $L^1$ norm bound on $A_{t_0,z_0}$.
+    %
+    Summing in $t_0$ and $z_0$ using the triangle inequality gives that
     %
     \begin{align*}
         &\| S_{l,k} C \|_{L^1(X)}\\
@@ -275,7 +282,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     %
 \end{proof}
 
-We now use this lemma to control the function $f_{\text{Long}}$. Because of the exponential decay in $l$ given by the lemma above, we may sum in $l$ trivially using the triangle inequality for $1 \leq q < p$. Interpolating $L^2$ orthogonality and the triangle inequality, we find that if $f_{\text{Long}} = \sum_k f_{\text{Long},k}$, then
+We now use this lemma to control the function $f_{\text{Long}}$. Because of the exponential decay in $l$ given by the lemma above, we may sum in $l$ trivially using the triangle inequality for $1 \leq q < p$. Using $L^2$ orthogonality, if $f_{\text{Long}} = \sum_k f_{\text{Long},k}$, then we find that
 %
 \[ \left\| \sum\nolimits_k f_{\text{Long},k} \right\|_{L^p(X)} = \left( \sum \| f_{\text{Long},k} \|_{L^p(X)}^p \right)^{1/p}. \]
 %
@@ -292,6 +299,6 @@ Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) =
 %
 Summing in $k$ using $L^p$ orthogonality, and summing over $\alpha$ trivially, we find that
 %
-\[ \| f_{\text{Long},l} \|_{L^p(X)} \lesssim C_p 2^{-l \varepsilon} \| u \|_{L^p(X)}. \]
+\[ \| f_{\text{Long},l} \|_{L^p(X)} \lesssim 2^{-l \varepsilon}  \| a \|_{R^{s,p}[0,\infty)} \| u \|_{L^p(X)}. \]
 %
-Summing in $l$ trivially gives $\| f_{\text{Long}} \|_{L^p(X)} \lesssim C_p \| u \|_{L^p(X)}$, completing the proof of the long range estimates, and thus the proof.
+Summing in $l$ trivially gives $\| f_{\text{Long}} \|_{L^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \| u \|_{L^p(X)}$, completing the proof of the long range estimates, and thus the proof.
