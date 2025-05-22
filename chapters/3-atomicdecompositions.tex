@@ -284,17 +284,14 @@ Now write $f_{\text{Long},k} = \sum f_{\text{Long},\alpha,l,k}$ with
 %
 \[ f_{\text{Long},\alpha,l,k} = \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Long}} \{ A_{\alpha,k,H,W} \}. \]
 %
-Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^1(X)}$, and $U_{z_0} = \sum\nolimits_H A_{\alpha,k,H,Q(z_0)}$, we conclude that %where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
+Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^1(X)} \| U_{z_0} \|_{L^1(X)}$, and with $U_{z_0} = \sum\nolimits_H A_{\alpha,k,H,Q(z_0)}$, we conclude that %where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
 % W^{1/p - 1}
 \begin{align*}
     \| f_{\text{Long},\alpha,l,k} \|_{L^p(X)} &\lesssim 2^{-l \varepsilon} 2^{kd/p'} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} [ \langle 2^k t_0 \rangle^{s} \| b_{t_0} \|_{L^1(X)} ]^p \big[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \big] \right)^{1/p}\\
-    &\lesssim \| a \|_{R^{s,p}[0,\infty)} 2^{-l \varepsilon} 2^{k[(d+2)/p']} \left(  \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l-k}} |W| \| A_{\alpha,k,H,W} \|_{L^\infty(X)}^p \right)^{1/p}.
+    &\lesssim \| a \|_{R^{s,p}[0,\infty)} 2^{-l \varepsilon} \left(  \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l-k}} |W| \| A_{\alpha,k,H,W} \|_{L^\infty(X)}^p \right)^{1/p}.
 \end{align*}
-% (L^1)^p is H^p W^p
-%  vs (L^p)^p is H^p W
-% So (L^1)^p <= W^{1-p} L^p
-% << R^{p-1}
-%
+% L^1 = H W
+% L^p = 
 Summing in $k$ using $L^p$ orthogonality, and summing over $\alpha$ trivially, we find that
 %
 \[ \| f_{\text{Long},l} \|_{L^p(X)} \lesssim 2^{-l \varepsilon}  \| a \|_{R^{s,p}[0,\infty)} \left( \sum\nolimits_H H^p |\Omega_H| \right) \lesssim 2^{-l \varepsilon}  \| a \|_{R^{s,p}[0,\infty)} \| u \|_{L^p(X)}. \]
