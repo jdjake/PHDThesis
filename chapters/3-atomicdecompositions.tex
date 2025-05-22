@@ -308,7 +308,9 @@ We end this chapter with a proof that $\text{Wave-Bound}(p,d)$ holds on $S^d$ fo
     The operator $P_{\text{SH}}$ satisfies $\text{Wave-Bound}(p,d)$ for $1/p - 1/2 > (d-1)^{-1}$.
 \end{lemma}
 \begin{proof}
-    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; it follows from the analysis of Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$.
+    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; indeed, it follows from the analysis of Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$. It remains to prove the result for $c$ supported on $[1/2 - \varepsilon, 1/2 + \varepsilon]$. To obtain this result, we use the fact that for small $t$, the operators $\text{Ref} \circ \cos(2 \pi (1/2 + t) P)$ have the same conical relation as $\cos(2 \pi t P)$, and using the oscillatory integral representations of these operators one can obtain the pointwise and quasi-orthogonality bounds TODO. Following the proof of Lemma \ref{LpBoundLemma} one can then prove the required wave bounds in this range.
 \end{proof}
-% cos( 2 pi t n) = e^{2 pi i t n} - e^{-2 pi i t n}
-% 
+
+\begin{remark}
+    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $S^d$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p,d)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absense of information about the geometric properties of conjugate points.
+\end{remark}

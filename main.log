@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  22 MAY 2025 00:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  22 MAY 2025 00:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1157,6 +1157,8 @@ eed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
 [72])
 
 [73]
+
+[74]
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
 153.
 
@@ -1164,7 +1166,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 
-[74
+[75
 
 ]
 Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
@@ -1174,7 +1176,7 @@ Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
 
 
 
-[75] (main.aux)
+[76] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -1211,9 +1213,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (81 pages, 416318 bytes).
+Output written on main.pdf (82 pages, 417714 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
+ 342 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
