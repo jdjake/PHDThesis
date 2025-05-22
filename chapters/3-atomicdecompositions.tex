@@ -206,8 +206,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q,d)$ is true. Then
     % |b_{t_0}|_{L^1} << 2^{-k/q}
     \begin{align*}
-        &\| S_{l,k} \{ C \} \|_{L^p(X)}\\
-        &\quad \lesssim 2^{kd/p'} 2^{- l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^p \big[ 2^{(l-k)d} \| U_{z_0,t_0} \|_{L^\infty(X)}^p \big] \langle 2^k t_0 \rangle^{d-1} \right)^{1/p},
+        &\| S_{l,k} \{ C \} \|_{L^p(X)}  \lesssim 2^{- l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^p \big[ 2^{(l-k)d} \| U_{z_0,t_0} \|_{L^\infty(X)}^p \big] \langle 2^k t_0 \rangle^{d-1} \right)^{1/p},
     \end{align*}
     %
     where
@@ -217,12 +216,15 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     which, in particular, is positive for $p < q$.
 \end{lemma}
 \begin{proof}
-    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique sidelength cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^q(X)}$, then $S_{l,k} \{ C \} = A_k \{ c \}$, and we can apply $\text{Wave-Bound}(q,d)$ to conclude that
+    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique sidelength cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then $S_{l,k} \{ C \} = A_k \{ c \}$, and we can apply $\text{Wave-Bound}(q,d)$ to conclude that
     %
     \begin{align*}
-      \| S_{l,k} C \|_{L^q(X)} \lesssim 2^{kd/q'} \left( \sum\nolimits_{x_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z(x_0),t_0)|^q \| u_{x_0} \|_{L^q(X)}^q \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}
+      \| S_{l,k} C \|_{L^q(X)} \lesssim \left( \sum\nolimits_{x_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z(x_0),t_0)|^q \| u_{x_0} \|_{L^q(X)}^q \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}
     \end{align*}
     %
+    % H^qW^q
+    % vs H^q W
+    % << 1/R^{1-1/q}
     Since the supports of the functions $\{ u_{x_0} \}$ are almost disjoint, and since $U_{z_0}$ is supported on a set of measure $2^{(l-k)d}$,
     %
     \[ \sum\nolimits_{z(x_0) = z_0} \| u_{x_0} \|_{L^q(X)}^q \lesssim \| U_{z_0} \|_{L^q(X)}^q \lesssim 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q. \]
@@ -231,7 +233,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int a_{t_0} 
     Substituting this bound into the prior bound yields that
     %
     \begin{align*}
-        \| S_{l,k} C \|_{L^q(X)} &\lesssim 2^{kd/q'} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^q \left[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q \right] \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}.
+        \| S_{l,k} C \|_{L^q(X)} &\lesssim \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} |C(z_0,t_0)|^q \left[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^q \right] \langle 2^k t_0 \rangle^{d-1} \right)^{1/q}.
     \end{align*}
     % H^p W^{p/2}
     % vs. H^p W
@@ -284,10 +286,10 @@ Now write $f_{\text{Long},k} = \sum f_{\text{Long},\alpha,l,k}$ with
 %
 \[ f_{\text{Long},\alpha,l,k} = \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l - k}} T_{k,l,\text{Long}} \{ A_{\alpha,k,H,W} \}. \]
 %
-Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^1(X)} \| U_{z_0} \|_{L^1(X)}$, and with $U_{z_0} = \sum\nolimits_H A_{\alpha,k,H,Q(z_0)}$, we conclude that %where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
+Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) = \langle 2^k t_0 \rangle^{- \frac{d-1}{2}} \| b_{t_0} \|_{L^1(X)}$, and with $U_{z_0} = \sum\nolimits_H A_{\alpha,k,H,Q(z_0)}$, we conclude that %where $W = [z_0, z_0 + 2^{l-k}]$ we conclude that
 % W^{1/p - 1}
 \begin{align*}
-    \| f_{\text{Long},\alpha,l,k} \|_{L^p(X)} &\lesssim 2^{-l \varepsilon} 2^{kd/p'} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} [ \langle 2^k t_0 \rangle^{s} \| b_{t_0} \|_{L^1(X)} ]^p \big[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \big] \right)^{1/p}\\
+    \| f_{\text{Long},\alpha,l,k} \|_{L^p(X)} &\lesssim 2^{-l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} [ \langle 2^k t_0 \rangle^{s} \| b_{t_0} \|_{L^1(X)} ]^p \big[ 2^{(l-k)d} \| U_{z_0} \|_{L^\infty(X)}^p \big] \right)^{1/p}\\
     &\lesssim \| a \|_{R^{s,p}[0,\infty)} 2^{-l \varepsilon} \left(  \sum\nolimits_H \sum\nolimits_{\substack{W \in \mathcal{W}_{\alpha,H}\\l(W) = l-k}} |W| \| A_{\alpha,k,H,W} \|_{L^\infty(X)}^p \right)^{1/p}.
 \end{align*}
 % L^1 = H W
