@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  20 MAY 2025 01:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  21 MAY 2025 23:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -742,14 +742,17 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `parametrixerrroestimate' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 97.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 97.
-
-(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
+ (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 97.
@@ -995,7 +998,7 @@ Chapter 2.
 [10]
 
 [11]
-Overfull \hbox (1.5795pt too wide) in paragraph at lines 568--568
+Overfull \hbox (1.5795pt too wide) in paragraph at lines 563--563
 []\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
  []
 
@@ -1077,9 +1080,9 @@ Chapter 4.
 
 [44]
 
-[45] Excluding 'comment' comment.
+[45]
 
-[46]
+[46] Excluding 'comment' comment.
 
 [47]
 
@@ -1090,13 +1093,13 @@ Chapter 4.
 [50]
 
 [51]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 833--834
+
+[52]
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 859--860
 []\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
  []
 
 
-
-[52]
 
 [53]
 
@@ -1120,48 +1123,40 @@ Overfull \hbox (0.23956pt too wide) in paragraph at lines 833--834
 
 [63]
 
-[64] Excluding 'comment' comment.
+[64]
 
-[65] Excluding 'comment' comment.)
+[65] Excluding 'comment' comment.
 
-[66]
+[66] Excluding 'comment' comment.)
+
+[67]
 Chapter 5.
 (chapters/3-atomicdecompositions.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--14
-
- []
-
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 15--30
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--30
-
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--26
+[]
  []
 
 
 
-[67
+[68
 
 ]
 
-[68]
-Overfull \hbox (3.86464pt too wide) in paragraph at lines 161--167
+[69]
+Overfull \hbox (3.86464pt too wide) in paragraph at lines 155--161
 \OT1/txr/m/n/12 To ob-tain short range bounds, we ex-ploit the pro-poga-tion sp
 eed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
  []
 
 
 
-[69]
-
 [70]
 
-[71])
+[71]
 
-[72]
+[72])
+
+[73]
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
 153.
 
@@ -1169,7 +1164,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 
-[73
+[74
 
 ]
 Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
@@ -1179,23 +1174,27 @@ Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
 
 
 
-[74] (main.aux)
+[75] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16805 strings out of 469941
- 310710 string characters out of 5468946
- 1120102 words of memory out of 5000000
- 43317 multiletter control sequences out of 15000+600000
+ 16812 strings out of 469941
+ 311014 string characters out of 5468946
+ 1122296 words of memory out of 5000000
+ 43324 multiletter control sequences out of 15000+600000
  683772 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,21n,66p,2075b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,21n,66p,2102b,1347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtc
 xr.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfont
 s/rtxi.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/tx
@@ -1212,9 +1211,9 @@ ocal/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (80 pages, 413922 bytes).
+Output written on main.pdf (81 pages, 416543 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
+ 339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

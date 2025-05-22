@@ -141,6 +141,44 @@
       \field{pages}{467\bibrangedash 498}
       \range{pages}{32}
     \endentry
+    \entry{DaiGongGuoZhang}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b4ec26c7aba6f9390bd5d94d60ed82c6}{%
+           family={Dai},
+           familyi={D\bibinitperiod},
+           given={Song},
+           giveni={S\bibinitperiod}}}%
+        {{hash=43ccfe7e108ff19ffc16b1e69cfdccfa}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Liuwei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8704defdb7200dcedd52f6d797f19c8f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ruixiang},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{fullhash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{fullhashraw}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{bibnamehash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{authorbibnamehash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{authornamehash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{authorfullhash}{e99cbe63b1461cd357e22b4e27b44a50}
+      \strng{authorfullhashraw}{e99cbe63b1461cd357e22b4e27b44a50}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Camb. J. Math.}
+      \field{number}{4}
+      \field{title}{Oscillatory integral operators on manifolds and related {K}akeya and {N}ikodym problems}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{pages}{937\bibrangedash 1015}
+      \range{pages}{79}
+    \endentry
     \entry{Denson}{unpublished}{}{}
       \name{author}{1}{}{%
         {{hash=e63095f1a47bff1d227c325cc9a3b81e}{%
@@ -224,6 +262,44 @@
       \field{labeltitlesource}{title}
       \field{title}{Classical {F}ourier Analysis}
       \field{year}{2014}
+    \endentry
+    \entry{GuoWangZhang}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=98f93d213ad1e40111942dd47120be17}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Shaoming},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b170f4c37010a14987a849eab01fe7b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=8704defdb7200dcedd52f6d797f19c8f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Ruixiang},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{fullhash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{fullhashraw}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{bibnamehash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{authorbibnamehash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{authornamehash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{authorfullhash}{ea04935cbdb21306d77cd22e821fc353}
+      \strng{authorfullhashraw}{ea04935cbdb21306d77cd22e821fc353}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Invent. Math.}
+      \field{number}{2}
+      \field{title}{A dichotomy for {H}örmander-type oscillatory integral operators}
+      \field{volume}{238}
+      \field{year}{2024}
+      \field{pages}{503\bibrangedash 584}
+      \range{pages}{82}
     \endentry
     \entry{HeoandNazarovandSeeger2}{article}{}{}
       \name{author}{3}{}{%
