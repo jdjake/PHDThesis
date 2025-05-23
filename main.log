@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  22 MAY 2025 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  23 MAY 2025 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,9 +948,9 @@ File: ts1txr.fd 2000/12/15 v3.1
 ] (chapters/1-background.tex
 Chapter 1.
 
-Overfull \hbox (4.84552pt too wide) in paragraph at lines 21--22
-[]\OT1/txr/m/n/12 The pri-mary ex-am-ple of el-lip-tic op-er-a-tors for our pur
--poses are ob-tained from a Laplace-
+Overfull \hbox (0.17752pt too wide) in paragraph at lines 21--22
+[]\OT1/txr/m/n/12 The pri-mary ex-am-ple of el-lip-tic op-er-a-tor for our pur-
+poses are ob-tained from a Laplace-
  []
 
 
@@ -974,45 +974,45 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 96--97
 [5]
 
 [6]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 150--151
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 156--157
 [] 
  []
 
 
 
 [7]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 192--207
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 198--213
 [] 
  []
 
 
 
 [8]
+
+[9]
 Chapter 2.
 
 
-[9
+[10
 
 ]
 
-[10]
-
 [11]
-Overfull \hbox (1.5795pt too wide) in paragraph at lines 563--563
+
+[12]
+Overfull \hbox (1.5795pt too wide) in paragraph at lines 568--568
 []\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
  []
 
 
 
-[12]
+[13]
 
-[13] Excluding 'comment' comment.
+[14] Excluding 'comment' comment.
 
-[14]
+[15]
 
-[15] Excluding 'comment' comment.
-
-[16]
+[16] Excluding 'comment' comment.
 
 [17]
 
@@ -1031,14 +1031,14 @@ Overfull \hbox (1.5795pt too wide) in paragraph at lines 563--563
 [24]
 
 [25]
+
+[26]
 Chapter 3.
 
 
-[26
+[27
 
 ]
-
-[27]
 
 [28]
 
@@ -1062,29 +1062,29 @@ Chapter 3.
 
 [38]
 
-[39])
+[39]
 
-[40]
+[40])
 
-[41
+[41]
+
+[42
 
 ]
 Chapter 4.
 (chapters/2-singlescalemultipliers.tex
 
-[42
+[43
 
 ]
-
-[43]
 
 [44]
 
 [45]
 
-[46] Excluding 'comment' comment.
+[46]
 
-[47]
+[47] Excluding 'comment' comment.
 
 [48]
 
@@ -1095,13 +1095,13 @@ Chapter 4.
 [51]
 
 [52]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 859--860
+
+[53]
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 858--859
 []\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
  []
 
 
-
-[53]
 
 [54]
 
@@ -1143,7 +1143,7 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--26
 ]
 
 [69]
-Overfull \hbox (3.86464pt too wide) in paragraph at lines 155--161
+Overfull \hbox (3.86464pt too wide) in paragraph at lines 167--173
 \OT1/txr/m/n/12 To ob-tain short range bounds, we ex-ploit the pro-poga-tion sp
 eed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
  []
@@ -1154,9 +1154,18 @@ eed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
 
 [71]
 
-[72])
+[72]
+Overfull \hbox (20.46962pt too wide) in paragraph at lines 335--339
+\OT1/txr/m/n/12 Applying Lemma 5.2[] with $\OML/txmi/m/it/12 l$ \OT1/txr/m/n/12
+ and $\OML/txmi/m/it/12 k$ \OT1/txr/m/n/12 as above, $\OML/txmi/m/it/12 C\OT1/t
+xr/m/n/12 (\OML/txmi/m/it/12 z[]; t[]\OT1/txr/m/n/12 ) = \OMS/txsy/m/n/12 k\OML
+/txmi/m/it/12 b[]\OMS/txsy/m/n/12 k[]$\OT1/txr/m/n/12 , and with $\OML/txmi/m/i
+t/12 U[] \OT1/txr/m/n/12 = [][] \OML/txmi/m/it/12 A[]$\OT1/txr/m/n/12 ,
+ []
 
-[73]
+
+
+[73])
 
 [74]
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
@@ -1169,6 +1178,12 @@ File: ot1txtt.fd 2000/12/15 v3.1
 [75
 
 ]
+Overfull \hbox (7.18814pt too wide) in paragraph at lines 154--154
+[]\OT1/txr/m/n/12 Jaak Pee-tre. ``On spaces of Triebel-Lizorkin type''. In: \OT
+1/txr/m/it/12 Ark. Math. \OT1/txr/m/n/12 13 (1975), pp. 123{
+ []
+
+
 Overfull \hbox (10.59874pt too wide) in paragraph at lines 154--154
 []\OT1/txr/m/n/12 Robert Thomas See-ley. ``Com-plex pow-ers of an el-lip-tic op
 -er-a-tor''. In: \OT1/txr/m/it/12 Proc.Symp.Pure
@@ -1183,20 +1198,28 @@ L3 programming layer <2025-04-14>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 16812 strings out of 469941
- 311014 string characters out of 5468946
- 1122296 words of memory out of 5000000
- 43324 multiletter control sequences out of 15000+600000
- 683772 words of font info for 168 fonts, out of 8000000 for 9000
+ 16824 strings out of 469941
+ 311698 string characters out of 5468946
+ 1120543 words of memory out of 5000000
+ 43336 multiletter control sequences out of 15000+600000
+ 680827 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,21n,66p,2102b,1347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,22n,66p,2102b,1345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtc
 xr.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfont
 s/rtxi.pfb><C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/tx
@@ -1213,7 +1236,7 @@ ocal/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/AppD
 ata/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron/App
 Data/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (82 pages, 417714 bytes).
+Output written on main.pdf (82 pages, 418636 bytes).
 PDF statistics:
  342 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

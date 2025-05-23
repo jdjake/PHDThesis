@@ -206,7 +206,7 @@ Since we already proved \eqref{TrivialLowFrequencyBound}, this proposition compl
 
 Proposition \ref{TjbLemma} splits the main bound of the paper into two regimes: regime $\text{I}$ and regime $\text{II}$. Noting that we require weaker bounds in \eqref{DPOIJAOIWDJQWIOFJQOIVJIEOVNFNJNVNV} than in \eqref{ejqwoifjeoifjwqoifjwqoi}, the operator $T^{II}$ will not require as refined an analysis as for the operator $T^I$, and we obtain bounds on $T^{II}$ by a reduction to an endpoint local smoothing inequality in Section \ref{regime2finalsection}. On the other hand, to obtain more refined estimates for the $L^p$ norms of quantities of the form $f = T^I u$, we consider a decompositions of the form $u = \sum_{x_0} u_{x_0}$, where $u_{x_0}: X \to \CC$ is supported on a ball $B(x,1/R)$ of radius $1/R$ centered at $x_0$. We then have $\smash{f = \sum\nolimits_{(x_0,t_0)} f_{x_0,t_0}}$, where $f_{x_0,t_0} = T^I_{t_0} u_{x_0}$. To control $f$ we must establish an $L^p$ square root cancellation bound for the functions $\{ f_{x_0,t_0} \}$. In the next section, we study the $L^2$ quasi-orthogonality of these functions, which we use as a starting point to obtain the required square root cancellation.
 
-% Finsler geometry arises in our problem because the principal symbol $p: T^* M \to [0,\infty)$ acts as a Minkowski norm on the cotangent spaces $T^* M$%, and thus induces a Finsler metric on $M$ by taking the dual Minkowski norm. % $F(x,v) = \sup\nolimits_{\xi \in S_x^*} \xi(v)$. % A very similar theory of geodesics and curvature can be developed for Finsler manifolds as for Riemannian manifolds. The main difference is that a geodesic travelling from one point $p$ to another point $q$ need not be a geodesic when the orientation of the geodesic is reversed. Thus the induced distance function $d_+$ on a Finsler manifold \emph{need not be symmetric}.
+% Finsler geometry arises in our problem because the principal symbol $p: T^* M \to [0,\infty)$ acts as a Minkowski norm on the cotangent spaces $T^* M$%, and thus induces a Finsler metric on $M$ by taking the dual Minkowski norm. % $F(x,v) = \sup\nolimits_{\xi \in S\!_x^*} \xi(v)$. % A very similar theory of geodesics and curvature can be developed for Finsler manifolds as for Riemannian manifolds. The main difference is that a geodesic travelling from one point $p$ to another point $q$ need not be a geodesic when the orientation of the geodesic is reversed. Thus the induced distance function $d_+$ on a Finsler manifold \emph{need not be symmetric}.
 
 % given a homogeneous function $F: TM \to [0,\infty)$ which induces a smoothly varying \emph{Minkowski norm} on the tangent spaces of $M$. 
 
@@ -225,7 +225,7 @@ where $c(0) = x$, $\dot{c}(0) = y$, and $s(0) = v$. If $y$ is suitably close to 
 % Thus
 % 0 = - \sum\nolimits_{a,b} \gamma^i_{ab}(tv,v) v^a v^b \quad\text{for $1 \leq i \leq d$},
 
-we can find $B_x \subset T_x M$ such that this is true for all $y \in B_x$ and $v$ with $F(x,v) = 1$, and in coordinates, the. But this implies that the coefficients of the ordinary differential equations have \emph{smooth coefficients}, and so we get smooth initial dependence on the data. Choosing an open precompact set $U \subset \bigcup_x \{ x \} \times B_x \times S_x$, we get a smooth map $F: U \to M$ which restricts to a diffeomorphism $F_{x,v}: B_x$ for each $x \in M$ and $v \in T_x M$ with $F(x,v) = 1$.
+we can find $B_x \subset T_x M$ such that this is true for all $y \in B_x$ and $v$ with $F(x,v) = 1$, and in coordinates, the. But this implies that the coefficients of the ordinary differential equations have \emph{smooth coefficients}, and so we get smooth initial dependence on the data. Choosing an open precompact set $U \subset \bigcup_x \{ x \} \times B_x \times S\!_x$, we get a smooth map $F: U \to M$ which restricts to a diffeomorphism $F_{x,v}: B_x$ for each $x \in M$ and $v \in T_x M$ with $F(x,v) = 1$.
 
 A proof of these facts using more modern notation is given in Theorem 7 of \cite{Pfeifer}.
 
@@ -239,21 +239,21 @@ The discussion at the end of Section \ref{PrelimSetup} motivates us to consider 
     Let $X$ be a compact manifold of dimension $d$, and let $P$ be a classical elliptic self-adjoint pseudodifferential operator of order one whose principal symbol satisfies the curvature assumptions of Theorem \ref{maintheorem}. Suppose $\varepsilon_X > 0$ is chosen smaller thant he injectivity radius of $X$. Then for all $R \geq 0$, the following estimates hold:
     %
     \begin{itemize}%[leftmargin=8mm]
-        \item (Pointwise Estimates) Fix  $|t_0| \leq \varepsilon_X$ and $x_0 \in X$. Consider any two $L^1$ normalized functions $c: \RR \to \CC$ and $u: X \to \CC$ with $\supp(c) \subset I_{t_0}$ and $\supp(u) \subset B(x_0,1/R)$. Define $S: X \to \CC$ by setting
+        \item (Pointwise Estimates) Fix  $|t_0| \leq \varepsilon_X$ and $x_0 \in X$. Consider any two $L^1$ normalized functions $c: \RR \to \CC$ and $u: X \to \CC$ with $\supp(c) \subset I_{t_0}$ and $\supp(u) \subset B(x_0,1/R)$. Define $S\!_{x_0,t_0}: X \to \CC$ by setting
         %
-        \[ S = \int c(t) (e^{2 \pi i t P} \circ Q_R) \{ u \}\; dt. \]
+        \[ S\!_{x_0,t_0} = \int c(t) (e^{2 \pi i t P} \circ Q_R) \{ u \}\; dt. \]
         %
         Then for any $K \geq 0$, and any $x \in X$,
         %
-        \[ |S(x)| \lesssim_K \frac{R^d}{\langle R d_X(x_0,x) \rangle^{\frac{d-1}{2}}} \max\nolimits_{\pm} \Big\langle R \big| t_0 \pm d_X^\pm(x,x_0) \big| \Big\rangle^{-K}. \]
+        \[ |S\!_{x_0,t_0}(x)| \lesssim_K \frac{R^d}{\langle R d_X(x_0,x) \rangle^{\frac{d-1}{2}}} \max\nolimits_{\pm} \Big\langle R \big| t_0 \pm d_X^\pm(x,x_0) \big| \Big\rangle^{-K}. \]
 
-        \item (Quasi-Orthogonality Estimates) Fix $|t_0 - t_1| \leq \varepsilon_X$, and $x_0, x_1 \in X$. Consider $L^1$ normalized functions $c_0,c_1: \RR \to \CC$ and $u_0,u_1: X \to \CC$ such that, for each $\nu \in \{ 0, 1 \}$, $\supp(c_\nu) \subset I_{t_\nu}$ and $\supp(u_\nu) \subset B(x_\nu,1/R)$. Define $S_\nu: X \to \CC$ by setting
+        \item (Quasi-Orthogonality Estimates) Fix $|t_0 - t_1| \leq \varepsilon_X$, and $x_0, x_1 \in X$. Consider $L^1$ normalized functions $c_0,c_1: \RR \to \CC$ and $u_0,u_1: X \to \CC$ such that, for each $\nu \in \{ 0, 1 \}$, $\supp(c_\nu) \subset I_{t_\nu}$ and $\supp(u_\nu) \subset B(x_\nu,1/R)$. Define $S\!_{x_\nu,t_\nu}: X \to \CC$ by setting
         %
-        \[ S_\nu = \int c_\nu(t) (e^{2 \pi i t P} \circ Q_R) \{ u_\nu \}\; dt. \]
+        \[ S\!_{x_\nu,t_\nu} = \int c_\nu(t) (e^{2 \pi i t P} \circ Q_R) \{ u_\nu \}\; dt. \]
         %
         Then for any $K \geq 0$,
         %
-        \[ \left| \langle S_0, S_1 \rangle \right| \lesssim_K \frac{R^d}{\langle R d_X(x_0,x_1) \rangle^{\frac{d-1}{2}}} \max\nolimits_{\pm} \Big\langle R \big| (t_0 - t_1) \pm d^\pm(x_0,x_1) \big| \Big\rangle^{-K}. \]
+        \[ \left| \langle S\!_{x_0,t_0}, S\!_{x_1,t_1} \rangle \right| \lesssim_K \frac{R^d}{\langle R d_X(x_0,x_1) \rangle^{\frac{d-1}{2}}} \max\nolimits_{\pm} \Big\langle R \big| (t_0 - t_1) \pm d^\pm(x_0,x_1) \big| \Big\rangle^{-K}. \]
     \end{itemize}
 \end{prop}
 
@@ -273,18 +273,18 @@ The discussion at the end of Section \ref{PrelimSetup} motivates us to consider 
 
 \begin{remark}
     Just as in Lemma \ref{lemma4}, the pointwise estimate of Lemma \ref{theMainEstimatesForWave} tells us that the function $S$ is concentrated on a geodesic annulus of radius $|t_0|$ centered at $x_0$ and thickness $O(1/R)$. %The annulus has thickness $O(1/R)$, and on this annulus the function $S$ has magnitude at most $O(R^{\frac{d+1}{2}} |t_0|^{- \frac{d-1}{2}})$.
-The quasi-orthogonality estimate tells us that the two functions $S_0$ and $S_1$ are only significantly correlated with one another if the two annuli on which the majority of the support of $S_0$ and $S_1$ lie are internally or externally tangent to one another, depending on whether $t_0$ and $t_1$ have the same or opposite sign respectively. %, and then
+The quasi-orthogonality estimate tells us that the two functions $S\!_{x_0,t_0}$ and $S\!_{x_1,t_1}$ are only significantly correlated with one another if the two annuli on which the majority of the support lies are internally or externally tangent to one another, depending on whether $t_0$ and $t_1$ have the same or opposite sign respectively. %, and then
 %
 %\begin{equation} \label{DIOAWJDOIWJAFOIJWAFcCw}
-%    |\langle S_0, S_1 \rangle| \lesssim R^{\frac{d+1}{2}} |t_0 - t_1|^{- \frac{d-1}{2}}.
+%    |\langle S\!_0, S\!_1 \rangle| \lesssim R^{\frac{d+1}{2}} |t_0 - t_1|^{- \frac{d-1}{2}}.
 %\end{equation}
 %
-%, though the upper bounds here look superficially different, because here we are using the half wave equation to define our functions $\{ S_\nu \}$, whereas in \cite{HeoandNazarovandSeeger} the analogous functions are simply defined by taking smooth functions adapted to certain annuli. Normalizing and rescaling appropriately causes the bounds to match.
+%, though the upper bounds here look superficially different, because here we are using the half wave equation to define our functions $\{ S\!_\nu \}$, whereas in \cite{HeoandNazarovandSeeger} the analogous functions are simply defined by taking smooth functions adapted to certain annuli. Normalizing and rescaling appropriately causes the bounds to match.
 \end{remark}
 
 %We denote the induced metric on $M$ by taking the lengths of forward geodesics between points by $d_X^+: M \times M \to [0,\infty)$, and the induced metric by taking the lengths of backward geodesics by $d_M^-: M \times M \to [0,\infty)$.
 
-% Thus $S_x^*$ has everywhere positive scalar curvature by continuity.\footnote{This argument is a higher dimensional variant of the argument of Chapter 2, Theorem 4.2 of \cite{HeinzHopf}.} But then Hadamard's ovaloid theorem (see Chapter 4, Theorem 2.1 of \cite{HeinzHopf}) implies that for each $x \in M$, the interior of $S_x^*$ is strictly convex. Thus $p$ is a strictly convex function in the $\xi$ variable.
+% Thus $S\!_x^*$ has everywhere positive scalar curvature by continuity.\footnote{This argument is a higher dimensional variant of the argument of Chapter 2, Theorem 4.2 of \cite{HeinzHopf}.} But then Hadamard's ovaloid theorem (see Chapter 4, Theorem 2.1 of \cite{HeinzHopf}) implies that for each $x \in M$, the interior of $S\!_x^*$ is strictly convex. Thus $p$ is a strictly convex function in the $\xi$ variable.
 
 %For each $x \in M$, define $\| \cdot \|_x^2$ to be the Legendre transform of $p(x,\cdot)^2$. Then $\| \cdot \|$ is a smoothly varying family of strictly convex norms on $TM$, and thus gives a Finsler metric on $M$. Moreover, the geodesic flow with respect to this metric is precisely the Hamiltonian flow induced by the principal symbol $p$, since $p$ is precisely the dual Finsler metric on $T^* M$ to the Finsler metric $\| \cdot \|$ on $TM$. %(the usual process of taking the Legendre transform of the Euler-Lagrange equations defining geodesics is precisely the inverse of the procedure we have used to define the metric on $M$ from the function $p$).
 %Slightly abusing notation, we will sometimes denote the principal symbol $p: T^* M \to [0,\infty)$ by $\| \cdot \|$, the distinction between the norm $\| \cdot \|$ being clear depending on whether it is applied to a tangent vector or covector. We denote the induced metric on $M$ by taking the lengths of forward geodesics between points by $d_M^+: M \times M \to [0,\infty)$, and the induced metric by taking the lengths of backward geodesics by $d_M^-: M \times M \to [0,\infty)$.
@@ -293,13 +293,12 @@ The quasi-orthogonality estimate tells us that the two functions $S_0$ and $S_1$
 
 To simplify notation, in the following proof we will suppress the use of $R$ as an index, for instance, writing $Q$ for $Q_R$. For both the pointwise and quasi-orthogonality estimates, we want to consider the operators in coordinates, so we can use Theorem \ref{thm:equivalenceofphase} to understand the wave propagators in terms of various oscillatory integrals. Consider a small quantity $\varepsilon_X' < \varepsilon_X$, to be fixed later.
 
-
-We begin with a proof of the pointwise bounds. Start by covering $X$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$.
+We begin with a proof of the pointwise bounds. Write $S = S\!_{x_0,t_0}$. Start by covering $X$ by a finite family of suitably small open sets $\{ V_\alpha \}$, such that for each $\alpha$, there is a coordinate chart $U_\alpha$ compactly containing $V_\alpha$ and with $N(V_\alpha, 1.1 \varepsilon_X) \subset U_\alpha$. Let $\{ \eta_\alpha \}$ be a partition of unity subordinate to $\{ V_\alpha \}$. Given $u: M \to \CC$, write $u = \sum_\alpha u_\alpha$, where $u_\alpha = \eta_\alpha u$.
 
 Let us first address the case where $\varepsilon_X' \leq |t_0| \leq \varepsilon_X$. Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} imply that if we define
 %
 \begin{equation}
-    S_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
+    S\!_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
 \end{equation}
 %
 where $Q_\alpha$ is a pseudo-differential operator whose symbol in the coordinate system $U_\alpha$ is supported on $\{ R/4 \leq |\xi| \leq 4R \}$, and
@@ -311,10 +310,10 @@ where $Q_\alpha$ is a pseudo-differential operator whose symbol in the coordinat
 where $s$ is smooth, and compactly supported on $L^{-1} \leq |\tau| \leq L$, and $\Phi$ is defined in \eqref{onedwavephase}, then for all $N \geq 0$,
 %
 \begin{equation} \label{parametrixerrroestimate}
-    \left\| S - \textstyle\sum\nolimits_\alpha S_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
+    \left\| S - \textstyle\sum\nolimits_\alpha S\!_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
 \end{equation}
 %
-This error is negligible to our analysis if $N$ is chosen appropriately large. Integrating by parts if $|t| - d^+(y,x)$ and $|t| - d^-(y,x)$ is suitably large, and then taking in absolute values gives the required bounds for each of the terms $S_\alpha$, completing the proof of the required bounds.
+This error is negligible to our analysis if $N$ is chosen appropriately large. Integrating by parts if $|t| - d^+(y,x)$ and $|t| - d^-(y,x)$ is suitably large, and then taking in absolute values gives the required bounds for each of the terms $S\!_\alpha$, completing the proof of the required bounds.
 
 % If d(x_0,x) << 1, then the bound says << R^{-N} for all N
 % If d(x_0,x) >> 1, then the bound says << R^{(d+1)/2} < ... >^{-N}
@@ -322,7 +321,7 @@ This error is negligible to our analysis if $N$ is chosen appropriately large. I
 Now we address the case $|t_0| \leq \varepsilon_X$. Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} imply that if we define
 %
 \begin{equation}
-    S_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
+    S\!_\alpha = \int c(t) (Q_\alpha \circ W_\alpha(t) \circ Q_\alpha) \{ u_\alpha \}\; dt,
 \end{equation}
 %
 where $Q_\alpha$ is as above, and
@@ -332,7 +331,7 @@ where $Q_\alpha$ is as above, and
 where $s$ is smooth and supported on $L^{-1} \leq |\theta| \leq L$, and $\phi$ is a solution to the Eikonal equation \eqref{awiodjawoidhjioq23412341234234}, then for all $N \geq 0$,
 %
 \begin{equation} \label{parametrixerrroestimate}
-    \left\| S - \textstyle\sum\nolimits_\alpha S_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
+    \left\| S - \textstyle\sum\nolimits_\alpha S\!_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
 \end{equation}
 %
 %This error is negligible to the pointwise bounds we want to obtain in Proposition \ref{theMainEstimatesForWave} if we choose $N \geq K - \frac{d+1}{2}$, since the compactness of $X$ implies that $d_X(x,x_0) \lesssim 1$ for all $x \in X$, and so
@@ -341,11 +340,11 @@ where $s$ is smooth and supported on $L^{-1} \leq |\theta| \leq L$, and $\phi$ i
 %    R^{-N} \lesssim R^{\left( \frac{d+1}{2} - K \right)} \lesssim \frac{R^{d}}{\langle R d_X(x,x_0) \rangle^{\frac{d-1}{2}}} \Big\langle R \big| |t_0| \pm d_X^\pm(x,x_0) \big| \Big\rangle^{-K}.
 %\end{equation}
 %
-The error in \eqref{parametrixerrroestimate} is again negligible. We bound each of the functions $\{ S_\alpha \}$ separately, combining the estimates using the triangle inequality. We continue by expanding out the implicit integrals in the definition of $S_\alpha$. In the coordinate system $U_\alpha$, we can write
+The error in \eqref{parametrixerrroestimate} is again negligible. We bound each of the functions $\{ S\!_\alpha \}$ separately, combining the estimates using the triangle inequality. We continue by expanding out the implicit integrals in the definition of $S\!_\alpha$. In the coordinate system $U_\alpha$, we can write
 %
 \begin{equation} \label{SalphaDefinition}
 \begin{split}
-    S_\alpha(x) &= \int c(t) \sigma(x,\eta) e^{2 \pi i \eta \cdot (x - y)}\\[-6 pt]
+    S\!_\alpha(x) &= \int c(t) \sigma(x,\eta) e^{2 \pi i \eta \cdot (x - y)}\\[-6 pt]
     &\quad\quad\quad s(t,y,z,\xi) e^{2 \pi i [ \phi(y,z,\xi) + t p(z,\xi) ]}\\
     &\quad\quad\quad\quad \sigma(z,\theta) e^{2 \pi i \theta \cdot (z - w)} (\eta_\alpha u)(w)\\
     &\quad\quad\quad\quad\quad dt\; dy\; dz\; dw\; d\theta\; d\xi\; d\eta.
@@ -378,7 +377,7 @@ and then set
 so that $\text{supp}_\xi(a) \subset \{ \xi : 1/8 \leq |\xi| \leq 8 \}$, and
 %
 \begin{equation}
-    S_\alpha(x) = R^d \int a(x, \xi) e^{2 \pi i R [ \phi(x,x_0,\xi) + t_0 p(x_0,\xi) ]}\; d\xi.
+    S\!_\alpha(x) = R^d \int a(x, \xi) e^{2 \pi i R [ \phi(x,x_0,\xi) + t_0 p(x_0,\xi) ]}\; d\xi.
 \end{equation}
 %
 Integrating by parts in $\eta$ and $\theta$ in \eqref{DIOAJVIOEJAV8318923} and \eqref{DWAIOCWOAIJFAIO213123} gives that for all multi-indices $\alpha$,
@@ -415,7 +414,7 @@ If $\tilde{a}(x,\rho, \eta) = a(x, \rho \lambda(x_0) \xi ) \det [ \lambda(x_0,\x
 % DF = L(x_0,xi) I + D_xi lambda
 %
 \begin{equation}
-    S_\alpha(x) = R^d \int_0^\infty \rho^{d-1} \int_{|\xi| = 1} \tilde{a}(x,\rho, \xi) e^{2 \pi i R \rho [ t_0 + \phi(x, x_0, \lambda(x_0,\xi) \xi) ]}\; d\xi\; d\rho.
+    S\!_\alpha(x) = R^d \int_0^\infty \rho^{d-1} \int_{|\xi| = 1} \tilde{a}(x,\rho, \xi) e^{2 \pi i R \rho [ t_0 + \phi(x, x_0, \lambda(x_0,\xi) \xi) ]}\; d\xi\; d\rho.
 \end{equation}
 %
 Define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0, \lambda(x_0,\xi) \xi)$.    
@@ -547,7 +546,7 @@ Define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0, \lambda(x_0,\
 %
 %Now the oscillatory integral has two critical points, at values $\eta$ such that $F_{x_0}(\eta)$ points directly towards or away the flow from $x_0$ to $x$. Thus the integral above can be written as
 %
-We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\xi$ variable, $\Phi$ has exactly two critical points $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, where $\xi^+ \in S_{x_0}^*$ is the covector corresponding to the forward geodesic from $x_0$ to $x$, and $\xi^- \in S_{x_0}^*$ is the covector corresponding to the backward geodesic from $x_0$ to $x$. Moreover,
+We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\xi$ variable, $\Phi$ has exactly two critical points $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, where $\xi^+ \in S\!_{x_0}^*$ is the covector corresponding to the forward geodesic from $x_0$ to $x$, and $\xi^- \in S\!_{x_0}^*$ is the covector corresponding to the backward geodesic from $x_0$ to $x$. Moreover,
 %
 \begin{equation}
     \Phi(|\xi^+|^{-1} \xi^+) = d_X^+(x_0,x) \quad\text{and}\quad \Phi(|\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x),
@@ -556,7 +555,7 @@ We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\
 and the Hessian at each of these points is non-degenerate, with each eigenvalue of the Hessian having magnitude exceeding a constant multiple of $d_X^{\pm}(x_0,x)$. We prove that these properties hold for $\Phi$ in Proposition \ref{triangleLemma} of the following section, via a series of geometric arguments. It then follows from the principle of stationary phase that
 %
 \begin{equation}
-    S_\alpha(x) = \sum_{\pm} \frac{R^{d}}{\left\langle R d_X^{\pm}(x_0,x) \right\rangle^{\frac{d-1}{2}}} \int_0^\infty \rho^{\frac{d-1}{2}} a_{\pm}(x,\rho) e^{2 \pi i R \rho [ t_0 \pm d_X^{\pm}(x_0,x)]}\; d\rho,
+    S\!_\alpha(x) = \sum_{\pm} \frac{R^{d}}{\left\langle R d_X^{\pm}(x_0,x) \right\rangle^{\frac{d-1}{2}}} \int_0^\infty \rho^{\frac{d-1}{2}} a_{\pm}(x,\rho) e^{2 \pi i R \rho [ t_0 \pm d_X^{\pm}(x_0,x)]}\; d\rho,
 \end{equation}
 %
 where $a_{\pm}$ is supported on $|\rho| \sim 1$, and for all $\alpha$, $|\partial_\rho^\alpha a_{\pm}| \lesssim_\alpha 1$. Integrating by parts in the $\rho$ variable if $t_0 \pm d_X^{\pm}(x_0,x)$ is large, we conclude that
@@ -568,17 +567,17 @@ where $a_{\pm}$ is supported on $|\rho| \sim 1$, and for all $\alpha$, $|\partia
 %
 \begin{equation} \label{finaloscillatoryintegralbound}
 \begin{split}
-    |S_\alpha(x)| \lesssim \frac{R^{d}}{\left\langle R d_X(x_0,x) \right\rangle^{\frac{d-1}{2}}} \sum_{\pm} \big\langle R |t_0 \pm d_X(x_0,x)| \big\rangle^{-K}.
+    |S\!_\alpha(x)| \lesssim \frac{R^{d}}{\left\langle R d_X(x_0,x) \right\rangle^{\frac{d-1}{2}}} \sum_{\pm} \big\langle R |t_0 \pm d_X(x_0,x)| \big\rangle^{-K}.
 \end{split}
 \end{equation}
 %
 Combining \eqref{parametrixerrroestimate} and \eqref{finaloscillatoryintegralbound} completes the proof of the pointwise bounds.
 
-The quasi-orthogonality arguments are obtained by a largely analogous method, and so we only sketch the proof. One major difference is that we can use the self-adjointness of the operators $Q$, and the unitary group structure of $\{ e^{2 \pi i t P} \}$, to write
+The quasi-orthogonality arguments are obtained by a largely analogous method, and so we only sketch the proof. Write $S\!_\nu$ for $S\!_{x_\nu,t_\nu}$. One major difference is that we can use the self-adjointness of the operators $Q$, and the unitary group structure of $\{ e^{2 \pi i t P} \}$, to write
 %
 \begin{equation}
 \begin{split}
-    \langle S_0, S_1 \rangle &= \int c_0(t) c_1(s) \big\langle (e^{2 \pi i t P} \circ Q) \{ u_0 \}, (e^{2 \pi i s P} \circ Q) \{ u_1 \} \big\rangle\\
+    \langle S\!_0, S\!_1 \rangle &= \int c_0(t) c_1(s) \big\langle (e^{2 \pi i t P} \circ Q) \{ u_0 \}, (e^{2 \pi i s P} \circ Q) \{ u_1 \} \big\rangle\\
     &= \int c_0(t) c_1(s) \big\langle (e^{2 \pi i (t - s) P} \circ Q^2) \{ u_0 \}, u_1 \big\rangle\\
     &= \int c(t) \big\langle (e^{2 \pi i t P} \circ Q^2) \{ u_0 \}, u_1 \big\rangle,
 \end{split}
@@ -612,7 +611,7 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
     %
     \[ F_* ( x, \nabla_x \phi(x,y,\xi) ) = F_*(y,\xi), \]
     %
-    such that $\phi(x,y,\xi) = 0$ for $x \in H(y,\xi)$, where $H(y, \xi) = \{ x \in U : \xi \cdot (x - y) = 0 \}$. For each $x_0,x_1 \in U$, let $S_{x_0}^* = \{ \xi \in \RR^d: F_*(x_0,\xi) = 1 \}$ be the cosphere at $x_0$, and define $\Psi: S_{x_0}^* \to \RR$ by setting
+    such that $\phi(x,y,\xi) = 0$ for $x \in H(y,\xi)$, where $H(y, \xi) = \{ x \in U : \xi \cdot (x - y) = 0 \}$. For each $x_0,x_1 \in U$, let $S\!_{x_0}^* = \{ \xi \in \RR^d: F_*(x_0,\xi) = 1 \}$ be the cosphere at $x_0$, and define $\Psi: S\!_{x_0}^* \to \RR$ by setting
     %
     \[ \Psi(\xi) = \phi(x_1,x_0,\xi). \]
     %
@@ -620,7 +619,7 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
     %
     \[ \Psi(\xi^+) = d_X^+(x_0,x_1) \quad\text{and}\quad \Psi(\xi^-) = - d_X^-(x_0,x_1), \]
     %
-    and the Hessians $H_+$ and $H_-$ of $\Psi$ at these critical points, viewed as quadratic maps from $T_{\xi_{\pm}} S_{x_0}^* \to \RR$ satisfy
+    and the Hessians $H_+$ and $H_-$ of $\Psi$ at these critical points, viewed as quadratic maps from $T_{\xi_{\pm}} S\!_{x_0}^* \to \RR$ satisfy
     %
     \[ H_+(\zeta) \geq C d_X^+(x_0,x_1) |\zeta| \quad\text{and}\quad H_-(\zeta) \leq - C d_X^-(x_0,x_1) |\zeta|, \]
     %
@@ -628,13 +627,13 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
 \end{prop}
 
 If $\Psi$ is as above, then the function $\Phi: S^{d-1} \to \RR$ obtained by setting $\Phi(\xi) = \phi( x, x_0, F_*(x,\xi)^{-1} \xi  )$ is precisely the kind of function that arose as a phase in Proposition \ref{theMainEstimatesForWave}, where $F_*$ was the principal symbol $p$ of the pseudodifferential operator we were considering. Since critical points and the Hessians of maps at critical points are stable under diffeomorphisms, %(see Chapter 5, Problem 17 of \cite{Spivak1}),
-and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S_{x_0}^*$ to $S^{d-1}$, classifying the critical points of the map $\Psi$ implies the required properties of the map $\Phi$ used in Proposition \ref{theMainEstimatesForWave}.
+and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S\!_{x_0}^*$ to $S^{d-1}$, classifying the critical points of the map $\Psi$ implies the required properties of the map $\Phi$ used in Proposition \ref{theMainEstimatesForWave}.
 
 % then, because critical points and the Hessians of maps at critical points are stable under diffeor
 
-%Define a function $\lambda: U \times S^{d-1} \to \RR$ by setting $\lambda(x,v) = F_*( x,v )^{-1}$ and then define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0,\lambda(x_0,\xi) \xi)$. Let $\xi^+$ and $\xi^-$ are the two points in $S_{x_0}^*$ such that $\mathcal{L}^{-1}(x_0,\xi^+)$ is the unit tangent vector of the forward geodesic from $x_0$ to $x$, and $-\mathcal{L}^{-1}(x_0,\xi^-)$ is the unit tangent vector to the backward geodesic from $x_0$ to $x$. In this subsection, we will verify that the only critical points of $\Phi$ occur at $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, that $\Phi( |\xi^+|^{-1} \xi^+) = d_X^+(x_0,x)$ and $\Phi( |\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x)$, and that if we let $V_+$ and $V_-$ be the subspaces of $\RR^d$ which give the tangent spaces of $S^{d-1}$ at each critical point, then the Hessians $H_{\pm} : V_{\pm} \to \RR$ of $\Phi$ at each critical point are non-degenerate, with $|H_{\pm}(\omega)| \gtrsim d_X^{\pm}(x_0,x) |\omega|$, where the implicit constant is locally uniform in $x_0$ and $x$. These properties precisely prove the properties we needed to analyze the function $\Phi$ occuring in Proposition \ref{theMainEstimatesForWave}, where $F_*$ is the principal symbol $p$ of the pseudodifferential operator we are considering.
+%Define a function $\lambda: U \times S^{d-1} \to \RR$ by setting $\lambda(x,v) = F_*( x,v )^{-1}$ and then define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0,\lambda(x_0,\xi) \xi)$. Let $\xi^+$ and $\xi^-$ are the two points in $S\!_{x_0}^*$ such that $\mathcal{L}^{-1}(x_0,\xi^+)$ is the unit tangent vector of the forward geodesic from $x_0$ to $x$, and $-\mathcal{L}^{-1}(x_0,\xi^-)$ is the unit tangent vector to the backward geodesic from $x_0$ to $x$. In this subsection, we will verify that the only critical points of $\Phi$ occur at $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, that $\Phi( |\xi^+|^{-1} \xi^+) = d_X^+(x_0,x)$ and $\Phi( |\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x)$, and that if we let $V_+$ and $V_-$ be the subspaces of $\RR^d$ which give the tangent spaces of $S^{d-1}$ at each critical point, then the Hessians $H_{\pm} : V_{\pm} \to \RR$ of $\Phi$ at each critical point are non-degenerate, with $|H_{\pm}(\omega)| \gtrsim d_X^{\pm}(x_0,x) |\omega|$, where the implicit constant is locally uniform in $x_0$ and $x$. These properties precisely prove the properties we needed to analyze the function $\Phi$ occuring in Proposition \ref{theMainEstimatesForWave}, where $F_*$ is the principal symbol $p$ of the pseudodifferential operator we are considering.
 
-%We will find it more geometrically natural to work with the function $\Psi: S_{x_0}^* \to \RR$ given by $\Psi(\xi) = \phi(x,x_0,\xi)$. Then $\Phi( \xi ) = \Psi( \lambda(x_0,\xi) \xi )$. The map $\xi \mapsto \lambda(x_0,\xi) \xi$ is a diffeomorphism from $S^{d-1}$ to $S_{x_0}^*$. Both critical points . Thus it suffices to prove that the only critical points of $\Psi$ occur at $\xi^+$ and $\xi^-$, that $\Psi(\xi_{\pm}) = \pm d_X^{\pm}(x_0,x)$, and that the Hessian of $\Psi$ is appropriately non-degenerate.
+%We will find it more geometrically natural to work with the function $\Psi: S\!_{x_0}^* \to \RR$ given by $\Psi(\xi) = \phi(x,x_0,\xi)$. Then $\Phi( \xi ) = \Psi( \lambda(x_0,\xi) \xi )$. The map $\xi \mapsto \lambda(x_0,\xi) \xi$ is a diffeomorphism from $S^{d-1}$ to $S\!_{x_0}^*$. Both critical points . Thus it suffices to prove that the only critical points of $\Psi$ occur at $\xi^+$ and $\xi^-$, that $\Psi(\xi_{\pm}) = \pm d_X^{\pm}(x_0,x)$, and that the Hessian of $\Psi$ is appropriately non-degenerate.
 
 %It is simpler to define $\Sigma(x_0,\xi)$ when there is a Riemannian metric $g$ on $U_0$ such that $F(x,v)^2 = \sum g_{ij}(x) v^i v^j$. In this case we take a system of normal coordinates around $x_0$, and define $\Sigma(x_0,\xi)$ to be the hyperplane through the origin in these coordinates perpendicular to $\xi$.  More precisely, we consider the exponential map $\exp: W \to U$, where $W$ is an open subset of $U_0 \times \RR^d$ containing $U_0 \times \{ 0 \}$, defined so that for each $x_0 \in U_0$ and each $u \in \RR^d$, the curve $c(t) = \exp(x_0,tv)$ is a geodesic where it is well defined, i.e. solving the system
 %
@@ -679,7 +678,7 @@ and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S_{x_0}^
 %with the initial conditions $c(0) = x_0$, $c'(0) = z$, and $s(0) = \xi$ has $c(1) = x$. If 
 
 %\begin{remark}
-%    Using the notation in Proposition \ref{theMainEstimatesForWave}, if $\alpha: S^{d-1} \to S_x^*$ is given by $\alpha(\xi) = \lambda(x_0,\xi) \xi$, then $(\Psi \circ \alpha)(\xi) = \Phi(\xi)$. Then $\alpha$ is a diffeomorphism, and so it follows from Proposition \ref{triangleLemma} that the critical points of $\Phi$ are equal to $\alpha^{-1}(\pm \xi_0)$, where $\xi_0$ is the unique covector in $S_x^*$ corresponding to the geodesic from $x_0$ to $x_1$. Since the Hessian of a function is a diffeomorphism invariant at critical points of a manifold, it also follows from Proposition \ref{theMainEstimatesForWave} that the Hessian of $\Phi$ at $\alpha^{-1}(\pm \xi_0)$ is non-degenerate, with each eigenvalue having magnitude exceeding a constant multiple of 
+%    Using the notation in Proposition \ref{theMainEstimatesForWave}, if $\alpha: S^{d-1} \to S\!_x^*$ is given by $\alpha(\xi) = \lambda(x_0,\xi) \xi$, then $(\Psi \circ \alpha)(\xi) = \Phi(\xi)$. Then $\alpha$ is a diffeomorphism, and so it follows from Proposition \ref{triangleLemma} that the critical points of $\Phi$ are equal to $\alpha^{-1}(\pm \xi_0)$, where $\xi_0$ is the unique covector in $S\!_x^*$ corresponding to the geodesic from $x_0$ to $x_1$. Since the Hessian of a function is a diffeomorphism invariant at critical points of a manifold, it also follows from Proposition \ref{theMainEstimatesForWave} that the Hessian of $\Phi$ at $\alpha^{-1}(\pm \xi_0)$ is non-degenerate, with each eigenvalue having magnitude exceeding a constant multiple of 
 
 %    In the statement of Proposition \ref{triangleLemma}, we have applied a change of coordinates as compared to the application
 %\end{remark}
@@ -687,7 +686,7 @@ and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S_{x_0}^
 In order to prove \ref{triangleLemma}, we rely on a geometric interpretation of $\Psi$ following from Hamilton-Jacobi theory.
 
 \begin{lemma} \label{HamiltonLemma}
-    Consider the setup to Proposition \ref{triangleLemma}. For any $\xi \in S_{x_0}^*$,
+    Consider the setup to Proposition \ref{triangleLemma}. For any $\xi \in S\!_{x_0}^*$,
     %
     \[ |\Psi(\xi)| = \begin{cases} \text{the length of the shortest curve from $H(x_0,\xi)$ to $x_1$} & : \text{if}\ \Psi(\xi) > 0, \\ \text{the length of the shortest curve from $x_1$ to $H(x_0,\xi)$} & : \text{if}\ \Psi(\xi) < 0. \end{cases} \]
 \end{lemma}
@@ -695,7 +694,7 @@ In order to prove \ref{triangleLemma}, we rely on a geometric interpretation of 
     We rely on a construction of $\phi$ from Proposition 3.7 of \cite{Treves2}, which we briefly describe. Fix $x_0$ and $\xi$. Then there is a unique covector field $\omega: H(x_0,\xi) \to \RR^d$ which is everywhere perpendicular to $H(x_0,\xi)$, with $\omega(x_0) = \xi$ and with $F_*(x,\omega(x)) = F_*(x_0,\xi)$ for all $x \in H(x_0,\xi)$. There exists a unique point $x(\xi) \in H(x_0,\xi)$ and a unique $t(\xi) \in \RR$, such that the unit speed geodesic $\gamma$ on $X$ with $\gamma(0) = x(\xi)$ and $\gamma'(0) = \mathcal{L}^{-1}( x(\xi), \omega(x(\xi)) )$ satisfies $\gamma( t(\xi) ) = x_1$. We then have $\Psi(\xi) = t(\xi)$. If $t(\xi)$ is negative, then $\gamma|_{[t(\xi),0]}$ is a geodesic from $x_1$ to $x_0$, and if $t(\xi)$ is positive, $\gamma|_{[0,t(\xi)]}$ is a geodesic from $x_0$ to $x_1$. Because $\gamma$ is a geodesic, the geometric interpretation then follows if $U$ is a suitably small neighborhood such that geodesics are length minimizing.
 \end{proof}
 
-% and relies on the fact discussed in the introduction that the Hamiltonian flow of the principal symbol $p$ of $P$ on $M$ is the geodesic flow of the Finsler metric induced by $p$ on $M$. Namely, for $\xi \in S_{x_0}$, the value $\psi(\xi)$ is the length of the unique geodesic starting at $x_1$ and ending at a point on $\Sigma(x_0,\xi)$, passing through $\Sigma(x_0,\xi)$ orthogonally. More precisely, there exists a unique point $x(\xi) \in \Sigma(x_0,\xi)$ and a unique value $t(\xi) \in \RR$, such that if $\eta = \eta(\xi)$ is the unique unit covector orthogonal to $\Sigma(x_0,\xi)$ at $x(\xi)$ and oriented outward from $\Sigma(x_0,\xi)$ in the same direction as $\xi$, then $x_1 = \exp_{x(\xi)}(t(\xi) \eta(\xi) )$, and we then have $\psi(\xi) = t(\xi)$.
+% and relies on the fact discussed in the introduction that the Hamiltonian flow of the principal symbol $p$ of $P$ on $M$ is the geodesic flow of the Finsler metric induced by $p$ on $M$. Namely, for $\xi \in S\!_{x_0}$, the value $\psi(\xi)$ is the length of the unique geodesic starting at $x_1$ and ending at a point on $\Sigma(x_0,\xi)$, passing through $\Sigma(x_0,\xi)$ orthogonally. More precisely, there exists a unique point $x(\xi) \in \Sigma(x_0,\xi)$ and a unique value $t(\xi) \in \RR$, such that if $\eta = \eta(\xi)$ is the unique unit covector orthogonal to $\Sigma(x_0,\xi)$ at $x(\xi)$ and oriented outward from $\Sigma(x_0,\xi)$ in the same direction as $\xi$, then $x_1 = \exp_{x(\xi)}(t(\xi) \eta(\xi) )$, and we then have $\psi(\xi) = t(\xi)$.
 %
 
 
@@ -707,7 +706,7 @@ In order to prove \ref{triangleLemma}, we rely on a geometric interpretation of 
 
 %\noindent That a unique point $x(\xi)$ exists with these properties follows if we choose the diameter of $V$ to be suitably small, depending on the Finsler metric $M$.
 
-% to be smaller than the normal injectivity radius of $\Sigma(x_0,\xi)$ for each $\xi \in S_{x_0}$. That the point $x(\xi)$ lies in $U$ follows because $d(\Sigma(x_0,\xi), x_1) \leq d(x_0,x_1)$, and $N(x_1,d(x_0,x_1)) \subset U$. In particular, if all sectional curvatures of $M$ are upper bounded by $\kappa^2$, then $\psi$ exists if we choose the diameter of $U$ to be smaller then $(\pi/2) \kappa^{-1}$, since, by Lemma 2.3 of \cite{Grimaldi}, $(\pi/2) \kappa^{-1}$ is smaller than the normal injectivity radius of $\Sigma(x_0,\xi)$. In particular, this result is satisfied since the diameter of $U$ is bounded by $2.5 \varepsilon_M$, and $\varepsilon_M < 0.4 (\pi/2) \kappa^{-1}$.
+% to be smaller than the normal injectivity radius of $\Sigma(x_0,\xi)$ for each $\xi \in S\!_{x_0}$. That the point $x(\xi)$ lies in $U$ follows because $d(\Sigma(x_0,\xi), x_1) \leq d(x_0,x_1)$, and $N(x_1,d(x_0,x_1)) \subset U$. In particular, if all sectional curvatures of $M$ are upper bounded by $\kappa^2$, then $\psi$ exists if we choose the diameter of $U$ to be smaller then $(\pi/2) \kappa^{-1}$, since, by Lemma 2.3 of \cite{Grimaldi}, $(\pi/2) \kappa^{-1}$ is smaller than the normal injectivity radius of $\Sigma(x_0,\xi)$. In particular, this result is satisfied since the diameter of $U$ is bounded by $2.5 \varepsilon_M$, and $\varepsilon_M < 0.4 (\pi/2) \kappa^{-1}$.
 
 It follows immediately from Lemma \ref{HamiltonLemma} that
 %
@@ -715,7 +714,7 @@ It follows immediately from Lemma \ref{HamiltonLemma} that
     \Psi(\xi_+) = d_X^+(x_0,x_1) \quad\text{and}\quad \Psi(\xi_-) = - d_X^-(x_0,x_1).
 \end{equation}
 %
-A simple geometric argument also shows $\Psi(\xi^+)$ is the maximum value of $\Psi$ on $S_{x_0}^*$, and $\Psi(\xi^-)$ is the minimum value on $S_{x_0}^*$, so that these two points are both critical. Indeed, the point $x_0$ lies in $H(x_0,\xi)$ for all $\xi \in \RR^d - \{ 0 \}$. Thus the shortest curve from $x_0$ to $x_1$ is always longer than the shortest curve from $H(x_0,\xi)$ to $x_1$. Similarily, the shortest curve from $x_1$ to $x_0$ is always longer than the shortest curve from $x_1$ to $H(x_0,\xi)$. Thus
+A simple geometric argument also shows $\Psi(\xi^+)$ is the maximum value of $\Psi$ on $S\!_{x_0}^*$, and $\Psi(\xi^-)$ is the minimum value on $S\!_{x_0}^*$, so that these two points are both critical. Indeed, the point $x_0$ lies in $H(x_0,\xi)$ for all $\xi \in \RR^d - \{ 0 \}$. Thus the shortest curve from $x_0$ to $x_1$ is always longer than the shortest curve from $H(x_0,\xi)$ to $x_1$. Similarily, the shortest curve from $x_1$ to $x_0$ is always longer than the shortest curve from $x_1$ to $H(x_0,\xi)$. Thus
 %
 \begin{equation}
     - d_X^-(x_0,x_1) \leq \Psi(\xi) \leq d_X^+(x_0,x_1),
@@ -732,7 +731,7 @@ In order to simplify proofs, we employ a structural symmetry to reduce the numbe
     %
     \begin{equation} \xi(t) = \frac{\xi^* + a(t) \eta}{F_*(x_0, \xi^* + a(t) \eta)}, \end{equation}
     %
-    into $S_{x_0}^*$, where
+    into $S\!_{x_0}^*$, where
     %
     \begin{equation} a(t) = - \frac{\xi^* \cdot ( \gamma(t) - x_0 )}{\eta \cdot ( \gamma(t) - x_0 )} \end{equation}
     %
@@ -761,7 +760,7 @@ In order to simplify proofs, we employ a structural symmetry to reduce the numbe
     %
     %
 
-%    For $t$ suitably close to $x_0$, we can find a smooth function $\xi(t) \in S_{x_0}^*$ with $\xi(0) = \xi^*$, and such that $\gamma(t) \in H(x_0, \xi(t))$ for each $t$. Using the fact that $\gamma|_{[t,t_*]}$ is a curve from $H(x_0,\xi(t))$ to $x_1$ of length $t_* - t$, we find that $\Psi(\xi(t)) \leq t_* - t$. Since $\Psi(\xi(0)) = t_*$, taking $t \to 0^+$ gives $D\Psi(\xi^*)(\xi'(0)) \leq -1$. In particular, $D\Psi(\xi^*) \neq 0$, and so $\xi^*$ is not a critical point. \qedhere
+%    For $t$ suitably close to $x_0$, we can find a smooth function $\xi(t) \in S\!_{x_0}^*$ with $\xi(0) = \xi^*$, and such that $\gamma(t) \in H(x_0, \xi(t))$ for each $t$. Using the fact that $\gamma|_{[t,t_*]}$ is a curve from $H(x_0,\xi(t))$ to $x_1$ of length $t_* - t$, we find that $\Psi(\xi(t)) \leq t_* - t$. Since $\Psi(\xi(0)) = t_*$, taking $t \to 0^+$ gives $D\Psi(\xi^*)(\xi'(0)) \leq -1$. In particular, $D\Psi(\xi^*) \neq 0$, and so $\xi^*$ is not a critical point. \qedhere
     \end{proof}
 
 We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
@@ -856,7 +855,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
     % < A(tw),  
 
 \begin{proof}[Proof that $\xi^+$ and $\xi^-$ are non-degenerate]
-    Using symmetry, it suffices without loss of generality to analyze the critical point $\xi^-$ rather than $\xi^+$. Let $H_-: T_{\xi^-} S_{x_0}^* \to \RR$ be the Hessian of $\Psi$ at $\xi^-$. Let $v_0 = \mathcal{L}_{x_0}^{-1} \xi^-$, and using the notation of the last argument, let $l = t(\xi^-)$. Consider a curve $\xi(a)$ valued in $S_{x_0}^*$ with $\xi(0) = \xi^-$ and $\zeta = \xi'(0)$ for some $\zeta \in T_{\xi^-}^* S_{x_0}$. Then the second derivative of $\Psi(\xi(a))$ at $a = 0$ is $H_-( \zeta )$, and so our proof would be complete if we could show that the function $L(a) = - \Psi( \xi(a) )$, which is the length of the shortest geodesic from $x_1$ to $H(x_0,\xi(a))$, satisfies $L''(0) \geq C l |\zeta|$, for a constant $C > 0$ uniform in $x_0$, $x_1$, and $\zeta$.
+    Using symmetry, it suffices without loss of generality to analyze the critical point $\xi^-$ rather than $\xi^+$. Let $H_-: T_{\xi^-} S\!_{x_0}^* \to \RR$ be the Hessian of $\Psi$ at $\xi^-$. Let $v_0 = \mathcal{L}_{x_0}^{-1} \xi^-$, and using the notation of the last argument, let $l = t(\xi^-)$. Consider a curve $\xi(a)$ valued in $S\!_{x_0}^*$ with $\xi(0) = \xi^-$ and $\zeta = \xi'(0)$ for some $\zeta \in T_{\xi^-}^* S\!_{x_0}$. Then the second derivative of $\Psi(\xi(a))$ at $a = 0$ is $H_-( \zeta )$, and so our proof would be complete if we could show that the function $L(a) = - \Psi( \xi(a) )$, which is the length of the shortest geodesic from $x_1$ to $H(x_0,\xi(a))$, satisfies $L''(0) \geq C l |\zeta|$, for a constant $C > 0$ uniform in $x_0$, $x_1$, and $\zeta$.
 
     Consider the partial function $\text{Exp}_{x_1}: \RR^d \to U_0$ obtained from the exponential map at $x_1$. If $r$ is chosen suitably small, there exists a neighborhood $V$ of the origin in $\RR^d$ such that $E = \text{Exp}_{x_1}|_V$ is a diffeomorphism between $V$ and $U$. Unlike in Riemannian manifolds, in general $E$ is only $C^1$ at the origin, though smooth on $V - \{ 0 \}$. However, for $|v| = 1$ and $t > 0$ we can write $E(tv) = (\pi \circ \varphi)( x_1, \mathcal{L}_{x_1} v, t)$, where the partial function $\varphi: (T^* U_0 - 0) \times \RR \to (T^* U_0 - 0)$ is the flow induced by the the Hamiltonian vector field $( \partial_\xi F_*, - \partial_x F_*)$ on $T^* U_0 - 0$, and $\pi$ is the projection map from $T^* U_0 - 0$ to $U_0$. Where defined, $\varphi$ is a smooth function since the Hamiltonian vector field is smooth, and so it follows by homogeneity and the precompactness of $U$ that the partial derivatives $(\partial^\alpha E_x)(v)$ are uniformly bounded for $v \neq 0$ and $x \in U$. It thus follows from the inverse function theorem that there exists a constant $A > 0$ such that for all $x_1$ and $x$ in $U$ with $x \neq x_1$,
     %
@@ -878,7 +877,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
     %
     %With notation now setup, we now prove $H_-$ is appropriately nondegenerate.
 
-    Since $\zeta \in T_{\xi^-} S_{x_0}^*$, and $S_{x_0}^* = \{ \xi : F_*(x_0,\xi)^2 = 1 \}$, by Euler's homogeneous function theorem we have
+    Since $\zeta \in T_{\xi^-} S\!_{x_0}^*$, and $S\!_{x_0}^* = \{ \xi : F_*(x_0,\xi)^2 = 1 \}$, by Euler's homogeneous function theorem we have
     %
     \begin{equation} \label{DIOAWJDIOWAJDOIWAJ14}
         \sum\nolimits_{ij} g^{ij}(x_0,\xi^-) \xi'(0) \xi^-_j = \frac{1}{2} \sum\nolimits_{i,j} \frac{\partial^2 F_*^2}{\partial \xi_i \partial \xi_j}(x_0,\xi^-) \zeta_i \xi^-_j = \frac{1}{2} \sum \frac{\partial F_*^2}{\partial \xi_j}(x_0,\xi^-) \zeta_j = 0.
@@ -995,7 +994,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
         |R(s) - (R(0) + s R'(0))| \leq B l^{-1} |u(a)|^2 s^2.
     \end{equation}
     %
-    Since $R(0) = $l, $R'(0) = 1 - c(a)^2$, $c(0) = 1$, $u(0) = 0$, $c'(0) = 0$, $|u'(0)| \leq A |\zeta|$, and $c''(0) \leq - |\zeta|^2 / A$, we conclude from \eqref{WADAWD21312} that as $a \to 0$, if $s > 0$ then
+    Since $R(0) = 1$, $R'(0) = 1 - c(a)^2$, $c(0) = 1$, $u(0) = 0$, $c'(0) = 0$, $|u'(0)| \leq A |\zeta|$, and $c''(0) \leq - |\zeta|^2 / A$, we conclude from \eqref{WADAWD21312} that as $a \to 0$, if $s > 0$ then
     %
     \begin{equation}
     \begin{split}
@@ -1018,19 +1017,19 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
 
 \section{Analysis of Regime I via Density Methods} \label{regime1firstsection}
 
-We now begin obtaining bounds for the operator $T^I$ specified in Proposition \ref{TjbLemma} by using the quasi-orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Define a metric $d_X = d_X^+ + d_X^-$ on $X$. Given an input $u: X \to \CC$, we consider a maximal $1/R$ separated subset $\mathcal{X}_R$ of $X$, and then consider a decomposition $u = \sum_{x_0 \in \mathcal{X}_R} u_{x_0}$ with respect to some partition of unity, where $\text{supp}(u_{x_0}) \subset B(x_0,1/R)$. The balls $\{ B(x_0,1/R) : x_0 \in \mathcal{X}_R \}$ have finite overlap, and so
+We now begin obtaining bounds for the operator $T^I$ specified in Proposition \ref{TjbLemma} by using the quasi-orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Given an input $u: X \to \CC$, we consider a maximal $1/R$ separated subset $\mathcal{X}_R$ of $X$, and then consider a decomposition $u = \sum_{x_0 \in \mathcal{X}_R} u_{x_0}$ with respect to some partition of unity, where $\text{supp}(u_{x_0}) \subset B(x_0,1/R)$. The balls $\{ B(x_0,1/R) : x_0 \in \mathcal{X}_R \}$ have finite overlap, and so
 %
 \begin{equation}
     \| u \|_{L^p(X)} \sim \left( \sum\nolimits_{x_0 \in \mathcal{X}_R} \| u_{x_0} \|_{L^p(X)}^p \right)^{1/p}.
 \end{equation}
 %
-If we set $f_{x_0,t_0} = T_{t_0}^I \{ u_{x_0} \}$, then
+If we set $S\!_{x_0,t_0} = T_{t_0}^I \{ u_{x_0} \}$, then
 %
 \begin{equation} \label{DAPOCJAPWOCJAWOIFJOI}
-    \left\| T^I u \right\|_{L^p(X)} = \left\| \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_R \times \mathcal{T}_R} f_{x_0,t_0} \right\|_{L^p(X)}.
+    \left\| T^I u \right\|_{L^p(X)} = \left\| \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_R \times \mathcal{T}_R} S\!_{x_0,t_0} \right\|_{L^p(X)}.
 \end{equation}
 %
-In this subsection, we use the quasi-orthogonality estimates of the last section to obtain $L^2$ estimates on partial sums of a family of functions of the form $\{ {S\!}_{x_0,t_0} \}$, which are essentially $L^1$ normalized versions of the functions $\{ f_{x_0, t_0} \}$, under a density assumption on the set of indices we are summing over. Namely, we say a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$ has \emph{density type} $(A_0,A_1)$ if for any set $B \subset \mathcal{X}_R \times \mathcal{T}_R$ with $1/R \leq \text{diam}(B) \leq A_1/R$,
+In this subsection, we use the quasi-orthogonality estimates of the last section to obtain $L^2$ estimates on partial sums of the quantities on the right hand side of \eqref{DAPOCJAPWOCJAWOIFJOI}, where the partial sum is taken over a `sparse' subset of indices. We say a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$ has \emph{density type} $(A_0,A_1)$ if for any set $B \subset \mathcal{X}_R \times \mathcal{T}_R$ with $1/R \leq \text{diam}(B) \leq A_1/R$,
 %
 \begin{equation}
     \#(\mathcal{E} \cap B) \leq R A_0\; \text{diam}(B). \footnote[1]{This definition of density is chosen because it is `scale-invariant' as we change the parameter $R$, matching the definition given in Section \ref{sec:densitydecompositions} when $R = 1$. Indeed, if $X = \RR^d$, $\mathcal{X}_R = (\ZZ / R)^d$, and $\mathcal{T}_R = \ZZ/R$, then a set $\mathcal{E} \subset (\ZZ / R)^d \times (\ZZ/R)$ has density type $(A_0,A_1)$ if and only if $R\; \mathcal{E} \subset \ZZ^d \times \ZZ$ has density type $(A_0,A_1)$.}
@@ -1039,11 +1038,7 @@ In this subsection, we use the quasi-orthogonality estimates of the last section
 To obtain $L^p$ bounds from these $L^2$ bounds, in the next section we will perform a \emph{density decomposition} to break up $\mathcal{X}_R \times \mathcal{T}_R$ into families of indices with controlled density, and then apply Proposition \ref{L2DensityProposition} on each subfamily to control \eqref{DAPOCJAPWOCJAWOIFJOI} via an interpolation.
 
 \begin{prop} \label{L2DensityProposition}
-    Fix $A \geq 1$. Consider a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. Suppose that for each $(x_0,t_0) \in \mathcal{E}$, we pick two measurable functions $b_{t_0}: I_0 \to \RR$ and $u_{x_0}: X \to \RR$, supported on $I_{t_0}$ and $B(x_0,1/R)$ respectively, such that $\| b_{t_0} \|_{L^1(I_0)} \leq 1$ and $\| u_{x_0} \|_{L^1(X)} \leq 1$. Define 
-    %
-    \[ {S\!}_{x_0,t_0} = \int b_{t_0}(t) (e^{2 \pi i t P} \circ Q_R) u_{x_0}\; dt. \]
-    %
-    Write $\mathcal{E} = \bigcup_{k = 0}^\infty \mathcal{E}_k$, where
+    Fix $A \geq 1$. Consider a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. For each $(x_0,t_0) \in \mathcal{E}$, consider $S\!_{x_0,t_0}: X \to \CC$ such that the family $\{ S\!_{x_0,t_0} \}$ satisfies the pointwise and quasi-orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Write $\mathcal{E} = \bigcup_{k = 0}^\infty \mathcal{E}_k$, where
     %
     \[ \mathcal{E}_0 = \{ (x,t) \in \mathcal{E}: 0 \leq |t| \leq 1/R \} \]
     %
@@ -1051,7 +1046,7 @@ To obtain $L^p$ bounds from these $L^2$ bounds, in the next section we will perf
     %
     \[ \mathcal{E}_k = \{ (x,t) \in \mathcal{E}: 2^{k-1} / R < |t| \leq 2^k / R \}. \]
     %
-    Suppose that for each $k$, the set $\mathcal{E}_k$ has density type $(A,2^{k})$.
+    Suppose that for each $k$, the set $\mathcal{E}_k$ has density type $(D,2^{k})$.
     %, i.e. so that for any set $B \subset \mathcal{X}_R \times \mathcal{T}_R$ with $\text{diam}(B) \leq 2^{k}/R$,
     %
 %    \begin{equation}
@@ -1060,24 +1055,24 @@ To obtain $L^p$ bounds from these $L^2$ bounds, in the next section we will perf
     %
     Then
     %
-    \[ \Big\| \sum\nolimits_k \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} 2^{k \frac{d-1}{2}} {S\!}_{x_0,t_0} \Big\|_{L^2(X)}^2 \lesssim R^d \log(A) A^{\frac{2}{d-1}} \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k. \]
+    \[ \Big\| \sum\nolimits_k \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} 2^{k \frac{d-1}{2}} {S\!}_{x_0,t_0} \Big\|_{L^2(X)}^2 \lesssim R^d \log(D) D^{\frac{2}{d-1}} \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k. \]
 \end{prop}
 
-\begin{remark}
-    If $\| b_{t_0} \|_{L^1(I_0)} \sim 1$ and $\| u_{x_0} \|_{L^1(X)} \sim 1$, then locally constancy from the uncertainty principle and energy conservation of the wave equation tell us that morally,
+%\begin{remark}
+%    If $\| b_{t_0} \|_{L^1(I_0)} \sim 1$ and $\| u_{x_0} \|_{L^1(X)} \sim 1$, then locally constancy from the uncertainty principle and energy conservation of the wave equation tell us that morally,
     %
-    \begin{equation}
-        \| S_{x_0,t_0} \|_{L^2(X)}^2 \sim R^d t_0^{d-1}.
-    \end{equation}
+%    \begin{equation}
+%        \| S\!_{x_0,t_0} \|_{L^2(X)}^2 \sim R^d t_0^{d-1}.
+%    \end{equation}
     %
-    If $\| b_{t_0} \|_{L^1(I_0)} \sim 1$ and $\| u_{x_0} \|_{L^1(X)} \sim 1$ for all $(x_0,t_0) \in \mathcal{E}$, this means that Proposition \ref{L2DensityProposition} is morally equivalent to
+%    If $\| b_{t_0} \|_{L^1(I_0)} \sim 1$ and $\| u_{x_0} \|_{L^1(X)} \sim 1$ for all $(x_0,t_0) \in \mathcal{E}$, this means that Proposition \ref{L2DensityProposition} is morally equivalent to
     %
-    \begin{equation}
-        \Big\| \sum\nolimits_{(x_0,t_0) \in \mathcal{E}} {S\!}_{x_0,t_0} \Big\|_{L^2(X)} \lesssim \sqrt{\log(A)} A^{\frac{1}{d-1}} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{E}} \| {S\!}_{x_0,t_0} \|_{L^2(X)}^2 \right)^{1/2}.
-    \end{equation}
+%    \begin{equation}
+%        \Big\| \sum\nolimits_{(x_0,t_0) \in \mathcal{E}} {S\!}_{x_0,t_0} \Big\|_{L^2(X)} \lesssim \sqrt{\log(A)} A^{\frac{1}{d-1}} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{E}} \| {S\!}_{x_0,t_0} \|_{L^2(X)}^2 \right)^{1/2}.
+%    \end{equation}
     %
-    Thus Proposition \ref{L2DensityProposition} is a kind of square root cancellation bound, albeit with an implicit constant which grows as the set $\mathcal{E}$ increases in density, a necessity given that the functions $\{ {S\!}_{x_0,t_0} \}$ are not almost-orthogonal to one another.
-\end{remark}
+%    Thus Proposition \ref{L2DensityProposition} is a kind of square root cancellation bound, albeit with an implicit constant which grows as the set $\mathcal{E}$ increases in density, a necessity given that the functions $\{ {S\!}_{x_0,t_0} \}$ are not almost-orthogonal to one another.
+%\end{remark}
 
 \begin{proof}
 Write $F = \sum_k F_k$, where
@@ -1089,7 +1084,7 @@ Write $F = \sum_k F_k$, where
 Our goal is to bound $\| F \|_{L^2(M)}$. Applying Cauchy-Schwarz, we have
 %
 \begin{equation} \label{loglossbound}
-    \| F \|_{L^2(X)}^2 \leq \log(A) \left( \sum\nolimits_{k \leq \log(A)} \| F_k \|_{L^2(X)}^2 + \left\| \sum\nolimits_{k \geq \log(A)} F_k \right\|_{L^2(X)}^2 \right).
+    \| F \|_{L^2(X)}^2 \leq \log(D) \left( \sum\nolimits_{k \leq \log(D)} \| F_k \|_{L^2(X)}^2 + \left\| \sum\nolimits_{k \geq \log(D)} F_k \right\|_{L^2(X)}^2 \right).
 \end{equation}
 %
 Without loss of generality, increasing the implicit constant in the final result by applying the triangle inequality, we can assume that $\{ k : \mathcal{E}_k \neq \emptyset \}$ is $10$-separated, and that all values of $t$ with $(x,t) \in \mathcal{E}$ are positive. Thus if $F_k$ and $F_{k'}$ are both nonzero functions, then $k = k'$ or $|k - k'| \geq 10$.
@@ -1177,26 +1172,26 @@ Using the density properties of $\mathcal{E}$, we can control the size of the in
     The latter set is covered by $O(2^{(k-k')(d-1)})$ balls of radius $2^{k'}/R$, and so the density properties of $\mathcal{E}_{k'}$ implies that
     %
     \begin{equation} \label{G0Size}
-        \#( \mathcal{G}_0(x_0,t_0,k') ) \lesssim A 2^{(k-k')(d-1)} 2^{k'}. 
+        \#( \mathcal{G}_0(x_0,t_0,k') ) \lesssim D 2^{(k-k')(d-1)} 2^{k'}. 
     \end{equation}
     %
     Since $k \geq k' + 10$, for $(x_1,t_1) \in \mathcal{G}_0(x_0,t_0,k')$ we have $d_X(x_0,x_1) \gtrsim 2^k / R$ and so
     %
     \begin{equation} \label{InnerProductG0Size}
-        \langle S_{x_0,t_0}, S_{x_1,t_1} \rangle \lesssim R^d 2^{-k \left( \frac{d-1}{2} \right)}.
+        \langle S\!_{x_0,t_0}, S\!_{x_1,t_1} \rangle \lesssim R^d 2^{-k \left( \frac{d-1}{2} \right)}.
     \end{equation}
     %
     But putting together \eqref{G0Size} and \eqref{InnerProductG0Size} gives that
     %
     \begin{align*}
-        B_0(x_0,t_0,k') &\leq (2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}}) ( A 2^{(k-k')(d-1)} 2^{k'} )  ( R^d 2^{-k \left( \frac{d-1}{2} \right)} )\\
-        &= A R^d 2^{k(d-1)} 2^{-k' \frac{d-3}{2}}.
+        B_0(x_0,t_0,k') &\leq (2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}}) ( D 2^{(k-k')(d-1)} 2^{k'} )  ( R^d 2^{-k \left( \frac{d-1}{2} \right)} )\\
+        &= D R^d 2^{k(d-1)} 2^{-k' \frac{d-3}{2}}.
     \end{align*}
     %
     Thus for each $k$, since $d \geq 4$,
     % d = 2: get an extra O( log k ) factor
     \begin{equation} \label{AAAlowbounds}
-        \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} \sum\nolimits_{k' \in [\log(A), k - 10]} B_0(x_0,t_0,k') \lesssim R^{d} 2^{k (d-1)} \# \mathcal{E}_k.
+        \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} \sum\nolimits_{k' \in [\log(D), k - 10]} B_0(x_0,t_0,k') \lesssim R^{d} 2^{k (d-1)} \# \mathcal{E}_k.
     \end{equation}
 
     \item Next we bound $B_l(x_0,t_0,k')$ for $k' + 5 \leq l \leq k - 5$. The set $\mathcal{G}_l^+(x_0,t_0,k')$ is empty in this case. Thus
@@ -1220,7 +1215,7 @@ Using the density properties of $\mathcal{E}$, we can control the size of the in
     These are geodesic annuli of thickness $O(2^l / R)$ and radius $\sim 2^k$. Thus $\mathcal{G}_l(x_0,t_0,k')$ is covered by $O( 2^{(l-k')} 2^{(k-k')(d-1)} )$ balls of radius $2^{k'} / R$, and the density of $\mathcal{E}_{k'}$ implies that
     %
     \begin{equation}
-        \#(\mathcal{G}_l(x_0,t_0,k')) \lesssim R A\; 2^{(l-k')} 2^{(k-k')(d-1)} 2^{k'} / R = A 2^{l} 2^{(k-k')(d-1)}.
+        \#(\mathcal{G}_l(x_0,t_0,k')) \lesssim R D\; 2^{(l-k')} 2^{(k-k')(d-1)} 2^{k'} / R = D 2^{l} 2^{(k-k')(d-1)}.
     \end{equation}
     %
     For $(x_1,t_1) \in \mathcal{G}_l(x_0,t_0,k')$, $d_X(x_0,x_1) \sim 2^k / R$, and thus Proposition \ref{theMainEstimatesForWave} implies
@@ -1233,21 +1228,21 @@ Using the density properties of $\mathcal{E}$, we can control the size of the in
     %
     \begin{equation}
     \begin{split}
-        B_l(x_0,t_0,k') &\lesssim_K \Big( A 2^{l} 2^{(k-k')(d-1)} \Big)  R^{d} 2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}} \Big( 2^{-k \frac{d-1}{2}} 2^{-lK} \Big)\\
-        &\lesssim A R^d 2^l 2^{k(d-1)} 2^{-k' \frac{d-1}{2}} 2^{-lK}.
+        B_l(x_0,t_0,k') &\lesssim_K \Big( D 2^{l} 2^{(k-k')(d-1)} \Big)  R^{d} 2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}} \Big( 2^{-k \frac{d-1}{2}} 2^{-lK} \Big)\\
+        &\lesssim D R^d 2^l 2^{k(d-1)} 2^{-k' \frac{d-1}{2}} 2^{-lK}.
     \end{split}
     \end{equation}
     %
     Picking $K > 1$, we conclude that
     % -d/2 + 1/2
     \begin{equation} \label{AAAlBoundSmall}
-        \sum_{(x_0,t_0) \in \mathcal{E}_k} \sum_{k' \in [\log(A), k - 10]} \sum_{l \in [k' + 10, k - 5]} B_l(x_0,t_0,k') \lesssim R^{d} 2^{k (d-1)} \# \mathcal{E}_k.
+        \sum_{(x_0,t_0) \in \mathcal{E}_k} \sum_{k' \in [\log(D), k - 10]} \sum_{l \in [k' + 10, k - 5]} B_l(x_0,t_0,k') \lesssim R^{d} 2^{k (d-1)} \# \mathcal{E}_k.
     \end{equation}
 
     \item Finally, let's bound $B_l(x_0,t_0,k')$ for $k - 5 \leq l \leq 10 \log R$. If either $(x_1,t_1) \in \mathcal{G}_l^-(x_0,t_0,k')$ or $(x_1,t_1) \in \mathcal{G}_l^+(x_0,t_0,k')$, then $d_X(x_0,x_1) \lesssim 2^l / R$. So $\mathcal{G}_l(x_0,t_0,k')$ is covered by $O( 2^{(l-k')d} )$ balls of radius $2^{k'} / R$, and thus
     %
     \begin{equation}
-        \#(\mathcal{G}_l(x_0,t_0,k')) \lesssim R A\; 2^{(l-k')d} (2^{k'} / R) = A 2^{(l-k')d} 2^{k'}.
+        \#(\mathcal{G}_l(x_0,t_0,k')) \lesssim R D\; 2^{(l-k')d} (2^{k'} / R) = D 2^{(l-k')d} 2^{k'}.
     \end{equation}
     %
     For $(x_1,t_1) \in \mathcal{G}_l(x_0,t_0,k')$, we have no good control over $d_X(x_0,t_1)$ aside from the trivial estimate $d_X(x_0,x_1) \lesssim 1$. Thus Proposition \ref{theMainEstimatesForWave} yields a bound of the form
@@ -1260,34 +1255,34 @@ Using the density properties of $\mathcal{E}$, we can control the size of the in
     %
     \begin{equation}
     \begin{split}
-        B_l(x_0,t_0,k') &\lesssim_N R^{d} 2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}} \Big( A 2^{(l-k')d} 2^{k'} \Big) \Big( 2^{-lN} \Big)\\
-        &= A R^d 2^{k \frac{d-1}{2}} 2^{-k' \frac{d-1}{2}} 2^{-lN}
+        B_l(x_0,t_0,k') &\lesssim_N R^{d} 2^{k \frac{d-1}{2}} 2^{k' \frac{d-1}{2}} \Big( D 2^{(l-k')d} 2^{k'} \Big) \Big( 2^{-lN} \Big)\\
+        &= D R^d 2^{k \frac{d-1}{2}} 2^{-k' \frac{d-1}{2}} 2^{-lN}
     \end{split}
     \end{equation}
     %
     Picking $K > d$, we conclude that
     %
     \begin{equation} \label{AAAlBoundBig}
-        \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} \sum\nolimits_{k' \in [\log(A), k - 10]} \sum\nolimits_{l \in [k+10,\log R]} B_l(x_0,t_0,k')  \lesssim R^d.
+        \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} \sum\nolimits_{k' \in [\log(D), k - 10]} \sum\nolimits_{l \in [k+10,\log R]} B_l(x_0,t_0,k')  \lesssim R^d.
     \end{equation}
 \end{itemize}
 %
 The three bounds \eqref{AAAlowbounds}, \eqref{AAAlBoundSmall} and \eqref{AAAlBoundBig} imply that
 %
 \begin{equation} \label{DADAOWIDJAWOIDJAWDaweq13412}
-    \sum\nolimits_k \sum\nolimits_{k' \in [\log(A), k]} |\langle F_k, F_{k'} \rangle| \lesssim R^d \sum\nolimits_k 2^{k (d-1)} \# \mathcal{E}_k.
+    \sum\nolimits_k \sum\nolimits_{k' \in [\log(D), k]} |\langle F_k, F_{k'} \rangle| \lesssim R^d \sum\nolimits_k 2^{k (d-1)} \# \mathcal{E}_k.
 \end{equation}
 %
 In particular, combining \eqref{DADAOWIDJAWOIDJAWDaweq13412} with \eqref{loglossbound}, we have
 %
 \begin{equation} \label{DPOWADPAWKDPOWAKDOPWAK}
-    \| F \|_{L^2(X)}^2 \lesssim \log(A) \left( \sum\nolimits_k \| F_k \|_{L^2(X)}^2 + R^d \sum\nolimits_k 2^{k (d-1)} \# \mathcal{E}_k \right).
+    \| F \|_{L^2(X)}^2 \lesssim \log(D) \left( \sum\nolimits_k \| F_k \|_{L^2(X)}^2 + R^d \sum\nolimits_k 2^{k (d-1)} \# \mathcal{E}_k \right).
 \end{equation}
 %
-Next, consider some parameter $a$ to be determined later, and decompose the interval $[2^{k} / R, 2^{k+1} / R]$ into the disjoint union of length $A^a / R$ intervals of the form
+Next, consider some parameter $a$ to be determined later, and decompose the interval $[2^{k} / R, 2^{k+1} / R]$ into the disjoint union of length $D^a / R$ intervals of the form
 %
 \begin{equation}
-    I_{k,\mu} = [ 2^{k} / R + (\mu - 1) A^a / R, 2^{k} / R + \mu A^a / R] \quad\text{for $1 \leq \mu \leq 2^k/A^a$}.
+    I_{k,\mu} = [ 2^{k} / R + (\mu - 1) D^a / R, 2^{k} / R + \mu D^a / R] \quad\text{for $1 \leq \mu \leq 2^k/D^a$}.
 \end{equation}
 %
 We thus consider a further decomposition $\mathcal{E}_k = \bigcup \mathcal{E}_{k,\mu}$, where $F_k = \sum F_{k,\mu}$. As before, increasing the implicit constant in the Proposition, we may assume without loss of generality that the set $\{ \mu: \mathcal{E}_{k,\mu} \neq \emptyset \}$ is $10$-separated. We now estimate
@@ -1299,7 +1294,7 @@ We thus consider a further decomposition $\mathcal{E}_k = \bigcup \mathcal{E}_{k
 For $(x_0,t_0) \in \mathcal{E}_{k,\mu}$ and $l \geq 1$, define
 %
 \begin{equation}
-    \mathcal{H}_l(x_0,t_0,\mu') = \Big\{ (x_1,t_1) \in \mathcal{E}_{k,\mu'} : \frac{2^l A^a}{2R} \leq \max(d_X(x_0,x_1), t_0 - t_1) \leq \frac{2^l A^a}{R} \Big\}.
+    \mathcal{H}_l(x_0,t_0,\mu') = \Big\{ (x_1,t_1) \in \mathcal{E}_{k,\mu'} : \frac{2^l D^a}{2R} \leq \max(d_X(x_0,x_1), t_0 - t_1) \leq \frac{2^l D^a}{R} \Big\}.
 \end{equation}
 %
 Then $\bigcup_{l \geq 1} \mathcal{H}_l(x_0,t_0,\mu')$ covers $\bigcup_{\mu \geq \mu' + 10} \mathcal{E}_{k,\mu'}$. Set
@@ -1317,63 +1312,63 @@ Then
 We now bound the constants $B'_l$. Pick a constant $r$ such that $d_X \leq 2^r d_X^+$ and $d_X \leq 2^r d_X^-$. As in the estimates of the quantities $B_l$, the quantities where $l$ is large have negligible magnitude:
 %
 \begin{itemize}
-    \item For $l \leq k - a \log_2 A + 10 r$, we have $2^l A^a / R \lesssim 2^k / R$. The set $\mathcal{H}_l(x_0,t_0,\mu')$ is covered by $O(1)$ balls of radius $2^l A^a / R$, and density properties imply
+    \item For $l \leq k - a \log_2 D + 10 r$, we have $2^l D^a / R \lesssim 2^k / R$. The set $\mathcal{H}_l(x_0,t_0,\mu')$ is covered by $O(1)$ balls of radius $2^l D^a / R$, and density properties imply
     %
     \begin{equation}
-        \# \mathcal{H}_l(x_0,t_0,\mu') \lesssim (R A) (2^l A^a / R) = A^{a+1} 2^l
+        \# \mathcal{H}_l(x_0,t_0,\mu') \lesssim (R D) (2^l D^a / R) = D^{a+1} 2^l
     \end{equation}
     %
     For $(x_1,t_1) \in \mathcal{H}_l(x_0,t_0,\mu')$, we claim that
     %
     \begin{equation}
-        2^{k(d-1)} |\langle {S\!}_{x_0,t_0}, {S\!}_{x_1,t_1} \rangle| \lesssim R^{d} 2^{k(d-1)} (2^l A^a)^{- \frac{d-1}{2}}.
+        2^{k(d-1)} |\langle {S\!}_{x_0,t_0}, {S\!}_{x_1,t_1} \rangle| \lesssim R^{d} 2^{k(d-1)} (2^l D^a)^{- \frac{d-1}{2}}.
     \end{equation}
     %
     Indeed, for such tuples we have
     %
     \begin{equation}
-        d_X(x_0,x_1) \gtrsim 2^l A^a / R \quad\text{or}\quad \min\nolimits_{\pm} |d_X^{\pm}(x_0,x_1) - (t_0 - t_1)| \gtrsim 2^l A^a / R,
+        d_X(x_0,x_1) \gtrsim 2^l D^a / R \quad\text{or}\quad \min\nolimits_{\pm} |d_X^{\pm}(x_0,x_1) - (t_0 - t_1)| \gtrsim 2^l D^a / R,
     \end{equation}
     %
     and the estimate follows from Proposition \ref{theMainEstimatesForWave} in either case. Since $d \geq 4$, we conclude that
     %
     \begin{align} \label{BBBEquation}
     \begin{split}
-        &\sum\nolimits_{l \in [1, k - a \log_2 A + 10]} B'_l(x_0,t_0,,\mu')\\
-        &\quad\quad\quad\quad \lesssim \sum\nolimits_{l \in [1, k - a \log_2 A + 10]} R^{d} (2^{k(d-1)}) (2^l A^a)^{- \frac{d-1}{2}} (A^{a+1} 2^l)\\
-        &\quad\quad\quad\quad \lesssim \sum\nolimits_{l \in [1, k - a \log_2 A + 10]} R^{d}  2^{k(d-1)} 2^{-l \frac{d-3}{2}} A^{1 - a \left( \frac{d-3}{2} \right)}\\
-        &\quad\quad\quad\quad \lesssim R^{d} 2^{k(d-1)} A^{1 - a \left( \frac{d-3}{2} \right)}.
+        &\sum\nolimits_{l \in [1, k - a \log_2 D + 10]} B'_l(x_0,t_0,,\mu')\\
+        &\quad\quad\quad\quad \lesssim \sum\nolimits_{l \in [1, k - a \log_2 D + 10]} R^{d} (2^{k(d-1)}) (2^l D^a)^{- \frac{d-1}{2}} (D^{a+1} 2^l)\\
+        &\quad\quad\quad\quad \lesssim \sum\nolimits_{l \in [1, k - a \log_2 D + 10]} R^{d}  2^{k(d-1)} 2^{-l \frac{d-3}{2}} D^{1 - a \left( \frac{d-3}{2} \right)}\\
+        &\quad\quad\quad\quad \lesssim R^{d} 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)}.
     \end{split}
     \end{align}
 
-    \item For $l > k - a \log_2 A + 10 r$, a tuple $(x_1,t_1) \in \mathcal{E}_k$ lies in $\mathcal{H}_l(x_0,t_0,\mu')$ if and only if $2^l A^a / 2 R \leq d_X(x_0,x_1) \leq 2^l A^a / R$, since we always have
+    \item For $l > k - a \log_2 D + 10 r$, a tuple $(x_1,t_1) \in \mathcal{E}_k$ lies in $\mathcal{H}_l(x_0,t_0,\mu')$ if and only if $2^l D^a / 2 R \leq d_X(x_0,x_1) \leq 2^l D^a / R$, since we always have
     %
     \begin{equation}
-         t_0 - t_1 \leq 2^{k+1}/R < 2^{l+r} A^a / 8R.
+         t_0 - t_1 \leq 2^{k+1}/R < 2^{l+r} D^a / 8R.
     \end{equation}
     %
-    and so $d_X(x_0,x_1) \geq 2^l A^a / 2R$. And so 
+    and so $d_X(x_0,x_1) \geq 2^l D^a / 2R$. And so 
     %
-    \[ |(t_0 - t_1) - d_X^-(x_0,x_1)| \geq 2^{-r} 2^l A^a / 2R - 2^{k+1} / R \geq 2^{-r} 2^l A^a / 4R. \]
+    \[ |(t_0 - t_1) - d_X^-(x_0,x_1)| \geq 2^{-r} 2^l D^a / 2R - 2^{k+1} / R \geq 2^{-r} 2^l D^a / 4R. \]
     %
-    Also $|(t_0 - t_1) + d_X^+(x_0,x_1)| \geq |d_X^+(x_0,x_1) \geq 2^{-r} 2^l A^a / 4R$. Thus we conclude from Proposition \ref{theMainEstimatesForWave} that
+    Also $|(t_0 - t_1) + d_X^+(x_0,x_1)| \geq |d_X^+(x_0,x_1) \geq 2^{-r} 2^l D^a / 4R$. Thus we conclude from Proposition \ref{theMainEstimatesForWave} that
     %
     \begin{equation}
-        2^{k(d-1)} |\langle {S\!}_{x_0,t_0}, {S\!}_{x_1,t_1} \rangle| \lesssim_K R^{d} 2^{k(d-1)} (2^l A^a)^{- K}.
+        2^{k(d-1)} |\langle {S\!}_{x_0,t_0}, {S\!}_{x_1,t_1} \rangle| \lesssim_K R^{d} 2^{k(d-1)} (2^l D^a)^{- K}.
     \end{equation}
     %
-    Now $\mathcal{H}_l(x_0,t_0,\mu')$ is covered by $O( (2^{l-k} A^a)^d )$ balls of radius $2^k / R$, and the density properties of $\mathcal{E}_k$ thus imply that
+    Now $\mathcal{H}_l(x_0,t_0,\mu')$ is covered by $O( (2^{l-k} D^a)^d )$ balls of radius $2^k / R$, and the density properties of $\mathcal{E}_k$ thus imply that
     %
     \begin{equation}
-        \#(\mathcal{H}_l(x_0,t_0,\mu')) \lesssim (RA) (2^{l-k} A^a)^d ( 2^k / R ) \lesssim A^{1 + ad} 2^{ld} 2^{-k(d-1)}.
+        \#(\mathcal{H}_l(x_0,t_0,\mu')) \lesssim (RD) (2^{l-k} D^a)^d ( 2^k / R ) \lesssim D^{1 + ad} 2^{ld} 2^{-k(d-1)}.
     \end{equation}
     %
     Thus, picking $K > \max(d,1+ad)$, we conclude that
     %
     \begin{align} \label{BBB2}
     \begin{split}
-        &\sum\nolimits_{l \geq k - a \log_2 A + 10} B'_l(x_0,t_0,\mu')\\
-        &\quad \lesssim R^{d} \sum\nolimits_{l \geq k - a \log_2 A + 10} (2^{k(d-1)}) (2^l A^a)^{-M} A^{1 + ad} 2^{ld} 2^{-k(d-1)} \lesssim R^{d}.
+        &\sum\nolimits_{l \geq k - a \log_2 D + 10} B'_l(x_0,t_0,\mu')\\
+        &\quad \lesssim R^{d} \sum\nolimits_{l \geq k - a \log_2 D + 10} (2^{k(d-1)}) (2^l D^a)^{-M} D^{1 + ad} 2^{ld} 2^{-k(d-1)} \lesssim R^{d}.
     \end{split}
     \end{align}
     \end{itemize}
@@ -1381,16 +1376,16 @@ We now bound the constants $B'_l$. Pick a constant $r$ such that $d_X \leq 2^r d
     Combining \eqref{BBBEquation} and \eqref{BBB2}, and then summing over the tuples $(x_0,t_0) \in \mathcal{E}_{k,\mu}$, we conclude that
     %
     \begin{equation} \label{DOUIAWJDOIAWJVIO}
-        \sum\nolimits_{\mu \geq \mu' + 10} |\langle F_{k,\mu}, F_{k,\mu'} \rangle| \lesssim R^{d} \left( 1 + 2^{k(d-1)} A^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_{k,\mu}.
+        \sum\nolimits_{\mu \geq \mu' + 10} |\langle F_{k,\mu}, F_{k,\mu'} \rangle| \lesssim R^{d} \left( 1 + 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_{k,\mu}.
     \end{equation}
     %
     Now summing in $\mu$, \eqref{DOUIAWJDOIAWJVIO} implies that
     %
     \begin{equation} \label{DAOWDHAODWWID}
-        \| F_k \|_{L^2(X)}^2 \lesssim \sum\nolimits_\mu \| F_{k,\mu} \|_{L^2(X)}^2 + R^{d} \left( 1 + 2^{k(d-1)} A^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k.
+        \| F_k \|_{L^2(X)}^2 \lesssim \sum\nolimits_\mu \| F_{k,\mu} \|_{L^2(X)}^2 + R^{d} \left( 1 + 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k.
     \end{equation}
 %
-The functions in the sum defining $F_{k,\mu}$ are highly coupled, and it is difficult to use anything except Cauchy-Schwarz to break them apart. Since $\# ( \mathcal{T}_R \cap I_{k,\mu}) \sim A^a$, if we set $F_{k,\mu} = \sum_{t \in \mathcal{T}_R \cap I_{k,\mu}} F_{k,\mu,t}$, where
+The functions in the sum defining $F_{k,\mu}$ are highly coupled, and it is difficult to use anything except Cauchy-Schwarz to break them apart. Since $\# ( \mathcal{T}_R \cap I_{k,\mu}) \sim D^a$, if we set $F_{k,\mu} = \sum_{t \in \mathcal{T}_R \cap I_{k,\mu}} F_{k,\mu,t}$, where
 %
 \begin{equation}
     F_{k,\mu,t} = \sum\nolimits_{(x_0,t) \in \mathcal{E}_{k,\mu}} 2^{k \frac{d-1}{2}} {S\!}_{x_0,t}.
@@ -1399,7 +1394,7 @@ The functions in the sum defining $F_{k,\mu}$ are highly coupled, and it is diff
 Then Cauchy-Schwarz implies that
 %
 \begin{equation} \label{IOJDAOIWDJAWOIJF}
-    \| F_{k,\mu} \|_{L^2(X)}^2 \lesssim A^a \sum\nolimits_{t \in \mathcal{T}_R \cap I_{k,\mu}} \| F_{k,\mu,t} \|_{L^2(X)}^2.
+    \| F_{k,\mu} \|_{L^2(X)}^2 \lesssim D^a \sum\nolimits_{t \in \mathcal{T}_R \cap I_{k,\mu}} \| F_{k,\mu,t} \|_{L^2(X)}^2.
 \end{equation}
 %
 Since the elements of $\mathcal{X}_R$ are $1/R$ separated, the functions in the sum defining $F_{k,\mu,t}$ are quite orthogonal to one another; Proposition \ref{theMainEstimatesForWave} implies that for $x_0 \neq x_1$,
@@ -1417,15 +1412,15 @@ Thus
 But this means that
 %
 \begin{equation} \label{eoqiejoiwjdoiaevjoa}
-    A^a \sum\nolimits_{t \in \mathcal{T}_R \cap I_{k,\mu}} \| F_{k,\mu,t} \|_{L^2(X)}^2 \lesssim R^{d} 2^{k(d-1)} A^a \# \mathcal{E}_{k,\mu}.
+    D^a \sum\nolimits_{t \in \mathcal{T}_R \cap I_{k,\mu}} \| F_{k,\mu,t} \|_{L^2(X)}^2 \lesssim R^{d} 2^{k(d-1)} D^a \# \mathcal{E}_{k,\mu}.
 \end{equation}
 %
 Thus \eqref{DAOWDHAODWWID}, \eqref{IOJDAOIWDJAWOIJF}, and \eqref{eoqiejoiwjdoiaevjoa} imply that
 %
 \begin{equation}
 \begin{split}
-    \| F_k \|_{L^2(X)}^2 &\lesssim \sum\nolimits_\mu \| F_{k,\mu} \|_{L^2(X)}^2 + R^{d} \left( 1 + 2^{k(d-1)} A^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k\\
-    &\lesssim R^{d} \left( 2^{k(d-1)} A^a + (1 + 2^{k(d-1)} A^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k.
+    \| F_k \|_{L^2(X)}^2 &\lesssim \sum\nolimits_\mu \| F_{k,\mu} \|_{L^2(X)}^2 + R^{d} \left( 1 + 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k\\
+    &\lesssim R^{d} \left( 2^{k(d-1)} D^a + (1 + 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k.
 \end{split}
 \end{equation}
 % u^a = u^{1 - a(d-3)/2}
@@ -1434,7 +1429,7 @@ Thus \eqref{DAOWDHAODWWID}, \eqref{IOJDAOIWDJAWOIJF}, and \eqref{eoqiejoiwjdoiae
 Optimizing by picking $a = 2 / (d-1)$ gives that
 %
 \begin{equation} \label{OICJOAIEVJAIOJFAOIJRIO}
-    \| F_k \|_{L^2(X)}^2 \lesssim R^{d} 2^{k(d-1)} A^{\frac{2}{d-1}} \# \mathcal{E}_k.
+    \| F_k \|_{L^2(X)}^2 \lesssim R^{d} 2^{k(d-1)} D^{\frac{2}{d-1}} \# \mathcal{E}_k.
 \end{equation}
 %
 The proof is completed by combining \eqref{DPOWADPAWKDPOWAKDOPWAK} with \eqref{OICJOAIEVJAIOJFAOIJRIO}.
@@ -1467,38 +1462,37 @@ where $u_{x_0}$ is supported on $B(x_0,1/R)$, and
 \end{equation}
 % L^p is H^p R^{-1}
 % L^1 is H^p R^{-p}
-Define
-%
-\begin{equation}
-    \mathcal{X}_{a} = \{ x_0 \in \mathcal{X}_R: 2^{a-1} < \| u_{x_0} \|_{L^1(X)} \leq 2^a \}
-\end{equation}
-%
-and let
-%
-\begin{equation}
-    \mathcal{T}_{b} = \{ t_0 \in \mathcal{T}_R: 2^{b-1} < \| b_{t_0}^I \|_{L^1(X)} \leq 2^b \}.
-\end{equation}
-%
-Define functions $f_{x_0,t_0} = T_{t_0}^I u_{x_0}$. Lemma \ref{regime1Lemma} follows from the following result.
+Lemma \ref{regime1Lemma} follows from the following result.
 
 \begin{lemma} \label{LpBoundLemma}
-    Fix $u \in L^p(X)$, and consider $\mathcal{X}_{a}$, $\mathcal{T}_{b}$, and $\{ f_{x_0,t_0} \}$ as above. For any function $c: \mathcal{X}_R \times \mathcal{T}_R \to \CC$, and $1 < p < 2 (d-1) / (d+1)$,
+    Fix $u \in L^p(X)$, consider $2^{1-k}$ separated subsets $\mathcal{X}_k$ and $\mathcal{T}_k$, and a family of functions $\{ S\!_{x_0,t_0} : X \to \CC \}$  satisfying the pointwise and quasi-orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Then for any function $c: \mathcal{X}_R \times \mathcal{T}_R \to \CC$, and $1 < p < 2 (d-1) / (d+1)$,
     %
     \begin{align*}
-    &\Bigg\| \sum\nolimits_{a,b} \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_{a} \times \mathcal{T}_{b}} 2^{-(a+b)} \langle R t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \Big\|_{L^p(X)}\\
-    &\quad\quad\quad\quad \lesssim R^{ d / p'} \left( \sum\nolimits_{a,b} \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_{a} \times \mathcal{T}_{b}} |c(x_0,t_0)|^p \langle R t_0 \rangle^{d-1} \right)^{1/p}.
+    &\Bigg\| \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} c(x_0,t_0) S\!_{x_0,t_0} \Big\|_{L^p(X)} \lesssim R^{d/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p},
     \end{align*}
+    %
+    where $s = (d-1)(1/p - 1/2)$.
 \end{lemma}
 
-To see how Lemma \ref{LpBoundLemma} implies Lemma \ref{regime1Lemma}, set $c(x_0,t_0) = 2^{a+b} \langle R t_0 \rangle^{- \frac{d-1}{2}}$ for $x_0 \in \mathcal{X}_{a}$ and $t_0 \in \mathcal{T}_{b}$. Then Lemma \ref{LpBoundLemma} implies that
+To see how Lemma \ref{LpBoundLemma} implies Lemma \ref{regime1Lemma}, given the setup of Lemma \ref{LpBoundLemma}, set 
+%
+\begin{equation}
+    c(x_0,t_0) = \| b_{t_0} \|_{L^1(\RR)} \| u_{x_0} \|_{L^p(X)}
+\end{equation}
+%
+for $x_0 \in \mathcal{X}_{a}$ and $t_0 \in \mathcal{T}_{b}$, and define
+%
+\begin{equation}
+    S\!_{x_0,t_0} = \frac{1}{\| b_{t_0} \|_{L^1(\RR)} \| u_{x_0} \|_{L^1(X)}} \int b_{t_0}(t) ( e^{2 \pi i t P} \circ Q_R ) \{ u_{x_0} \}\; dt.
+\end{equation}
+%
+Then Lemma \ref{LpBoundLemma} and H\"{o}lder's inequality implies that
 %
 \begin{equation}
 \begin{split}
-    &\| T^I u \|_{L^p(X)}\\
-    &\quad = \left\| \sum f_{x_0,t_0} \right\|_{L^p(X)}\\
-    &\quad \lesssim R^{d/p'} \left( \sum\nolimits_{(x_0,t_0)} \left[ \| b_{t_0}^I \|_{L^1(\RR)} \| u_{x_0} \|_{L^1(X)} \langle R t_0 \rangle^{s} \right]^p \right)^{1/p}\\
-    &\quad \lesssim R^{-1/p'} \left( \sum\nolimits_{t_0} \Big[ \| b_{t_0}^I \|_{L^p(I_0)} \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}\left( \sum\nolimits_{x_0} \left[ \| u_{x_0} \|_{L^1(X)}  R^{d/p'} \right]^p \right)^{1/p}\\
-    &\quad \lesssim R^{-1/p'} \left( \sum\nolimits_{t_0} \Big[ \| b_{t_0}^I \|_{L^p(I_0)} \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p} \| u \|_{L^p(X)}.
+    \| T^I u \|_{L^p(X)} &\lesssim R^{d/p'} \left( \sum\nolimits_{(x_0,t_0)} \left[ \| b_{t_0}^I \|_{L^1(\RR)} \| u_{x_0} \|_{L^1(X)} \langle R t_0 \rangle^{s} \right]^p \right)^{1/p}\\
+    &\lesssim R^{-1/p'} \left( \sum\nolimits_{t_0} \Big[ \| b_{t_0}^I \|_{L^p(I_0)} \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}\left( \sum\nolimits_{x_0} \| u_{x_0} \|_{L^p(X)}^p \right)^{1/p}\\
+    &\lesssim R^{-1/p'} \left( \sum\nolimits_{t_0} \Big[ \| b_{t_0}^I \|_{L^p(I_0)} \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p} \| u \|_{L^p(X)}.
 \end{split}
 \end{equation}
 % C = alpha(p) + d/p'
@@ -1508,22 +1502,22 @@ Thus we have proved Lemma \ref{regime1Lemma}. We take the remainder of this sect
 
 \begin{proof}[Proof of Lemma \ref{LpBoundLemma}]
 
-For $p = 1$, this inequality follows simply by applying the triangle inequality, and applying the pointwise estimates of Proposition \ref{theMainEstimatesForWave}. By methods of interpolation, to prove the result for $p > 1$, we thus only need only prove a restricted strong type version of this inequality. In other words, we can restrict $c$ to be the indicator function of a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. Write $\mathcal{E} = \bigcup_{k \geq 0} \mathcal{E}_{k,a,b}$, where
+For $p = 1$, this inequality follows simply by applying the triangle inequality and applying the pointwise estimates of Proposition \ref{theMainEstimatesForWave}. By methods of interpolation, to prove the result for $p > 1$, we thus only need only prove a restricted strong type version of this inequality. In other words, we can restrict $c$ to be the indicator function of a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. Write $\mathcal{E} = \bigcup_{k \geq 0} \mathcal{E}_k$, where
 %
 \begin{equation}
-    \mathcal{E}_{0,a,b} = \{ (x,t) \in \mathcal{E} \cap (\mathcal{X}_{a} \times \mathcal{T}_{b}) : |t| \leq 1/R \}
+    \mathcal{E}_0 = \{ (x,t) \in \mathcal{E} : |t| \leq 1/R \}
 \end{equation}
 %
 and for $k > 0$, let
 %
 \begin{equation}
-    \mathcal{E}_{k,a,b} = \{ (x,t) \in \mathcal{E} \cap (\mathcal{X}_{a} \times \mathcal{T}_{b}) : 2^{k-1} / R < |t| \leq 2^{k} / R \}.
+    \mathcal{E}_k = \{ (x,t) \in \mathcal{E} : 2^{k-1} / R < |t| \leq 2^{k} / R \}.
 \end{equation}
 %
 Write
 %
 \begin{equation}
-    F_k = \sum\nolimits_{a,b} \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_{k,a,b}} 2^{k \left( \frac{d-1}{2} \right)} 2^{-(a+b)} f_{x_0,t_0}.
+    F_k = \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} 2^{k \left( \frac{d-1}{2} \right)} S\!_{x_0,t_0}.
 \end{equation}
 %
 Our proof will be completed if we can show that
@@ -1532,19 +1526,13 @@ Our proof will be completed if we can show that
     \Big\| \sum\nolimits_k F_k \Big\|_{L^p(X)} \lesssim R^{d ( 1 - 1/p )} \Big( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \Big)^{1/p}.
 \end{equation}
 %
-To prove \eqref{oDOIAWJCVOIEJOIJER1312s}, we perform a density decomposition on the sets $\{ \mathcal{E}_k \}$. For $u \geq 0$, let $\widehat{\mathcal{E}}_k(u)$ be the set of all points $(x_0,t_0) \in \mathcal{E}_k$ that are contained in a ball $B$ with $\text{rad}(B) \leq 2^{k} / 100 R$, such that $\#( \mathcal{E}_k \cap B ) \geq R 2^{u} \text{rad}(B)$. Then define
+To prove \eqref{oDOIAWJCVOIEJOIJER1312s}, we perform a density decomposition on the sets $\{ \mathcal{E}_k \}$. Applying a rescaled version of Lemma \ref{DecompositionTheorem}, we can obtain a disjoint union
 %
 \begin{equation}
-    \mathcal{E}_k(u) = \widehat{\mathcal{E}}_k(u) - \bigcup\nolimits_{u' > u} \widehat{\mathcal{E}}_k(u').
+    \mathcal{E}_k = \bigcup\nolimits_{u \geq 0} \mathcal{E}_k(u),
 \end{equation}
 %
-Because the set $\mathcal{E}_k$ is $1/R$ discretized, we have
-%
-\begin{equation}
-    \mathcal{E}_k = \bigcup\nolimits_{u \geq 0} \mathcal{E}_k(u).
-\end{equation}
-%
-Moreover $\mathcal{E}_k(u)$ has density type $(R 2^{u}, 2^{k} / 100 R)$, and thus by a covering argument, also has density type $(C_d R 2^{u}, 2^{k} / R)$ for $C_d = 1000^d$. Furthermore, there are disjoint balls $B_{k,u,1},\dots,B_{k,u,N_{k,u}}$ of radius at most $2^{k} / 100 R$ such that
+where $\mathcal{E}_k(u)$ has density type $(R 2^{u}, 2^{k} / 100 R)$, and is covered by $B_{k,u,1}^*,\dots,B_{k,u,N_{k,u}}^*$, where the family $\{ B_{k,u,n} \}$ are a family of disjoint balls, each of radius at most $2^{k} / 100 R$ such that
 %
 \begin{equation}
     \sum\nolimits_n \text{rad}(B_{k,u,n}) \leq 2^{-u} / R \# \mathcal{E}_k.
@@ -1553,10 +1541,10 @@ Moreover $\mathcal{E}_k(u)$ has density type $(R 2^{u}, 2^{k} / 100 R)$, and thu
 and such that $\mathcal{E}_k(u)$ is covered by the balls $\{ B_{k,u,n}^* \}$, where, for a ball $B$, $B^*$ denotes the ball with the same center as $B$, but 5 times the radius. Now write
 %
 \begin{equation}
-    F_{k,u} = \sum\nolimits_{a,b} \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_{k,a,b}(u)} 2^{k \left( \frac{d-1}{2} \right)} 2^{-(a+b)} f_{x_0,t_0}.
+    F_{k,u} = \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k(u)} 2^{k \left( \frac{d-1}{2} \right)} S\!_{x_0,t_0}.
 \end{equation}
 %
-Using the density assumption on $\mathcal{E}_k(u)$, we can apply Lemma \ref{L2DensityProposition} of the last section, which implies that, with ${S\!}_{x_0,t_0} = 2^{-(a+b)} f_{x_0,t_0}$ for $(x_0,t_0) \in \mathcal{E}_{k,a,b}(u)$,
+We can apply Lemma \ref{L2DensityProposition} of the last section to $\{ \mathcal{E}_k(u) \}$, which implies that
 %
 \begin{equation} \label{DOIWAJOIAJVOIWAJFOIWF}
 \begin{split}
@@ -1564,13 +1552,13 @@ Using the density assumption on $\mathcal{E}_k(u)$, we can apply Lemma \ref{L2De
 \end{split}
 \end{equation}
 %
-Let $(y_{k,u,n}, t_{k,u,n})$ denote the center of $B_{k,u,n}$. Then
+Let $(y_{k,u,n}, t_{k,u,n})$ denote the center of $B_{k,u,n}$. Then the functions
 %
 \begin{equation}
-    \sum\nolimits_{(x_0,t_0) \in [B_{k,u,n} \cap \mathcal{E}_k(u)]} 2^{-(a+b)} f_{x_0,t_0}
+    \sum\nolimits_{(x_0,t_0) \in [B_{k,u,n} \cap \mathcal{E}_k(u)]} S\!_{x_0,t_0}
 \end{equation}
 %
-has mass concentrated on the geodesic annulus $\text{Ann}_{k,u,n} \subset X$ with center $y_{k,u,n}$, with radius $t_{k,u,n} \sim 2^{k} / R$, and with thickness $5\; \text{rad}(B_{k,u,n})$. Thus
+have mass concentrated on the geodesic annulus $\text{Ann}_{k,u,n} \subset X$ with center $y_{k,u,n}$, with radius $t_{k,u,n} \sim 2^{k} / R$, and with thickness $5\; \text{rad}(B_{k,u,n})$. Thus
 %
 \begin{equation}
     \sum\nolimits_n |\text{Ann}_{k,u,n}| \lesssim \sum\nolimits_{n} (2^{k} / R)^{d-1} \text{rad}(B_{k,u,n}) \leq (2^{k}/R)^{d-1} R^{-1} 2^{-u} \# \mathcal{E}_k.
@@ -1590,11 +1578,11 @@ Since $1/p - 1/2 > 1/(d-1)$, so that $s > 1$, H\"{o}lder's inequality implies th
     &\lesssim \left( R^{-d} 2^{-u} \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p - 1/2}\\
     &\quad\quad\quad\quad \left( R^{d} \left( u 2^{u \left( \frac{2}{d-1} \right)} \right) \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/2}\\
     &= R^{d(1-1/p)} \left( u^{1/2} 2^{-u \left( \frac{s - 1}{d - 1} \right)}  \right) \left( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}\\
-    &\lesssim R^{d(1 - 1/p)} 2^{-u \varepsilon} \left( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}
+    &\lesssim R^{d/p'} 2^{-u \varepsilon} \left( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}
 \end{split}
 \end{equation}
 %
-for some suitable small $\varepsilon > 0$. For each $(x_0,t_0) \in \mathcal{E}_{k,a,b}(u) \cap B_{k,u,n}$, we calculate using the pointwise bounds for the functions $\{ f_{x_0,t_0} \}$ that
+for some suitable small $\varepsilon > 0$. For each $(x_0,t_0) \in \mathcal{E}_{k,a,b}(u) \cap B_{k,u,n}$, using the poitnwise bounds of Proposition \ref{theMainEstimatesForWave} we calculate that
 %
 %\begin{align*}
 %        \| 2^{-(l+r)} f_{x_0,t_0} \|_{L^q(\text{Ann}_n^c)}^q &= 2^{jdq} \int_{\text{Ann}_j^c} \langle 2^j d_X(x,x_0) \rangle^{- q \left( \frac{d-1}{2} \right)} \langle 2^j |t_0 - d_X(x,x_0)| \rangle^{-qM}\; dx \\
@@ -1603,7 +1591,7 @@ for some suitable small $\varepsilon > 0$. For each $(x_0,t_0) \in \mathcal{E}_{
 %\end{align*}
 \begin{equation}
 \begin{split}
-        \| 2^{-(a+b)} f_{x_0,t_0} \|_{L^1(\Lambda(u)^c)} &= R^{d} \int_{\text{Ann}_R^c} \langle R d_X(x,x_0) \rangle^{- \left( \frac{d-1}{2} \right)} \langle R |t_0 - d_X(x,x_0)| \rangle^{-M}\; dx\\
+        \| S\!_{x_0,t_0} \|_{L^1(\Lambda(u)^c)} &= R^{d} \int_{\text{Ann}_R^c} \langle R d_X(x,x_0) \rangle^{- \left( \frac{d-1}{2} \right)} \langle R |t_0 - d_X(x,x_0)| \rangle^{-M}\; dx\\
         &\lesssim R^{ \left( \frac{d+1}{2} - M \right)} \int_{5\; \text{rad}(B_{k,u,n})}^{O(1)} ( t_{k,u,n} + s)^{\left( \frac{d-1}{2} \right)} s^{-M}\; ds\\
         &\lesssim R^{ \left( \frac{d+1}{2} - M \right)} \text{rad}(B_{k,u,n})^{1-M} t_{k,u,n}^{\left( \frac{d-1}{2} \right)}\\
         &\lesssim 2^{k \left( \frac{d-1}{2} \right)} (R \text{rad}(B_{k,u,n}))^{1 - M}.
@@ -1614,7 +1602,7 @@ Thus
 %
 %\[ \| 2^{k \left( \frac{d-1}{2} \right)} 2^{-(l+r)} f_{x_0,t_0} \|_{L^q(\text{Ann}_n^c)} \lesssim 2^{k \left( \frac{d-1}{q} \right) } 2^{jd/q'} (2^j \text{rad}(B_n))^{1/q - M} \]\
 \begin{equation}
-    \| 2^{k \left( \frac{d-1}{2} \right)} 2^{-(a+b)} f_{x_0,t_0} \|_{L^1(\text{Ann}_n^c)} \lesssim 2^{k(d-1)} (R \text{rad}(B_{k,u,n}))^{1 - M}
+    \|  S\!_{x_0,t_0} \|_{L^1(\text{Ann}_n^c)} \lesssim 2^{k \big( \frac{d-1}{2} \big)} (R \text{rad}(B_{k,u,n}))^{1 - M}
 \end{equation}
 %
 % 2^{(k-j)[-p(d-1)/2]} rad(B_n)^{d-pM}
@@ -1631,8 +1619,7 @@ Because the set of points in $\mathcal{E}_k$ is $1/R$ separated, there are at mo
 %\end{align*}
 \begin{equation}
 \begin{split}
-    &\Big\| \sum\nolimits_{a,b} \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_{k,a,b}(u) \cap B_{k,u,n}} 2^{k \left( \frac{d-1}{2} \right)} 2^{-(a+b)} f_{x_0,t_0} \Big\|_{L^1(\Lambda(u)^c)}\\
-    &\quad\quad\quad \lesssim 2^{k (d - 1)} (R \text{rad}(B_{k,u,n}))^{d + 2 - M}.
+    &\Big\| \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k(u) \cap B_{k,u,n}} S\!_{x_0,t_0} \Big\|_{L^1(\Lambda(u)^c)} \lesssim 2^{k \big( \frac{d - 1}{2} \big)} (R \text{rad}(B_{k,u,n}))^{d + 2 - M}.
 \end{split}
 \end{equation}
 %
@@ -1649,20 +1636,18 @@ Thus
 \begin{equation}
 \begin{split}
     \Big\| \sum\nolimits_k F_{k,u} \Big\|_{L^1(\Lambda(u)^c)} &\lesssim_X \sum\nolimits_k \sum\nolimits_n 2^{k (d-1)} (R \text{rad}(B_{k,u,n}))^{d + 2 - M}\\
-    &\lesssim \sum\nolimits_k 2^{k(d-1)} \Big( R \min\nolimits_n \text{rad}(B_{k,u,n}) \Big)^{d + 1 - M}\\
-    &\quad\quad\quad\quad \left( \sum\nolimits_n R \text{rad}(B_{k,u,n}) \right) \\
+    &\lesssim \sum\nolimits_k 2^{k(d-1)} \Big( R \min\nolimits_n \text{rad}(B_{k,u,n}) \Big)^{d + 1 - M} \left( \sum\nolimits_n R \text{rad}(B_{k,u,n}) \right) \\
     &\lesssim \sum\nolimits_k 2^{k (d-1)} 2^{u \left( \frac{d+1-M}{d-1} \right)} \left( 2^{-u} \# \mathcal{E}_k \right)\\
     &\lesssim 2^{u \left( \frac{2-M}{d-1} \right)} \sum\nolimits_k 2^{k (d-1)} \# \mathcal{E}_k
 \end{split}
 \end{equation}
 %
-Picking $M > 2 + (1 - 1/p)(1/p - 1/2)^{-1}$, and interpolating with the bounds on $\| \sum_k F_{k,u} \|_{L^2(X)}$ yields that
+Picking $M > 2 + (1/p')(1/p - 1/2)^{-1}$, and interpolating with the bounds on $\| \sum_k F_{k,u} \|_{L^2(X)}$ yields that
 %
 \begin{equation}
 \begin{split}
-    \Big\| \sum\nolimits_k F_{k,u} \Big\|_{L^p(\Lambda(u)^c)} &\lesssim \left( 2^{u \left( \frac{2-M}{d-1} \right)} \right)^{2/p - 1} \left( R^{d/2} \left( u^{1/2} 2^{u \left( \frac{1}{d-1} \right)} \right) \right)^{2(1 - 1/p)}\\
-    &\quad\quad\quad\quad \left( \sum 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p} \\
-    &\lesssim 2^{-u \varepsilon} R^{d(1 - 1/p)} \sum\nolimits_k \left( \sum 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}.
+    \Big\| \sum\nolimits_k F_{k,u} \Big\|_{L^p(\Lambda(u)^c)} &\lesssim \left( 2^{u \left( \frac{2-M}{d-1} \right)} \right)^{2/p - 1} \left( R^{d/2} \left( u^{1/2} 2^{u \left( \frac{1}{d-1} \right)} \right) \right)^{2/p'} \left( \sum 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p} \\
+    &\lesssim 2^{-u \varepsilon} R^{d/p'} \sum\nolimits_k \left( \sum 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}.
 \end{split}
 \end{equation}
 %
@@ -1675,7 +1660,7 @@ So now we know
 The exponential decay in $u$ allows us to sum in $u$ to obtain that
 %
 \begin{equation}
-    \Big\| \sum\nolimits_u \sum\nolimits_k F_{k,u} \Big\|_{L^p(X)} \lesssim R^{d(1 - 1/p)} \left( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}.
+    \Big\| \sum\nolimits_u \sum\nolimits_k F_{k,u} \Big\|_{L^p(X)} \lesssim R^{d/p'} \left( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \right)^{1/p}.
 \end{equation}
 %
 This is precisely the bound we were required to prove.
@@ -1710,7 +1695,7 @@ The last inequality uses the fact that for any $\varepsilon, \delta > 0$, and $x
 
 % p / p' = p (1 - 1/p) = p - 1
 % When p = 1 the inequality says
-% Sum_k 2^{k (d-1)/2} |S_{x_0,t_0}|_{L^1} << R^{-1} sum_k 2^{k(d-1)} #(E_k)
+% Sum_k 2^{k (d-1)/2} |S\!_{x_0,t_0}|_{L^1} << R^{-1} sum_k 2^{k(d-1)} #(E_k)
 %
 % d_g(x,x_0) ~ 2^k / R
 %
@@ -1965,7 +1950,7 @@ Putting \eqref{ChebyshevFirstBound}, \eqref{BadSet}, and \eqref{LastMarkovRemain
 This completes the proof of \eqref{FSumLPInfBound}, and thus the theorem.
 \end{proof}
 
-% The sum of S_{x_0,t_0}, where (x_0,t_0) range over some ball B_j
+% The sum of S\!_{x_0,t_0}, where (x_0,t_0) range over some ball B_j
 % has measure concentrated on a radius ~ 2^k / R annulus with thickness rad(B_j), a set with measure (2^k / R)^{d-1} rad(B_j).
 
 %
@@ -1986,7 +1971,7 @@ This completes the proof of \eqref{FSumLPInfBound}, and thus the theorem.
 %
 % <= R^{-1} (L / R^{d-1})^{-(d-1)(1 - p/2)} log(L / R^{d-1})^{O(1)}
 %
-% The sum of S_{x_0,t_0}, where (x_0,t_0) range over some ball B_j
+% The sum of S\!_{x_0,t_0}, where (x_0,t_0) range over some ball B_j
 % has measure concentrated on a radius ~ 2^k / R annulus with thickness rad(B_j), a set with measure (2^k / R)^{d-1} rad(B_j).
 %
 % Summing over j, the total measure of these annulus are
@@ -2060,15 +2045,6 @@ This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-
     %
     then we obtain the required result by duality. We apply this duality because it is easier to exploit local smoothing inequalities in $L^{p'}(X)$ since now $p' > 2$.
 
-    We begin by noting that the operators $\{ Q_R \}$, being a bounded family of order zero pseudo-differential operators, are uniformly bounded on $L^{p'}(X)$. Thus
-    %
-    \begin{equation}
-    \begin{split}
-        \| T^{II} u \|_{L^{p'}(X)} &= \Big\| \Big( \int_{I_0} b^{II}(t) e^{2 \pi i tP} (Q_R u) \Big) \Big\|_{L^{p'}(X)}\\
-        &\lesssim \Big\| \Big( \int_{I_0} b^{II}(t) e^{2 \pi i tP} (Q_R u) \Big) \Big\|_{L^{p'}(X)}.
-    \end{split}
-    \end{equation}
-    %
     Applying H\"{o}lder and Minkowski's inequalities, we find that
     %
     \begin{equation}
@@ -2103,7 +2079,7 @@ This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-
 
 Combining Lemma \ref{regime1Lemma} and Lemma \ref{LocalSmoothingLargeTimesTheorem} completes the proof of Proposition \ref{TjbLemma}, and thus of inequality \eqref{dyadicMainReulst}. Since \eqref{TrivialLowFrequencyBound} was already proven as a consequence of Lemma \ref{lowjLemma}, this completes the proof of Theorem \ref{maintheorem}.
 
-%Indeed, if we fix an arbitrary point $v_0 \in T_x^*M$, and consider the smallest closed ball $B \subset T_x^* M$ centered at $v_0$ and containing $S_x^*$, then the sphere $\partial B$ must share the same tangent plane as $S_x^*$ at some point. All principal curvatures of $\partial B$ are positive, and at this point all principal curvatures of $S_x^*$ must be greater than the principal curvatures of $\partial B$, since $S_x^*$ curves away faster than $\partial B$ in all directions. By continuity, we conclude that the principal curvatures are everywhere positive. 
+%Indeed, if we fix an arbitrary point $v_0 \in T_x^*M$, and consider the smallest closed ball $B \subset T_x^* M$ centered at $v_0$ and containing $S\!_x^*$, then the sphere $\partial B$ must share the same tangent plane as $S\!_x^*$ at some point. All principal curvatures of $\partial B$ are positive, and at this point all principal curvatures of $S\!_x^*$ must be greater than the principal curvatures of $\partial B$, since $S\!_x^*$ curves away faster than $\partial B$ in all directions. By continuity, we conclude that the principal curvatures are everywhere positive. 
 
 
 

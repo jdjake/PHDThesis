@@ -1,21 +1,21 @@
 \contentsline {part}{I\hspace {1em}Background}{2}{}%
 \contentsline {chapter}{\numberline {1}Multipliers of an Elliptic Operator}{3}{}%
-\contentsline {chapter}{\numberline {2}Radial Multipliers on Euclidean Space}{9}{}%
-\contentsline {section}{\numberline {2.1}Convolution Kernels of Fourier Multipliers}{10}{}%
-\contentsline {section}{\numberline {2.2}The Radial Multiplier Conjecture}{11}{}%
-\contentsline {section}{\numberline {2.3}Radial-Multiplier Bounds by Density Decompositions}{12}{}%
-\contentsline {section}{\numberline {2.4}Combining Scales with Atomic Decompositions}{21}{}%
-\contentsline {section}{\numberline {2.5}Quasi-Radial Multipliers and Local Smoothing}{23}{}%
-\contentsline {chapter}{\numberline {3}Wave Equations on Compact Manifolds}{26}{}%
-\contentsline {section}{\numberline {3.1}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{26}{}%
-\contentsline {section}{\numberline {3.2}Geometries Induced by Elliptic Operators}{27}{}%
-\contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{32}{}%
-\contentsline {section}{\numberline {3.4}Periodic Geodesics and Assumption B}{39}{}%
-\contentsline {part}{II\hspace {1em}New Results}{41}{}%
-\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{42}{}%
-\contentsline {section}{\numberline {4.1}Preliminary Setup}{43}{}%
-\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{47}{}%
-\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{56}{}%
+\contentsline {chapter}{\numberline {2}Radial Multipliers on Euclidean Space}{10}{}%
+\contentsline {section}{\numberline {2.1}Convolution Kernels of Fourier Multipliers}{11}{}%
+\contentsline {section}{\numberline {2.2}The Radial Multiplier Conjecture}{12}{}%
+\contentsline {section}{\numberline {2.3}Radial-Multiplier Bounds by Density Decompositions}{13}{}%
+\contentsline {section}{\numberline {2.4}Combining Scales with Atomic Decompositions}{22}{}%
+\contentsline {section}{\numberline {2.5}Quasi-Radial Multipliers and Local Smoothing}{24}{}%
+\contentsline {chapter}{\numberline {3}Wave Equations on Compact Manifolds}{27}{}%
+\contentsline {section}{\numberline {3.1}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{27}{}%
+\contentsline {section}{\numberline {3.2}Geometries Induced by Elliptic Operators}{28}{}%
+\contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{33}{}%
+\contentsline {section}{\numberline {3.4}Periodic Geodesics and Assumption B}{40}{}%
+\contentsline {part}{II\hspace {1em}New Results}{42}{}%
+\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{43}{}%
+\contentsline {section}{\numberline {4.1}Preliminary Setup}{44}{}%
+\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{48}{}%
+\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{57}{}%
 \contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{66}{}%
 \contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{68}{}%
 \contentsline {section}{\numberline {5.1}Short Range Bounds}{70}{}%
