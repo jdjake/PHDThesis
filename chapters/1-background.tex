@@ -163,7 +163,7 @@ As $t$ varies, the operators $\cos(t P)$ solve the wave equation $\partial_t^2 u
   The operator $P_{\text{SH}}$ satisfies Assumption C.
 \end{lemma}
 \begin{proof}
-  Fix $c \in \RR$, and let $Lu = (\Delta + c) u$. It suffices to show solutions to the partial differential equation $\partial_t^2 u = Lu$ on $S^d$ has finite propagation speed, and this follows if we can prove that for sufficiently small $t$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the general case follows by repeatedly composing the result with itself. The full propagation result then follows by composition. Fix $x_0 \in X$, and choose $t > 0$ small enough that there exists a geodesic normal coordinate ball $B_t(x_0)$ in $S^d$. Define $e = u^2 + (\partial_t u)^2 + |\nabla_g u|_g^2$. Then define $E(s) = \int_{B_{t-s}(x_0)} e\; dV$. For solutions to $\partial_t^2 u = Lu$, we have $\partial_t e = 2[ (c + 1) u \partial_t u + \text{div}_g \{ \partial_t u\; \nabla_g u \} ]$.
+  Fix $c \in \RR$, and let $Lu = (\Delta + c) u$. It suffices to show solutions to the partial differential equation $\partial_t^2 u = Lu$ on $S^d$ has finite propagation speed, and this follows if we can prove that for sufficiently small $t$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the general case follows by repeatedly composing the result by time invariance of the equation. Fix $x_0 \in X$, and choose $t > 0$ small enough that there exists a geodesic normal coordinate ball $B_t(x_0)$ in $S^d$. Define $e = u^2 + (\partial_t u)^2 + |\nabla_g u|_g^2$. Then define $E(s) = \int_{B_{t-s}(x_0)} e\; dV$. For solutions to $\partial_t^2 u = Lu$, we have $\partial_t e = 2[ (c + 1) u \partial_t u + \text{div}_g \{ \partial_t u\; \nabla_g u \} ]$.
   %
   Substituting this identity into the equation $E'(s) = \int_{B_{t-s}(x_0)} \partial_t e - \int_{\partial B_{t-s}} e$, we find that
   %
@@ -245,7 +245,7 @@ Consider the elliptic operator $P = \sqrt{-\Delta}$ on $\TT^d$, where $\Delta = 
   Tf(x) = \sum\nolimits_{n \in \ZZ^d} a( |n| ) \widehat{f}(n) e^{2 \pi i n \cdot x}.
 \end{equation}
 %
-Thus a multiplier of $\Delta$ on $\TT^d$ is nothing more than a Fourier multiplier operator on $\TT^d$ whose symbol is radial. Methods of transference\footnote{See Section 3.6.2 of Grafakos \cite{Grafakos}, based on methods of de Leeuw \cite{deLeeuw}} show that $\| a \|_{M^p(\RR^d)} \sim \| a \|_{M^p_{\text{Dil}}(\TT^d)}$, where $\| a \|_{M^p(\RR^d)}$ is the operator norm of the Fourier multiplier on $\RR^d$ given by
+Thus a multiplier of $\Delta$ on $\TT^d$ is nothing more than a Fourier multiplier operator on $\TT^d$ whose symbol is radial. Methods of transplantation\footnote{See Section 3.6.2 of Grafakos \cite{Grafakos}, based on methods of de Leeuw \cite{deLeeuw}} show that $\| a \|_{M^p(\RR^d)} \sim \| a \|_{M^p_{\text{Dil}}(\TT^d)}$, where $\| a \|_{M^p(\RR^d)}$ is the operator norm of the Fourier multiplier on $\RR^d$ given by
 %
 \begin{equation}
   Tf(x) = \int_{\RR^d} a \big(|\xi| \big) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi 
@@ -577,7 +577,7 @@ In this section and the following, we give an overview of the proof of the radia
     where $s = (d-1)(1/p - 1/2)$.
 \end{theorem}
 
-The main tool we will take away for application to the proof of Theorem \ref{maintheorem} is the method of \emph{density decompositions}, and the method of \emph{atomic decompositions} used to combine frequency scales in the problem. We give an overview of the density decomposition argument in this section to establish a single scale version of Theorem \ref{HeoNazarovSeegerTheorem}, as described in the following lemma, and discuss the particular atomic decomposition method in the following section.
+The main tool we will take away for application to the proof of Theorem \ref{maintheorem} is the method of \emph{density decompositions}, and a method of \emph{atomic decompositions} used to combine frequency scales in the problem. We give an overview of the density decomposition argument in this section to establish a single scale version of Theorem \ref{HeoNazarovSeegerTheorem}, as described in the following lemma, and discuss the particular atomic decomposition method in the following section.
 
 \begin{lemma} \label{HeoNazarovSeegerSingleScaleInequality}
   Suppose $1/2 > 1/p - 1/2 > 1/(d-1)$, and $k$ is a radial function with Fourier transform supported on $1/2 \leq |\xi| \leq 2$. Then
@@ -1122,7 +1122,7 @@ The goal of this section is to prove that we can bound the sum of the operators 
 %
 We must thus show that the operators $\{ T_j \}$ do not constructively interfere with one another to a significant extent.
 
-Atomic decompositions are a powerful way to control interactions between operators. The method involves decomposing functions into more elementary components, which we call \emph{atoms}, that have controlled size, spatial support, and oscillatory properties. Such atoms are chosen via careful, non-linear selection processes, often related to stopping times, to ensure certain cancellation conditions hold. We use a variant of this method, involving a use of a Whitney decomposition rather than a stopping time argument, to obtain an atomic decomposition where atoms do not cluster, in an appropriate sense.
+Atomic decompositions are a powerful way to control interactions between operators. The method involves decomposing functions into more elementary components, which we call \emph{atoms}, that have controlled size, spatial support, and oscillatory properties. Such atoms are chosen via careful, non-linear selection processes, often related to stopping times, to ensure certain cancellation conditions hold. We use a variant of this method, involving a use of a Whitney decomposition rather than a stopping time argument, to obtain an atomic decomposition where atoms do not cluster, in an appropriate sense. The method employed was first introduced in \cite{SeegerRemarks}.
 
 Since we are controlling parts of an operator supported on different dyadic frequency ranges on functions in $L^p(\RR^d)$ for $1 < p < \infty$, it is natural to consider the Littlewood-Paley inequality $\| Sf \|_{L^p(\RR^d)} \lesssim \| f \|_{L^p(\RR^d)}$, where
 %
@@ -1307,7 +1307,7 @@ To end our discussion of radial multipliers, notice that the Fourier multiplier 
 
 \section{An Analogue of the Radial Multiplier Conjecture on Compact Manifolds} \label{sec:AnAnalogueOf}
 
-We now return to the study of spectral multipliers on compact manifolds. In a heuristic sense, one can think of the Fourier multipliers studied in the last Chapter as a `high frequency' limiting case of multipliers on manifolds, i.e. so that for any elliptic operator on a manifold $X$ with principal symbol $p(x_0,\xi)$, locally around $x_0 \in X$ the operators $P/R$ behave more and more like the Fourier multiplier operator on $\RR^d$ with symbol $p(x_0,\cdot)$ as $R \to \infty$. In particular, the following transference result of Mitjagin \cite{Mitjagin} holds.
+We now return to the study of spectral multipliers on compact manifolds. In a heuristic sense, one can think of the Fourier multipliers studied in the last Chapter as a `high frequency' limiting case of multipliers on manifolds, i.e. so that for any elliptic operator on a manifold $X$ with principal symbol $p(x_0,\xi)$, locally around $x_0 \in X$ the operators $P/R$ behave more and more like the Fourier multiplier operator on $\RR^d$ with symbol $p(x_0,\cdot)$ as $R \to \infty$. In particular, the following transplantation result of Mitjagin \cite{Mitjagin} holds.
 
 \begin{theorem} \label{Pawdiojwaoij123423423423423}
   Suppose $P$ is an elliptic operator on a $d$-dimensional compact manifold $X$. For each $x_0 \in X$, if we choose a basis, identifying $T_{x_0}^* X$ with $\RR^d$, and let $p_{x_0}: \RR^d \to [0,\infty)$ be the principal symbol of $p$ restricted to $T_{x_0}^* X$, then for any regulated function $a$,

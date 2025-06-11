@@ -19,10 +19,32 @@
     \textbf{Abstract}
 \end{center}
 
-For any bounded, regulated function $a: [0,\infty) \to \mathbb{C}$, consider the family of operators $\{ T_R \}$ on the sphere $S^d$ such that $T_R f = a(k/R) f$ for any spherical harmonic $f$ of degree $k$. This thesis discusses the work of the author on characterizing the functions $a$ for which the operators $\{ T_R \}$ are uniformly bounded on $L^p(S^d)$ in the range $1/(d-1) < |1/p - 1/2| < 1/2$. More generally, we obtain analogous results for spectral multiplier operators of eigenfunction expansions of a first order elliptic pseudo-differential operator $P$ on a compact manifold $X$. Under curvature assumptions on the principal symbol of the operator $P$, and assuming the eigenvalues of $P$ are contained in an arithmetic progression, we characterize all regulated and compactly supported functions $a$ whose associated spectral multiplier operators $\{ a(P/R) \}$ are uniformly bounded on $L^p(X)$, under curvature assumptions on the principal symbol of $P$, and assuming the eigenvalues of $P$ are contained in an arithmetic progression. If in addition, we assume that solutions to the wave equation $\partial_t^2 u = P^2 u$ have finite propagation speed, and that certain estimates for the wave equation hold, then we characterize all regulated functions whose associated operators $\{ T_R \}$ are uniformly bounded on $L^p(X)$, without the assumption of compact support.
+Let $T$ be a Schwartz operator on $S^d$ commuting with rotations. Then there exists a function $a: \ZZ \to \CC$, the symbol of $T$, such that for any spherical harmonic $f: S^d \to \mathbb{C}$ of degree $k$, $Tf = a \big( k \big) f$. This thesis discusses the work of the author on obtaining new results about the boundedness of such operators on $L^p(S^d)$ for $p \neq 2$ and $d \geq 4$.
 
-One consequence of this result are new transference principles controlling the $L^p$ boundedness of the multiplier operators associated with a function $a$ in terms of the $L^p$ operator norm of the radial Fourier multiplier operator on $\RR^d$ with symbol $a(|\cdot|): \mathbb{R}^d \to \mathbb{C}$, the first nontrivial result of it's kind.
+Given any regulated function $a: [0,\infty) \to \mathbb{C}$, define operators $T_a$ and $\{ T_\rho : \rho > 0 \}$ on $S^d$, commuting with rotations, with symbols $a(k)$ and $a_\rho(k) = a \big( \rho \big( k + \tfrac{d-1}{2} \big) \big)$ respectively. For $d \geq 4$, and $1 < p < 2(d-1)/(d+1)$, we obtain sufficient conditions on $a$ in order for $T_a$ to be bounded on $L^p(S^d)$, and necessary and sufficient conditions for the operators $\{ T_\rho \}$ to be uniformly bounded on $L^p(S^d)$. One consequence of these results are new transplantation principles, which control the $L^p$ boundedness of the multiplier operators $\{ T_\rho \}$ in terms of the radial Fourier multiplier operator on $\RR^d$ with symbol $a(|\cdot|): \mathbb{R}^d \to \mathbb{C}$. This is the first nontrivial transplantation result of it's kind.
 
-In order to prove these results, we obtain new quasi-orthogonality estimates for averages of solutions to the half-wave equation $\partial_t - i P = 0$, via a connection between pseudo-differential operators satisfying an appropriate curvature condition and Finsler geometry, and combine estimates for different frequency scales via arguments based on a theory of atomic decompositions in $L^p$ for $p > 1$, first introduced in \cite{SeegerRemarks}.
+%, for a compact manifold $X$, and a restricted family of self-adjoint, first order, elliptic, pseudo-differential operator of order one, we obtain results giving necessary and sufficient conditions for the uniform boundedness of a family of rescaled spectral multiplier operators for eigenfunction expansions.
 
-In Part I of the thesis, we review prior work on endpoint bounds relevant to the new results stated, in particular, endpoint bounds for radial and quasi-radial Fourier multiplier operators on Euclidean space, as well as Finsler geometry and Fourier integral operators on compact manifolds. In Part II, we prove the results stated above. The characterizations of $L^p$ boundedness for compactly supported and regulated functions are adapted from a paper of the author \cite{Denson}, with the other results in forthcoming work.
+%
+% Given a(P_delta) = a(P_{SH} + delta - (d-1)/2)
+% Trans_{delta + (d-1)/2 - delta} a
+
+% If P_delta f = (k + delta) f
+% P_{SH} f = (k + (d-1)/2) f
+% So a
+
+%
+% 
+%
+% 1/p - 1/2 > 1/(d-1)
+% 1/p = (d-1)/2(d+1)
+% P = P_{SH} - (d-1)/2
+% P_{SH}/R = (d-1)/2R + P
+
+%For any bounded, regulated function $a: [0,\infty) \to \mathbb{C}$, consider the family of operators $\{ T_R \}$ on the sphere $S^d$ such that $T_R f = a(k/R) f$ for any spherical harmonic $f$ of degree $k$. This thesis discusses the work of the author on characterizing the functions $a$ for which the operators $\{ T_R \}$ are uniformly bounded on $L^p(S^d)$ in the range $1/(d-1) < |1/p - 1/2| < 1/2$. More generally, we obtain analogous results for spectral multiplier operators of eigenfunction expansions of a first order elliptic pseudo-differential operator $P$ on a compact manifold $X$. Under curvature assumptions on the principal symbol of the operator $P$, and assuming the eigenvalues of $P$ are contained in an arithmetic progression, we characterize all regulated and compactly supported functions $a$ whose associated spectral multiplier operators $\{ a(P/R) \}$ are uniformly bounded on $L^p(X)$, under curvature assumptions on the principal symbol of $P$, and assuming the eigenvalues of $P$ are contained in an arithmetic progression. If in addition, we assume that solutions to the wave equation $\partial_t^2 u = P^2 u$ have finite propagation speed, and that certain estimates for the wave equation hold, then we characterize all regulated functions whose associated operators $\{ T_R \}$ are uniformly bounded on $L^p(X)$, without the assumption of compact support.
+
+More generally we obtain analogous results for spectral multiplier operators on a compact manifold $X$ associated with eigenfunction expansions of a self-adjoint, first order, elliptic pseudo-differential operator $P$, under restrictive assumptions related to the periodicity and curvature properties of a Hamiltonian flow on $T^* X$ associated with $P$.
+
+In order to prove these results, we obtain new quasi-orthogonality estimates for averages of solutions to the half-wave equation $\partial_t - i P = 0$, via a connection between pseudo-differential operators satisfying an appropriate curvature condition and Finsler geometry, and combine estimates for different frequency scales via arguments based on a theory of atomic decompositions in $L^p$ for $p > 1$.
+
+In Part I of the thesis, we review prior work on endpoint bounds relevant to the new results stated, in particular, endpoint bounds for radial and quasi-radial Fourier multiplier operators on Euclidean space, as well as Finsler geometry and Fourier integral operators on compact manifolds. In Part II, we prove the results stated above. The characterizations of $L^p$ boundedness for compactly supported and regulated functions are adapted from a paper of the author \cite{Denson}, with the methods of combining frequency scales taken from forthcoming work.

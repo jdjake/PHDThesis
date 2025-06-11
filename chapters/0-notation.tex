@@ -7,39 +7,43 @@
     %
     \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx. \]
     %
-    Overloading notation, for a function $f: [0,\infty) \to \CC$, we also use the same notation to denote the cosine transform
+    Overloading notation, for a function $f: [0,\infty) \to \CC$, for $\lambda \geq 0$ we write
     %
     \[ \widehat{f}(\lambda) = \int_0^\infty f(t) \cos(2 \pi \lambda t)\; dt, \]
     %
-    which is the Fourier transform of the even extension of $f$ to a function on $(-\infty,\infty)$.
+    for the cosine transform of the function $f$.
 
-    \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$. Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
+    \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$, chosen so that if a function $f$ is supported on a set $A$, then $\text{Trans}_y f$ is supported on $A + y$, and $\text{Dil}_t f$ is supported on $tA$. %Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that conventionally stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
 
-    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators, and $D_j$ to denote the self-adjoint normalization $D_j f = (2 \pi i)^{-1} \partial_j$. This notation has the convenience that for a polynomial $P$,
+    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators by the $j$th coordinate, and use $D_j$ to denote the self-adjoint normalization $D_j f = (2 \pi i)^{-1} \partial_j$. This normalization has the convenience that for a $d$-variate polynomial $P: \RR^d \to \CC$,
     %
     \[ P(D_j) \{ f \} = \int P(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
     %
-    and simplifies many formulas associated with Fourier integral operators.
+    and simplifies many formulas associated with Fourier integral operators. We also consider the compositions of these operators $\partial^\alpha$ and $D^\alpha$ given by multi-indices $\alpha$.
 
-    \item We will often use the Japanese bracket $\langle x \rangle \coloneqq (1 + |x|^2)^{1/2}$ for $x \in \RR^d$.
+    \item We will often use the Japanese bracket $\langle x \rangle = (1 + |x|^2)^{1/2}$ for $x \in \RR^d$.
 
-    \item A function $f: \RR^n \times \RR^p \to \RR$ is a \emph{symbol of order $s$} if it satisfies bounds of the form
+    \item We let $\dot{\RR}^p = \RR^p - \{ 0 \}$. A function $f: {\RR^n} \times {\dot{\RR}^p} \to \CC$ is a \emph{symbol of order $s$} if it satisfies bounds of the form
     %
     \[ | \partial_x^\alpha \partial_\theta^\beta f (x,\theta) | \lesssim_{\alpha,\beta} \langle \theta \rangle^{s - |\beta|} \]
     %
-    for all multi-indices $\alpha$ and $\beta$.
+    for all multi-indices $\alpha$ and $\beta$. More generally, symbols $s: \Gamma \to \CC$ can be defined for \emph{conical subsets} $\Gamma$ of $\RR^n \times \dot{\RR}^p$, i.e. sets $\Gamma$ with the property that if $(x,\theta) \in \Gamma$ and $\rho > 0$, then $(x,\rho \theta) \in \Gamma$.
 
-    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere. We also used mixed norm spaces; for a function $f(x,y)$ of two variables, we write
+    \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere. We also used mixed norm spaces; for a function $f(x,y)$ defined on the Cartesian product of two measure spaces $X$ and $Y$, we define
     %
-    \[ \| f \|_{L^p_x L^q_y} = \left( \int \left( \int |f(x,y)|^q\; dy \right)^{p/q}\; dx \right)^{1/p}. \]
+    \[ \| f \|_{L^p(X) L^q(Y)} = \big\| \| f \|_{L^q(Y)} \big\|_{L^p(X)} = \left( \int\nolimits_X \left( \int\nolimits_Y |f(x,y)|^q\; dy \right)^{p/q}\; dx \right)^{1/p}. \]
     %
-    Similarily, we can define the interchanged norm $L^q_y L^p_x$.
+    Similarily, we can define the interchanged norm $L^q(Y) L^p(X)$ by swapping the order of application of the norms. It follows from Minkowski's inequality that if $p \geq q$ then $\| f \|_{L^p(X) L^q(Y)} \leq \| f \|_{L^q(Y) L^p(X)}$ and if $p \leq q$, then $\| f \|_{L^p(X) L^q(Y)} \geq \| f \|_{L^q(Y) L^p(X)}$.
 
-    \item All operators we consider are Schwartz operators between manifolds equipped with a canonical measure. Abusing notation, we thus identify an operator with the distribution that gives it's Schwartz kernel. Thus, for a Schwartz operator $A$ from a manifold $Y$ to a manifold $X$, we might write
+    \item If $T$ is a Schwartz operator from a manifold $Y$ to a manifold $X$, we let $K_T$ denote the Schwartz distribution on $Y \times X$ which is the integral kernel for $T$, i.e. such that for any $f \in C_c^\infty(X)$ and $g \in C_c^\infty(Y)$,
     %
-    \[ A f(x) = \int_Y A(x,y) f(y)\; dy, \]
+    \[ \int_X f(x) (Tg)(x)\; dx = \int_{X \times Y} K_T(x,y) f(x) g(y)\; dx\; dy. \]
+
+%    All operators we consider are Schwartz operators between manifolds equipped with a canonical measure. Abusing notation, we thus identify an operator with the distribution that gives it's Schwartz kernel. Thus, for a Schwartz operator $A$ from a manifold $Y$ to a manifold $X$, we might write
     %
-    where $A$ on the left hand side denotes the operator $A$, and the $A$ on the right hand side denotes the kernel.
+%    \[ A f(x) = \int_Y A(x,y) f(y)\; dy, \]
+    %
+%    where $A$ on the left hand side denotes the operator $A$, and the $A$ on the right hand side denotes the kernel.
 
     \item For $1 \leq p \leq \infty$ and $s \in \RR$, we consider the Sobolev spaces $W^{s,p}(\RR^d)$ with norm
     %
@@ -47,46 +51,112 @@
     %
     and for $1 \leq r \leq \infty$, we consider the (homogeneous) Besov spaces
     %
-    \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k = -\infty}^\infty \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}, \]
+    \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k \in \ZZ} \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}, \]
     %
-    where $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( \cdot / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev and Besov spaces $W^{s,p}(X)$ and $\dot{B}^{s,p}_r(X)$ on compact manifolds. We will often use the \emph{Sobolev embedding inequality}, which states that for $1 \leq p \leq q < \infty$, if $r = d(1/p - 1/q)$, then for any $s \in \RR$, $W^{s,q}(X) \subset W^{s - r, p}(X)$, and that if $s > d/p$, then $W^{s,p}(X) \subset C_b(X)$, the space of continuous, bounded functions. We also use \emph{Bernstein's inequality}, that if a function $f$ has a Fourier transform supported on $\{ \xi : R/2 \leq |\xi| \leq 2R \}$, then $\| f \|_{W^{s,p}(\RR^d)} \sim R^s \| f \|_{L^p(\RR^d)}$.
+    where $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( |\cdot| / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev and Besov spaces $W^{s,p}(X)$ and $\dot{B}^{s,p}_r(X)$ of functions on a compact manifold $X$.
+\end{itemize}
+%
+We will also rely on the following results which often occur in harmonic analysis.
 
-    \item We use \emph{Schur's test} for integral kernels. If $T$ is an operator, then
+\begin{theorem}[The Sobolev Embedding Theorem]
+    Suppose $X$ is a $d$-dimensional manifold, or $X = \RR^d$. Fix $1 \leq p \leq q < \infty$ and let $r = d(1/p - 1/q)$. Then for any $s \in \RR$, $W^{s,q}(X) \subset W^{s-r,p}(X)$, and if $s > d/p$, $W^{s,p}(X) \subset C_b(X)$, the space of continuous, bounded functions, where these inclusions are continuous.
+\end{theorem}
+\begin{proof}
+    See 
+\end{proof}
+
+\begin{theorem}[Bernstein's Inequality]
+    Fix $1 \leq p \leq \infty$, $s \in \RR$, and $R > 0$. If the Fourier transform of a function $f: \RR^d \to \CC$ is supported on $\{ \xi : R/2 \leq |\xi| \leq 2R \}$, then
+        %
+    \[ \| f \|_{W^{s,p}(\RR^d)} \sim \langle R \rangle^s \| f \|_{L^p(\RR^d)}. \]% \quad\text{and}\quad \| f \|_{\dot{B}^{s,p}_r(\RR^d)} \sim R^s \| f \|_{L^p(\RR^d)}. \]
+    Similarily, suppose $X$ is a compact manifold, and $P$ is a classical, elliptic, self-adjoint operator of order one on $X$. If $f: \RR^d \to \CC$ can be written as a linear combination of eigenfunctions of $P$, whose eigenvalues are contained in the interval $[R/2,2R]$, then
+        %
+        \[ \| f \|_{W^{s,p}(X)} \sim \langle R \rangle^s \| f \|_{L^p(\RR^d)} \]
+\end{theorem}
+
+\begin{theorem}[Schur's Test for Integral Kernels]
+    Let $X$ and $Y$ be measure spaces, and suppose $T$ is an integral operator from $Y$ to $X$, i.e. an operator defined in terms of a measurable function $K_T: X \times Y \to \CC$ by setting
     %
-    \[ \| T \|_{L^1(Y) \to L^p(X)} \lesssim \| T \|_{L^\infty_x L^p_y}, \]
+    \[ Tf(x) = \int K_T(x,y) f(y)\; dy \]
+    %
+    where such an integral is well defined. Then
+    %
+    \[ \| T \|_{L^1(Y) \to L^p(X)} \lesssim \| K_T \|_{L^\infty(X) L^p(Y)}, \]
     %
     and
     %
-    \[ \| T \|_{L^p(X) \to L^\infty(X)} \lesssim \| T \|_{L^\infty_x L^{p'}_y}, \]
+    \[ \| T \|_{L^p(Y) \to L^\infty(X)} \lesssim \| K_T \|_{L^\infty(Y) L^{p'}(X)}. \]
     %
-    which follow by H\"{o}lder and Minkowski's inequality.
+%   which follow by H\"{o}lder and Minkowski's inequality.
+\end{theorem}
 
-    \item We will implicitly rely on the following real interpolation result: Consider a family of functions $\{ f_H: H\ \text{dyadic} \}$, and fix $0 < p_0 < p_1 < \infty$. If for $i \in \{ 0,1 \}$ we have $\| f_H \|_{L^{p_i}(X)} \lesssim H W_j^{1/p_i}$, then for any $p_0 < p < p_1$,
+\begin{theorem}[A Real Interpolation Lemma]
+    Consider a family of functions $\{ f_H: H\ \text{dyadic} \}$, and fix $0 < p_0 < p_1 < \infty$. If for $i \in \{ 0,1 \}$ we know that $\| f_H \|_{L^{p_i}(X)} \lesssim H W_j^{1/p_i}$, then for any $p_0 < p < p_1$,
     %
     \[ \left\| \sum\nolimits_H f_H \right\|_{L^p(X)} \lesssim \left( \sum\nolimits_H H^p W_j \right)^{1/p}. \]
     %
-    The quantities $H$ normally stand for the `height' of a given input, and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for a fixed `height scale'. See Lemma 2.2 of \cite{HeoandNazarovandSeeger} for a rigorous proof.
+    The quantities $H$ normally stand for the `height' of a given input, and the quantities $\{ W_j \}$ the `width', and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for a fixed `height scale'. See Lemma 2.2 of \cite{HeoandNazarovandSeeger} for a rigorous proof.
+\end{theorem}
+    
+\begin{itemize}
+    \item We will implicitly rely on the following real interpolation result: 
 
-    \item Suppose $f_1,\dots,f_N$ are pairwise orthogonal in $L^2(X)$. Then for $1 \leq p \leq 2$,
+    %\item Suppose $f_1,\dots,f_N$ are pairwise orthogonal in $L^2(X)$. Then for $1 \leq p \leq 2$,
     %
-    \[ \left\| f_1 + \dots + f_N \right\|_{L^p(X)} \lesssim \left( \| f_1 \|_{L^p(X)}^p + \cdots + \| f_N \|_{L^p(X)}^p \right)^{1/p}. \]
+    %\[ \left\| f_1 + \dots + f_N \right\|_{L^p(X)} \lesssim \left( \| f_1 \|_{L^p(X)}^p + \cdots + \| f_N \|_{L^p(X)}^p \right)^{1/p}\!\!\!\!\!\!, \]
     %
-    The proof follows from interpolation between the triangle inequality
+    %with an implicit constant uniform in $N$.
     %
-    \[ \left\| \sum f_j \right\|_{L^1(X)} \leq \sum \| f_j \|_{L^1(X)} \]
+    % Let | f_i |_{L^1} = H_i W_i, and | f_i |_{L^2} = H_i W_i^{1/2}
+    % Write f_H = Sum_{i in I(H)} f_i
+    % Then | f_H |_{L^1} <= H ( Sum_{i in I(H)} W_i )
+    % And | f_H |_{L^2} <= H ( Sum_{i in I(H)} W_i )^{1/2}
+    % So it follows that
     %
-    and Parseval's inequality
+    % | Sum f_i |_{L^p} <= ( Sum H^p ( Sum W_i ) )^{1/p}
+    %                   <= ( Sum H_i^p W_i )^{1/p}
     %
-    \[ \left\| \sum f_j \right\|_{L^2(X)} \leq \left( \sum \| f_j \|_{L^2(X)}^2 \right)^{1/2}. \]
+    % Is it true that H_i^p W_i <= | f_i |_{L^p}
     %
-    We will call such a bounded a use of the `$L^2$ orthogonality' of the $\{ f_j \}$. More generally, the bound holds if we assume that for each $j$, $\langle f_j, f_k \rangle = 0$ holds for all but $O(1)$ many $k$, uniformly in $j$.
-
+    %
     % Normalize L^2
     %
     % { |Sum f_j| >= t } << ( sum |f_j| ) t^{-1}
     %                    << ( sum |f_j|^2 ) t^{-2}
     % [ int A(x)^z ] / ( Sum C_j^z ) <= 1
     % 
+    %
+    % Define B(z) = [ int A(x)^z dx ] / ( Sum C_j^z )
+    % Then |B(0 + it)|
+
+
+    %
+    % Suppose X is a finite measure space. Then we may assume |X| = 1
+    % Define f_H = sum_{|f_j|_{L^p} ~ H} f_j
+    %
+    % Then |f_H|_{L^1} << H #E_j
+    % And |f_H|_{L^2} << H #E_j^{1/2}
+    %
+    % So |f|_{L^p} << ( Sum_j H^p #E_j )
+    %
+    % Define f_H = sum_{|f_j|_{L^p} ~ 2^j}
+    % Suppose we've proven the result with 1 <= | f_j |_{L^p} <= 2
+    %
+    %
+    %
+    % Then the L^p norm is << sum_j # E_j^{1/p} 2^j
+    %
+    % Whereas the L^p norm bound we need is ( sum_j # E_j 2^{jp} )^{1/p}
+    %
+%    \[ \left\| \sum f_j \right\|_{L^1(X)} \leq \sum \| f_j \|_{L^1(X)} \]
+    %
+%    and Parseval's inequality
+    %
+%    \[ \left\| \sum f_j \right\|_{L^2(X)} \leq \left( \sum \| f_j \|_{L^2(X)}^2 \right)^{1/2}. \]
+    %
+    %We will call such a bounded a use of the `$L^2$ orthogonality' of the $\{ f_j \}$. More generally, the bound holds if we assume that for each $j$, $\langle f_j, f_k \rangle = 0$ holds for all but $O(1)$ many $k$, uniformly in $j$, i.e. under the assumption of a kind of `almost orthogonality'.
+
+
 
 
 %    \item For $1/p + 1/p' = 1$, we can identify $f \in L^{p'}(X)$ as an element of $(L^p(X))^*$ either via the pairing $\langle f, g \rangle = \int f(x) g(x)$, or via the pairing $\langle f,g \rangle = \int \overline{f(x)} g(x)\; dx$. Given an operator $A$ from $L^p(Y)$ to $L^q(X)$, we can take the dual to obtain an operator from $L^q(X)^*$ to $L^p(Y)^*$, and the two pairings above give two possibly different linear maps from $L^{q'}(X)$ to $L^{p'}(X)$. We denote the first by $A^t$, and the second by $A^*$. As examples, for a Fourier multiplier on $\RR^d$ given by the integral expression

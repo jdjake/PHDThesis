@@ -136,7 +136,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{A Series of Modern Surveys in Mathematics}
-      \field{title}{Manifolds all of whose Geodesics are Closed}
+      \field{title}{Manifolds All of Whose Geodesics Are Closed}
       \field{volume}{93}
       \field{year}{1978}
     \endentry
@@ -200,7 +200,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Camb. J. Math.}
       \field{number}{4}
-      \field{title}{Oscillatory integral operators on manifolds and related {K}akeya and {N}ikodym problems}
+      \field{title}{Oscillatory Integral Operators on Manifolds and Related {K}akeya and {N}ikodym problems}
       \field{volume}{12}
       \field{year}{2024}
       \field{pages}{937\bibrangedash 1015}
@@ -322,7 +322,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Invent. Math.}
       \field{number}{2}
-      \field{title}{A dichotomy for {H}örmander-type oscillatory integral operators}
+      \field{title}{A Dichotomy for {H}örmander-Type Oscillatory Integral Operators}
       \field{volume}{238}
       \field{year}{2024}
       \field{pages}{503\bibrangedash 584}
@@ -430,7 +430,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{series}{Lectures Notes in Mathematics}
-      \field{title}{Differential Geometry in the Large}
+      \field{title}{Differential Geometry In The Large}
       \field{volume}{1000}
       \field{year}{1989}
     \endentry
@@ -457,7 +457,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Acta Math.}
       \field{number}{1-2}
-      \field{title}{Estimates for translation invariant operators in {$L^p$} spaces}
+      \field{title}{Estimates For Translation Invariant Operators In {$L^p$} Spaces}
       \field{volume}{104}
       \field{year}{1960}
       \field{pages}{93\bibrangedash 140}
@@ -541,7 +541,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Ann. Mat. Pura Appl. (4)}
-      \field{title}{Endpoint bounds for quasiradial {F}ourier multipliers}
+      \field{title}{Endpoint Bounds for Quasiradial {F}ourier Multipliers}
       \field{volume}{196}
       \field{year}{2017}
       \field{pages}{773\bibrangedash 789}
@@ -575,7 +575,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Math. Nachr.}
       \field{number}{7}
-      \field{title}{{L}ebesgue Space Estimates for a class of {F}ourier Integral Operators Associated With Wave Propogation}
+      \field{title}{{L}ebesgue Space Estimates for a Class of {F}ourier Integral Operators Associated with Wave Propogation}
       \field{volume}{286}
       \field{year}{2013}
       \field{pages}{745\bibrangedash 755}
@@ -609,7 +609,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Lond. Math. Soc.}
       \field{number}{2}
-      \field{title}{On radial {F}ourier multipliers and almost everywhere convergence}
+      \field{title}{On Radial {F}ourier Multipliers and Almost Everywhere Convergence}
       \field{volume}{91}
       \field{year}{2015}
       \field{pages}{105\bibrangedash 126}
@@ -666,7 +666,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{J. Math. Kyoto Univ.}
-      \field{title}{A slope of mountain is a {F}insler surface with respect to a time measure}
+      \field{title}{A Slope of a Mountain is a {F}insler Surface With Respect to a Time Measure}
       \field{volume}{29}
       \field{year}{1989}
       \field{pages}{17\bibrangedash 25}
@@ -753,7 +753,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Ark. Math.}
-      \field{title}{On spaces of {T}riebel-{L}izorkin type}
+      \field{title}{On Spaces of {T}riebel-{L}izorkin Type}
       \field{volume}{13}
       \field{year}{1975}
       \field{pages}{123\bibrangedash 130}
@@ -811,7 +811,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Studia Math.}
       \field{number}{2}
-      \field{title}{Remarks on singular convolution operators}
+      \field{title}{Remarks on Singular Convolution Operators}
       \field{volume}{97}
       \field{year}{1990}
       \field{pages}{91\bibrangedash 114}
@@ -840,7 +840,7 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Trans. Amer. Math. Soc.}
       \field{number}{1}
-      \field{title}{Some Inequalities For Singular Convolution Operators In $L^p$-Spaces}
+      \field{title}{Some Inequalities for Singular Convolution Operators in $L^p$-Spaces}
       \field{volume}{308}
       \field{year}{1988}
       \field{pages}{259\bibrangedash 272}
@@ -866,8 +866,8 @@
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Proc.Symp.Pure Math.}
-      \field{title}{Complex powers of an elliptic operator}
+      \field{journaltitle}{Proc. Symp. Pure Math.}
+      \field{title}{Complex Powers Of An Elliptic Operator}
       \field{volume}{10}
       \field{year}{1967}
       \field{pages}{288\bibrangedash 307}

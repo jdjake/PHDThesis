@@ -18,6 +18,6 @@
 \contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{57}{}%
 \contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{66}{}%
 \contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{68}{}%
-\contentsline {section}{\numberline {5.1}Short Range Bounds}{70}{}%
-\contentsline {section}{\numberline {5.2}Long Range Bounds}{71}{}%
-\contentsline {section}{\numberline {5.3}Wave Bounds on the Sphere}{73}{}%
+\contentsline {section}{\numberline {5.1}Short Range Bounds}{72}{}%
+\contentsline {section}{\numberline {5.2}Long Range Bounds}{73}{}%
+\contentsline {section}{\numberline {5.3}Wave Bounds on the Sphere}{75}{}%
