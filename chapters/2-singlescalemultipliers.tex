@@ -330,7 +330,7 @@ where $Q_\alpha$ is as above, and
 %
 where $s$ is smooth and supported on $L^{-1} \leq |\theta| \leq L$, and $\phi$ is a solution to the Eikonal equation \eqref{awiodjawoidhjioq23412341234234}, then for all $N \geq 0$,
 %
-\begin{equation} \label{parametrixerrroestimate}
+\begin{equation} \label{parametrixerrroestimate2}
     \left\| S - \textstyle\sum\nolimits_\alpha S\!_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
 \end{equation}
 %
@@ -340,7 +340,7 @@ where $s$ is smooth and supported on $L^{-1} \leq |\theta| \leq L$, and $\phi$ i
 %    R^{-N} \lesssim R^{\left( \frac{d+1}{2} - K \right)} \lesssim \frac{R^{d}}{\langle R d_X(x,x_0) \rangle^{\frac{d-1}{2}}} \Big\langle R \big| |t_0| \pm d_X^\pm(x,x_0) \big| \Big\rangle^{-K}.
 %\end{equation}
 %
-The error in \eqref{parametrixerrroestimate} is again negligible. We bound each of the functions $\{ S\!_\alpha \}$ separately, combining the estimates using the triangle inequality. We continue by expanding out the implicit integrals in the definition of $S\!_\alpha$. In the coordinate system $U_\alpha$, we can write
+The error in \eqref{parametrixerrroestimate2} is again negligible. We bound each of the functions $\{ S\!_\alpha \}$ separately, combining the estimates using the triangle inequality. We continue by expanding out the implicit integrals in the definition of $S\!_\alpha$. In the coordinate system $U_\alpha$, we can write
 %
 \begin{equation} \label{SalphaDefinition}
 \begin{split}
@@ -571,7 +571,7 @@ where $a_{\pm}$ is supported on $|\rho| \sim 1$, and for all $\alpha$, $|\partia
 \end{split}
 \end{equation}
 %
-Combining \eqref{parametrixerrroestimate} and \eqref{finaloscillatoryintegralbound} completes the proof of the pointwise bounds.
+Combining \eqref{parametrixerrroestimate2} and \eqref{finaloscillatoryintegralbound} completes the proof of the pointwise bounds.
 
 The quasi-orthogonality arguments are obtained by a largely analogous method, and so we only sketch the proof. Write $S\!_\nu$ for $S\!_{x_\nu,t_\nu}$. One major difference is that we can use the self-adjointness of the operators $Q$, and the unitary group structure of $\{ e^{2 \pi i t P} \}$, to write
 %
@@ -2062,10 +2062,10 @@ This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-
     \end{split}
     \end{equation}
     %
-    Bernstein's inequality for compact manifolds (see \cite{Sogge}, Section 3.3) gives
+    The operator $L_R = R^{1/p' - s} \langle P \rangle^{s - 1/p'} Q_R$ can be written as $l_R(P)$, where $l_R(\lambda) = R^{1/p' - s} \langle \lambda \rangle^{s - 1/p'} q(\lambda/R)$. Since the functions $l_R$ are \emph{uniformly} symbols of order zero, i.e. for $R \geq 1$ we have uniform estimates $(\partial^\alpha l_R)(\lambda) \lesssim_\alpha \langle \lambda \rangle^{- \alpha}$, Corollary 4.3.2 of \cite{Sogge} implies that the operators $\{ L_R \}$ are uniformly bounded on $L^p(X)$. But this means that
     %
     \begin{equation}
-        \| Q_R u \|_{L^{q}_{s - 1/p'}(X)} \lesssim R^{s - 1/p'} \| u \|_{L^p(X)}.
+        \| Q_R u \|_{L^{q}_{s - 1/p'}(X)} = R^{s - 1/p'} \| L_R u \|_{L^q(X)} \lesssim R^{s - 1/p'} \| u \|_{L^p(X)}.
     \end{equation}
     %
     Thus we conclude that

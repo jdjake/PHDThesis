@@ -1,0 +1,154 @@
+%!TEX root = ../main.tex
+
+\renewcommand{\thechapter}{A}
+\chapter{Elementary Theorems}
+
+In this appendix, we list several results that occur so frequently in the harmonic analysis literature that they are often used without comment. In this appendix, we briefly list those results that will be used in this thesis. The first result, the Sobolev embedding theorem, allows us to trade smoothness for integrability.
+
+\begin{theorem}[The Sobolev Embedding Theorem]
+    Suppose $X$ is a $d$-dimensional manifold, or $X = \RR^d$. Fix $1 \leq p \leq q < \infty$ and let $r = d(1/p - 1/q)$. Then for any $s \in \RR$, $W^{s,q}(X) \subset W^{s-r,p}(X)$, and if $s > d/p$, $W^{s,p}(X) \subset C_b(X)$, the space of continuous, bounded functions, where these inclusions are continuous.
+\end{theorem}
+\begin{proof}
+    For the case where $X = \RR^d$, see Theorem 6.2.4 of \cite{GrafakosModern}. To obtain the result on a general compact manifold, apply the Sobolev embedding theorem in each coordinate system.
+\end{proof}
+
+\begin{comment}
+\begin{theorem}[Bernstein's Inequality]
+    Fix $1 \leq p \leq \infty$, $s \in \RR$, and $R > 0$. If the Fourier transform of a function $f: \RR^d \to \CC$ is supported on $\{ \xi : 0 \leq |\xi| \leq R \}$, then
+        %
+    \[ \| f \|_{W^{s,p}(\RR^d)} \sim \langle R \rangle^s \| f \|_{L^p(\RR^d)}. \]% \quad\text{and}\quad \| f \|_{\dot{B}^{s,p}_r(\RR^d)} \sim R^s \| f \|_{L^p(\RR^d)}. \]
+    Similarily, suppose $X$ is a compact manifold, and $P$ is a classical, elliptic, self-adjoint operator of order one on $X$. If $f: \RR^d \to \CC$ can be written as a linear combination of eigenfunctions of $P$, whose eigenvalues are contained in the interval $[0,R]$, then
+        %
+        \[ \| f \|_{W^{s,p}(X)} \sim \langle R \rangle^s \| f \|_{L^p(\RR^d)} \]
+\end{theorem}
+\begin{proof}
+    For the result on $\RR^d$, see Proposition 5.3 of \cite{Wolff}.
+\end{proof}
+\end{comment}
+
+Schur's Test for integral kernels is a simple, but often optimal method, for obtaining the boundedness of integral operators from an $L^1$ norm, or into an $L^\infty$ norm. Interpolation can then be used to obtain simple bounds for operators with respect to other norms.
+
+\begin{theorem}[Schur's Test for Integral Kernels]
+    Let $X$ and $Y$ be measure spaces.
+    %
+    \begin{itemize}
+        \item If $K_T \in L^\infty(Y) L^p(X)$, then for each $f \in L^1(Y)$, and for almost every $x$, the integral
+        %
+        \[ Tf(x) = \int K_T(x,y) f(y)\; dy \]
+        %
+        is absolutely integrable, and defines an operator from $L^1(Y)$ to $L^p(X)$ such that
+        %
+        \[ \| T \|_{L^1(Y) \to L^p(X)} \leq \| K_T \|_{L^\infty(X) L^p(Y)}. \]
+
+        \item If $K_T \in L^\infty(X) L^{p'}(Y)$, then for each $f \in L^p(Y)$, and for almost every $x$, the integral
+        %
+        \[ Tf(x) = \int K_T(x,y) f(y)\; dy \]
+        %
+        is absolutely integrable, defining an operator $T$ from $L^p(Y)$ to $L^\infty(X)$, such that
+        %
+        \[ \| T \|_{L^p(Y) \to L^\infty(X)} \leq \| K_T \|_{L^\infty(Y) L^{p'}(X)}. \]
+    \end{itemize}
+\end{theorem}
+\begin{proof}
+    For any measurable $f: Y \to \CC$, define $T^\dagger f: X \to [0,\infty]$ by setting
+    %
+    \begin{equation}
+        T^\dagger f(x) = \int |K_T(x,y)| f(y)|\; dy.
+    \end{equation}
+    %
+    Applying Minkowski's inequality and H\"{o}lder's inequality gives the bounds
+    %
+    \begin{equation}
+        \| T^\dagger f \|_{L^p(X)} \leq \| K_T \|_{L^\infty(X) L^p(Y)} \| f \|_{L^1(Y)}
+    \end{equation}
+    %
+    and
+    \begin{equation}
+        \| T^\dagger f \|_{L^\infty(X)} \leq \| K_T \|_{L^\infty(Y) L^{p'}(X)} \| f \|_{L^p(Y)}.
+    \end{equation}
+    %
+    These bounds immediately imply the required results for the integral operator $T$.
+\begin{comment}
+    If $K_T \in L^\infty(Y) L^p(X)$, then for any measurable function $f$ on $Y$, the integral
+    %
+    \begin{equation} \label{equation189203u190248231094583129}
+        \left( \int \left( \int |K_T(x,y)| |f(y)|\; dy \right)^p\; dx \right)^{1/p}
+    \end{equation}
+    %
+    is well defined, though possibly infinite. Applying Minkowski's inequality, we find that
+    %
+    \begin{equation} \label{equatyion12890u3091284587u93125tuy98324hfv9i8euwhf}
+    \begin{split}
+        \left( \int \left( \int |K_T(x,y)| |f(y)|\; dy \right)^p\; dx \right)^{1/p} &\leq \int \left( \int |K_T(x,y)|^p |f(y)|^p\; dx \right)^{1/p}\; dy\\
+        &\leq \int \| K_T \|_{L^p(X)} |f(y)|\; dy\\
+        &\leq \| K_T \|_{L^\infty(X) L^p(Y)} \| f \|_{L^1(Y)}.
+    \end{split}
+    \end{equation}
+    %
+    Thus if $f \in L^1(Y)$, \eqref{equation189203u190248231094583129} is finite, and so $\int |K_T(x,y)| |f(y)|\; dy$ is finite for almost every $x \in X$, so that $Tf$ is well defined as a measurable function on $X$. But the triangle inequality and \eqref{equatyion12890u3091284587u93125tuy98324hfv9i8euwhf} imply the bound $\| Tf \|_{L^\infty(X)} \leq \| K_T \|_{L^\infty(X) L^p(Y)} \| f \|_{L^1(Y)}$.
+\end{comment}
+\end{proof}
+
+Finally, we will often use a helpful interpolation lemma.
+
+\begin{theorem}[A Real Interpolation Lemma] \label{theoremrealinterpolation}
+    Consider a family of functions $\{ f_H \}$, where $H$ ranges over the dyadic numbers, and fix $0 < p_0 < p_1 < \infty$. If for each $H$,
+    %
+    \[ \| f_H \|_{L^{p_0}(X)} \lesssim H W_H^{1/p_0} \quad\text{and}\quad \| f_H \|_{L^{p_1}(X)} \lesssim H W_H^{1/p_1}, \]
+    %
+    with implicit constants uniform in $H$, then for any $p_0 < p < p_1$,
+    %
+    \[ \left\| \sum\nolimits_H f_H \right\|_{L^p(X)} \lesssim \left( \sum\nolimits_H H^p W_H \right)^{1/p}. \]
+\end{theorem}
+\begin{proof}
+    See Lemma 2.2 of \cite{HeoandNazarovandSeeger}.
+\end{proof}
+
+In an application of \ref{theoremrealinterpolation}, the quantities $H$ normally stand for the `height' of a given input, and the quantities $\{ W_H \}$ the `width', and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for a fixed `height scale'.
+
+\renewcommand{\thechapter}{B}
+\chapter{Pseudo-Differential Operators} \label{appendixpsueiodjaweiodj}
+
+In this appendix we briefly introduce the theory of pseudodifferential operators relevant to this thesis. Recall that a \emph{pseudo-differential operator} on $\RR^d$ of order $s \in \RR$ is a bounded operator $T$ on the space $\mathcal{S}(\RR^d)$ of Schwartz functions such that
+%
+\begin{equation}
+    Tf(x) = \int_{\RR^d} a(x,\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi,
+\end{equation}
+%
+where $a: \RR^d \times {\dot{\RR}^d} \to \CC$ is a fixed symbol of order $s$. The operator $T$ is often written $a(x,D)$, because if $a$ is a polynomial in $\xi$, i.e.
+%
+\begin{equation}
+    a(x,\xi) = \sum\nolimits_\alpha c_\alpha(x) \xi^\alpha,
+\end{equation}
+%
+then the pseudo-differential operator $a(x,D)$ is really the differential operator $\sum c_\alpha(x) D^\alpha$.
+
+An important property of pseudo-differential operators is that they are \emph{pseudo-local}, in the sense that the Schwartz kernel $K_T$ is a smooth function, rapidly decaying away from the diagonal $\Delta_{\RR^d} = \{ (x,x): x \in \RR^d \}$. % and satisfies, for $|x - y| \geq 1$, estimates of the form
+%
+%\[ |\partial_x^\alpha \partial_y^\beta K_T(x,y)| \lesssim_{\alpha,\beta,N} \langle x - y \rangle^{-N} \]
+%
+%for arbitrarily large $N > 0$.
+
+A symbol $a$ of order $s$ is \emph{classical} if it has an expansion of the form
+%
+\begin{equation}
+    a \sim \sum\nolimits_{k = 0}^\infty a_{s - k},
+\end{equation}
+%
+where $a_{s-k}: \RR^d \times {\dot{\RR}^d} \to \CC$ is a smooth function which is homogeneous of order $s - k$ in the second variable. A pseudo-differential operator $T = a(x,D)$ is then \emph{classical} if the symbol $a$ is classical. We then call $a_s$ the \emph{principal symbol} of the operator $T$. A classical pseudo-differential operator is \emph{elliptic} if it's principal symbol is non-vanishing.
+
+All this generalizes to the setting of compact manifolds by working in coordinates. Let $X$ be a compact manifold, and consider a cover of $X$ by open sets $\{ U_\alpha \}$, where the closure of $U_\alpha$ is contained in an open set $V_\alpha$ which is diffeomorphic to a precompact subset $W_\alpha$ of $\RR^d$ by a diffeomorphism $F_\alpha: V_\alpha \to W_\alpha$. Consider a partition of unity $\{ \psi_\alpha \}$ of $X$, subordinate to the cover $\{ U_\alpha \}$, and also consider a smooth function $\phi_\alpha$ on $\RR^d$, equal to one on $F_\alpha(U_\alpha)$ but vanishing outside of $W_\alpha$.
+
+A Schwartz operator $T$ on a compact $d$-dimensional manifold $X$ is a pseudo-differential operator of order $s > 0$ if it's Schwartz kernel $K_T$ (with respect to any fixed smooth volume density on $X$) agrees with a smooth function away from the diagonal $\Delta_X = \{ (x,x): x \in X \}$, and if for each $\alpha$, the operators $T_\alpha$ on $\RR^d$ given by
+%
+\begin{equation}
+    (T_\alpha f)(x) = \phi_\alpha(x)\; T \{ \psi_\alpha \cdot (f \circ F_\alpha) \} (F_\alpha^{-1}(x))
+\end{equation}
+%
+are pseudo-differential operators on $\RR^d$. The operator $T$ is classical if each of the operators $T_\alpha$ is classical, and if $T_\alpha$ has principal symbol $p_\alpha(x,\xi)$ we can then define the principal symbol of $T$ to be the function $p: T^* X - \{ 0 \} \to \CC$ defined by
+%
+\begin{equation}
+    p(x,\xi) = \sum \psi_\alpha(x) p_\alpha(x, DF_\alpha(x)^{-T} \xi).
+\end{equation}
+%
+One verifies using the change-of-variable formulas for pseudo-differential operators\footnote{See Theorem 18.1.17 of \cite{Hormander3}.} that if $T$ is a pseudo-differential operator for one choice of cover $\{ U_\alpha \}$, then it is a pseudo-differential operator for \emph{all} choices of covers, and that for a classical pseudo-differential operator the function $p$ is invariant of this choice. A classical pseudo-differential operator $T$ on a compact manifold is then \emph{elliptic} if it's principal symbol is non-vanishing.
