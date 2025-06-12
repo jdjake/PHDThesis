@@ -7,22 +7,22 @@
 \contentsline {section}{\numberline {2.2}The Radial Multiplier Conjecture}{13}{}%
 \contentsline {section}{\numberline {2.3}Radial-Multiplier Bounds by Density Decompositions}{14}{}%
 \contentsline {section}{\numberline {2.4}Combining Scales with Atomic Decompositions}{23}{}%
-\contentsline {section}{\numberline {2.5}Quasi-Radial Multipliers and Local Smoothing}{25}{}%
+\contentsline {section}{\numberline {2.5}Quasi-Radial Multipliers and Local Smoothing}{26}{}%
 \contentsline {chapter}{\numberline {3}Wave Equations on Compact Manifolds}{28}{}%
 \contentsline {section}{\numberline {3.1}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{28}{}%
 \contentsline {section}{\numberline {3.2}Geometries Induced by Elliptic Operators}{29}{}%
 \contentsline {section}{\numberline {3.3}Fourier Integral Operator Techniques}{34}{}%
-\contentsline {section}{\numberline {3.4}Periodic Geodesics and Assumption B}{41}{}%
-\contentsline {part}{II\hspace {1em}New Results}{43}{}%
-\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{44}{}%
-\contentsline {section}{\numberline {4.1}Preliminary Setup}{45}{}%
-\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{49}{}%
-\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{58}{}%
-\contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{67}{}%
-\contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{69}{}%
-\contentsline {section}{\numberline {5.1}Short Range Bounds}{73}{}%
-\contentsline {section}{\numberline {5.2}Long Range Bounds}{74}{}%
-\contentsline {section}{\numberline {5.3}Wave Bounds on the Sphere}{76}{}%
-\contentsline {part}{III\hspace {1em}Appendices}{78}{}%
-\contentsline {chapter}{\numberline {A}Elementary Theorems}{79}{}%
-\contentsline {chapter}{\numberline {B}Pseudo-Differential Operators}{81}{}%
+\contentsline {section}{\numberline {3.4}Periodic Geodesics and Assumption B}{42}{}%
+\contentsline {part}{II\hspace {1em}New Results}{44}{}%
+\contentsline {chapter}{\numberline {4}The Boundedness of Spectral Multipliers with Compact Support}{45}{}%
+\contentsline {section}{\numberline {4.1}Preliminary Setup}{46}{}%
+\contentsline {section}{\numberline {4.2}Quasi-Orthogonality Estimates For Wave-Packets}{50}{}%
+\contentsline {section}{\numberline {4.3}Analysis of Regime I via Density Methods}{59}{}%
+\contentsline {section}{\numberline {4.4}Analysis of Regime II via Local Smoothing}{68}{}%
+\contentsline {chapter}{\numberline {5}Combining Scales Via Atomic Decompositions}{70}{}%
+\contentsline {section}{\numberline {5.1}Short Range Bounds}{74}{}%
+\contentsline {section}{\numberline {5.2}Long Range Bounds}{75}{}%
+\contentsline {section}{\numberline {5.3}Wave Bounds on the Sphere}{77}{}%
+\contentsline {part}{III\hspace {1em}Appendices}{79}{}%
+\contentsline {chapter}{\numberline {A}Elementary Theorems}{80}{}%
+\contentsline {chapter}{\numberline {B}Pseudo-Differential Operators}{82}{}%

@@ -877,6 +877,7 @@
       \strng{authorbibnamehash}{70049ef238337584135a0b51cf57211b}
       \strng{authornamehash}{70049ef238337584135a0b51cf57211b}
       \strng{authorfullhash}{70049ef238337584135a0b51cf57211b}
+      \field{extraname}{1}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -887,6 +888,57 @@
       \field{year}{1975}
       \field{pages}{123\bibrangedash 130}
       \range{pages}{8}
+    \endentry
+    \entry{PeetreDiff}{article}{}
+      \name{author}{1}{}{%
+        {{hash=70049ef238337584135a0b51cf57211b}{%
+           family={Peetre},
+           familyi={P\bibinitperiod},
+           given={Jaak},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{70049ef238337584135a0b51cf57211b}
+      \strng{fullhash}{70049ef238337584135a0b51cf57211b}
+      \strng{bibnamehash}{70049ef238337584135a0b51cf57211b}
+      \strng{authorbibnamehash}{70049ef238337584135a0b51cf57211b}
+      \strng{authornamehash}{70049ef238337584135a0b51cf57211b}
+      \strng{authorfullhash}{70049ef238337584135a0b51cf57211b}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Math. Scand.}
+      \field{title}{Une caractérisation abstraite des opérateurs différentiels}
+      \field{volume}{7}
+      \field{year}{1959}
+      \field{pages}{211\bibrangedash 218}
+      \range{pages}{8}
+    \endentry
+    \entry{RudinFunc}{book}{}
+      \name{author}{1}{}{%
+        {{hash=33be2fc2739d3493c6d6cc5d56a4c41e}{%
+           family={Rudin},
+           familyi={R\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill Book Co., New York-Düsseldorf-Johannesburg}%
+      }
+      \strng{namehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{fullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{bibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorbibnamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authornamehash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \strng{authorfullhash}{33be2fc2739d3493c6d6cc5d56a4c41e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{McGraw-Hill Series in Higher Mathematics}
+      \field{title}{Functional analysis}
+      \field{year}{1973}
     \endentry
     \entry{SeegerSoggeBochnerRiesz}{article}{}
       \name{author}{2}{}{%
@@ -1187,6 +1239,31 @@
       \field{pages}{43\bibrangedash 65}
       \range{pages}{23}
     \endentry
+    \entry{spivakvol4}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ee3293a9c2577bc8e7bb84e4d67e85c5}{%
+           family={Spivak},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Publish or Perish, Inc., Wilmington, DE}%
+      }
+      \strng{namehash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \strng{fullhash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \strng{bibnamehash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \strng{authorbibnamehash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \strng{authornamehash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \strng{authorfullhash}{ee3293a9c2577bc8e7bb84e4d67e85c5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second}
+      \field{title}{A comprehensive introduction to differential geometry. {V}ol. {IV}}
+      \field{year}{1979}
+    \endentry
     \entry{TaoDispersive}{book}{}
       \name{author}{1}{}{%
         {{hash=4cea0d7ce90ed017dfa21b4cee6c72e9}{%
@@ -1290,7 +1367,6 @@
       \field{labeltitlesource}{title}
       \field{series}{University Series in Mathematics}
       \field{title}{Introduction to Pseudodifferential and {F}ourier Integral Operators. {V}ol. 2}
-      \field{volume}{2}
       \field{year}{1980}
     \endentry
   \enddatalist

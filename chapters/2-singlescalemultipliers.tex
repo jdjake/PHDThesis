@@ -39,7 +39,7 @@ Equations \eqref{TrivialLowFrequencyBound} and \eqref{dyadicMainReulst} thus imp
 Without loss of generality, by translating and dilating our multiplier, we can assume that the eigenvalues of the operator $P$ are all integers. Fix a constant $\varepsilon_X > 0$, strictly smaller than the injectivity radius of the geodesic flow on the manifold $X$ induced by the geometry of $P$. Our goal is to prove inequalities \eqref{TrivialLowFrequencyBound} and \eqref{dyadicMainReulst}. Proving \eqref{TrivialLowFrequencyBound} is simple because the operators $a_R(P)$ are smoothing operators, uniformly for $0 < R < 1$, because the spectrum of $X$ is discrete, low eigenvalue eigenfunctions are uniformly smooth, and $X$ is compact.
 
 \begin{lemma} \label{lowjLemma}
-    Let $X$ be a compact $d$-dimensional manifold, and suppose $P$ is an elliptic operator on $X$. If $1/2d < 1/p - 1/2 \leq 1/2$, and if $a$ is a regulated function, then
+    Let $X$ be a compact $d$-dimensional manifold, and suppose $P \in \COP{1}(X)$. If $1/2d < 1/p - 1/2 \leq 1/2$, and if $a$ is a regulated function, then
     %
     \[ \sup\nolimits_{R \leq 1} \| a_R \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{l^\infty(\Lambda)} \lesssim \| a \|_{R^{p,s}[0,\infty)}. \]
 \end{lemma}
@@ -183,7 +183,7 @@ The following proposition, a kind of $L^p$ square root cancellation bound, impli
 Since we already proved \eqref{TrivialLowFrequencyBound}, this proposition completes the proof of Theorem \ref{maintheorem}, and will take the remainder of the chapter.
 
 \begin{prop} \label{TjbLemma}
-    Let $P$ be an elliptic operator on a $d$-dimensional compact manifold $X$ satisfying Assumptions A and B. Fix $R > 0$ and a constant $\varepsilon_X$ smaller than the injectivity radius of $X$ with respect to the geodesic flow induced by $P$, and suppose $1/(d-1) < 1/p - 1/2 < 1/2$. Consider any function $b: I_0 \to \CC$, and suppose we can write $b = \sum\nolimits_{t_0 \in \mathcal{T}_R} b_{t_0}^I + b^{II}$, where $\supp(b_{t_0}^I) \subset I_{t_0}$ and $\supp(b_R^{II}) \subset I_0 \smallsetminus [-\varepsilon_X,\varepsilon_X]$. Define operators $T^I = \sum\nolimits_{t_0 \in \mathcal{T}_R} T^I_{t_0}$ and $T^{II}$, where
+    Let $X$ be a $d$-dimensional compact manifold, and consider $P \in \COP{1}(X)$ satisfying Assumptions A and B. Fix $R > 0$ and a constant $\varepsilon_X$ smaller than the injectivity radius of $X$ with respect to the geodesic flow induced by $P$, and suppose $1/(d-1) < 1/p - 1/2 < 1/2$. Consider any function $b: I_0 \to \CC$, and suppose we can write $b = \sum\nolimits_{t_0 \in \mathcal{T}_R} b_{t_0}^I + b^{II}$, where $\supp(b_{t_0}^I) \subset I_{t_0}$ and $\supp(b_R^{II}) \subset I_0 \smallsetminus [-\varepsilon_X,\varepsilon_X]$. Define operators $T^I = \sum\nolimits_{t_0 \in \mathcal{T}_R} T^I_{t_0}$ and $T^{II}$, where
     %
     \[ T_{t_0}^I = \int b_{t_0}^I(t) ( e^{2 \pi i tP} \circ Q_R )\; dt\ \ \text{and}\ \ T^{II} = \int b^{II}(t) ( e^{2 \pi i tP} \circ Q_R)\; dt. \]
     %
@@ -236,7 +236,7 @@ A proof of these facts using more modern notation is given in Theorem 7 of \cite
 The discussion at the end of Section \ref{PrelimSetup} motivates us to consider estimates for functions obtained by taking averages of the wave equation over a small time interval, with initial conditions localized to a particular part of space. In this section, we study the $L^2$ orthogonality of such quantities. One should compare the results of this section to the results of Lemma \ref{lemma4}. We do not exploit periodicity of the Hamiltonian flow in this section since we are only dealing with estimates for the half wave-equation for \emph{small times}. Our results here thus hold for any manifold $X$, and any operator $P$ whose principal symbol has cospheres with non-vanishing Gaussian curvature. In order to prove the required quasi-orthogonality estimates of the functions $\{ f_{x_0,t_0} \}$, we find a new connection between the Finsler geometry we introduced in section \ref{sec:geometriesinduced} and the behaviour of the operator $P$. In particular, recall the quasimetrics $d_+$ and $d_-$ introduced in that section.
 
 \begin{prop} \label{theMainEstimatesForWave}
-    Let $X$ be a compact manifold of dimension $d$, and let $P$ be a classical elliptic self-adjoint pseudodifferential operator of order one whose principal symbol satisfies the curvature assumptions of Theorem \ref{maintheorem}. Suppose $\varepsilon_X > 0$ is chosen smaller thant he injectivity radius of $X$. Then for all $R \geq 0$, the following estimates hold:
+    Let $X$ be a compact manifold of dimension $d$, and suppose $P \in \COP{1}(X)$ satisfies the curvature assumptions of Theorem \ref{maintheorem}. Suppose $\varepsilon_X > 0$ is chosen smaller thant he injectivity radius of $X$. Then for all $R \geq 0$, the following estimates hold:
     %
     \begin{itemize}%[leftmargin=8mm]
         \item (Pointwise Estimates) Fix  $|t_0| \leq \varepsilon_X$ and $x_0 \in X$. Consider any two $L^1$ normalized functions $c: \RR \to \CC$ and $u: X \to \CC$ with $\supp(c) \subset I_{t_0}$ and $\supp(u) \subset B(x_0,1/R)$. Define $S\!_{x_0,t_0}: X \to \CC$ by setting
@@ -2025,7 +2025,7 @@ In this section, we bound the operators $\{ T^{II} \}$, by a reduction to an end
     \| e^{2\pi i t P} f \|_{L^{p'}(X) L^{p'}_t(I_0)} \lesssim \| f \|_{L^{p'}_{s - 1/p'}}.
 \end{equation}
 %
-This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-1)/(d+1)$ for classical elliptic pseudodifferential operators $P$ satisfying the cosphere assumption of Theorem \ref{maintheorem}. The range of $p$ here is also precisely the range of $p$ in Theorem \ref{maintheorem}. Alternatively, Lemma \ref{LpBoundLemma} can be used to prove \eqref{thelocalsmoothinginequality} independently of \cite{LeeSeeger} in the same range by a generalization of the method of Section 10 of \cite{HeoandNazarovandSeeger}.
+This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-1)/(d+1)$ for $P \in \COP{1}(X)$ satisfying the cosphere assumption of Theorem \ref{maintheorem}. The range of $p$ here is also precisely the range of $p$ in Theorem \ref{maintheorem}. Alternatively, Lemma \ref{LpBoundLemma} can be used to prove \eqref{thelocalsmoothinginequality} independently of \cite{LeeSeeger} in the same range by a generalization of the method of Section 10 of \cite{HeoandNazarovandSeeger}.
 
 \begin{lemma} \label{LocalSmoothingLargeTimesTheorem}
     Using the notation of Proposition \ref{TjbLemma}, let

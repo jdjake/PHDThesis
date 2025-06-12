@@ -29,7 +29,7 @@
     %
     \[ | \partial_x^\alpha \partial_\theta^\beta f (x,\theta) | \lesssim_{\alpha,\beta} \langle \theta \rangle^{s - |\beta|} \]
     %
-    for all multi-indices $\alpha$ and $\beta$. More generally, symbols $s: \Gamma \to \CC$ can be defined for \emph{conical subsets} $\Gamma$ of $\RR^n \times \dot{\RR}^p$, i.e. sets $\Gamma$ with the property that if $(x,\theta) \in \Gamma$ and $\rho > 0$, then $(x,\rho \theta) \in \Gamma$. For a sequence of symbols $\{ a_k : k \geq 0 \}$, we write $a \sim \sum_{k = 0}^\infty a_k$ if, for any $l > 0$, there exists $N_0$ such that for $N \geq N_0$, $a - \sum_{k = 0}^N a_k$ is a symbol of order $s - l$. We view this relation as an asymptotic expansion of the function $a$.
+    for all multi-indices $\alpha$ and $\beta$. More generally, symbols $s: \Gamma \to \CC$ can be defined for \emph{conical subsets} $\Gamma$ of $\RR^n \times \dot{\RR}^p$, i.e. sets $\Gamma$ with the property that if $(x,\theta) \in \Gamma$ and $\rho > 0$, then $(x,\rho \theta) \in \Gamma$. For a sequence of symbols $\{ a_k : k \geq 0 \}$, we write $a \sim \sum_{k = 0}^\infty a_k$ if, for any $l > 0$, there exists $N_0$ such that for $N \geq N_0$, $a - \sum_{k = 0}^N a_k$ is a symbol of order $s - l$. We view this relation as an asymptotic expansion of the function $a$
 
     \item We let $\mathcal{S}(\RR^d)$ denote the Schwartz space of rapidly decreasing smooth functions on $\RR^d$, i.e. the functions $f: \RR^d \to \CC$ such that for any multi-index $\alpha$ and any $N > 0$, $|\partial^\alpha f(x)| \lesssim_{\alpha,N} \langle x \rangle^{-N}$.
 
@@ -58,4 +58,6 @@
     \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k \in \ZZ} \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}, \]
     %
     where $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( |\cdot| / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev and Besov spaces $W^{s,p}(X)$ and $\dot{B}^{s,p}_r(X)$ of functions on a compact manifold $X$.
+
+    \item If $X$ is a compact manifold equipped with a smooth volume density, we let $\COP{s}(X)$ denote the family of all classical, elliptic pseudo-differential operators of order $s$ on $X$ which are positive-semidefinite in the sense that $\langle Pf, g \rangle = \langle f, Pg \rangle$ and $\langle Pf, f \rangle \geq 0$ hold for all $f,g \in C^\infty(X)$.
 \end{itemize}
