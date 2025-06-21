@@ -2,18 +2,16 @@
 
 \chapter*{Notation}
 
+\vspace{-1em}
+
 \begin{itemize}
     \item We use the normalization of the Fourier transform given by the formula
     %
     \[ \widehat{f}(\xi) = \int f(x) e^{- 2 \pi i \xi \cdot x}\; dx. \]
     %
-    Overloading notation, for a function $f: [0,\infty) \to \CC$, for $\lambda \geq 0$ we write
-    %
-    \[ \widehat{f}(\lambda) = \int_0^\infty f(t) \cos(2 \pi \lambda t)\; dt, \]
-    %
-    for the cosine transform of the function $f$.
+    Overloading notation, for a function $f: [0,\infty) \to \CC$ and $\lambda \geq 0$ we write the cosine transform of $f$ as $\widehat{f}(\lambda) = \int_0^\infty f(t) \cos(2 \pi \lambda t)\; dt$.
 
-    \item For $p \in [1,\infty]$, we let $p' \in [1,\infty]$ be the dual exponent, with $1/p + 1/p' = 1$.
+    \item For $p \in [1,\infty]$, we let $p' \in [1,\infty]$ be it's dual exponent, satisfying $1/p + 1/p' = 1$.
 
     \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$, chosen so that if a function $f$ is supported on a set $A$, then $\text{Trans}_y f$ is supported on $A + y$, and $\text{Dil}_t f$ is supported on $tA$. %Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that conventionally stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
 
@@ -21,9 +19,11 @@
     %
     \[ P(D_j) \{ f \} = \int P(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
     %
-    and simplifies many formulas associated with Fourier integral operators. We also consider the compositions of these operators $\partial^\alpha$ and $D^\alpha$ given by multi-indices $\alpha$.
+    and simplifies many formulas associated with Fourier integral operators. We also consider the compositions of these operators $\partial^\alpha$ and $D^\alpha$ given by multi-indices $\alpha$. For a differentiable function $F: \RR^m \to \RR^n$ and $x \in \RR^m$, we let $F_{\!*}(x) = \{ \partial_j F_k(x) \}$ denote the $n \times m$ matrix of partial derivatives of the components of $F$.
 
     \item We will often use the Japanese bracket $\langle x \rangle = (1 + |x|^2)^{1/2}$ for $x \in \RR^d$.
+
+    \item Let $\Omega \subset \RR^d$ be a bounded open set. For each affine transformation $T: \RR^d \to \RR^d$, consider a smooth function $\phi_T$ supported on $T(\Omega)$. We say these functions are \emph{adapted} if $|\partial_x^\alpha \{ \phi_T \circ T \}| \lesssim_\alpha 1$, uniformly in $T$. We will apply this definition when $\Omega$ is a cube (to obtain functions adapted to certain rectangles), and when $\Omega$ is an annulus (to obtain functions adapted to various annuli).
 
     \item We let $\dot{\RR}^p = \RR^p - \{ 0 \}$. A function $f: {\RR^n} \times {\dot{\RR}^p} \to \CC$ is a \emph{symbol of order $s$} if it satisfies bounds of the form
     %
@@ -37,7 +37,7 @@
     %
     \[ \| f \|_{L^p(X) L^q(Y)} = \big\| \| f \|_{L^q(Y)} \big\|_{L^p(X)} = \left( \int\nolimits_X \left( \int\nolimits_Y |f(x,y)|^q\; dy \right)^{p/q}\; dx \right)^{1/p}. \]
     %
-    Similarily, we can define the interchanged norm $L^q(Y) L^p(X)$ by swapping the order of application of the norms. It follows from Minkowski's inequality that if $p \geq q$ then $\| f \|_{L^p(X) L^q(Y)} \leq \| f \|_{L^q(Y) L^p(X)}$ and if $p \leq q$, then $\| f \|_{L^p(X) L^q(Y)} \geq \| f \|_{L^q(Y) L^p(X)}$.
+    Similarly, we can define the interchanged norm $L^q(Y) L^p(X)$ by swapping the order of application of the norms. It follows from Minkowski's inequality that if $p \geq q$ then $\| f \|_{L^p(X) L^q(Y)} \leq \| f \|_{L^q(Y) L^p(X)}$ and if $p \leq q$, then $\| f \|_{L^p(X) L^q(Y)} \geq \| f \|_{L^q(Y) L^p(X)}$.
 
     \item If $T$ is a Schwartz operator from a manifold $Y$ to a manifold $X$, we let $K_T$ denote the Schwartz distribution on $Y \times X$ which is the integral kernel for $T$, i.e. such that for any $f \in C_c^\infty(X)$ and $g \in C_c^\infty(Y)$,
     %

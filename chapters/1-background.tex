@@ -138,7 +138,7 @@ In what follows, we will assume the operator $P$ is an elliptic operator \emph{o
 %
 %the function $p: T^* M \to [0,\infty)$ being the principal symbol of $P$.
 
-The primary example for our purposes is obtained from a Laplace-Beltrami operator on a compact Riemannian manifold $X$; the operator $-\Delta$ is classsical (since it is a differential operator), and formally positive-semidefinite with respect to the volume form $dV$ on $X$, because of the `integration by parts' identity $\smash{\int_X (\Delta f_1) f_2\; dV = - \int_X g( \nabla_g f_1(x), \nabla_g f_2 )\; dV}$. Since we restrict our attention to elliptic operators of order one, the archetypal object of study is the operator $P = \sqrt{-\Delta}$.
+The primary example for our purposes is obtained from a Laplace-Beltrami operator on a compact Riemannian manifold $X$; the operator $-\Delta$ is classical (since it is a differential operator), and formally positive-semidefinite with respect to the volume form $dV$ on $X$, because of the `integration by parts' identity $\smash{\int_X (\Delta f_1) f_2\; dV = - \int_X g( \nabla_g f_1(x), \nabla_g f_2 )\; dV}$. Since we restrict our attention to elliptic operators of order one, the archetypal object of study is the operator $P = \sqrt{-\Delta}$.
 
 We claim that the study of spectral multipliers for eigenfunctions is a generalization of the study of multipliers for spherical harmonic expansions introduced in the previous section. Define an operator $P_{\text{SH}}$ on $S^d$ by setting $P_{\text{SH}} f = \big( k + \tfrac{d-1}{2} \big)f$ for $f \in \mathcal{H}_k$. Then $T_{a_\rho} = a(\rho P_{\text{SH}})$. In Lemma \ref{lemmaoijioawjdioawjdw} we will see that $P_{\text{SH}}$ is an element of $\COP{s}(S^d)$ with respect to the Riemannian volume density on $S^d$.
 
@@ -182,9 +182,9 @@ is a hypersurface in $T^*_{\!\!x} M$ with non-vanishing Gauss curvature, where $
   %
   Thus we can write $P_{\text{SH}} = \alpha(P)$, where $\alpha(\lambda) = \sqrt{ \lambda^2 + c^2 }$ with $c = \tfrac{d-1}{2}$. Since $\alpha$ is a symbol of order $1$ with principal symbol $|\lambda|$, it follows that $P_{\text{SH}} \in \COP{1}(S^d)$, and $P_{\text{SH}}$ and $P$ share the same principal symbol\footnote{See Theorem 4.3.1 of \cite{Sogge} for details.}. Thus $P_{\text{SH}}$ satisfies Assumption A. The operator also satisfies Assumption B by definition since it is diagonalized by the spherical harmonics, and it's eigenvalues form the arithmetic progression $\NN + \tfrac{d-1}{2}$.
 
-  Now we prove Assumption C. Fix $c \in \RR$, and let $Lu = (\Delta + c) u$. Then as $t$ varies, for each input $f$ the functions $u = \cos(2 \pi t P_{\text{SH}}) f$ solve the differential equation $\partial_t^2 u = Lu$, and so it suffices to show solutions to the partial differential equation have finite propagation speed. This follows if we can prove that for sufficiently small $t$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the general case follows by repeatedly composing the result by time invariance of the equation. We prove this result by using standard energy methods for partial differential equations. See Theorem 2.4.2 of \cite{SoggeHangzhou} for another example of this approach.
+  Now we prove Assumption C. Fix $c \in \RR$, and let $Lu = (\Delta + c) u$. Then as $t$ varies, for each input $f$ the functions $u = \cos(t P_{\text{SH}}) f$ solve the differential equation $\partial_t^2 u = Lu$, and so it suffices to show solutions to the partial differential equation have finite propagation speed. This follows if we can prove that for sufficiently small $t$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the general case follows by repeatedly composing the result by time invariance of the equation. We prove this result by using standard energy methods for partial differential equations. See Theorem 2.4.2 of \cite{SoggeHangzhou} for another example of this approach.
 
-  Fix $x_0 \in X$ and $t < 1/2$. Define a geodesic normal coordinate ball\footnote{See Theorem 31 of \cite{spivakvol4} for a proof that the exponential maps a ball of radius $t$ at the origin in $T_{x_0} S^d$ diffeomorphically to a ball in $\RR^d$.} $B_t(x_0)$ in $S^d$, and set $e = u^2 + (\partial_t u)^2 + |\nabla_g u|_g^2$. Then define $E(s) = \int_{B_{t-s}(x_0)} e\; dV$. For solutions to $\partial_t^2 u = Lu$, we have $\partial_t e = 2[ (c + 1) u \partial_t u + \text{div}_g \{ \partial_t u\; \nabla_g u \} ]$.
+  Fix $x_0 \in X$ and $t < 1/2$. Define a geodesic normal coordinate ball\footnote{See Theorem 31 of \cite{spivakvol4} for a proof that the exponential map from $T_{x_0} S^d$ to $S^d$ is an embedding when restricted to a ball of radius $t$ at the origin in $T_{x_0} S^d$, provided $t$ is smaller than the cut time of $S^d$, which is $\pi$.} $B_t(x_0)$ in $S^d$, and set $e = u^2 + (\partial_t u)^2 + |\nabla_g u|_g^2$. Then define $E(s) = \int_{B_{t-s}(x_0)} e\; dV$. For solutions to $\partial_t^2 u = Lu$, we have $\partial_t e = 2[ (c + 1) u \partial_t u + \text{div}_g \{ \partial_t u\; \nabla_g u \} ]$.
   %
   Substituting this identity into the equation
   %
@@ -219,9 +219,9 @@ is a hypersurface in $T^*_{\!\!x} M$ with non-vanishing Gauss curvature, where $
   Thus by Gronwall's inequality\footnote{See Theorem 1.10 of \cite{TaoDispersive}}, $E(s) \leq E(0) e^{|c+1|s}$. Since $E(0) = 0$, we have $E(s) = 0$ for $s \leq t$, which implies that $u(x,s) = 0$ for $d(x,x_0) \leq t - s$.
 \end{proof}
 
-To obtain more general examples of operators satisfying Assumptions A and B, we will see in Section \ref{sec:geometriesinduced} that if an operator $P$ satisfies Assumption A then it gives $X$ a geometry, and Assumption B is closely related to this geometry. Assumption B implies that geodesics on $X$ with respect to this geometry are all closed and have commensurable lengths. Conversely, for most naturally occuring operators in $\COP{1}(X)$ with this geometrical property, including the Riemannian case where $P = \sqrt{-\Delta}$, there exists\footnote{See Lemma 29.2.1 of \cite{Hormander4}, discussed in slightly more detail (but not proved) in Section \ref{sec:PeriodicGeodesics}.} there exists $\tilde{P} \in \COP{1}(X)$ satisfying Assumptions A and B, and such that $P - \tilde{P}$ is a pseudo-differential operator of order $0$, so we can view $\tilde{P}$ as a perturbation of $P$. We can study the regularity of a subfamily of multipliers of $P$ by representing them as multipliers of $\tilde{P}$. Thus we can study multipliers of an appropriate pertubation of the Laplacian on any compact rank one symmetric space, or any Zoll manifold\footnote{The rank one $d$-dimensional symmetric spaces are $S^d$, $\RR \PP^d$, $\CC \PP^{d/2}$ (if $d$ is even), $\mathbb{H} \PP^{d/4}$ (if $d$ is a multiple of $4$), and the Cayley plane $\mathbb{O} \PP^2$ (if $d = 16$). Zoll manifolds are Riemannian manifolds diffeomorphic to $S^d$. See Chapter 3 of \cite{Besse} for a definition and classification of the rank one symmetric spaces, and Chapter 4 for an analysis of Zoll manifolds.}.
+To obtain more general examples of operators satisfying Assumptions A and B, we will see in Section \ref{sec:geometriesinduced} that if an operator $P$ satisfies Assumption A then it gives $X$ a geometry, and Assumption B is closely related to this geometry. Assumption B implies that geodesics on $X$ with respect to this geometry are all closed and have commensurable lengths. Conversely, for most naturally occurring operators in $\COP{1}(X)$ with this geometrical property, including the Riemannian case where $P = \sqrt{-\Delta}$, there exists\footnote{See Lemma 29.2.1 of \cite{Hormander4}, discussed in slightly more detail (but not proved) in Section \ref{sec:PeriodicGeodesics}.} there exists $\tilde{P} \in \COP{1}(X)$ satisfying Assumptions A and B, and such that $P - \tilde{P}$ is a pseudo-differential operator of order $0$, so we can view $\tilde{P}$ as a perturbation of $P$. We can study the regularity of a subfamily of multipliers of $P$ by representing them as multipliers of $\tilde{P}$. Thus we can study multipliers of an appropriate perturbation of the Laplacian on any compact rank one symmetric space, or any Zoll manifold\footnote{The rank one $d$-dimensional symmetric spaces are $S^d$, $\RR \PP^d$, $\CC \PP^{d/2}$ (if $d$ is even), $\mathbb{H} \PP^{d/4}$ (if $d$ is a multiple of $4$), and the Cayley plane $\mathbb{O} \PP^2$ (if $d = 16$). Zoll manifolds are Riemannian manifolds diffeomorphic to $S^d$. See Chapter 3 of \cite{Besse} for a definition and classification of the rank one symmetric spaces, and Chapter 4 for an analysis of Zoll manifolds.}.
 
-In order for Assumption C to hold, it is necessary that the operator $P^2$ be \emph{local} rather than merely \emph{pseudo-local}, i.e. it must be true that $\text{supp}(P^2u) \subset \text{supp}(u)$ for all inputs $u$ rather than that $P^2u$ is smooth and rapidly decaying away from the support of $u$. A result of Peetre \cite{PeetreDiff} implies that $P^2$ must be a \emph{differential operator}, and thus that $P$ be a Dirac operator. Thus a use of Assumption C restricts our assumption to Dirac operators, and thus explains the presence of the shift $\tfrac{d-1}{2}$ that occurs in our definition of dilations in our discussion of multipliers of spherical harmonic expansions in the previous section (since the square of the operatore $P_{\text{SH}} - \tfrac{d-1}{2}$ is not a differential operator). This assumption is only needed when combining frequency scales together in our theorem, and thus does not occur when we restrict our attention to the study of spectral multipliers of the form $a(P)$, where $a$ is compactly supported away from the origin.
+In order for Assumption C to hold, it is necessary that the operator $P^2$ be \emph{local} rather than merely \emph{pseudo-local}, i.e. it must be true that $\text{supp}(P^2u) \subset \text{supp}(u)$ for all inputs $u$ rather than that $P^2u$ is smooth and rapidly decaying away from the support of $u$. A result of Peetre \cite{PeetreDiff} implies that $P^2$ must be a \emph{differential operator}, and thus that $P$ be a Dirac operator. Thus a use of Assumption C restricts our assumption to Dirac operators, and thus explains the presence of the shift $\tfrac{d-1}{2}$ that occurs in our definition of dilations in our discussion of multipliers of spherical harmonic expansions in the previous section (since the square of the operator $P_{\text{SH}} - \tfrac{d-1}{2}$ is not a differential operator). This assumption is only needed when combining frequency scales together in our theorem, and thus does not occur when we restrict our attention to the study of spectral multipliers of the form $a(P)$, where $a$ is compactly supported away from the origin. We hope to remove this assumption in further work.
 
 Under Assumption A and Assumption B, in Chapter \ref{chap:boundedsinglefrequencyscale} we prove necessary and sufficient conditions hold for a compactly supported function to be contained in $M^p_{\text{Dil}}(X)$ for $1 < p < (d-1)/2(d+1)$.
 
@@ -237,7 +237,7 @@ Under Assumption C, and the additional assumption of certain wave estimates asso
 
 \vspace{0.5em}
 
-\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}(p)$:
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\textbf{Wave-Bound}(p)$:
 There exists a constant $C_0 > 0$ such that
 %
 \begin{align*}
@@ -394,7 +394,7 @@ for symbols $s_1$ and $s_2$ of order $-1/2$. The presence of $e^{2 \pi i \lambda
 
 \section{The Radial Multiplier Conjecture}
 
-The general study of the boundedness properties of Fourier multiplier operators in multiple variables was initiated in the 1950s, as connections of the theory to partial differential equations became more fully realized\footnote{See \cite{Hormander1} for a more detailed overview of what was known at this time.}. It was quickly realized that the most fundamental estimates were $L^p \to L^q$ estimates for such operators.
+The general study of the boundedness properties of Fourier multiplier operators in multiple variables was initiated in the 1950s, as connections of the theory to partial differential equations became more fully realized\footnote{See \cite{Hormander1} for a more detailed overview of what was known at this time.}. It was quickly realized that the most fundamental estimates were the study of the boundedness of such operators on Lebesgue spaces.
 %
 %for $1 \leq p \leq 2$, and $q \geq p$, which by duality are equivalent to bounds
 %
@@ -438,12 +438,12 @@ where $s = (d-1)(1/p - 1/2)$. Thus Garrigos and Seeger have proved that the isom
 
 %Lower bounding the left hand side of \eqref{RadialMultiplierRadialBound} by the right hand side follows from rescaling the convolution identity $k_j * \psi = k_j$, where $\psi$ is a radial Schwartz function whose Fourier transform is equal to one on the Fourier support of $\chi$. The hard part of the result of \cite{GarrigosandSeeger} is upper bounding the left hand side by the right.
 
-For any other value of $p$, $M^p_{\text{Rad}}(\RR^d)$ is a proper subset of $R^{s,p}[0,\infty)$, as the following counterexamples show:
+For any other value of $p$, $M^p_{\text{Rad}}(\RR^d)$ is a proper subset of $R^{s,p}[0,\infty)$:
 %
 \begin{itemize}
-  \item For $p = 1$, the inclusion `fails by a logarithm', as we can see by the characterization of $M^1(\RR^d)$ in the last section; if $a$ is supported on an interval $I$ we have the converse inequality $\| a \|_{M^1(\RR^d)} \lesssim \log |I|\; \| a \|_{R^{s,p}[0,\infty)}$ where dependence on $I$ is in general sharp, and cannot be removed.
+  \item For $p = 1$, the inclusion `fails by a logarithm', as we can see by the characterization of $M^1(\RR^d)$ in the last section; if $a$ is supported on an interval $I$, the inequality $\| a \|_{M^1(\RR^d)} \lesssim \log |I|\; \| a \|_{R^{s,1}[0,\infty)}$ holds with $s = (d-1)/2$, and where the dependence on $I$ is in general sharp, and cannot be removed.
 
-  \item Suppose $p \geq 2d/(d+1)$. Then $R^{s,p}[0,\infty)$ contains all elements of the Besov space $\dot{B}^{{1/2},2}_p[0,\infty)$ supported on $[1/2,2]$, and thus, in particular, must contain unbounded functions for $p > 1$ (because the Sobolev embedding theorem fails when used at the endpoint to embed into $L^\infty$). Since $M^p(\RR^d) \subset M^2(\RR^d) = L^\infty[0,\infty)$, $M^p(\RR^d)$ cannot contain unbounded functions, and thus $M^p(\RR^d)$ is a proper subset of $R^{s,p}(\RR^d)$.
+  \item Suppose $p \geq 2d/(d+1)$. Then $R^{s,p}[0,\infty)$ contains all elements of the Besov space $\dot{B}^{{1/2},2}_p[0,\infty)$ supported on $[1/2,2]$. Thus, in particular, $R^{s,p}[0,\infty)$ must contain unbounded functions for $p > 1$, essentially, because the Sobolev embedding theorem fails when used at the endpoint to embed into $L^\infty$. Since $M^p(\RR^d) \subset M^2(\RR^d)$, and $M^2(\RR^d) = L^\infty[0,\infty)$, $M^p(\RR^d)$ cannot contain unbounded functions, and thus $M^p(\RR^d)$ is a proper subset of $R^{s,p}(\RR^d)$.
   % 1/p - 1/2 = 1/2d, have 1/2 derivatives in L^p
   %
 
@@ -607,7 +607,7 @@ It is natural to conjecture the same bounds hold when we remove the constraint t
 %However, for $1/2d < 1/p - 1/2 < 1/(d+1)$ an additional counterexample is obtained by considering Knapp type examples, i.e. considering the multiplier operators whose symbols are supported on $\delta$-annuli as above, and testing them against smooth, \emph{non-radial} functions whose Fourier transforms are adapted to $\delta$-caps on the annuli. These counterexamples show that the condition $q < (d-1)/(d+1) \cdot p'$ is necessary for \eqref{RadialMultiplierBound} to hold. We thus conjecture that \eqref{RadialMultiplierBound} holds for all radial $m$ when either $1/p - 1/2 > 1/(d+1)$ and $p \leq q < 2$, or when $1/2d < 1/p - 1/2 < 1/(d+1)$ and $p \leq q < (d-1)/(d+1) \cdot p'$, and we call this the \emph{radial multiplier conjecture} on $\RR^d$.
 We call this the \emph{radial multiplier conjecture} on $\RR^d$.
 
-We now know, by results of Yaryong Heo, Fedor Nazarov, and Andreas Seeger \cite{HeoandNazarovandSeeger} that the radial multiplier conjecture is true when $d \geq 4$ and when $1/(d-1) < 1/p - 1/2 < 1/2$. A summary of the proof strategies of this argument is provided in the following two sections, and a major part of our bounds for spectral multipliers follow by adapting this argument to the non-Euclidean setting. Partial improvements were obtained by Cladek \cite{Cladek} for symbols $m$ compactly supported away from the origin, obtaining results for multipliers with a compactly supported symbol when $d = 4$ and $1/p - 1/2 > 11/36$, and establishing \emph{restricted weak type} bounds when $d = 3$ and $1/p - 1/2 > 41/22$. But the radial multiplier conjecture has not been resolved fully in any dimension $d$, we do not have any strong type $L^p$ bounds when $d = 3$, and no bounds whatsoever are known when $d = 2$.
+We now know, by results of Yaryong Heo, Fedor Nazarov, and Andreas Seeger \cite{HeoandNazarovandSeeger} that the radial multiplier conjecture is true when $d \geq 4$ and when $1/(d-1) < 1/p - 1/2 < 1/2$. A summary of the proof strategies of this argument is provided in the following two sections, and a major part of our bounds for spectral multipliers follow by adapting this argument to the non-Euclidean setting. Partial improvements were obtained by Laura Cladek \cite{Cladek} for symbols $m$ compactly supported away from the origin, obtaining results for multipliers with a compactly supported symbol when $d = 4$ and $1/p - 1/2 > 11/36$, and establishing \emph{restricted weak type} bounds when $d = 3$ and $1/p - 1/2 > 41/22$. But the radial multiplier conjecture has not been resolved fully in any dimension $d$, we do not have any strong type $L^p$ bounds when $d = 3$, and no bounds whatsoever are known when $d = 2$.
 
 \section{Radial-Multiplier Bounds by Density Decompositions} \label{sec:densitydecompositions}
 
@@ -1070,7 +1070,7 @@ The exponent $\tfrac{d-1}{2}$ in Lemma \ref{lemma4} is too weak to apply almost 
     and so we obtain that, again using the assumption that $d \geq 4$,
     %
     \begin{equation}
-      |\sum\nolimits_{\mu < \mu'} \langle F_{k,\mu}, \chi_{y,s} \rangle| \lesssim 2^{k(d-1)} 2^{m(1-u(d-3)/2)}.
+      \left|\sum\nolimits_{\mu < \mu'} \langle F_{k,\mu}, \chi_{y,s} \rangle \right| \lesssim 2^{k(d-1)} 2^{m(1-u(d-3)/2)}.
     \end{equation}
     %
     Now summing over all $(y,s)$, we obtain that
@@ -1152,10 +1152,10 @@ This completes a proof of the single scale estimates of the paper. The paper the
 
 \section{Combining Scales with Atomic Decompositions} \label{sec:combiningscaleswithatomicdecompositions}
 
-We now sketch a proof as to how we can complete the proof of Theorem \ref{HeoNazarovSeegerTheorem}. Our arguments are deliberately vague, as our goal is to build intuition about the techniques involved, in order to carry out analogous methods more rigorously in the compact manifold setting later. If $T = m(P)$, then Proposition \ref{HeoNazarovSeegerSingleScaleInequality}, appropriately rescaled, implies that if we write $T = \sum T_j$, where $T_j$ is the radial Fourier multiplier operator with convolution kernel $k_j(\cdot/2^j)$, then
+We now sketch a proof as to how we can complete the proof of Theorem \ref{HeoNazarovSeegerTheorem}. Our arguments are deliberately vague, as our goal is to build intuition about the techniques involved, in order to carry out analogous methods more rigorously in the compact manifold setting later in Chapter \ref{chap:spectralatomicdchapter}. If $T = m(P)$, then Proposition \ref{HeoNazarovSeegerSingleScaleInequality}, appropriately rescaled, implies that if we write $T = \sum T_j$, where $T_j$ is the radial Fourier multiplier operator with convolution kernel $k_j(\cdot/2^j)$, then
 %
 \begin{equation} \label{individualscaleoperatorbound}
-    \| T_j \|_{L^p(\RR^d) \to L^q(\RR^d)} \lesssim \| k_j \|_{L^q(\RR^d)}.
+    \| T_j \|_{L^p(\RR^d) \to L^p(\RR^d)} \lesssim \| k_j \|_{L^p(\RR^d)}.
 \end{equation}
 %
 The goal of this section is to prove that we can bound the sum of the operators $T_j$ by $\sup_j \| k_j \|_{L^q(\RR^d)}$, which morally speaking, is a bound of the form
@@ -1223,27 +1223,35 @@ Such a simple proof will not suffice for our analysis, since the class of multip
   Tf = \sum T_j \{ A_{j,H,W} \} = \sum T_{j,W,\text{Short}} \{ A_{j,H,W} \} + T_{j,W,\text{Long}} \{ A_{j,H,W} \},
 \end{equation}
 %
-where
+where $T_{j,W,\text{Short}}$ and $T_{j,W,\text{Long}}$ are Schwartz operators with kernels
 %
 \begin{equation}
-  T_{j,W,\text{Short}}(x,y) = \mathbb{I}_{W^*}(x)\; T_{j,W}(x,y) \quad\text{and}\quad T_{j,W,\text{Long}}(x,y) = \mathbb{I}_{(W^*)^c}(x)\; T_{j,W}(x,y).
+  K_{j,W,\text{Short}}(x,y) = \chi_{W^*}(x)\; K_{T_j}(x,y) \quad\text{and}\quad K_{j,W,\text{Long}}(x,y) = \chi_{(W^*)^c}(x)\; K_{T_j}(x,y),
 \end{equation}
 %
-The calculations of the previous paragraph can be adapted to show that
+and where $\chi_{W^*}$ is a smooth function adapted to $W^*$, and $\chi_{(W^*)^c} = 1 - \chi_{W^*}$. The functions $T_{j,W,\text{Short}} \{ A_{j,H,W} \}$ remain almost orthogonal as $j$ and $W$ vary, and so the calculations of the previous paragraph can be adapted to show that
 %
 \begin{equation}
-  \left\| \sum\nolimits_{j,W,H} T_{j,W,\text{Short}} \{ A_{j,H,W} \} \right\|_{L^q(\RR^d)} \lesssim \| f \|_{L^p(\RR^d)},
+  \left\| \sum\nolimits_{j,W,H} T_{j,W,\text{Short}} \{ A_{j,H,W} \} \right\|_{L^p(\RR^d)} \lesssim \| f \|_{L^p(\RR^d)},
 \end{equation}
 %
-and it remains to find a way to control the long range interactions between atoms.
+It remains to find a way to control the long range interactions between atoms.
 
-There are several related techniques to control the long range interactions, the most elegant formulation provided in the paper \cite{HeoandNazarovandSeeger2}. The idea is to take a singlef scale estimate, and upgrade this to an estimate with a geometrically decaying constant term when our inputs have amplitudes that are locally constant on a much larger scale than is required by the uncertainty principle and the frequency support of the inputs, namely, that
+There are several related techniques to control the long range interactions, the most elegant formulation provided in the paper \cite{HeoandNazarovandSeeger2}. The idea is to take the single scale estimate we obtained in \ref{HeoNazarovSeegerSingleScaleInequality}, and upgrade this to an estimate with a geometrically decaying constant term when our inputs have amplitudes that are locally constant on a much larger scale than is required by the uncertainty principle and the frequency support of the inputs, i.e. that
 %
 \begin{equation}
-  \left\| {\textstyle \sum\nolimits_H} {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} T_{j,W,\text{Long}} \{ A_{j,H,W} \} \right\|_{L^q(\RR^d)} \lesssim 2^{-l \varepsilon} \left( {\textstyle \sum\nolimits_H} \| {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} A_{j,H,W} \|_{L^\infty(\RR^d)}^p |W| \right)^{1/p},
+  \left\| {\textstyle \sum\nolimits_H} {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} T_{j,W,\text{Long}} \{ A_{j,H,W} \} \right\|_{L^p(\RR^d)} \lesssim 2^{-l \varepsilon} \left( {\textstyle \sum\nolimits_H} \| {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} A_{j,H,W} \|_{L^\infty(\RR^d)}^p |W| \right)^{1/p}\!\!\!\!,
 \end{equation}
 %
-where $\mathcal{W}_{H,a}$ are the set of all cubes of side-length $2^a$. Summing in $j$ using the $L^2$ orthogonality of different frequency scales, we find that
+where $\mathcal{W}_{H,a}$ are the set of all cubes of side-length $2^a$. The functions $T_{j,W,\text{Long}} \{ A_{j,H,W} \}$ are almost orthogonal as $j$ varies, and so using Lemma \ref{lem:LpOrthogonalityEasyLemma} one can show
+\begin{equation}
+\begin{split}
+  &\left\| {\textstyle \sum\nolimits_j} {\textstyle \sum\nolimits_H} {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} T_{j,W,\text{Long}} \{ A_{j,H,W} \} \right\|_{L^p(\RR^d)}\\
+  &\quad\quad\quad\quad \lesssim \left( {\textstyle \sum\nolimits_j} \left\| {\textstyle \sum\nolimits_H} {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} T_{j,W,\text{Long}} \{ A_{j,H,W} \} \right\|_{L^p(\RR^d)}^p \right)^{1/p}.
+\end{split}
+\end{equation}
+%
+Thus
 %
 \begin{equation}
   \left\| {\textstyle \sum\nolimits_{j,H}} {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} T_{j,W,\text{Long}} A_{j,H,W} \right\|_{L^p(\RR^d)} \lesssim 2^{-l \varepsilon} \left( {\textstyle \sum\nolimits_{j,H}} \|  {\textstyle \sum\nolimits_{W \in \mathcal{W}_{H,l-j}}} A_{j,H,W} \|_{L^\infty(\RR^d)}^p |W| \right)^{1/p}.
@@ -1252,7 +1260,7 @@ where $\mathcal{W}_{H,a}$ are the set of all cubes of side-length $2^a$. Summing
 For a fixed $l$, and each $W \in \mathcal{W}_H$, there exists a unique $j$ such that $W \in \mathcal{W}_{H,l-j}$, which implies that the supports of the functions $\{ A_{j,H,W} \}$ in the sum above are almost disjoint, and thus the simple bound $\| A_{j,H,W} \|_{L^\infty(\RR^d)} \lesssim H$ gives that
 %
 \begin{equation}
-  \sum\nolimits_j \| \sum\nolimits_{W \in \mathcal{W}_{H,l-j}} A_{j,H,W} \|_{L^\infty(\RR^d)}^p |W| \leq H^p |\Omega_H|,
+  \sum\nolimits_j \left\| \sum\nolimits_{W \in \mathcal{W}_{H,l-j}} A_{j,H,W} \right\|_{L^\infty(\RR^d)}^p |W| \lesssim H^p |\Omega_H|,
 \end{equation}
 %
 and thus that
@@ -1284,7 +1292,7 @@ which controls the long-range interactions in full, completing the proof of Theo
 \section{Quasi-Radial Multipliers and Local Smoothing}
 
 Jongchon Kim \cite{KimQuasiradial} has extended 
-the bounds of Heo-Nazarov-Seeger to quasi-radial multipliers, i.e. multipliers of the form $(a \circ r)(\xi)$, where $r: \RR^d \to [0,\infty)$ is a smooth, homogeneous function of order one, such that the cosphere $S = \{ \xi : r(\xi) = 1 \}$ is a hypersurface with non-vanishing Gauss curvature. Such multipliers retain the translation and dilation symmetries of the family of radial Fourier multiplier operators, but are no longer \emph{rotation-invariant}.
+the bounds of Heo-Nazarov-Seeger to quasi-radial multipliers, i.e. multipliers of the form $(a \circ r)(\xi)$, where $r: \RR^d \to [0,\infty)$ is a smooth, homogeneous function of order one, such that the co-sphere $S = \{ \xi : r(\xi) = 1 \}$ is a hypersurface with non-vanishing Gauss curvature. Such multipliers retain the translation and dilation symmetries of the family of radial Fourier multiplier operators, but are no longer \emph{rotation-invariant}.
 
 Using the same identities as for radial Fourier multiplier operators, one can verify that
 %
@@ -1322,7 +1330,13 @@ The proof is an adaption of the proof of \cite{HeoandNazarovandSeeger2}. However
 \end{split}
 \end{equation}
 %
-where $\widehat{w}_t(\xi) = e^{i t r(\xi)}$. As $t$ varies, $u = w_t * f$ solves the wave equation $\partial_t u = i P u$, where $P$ is the Fourier multiplier operator whose symbol is the function $r$. Define $\chi_{x,t} = \text{Trans}_x \left( \int_{-\infty}^\infty \psi(s) w_{t - s}\; ds \right)$, where the Fourier transform of $\psi$ is non-negative and vanishing to high order at the origin. Then, using oscillatory integral techniques akin to Lemma \ref{lemma4}, one can obtain inner product estimates on the quantities $\langle \chi_{x_1,t_1}, \chi_{x_2,t_2} \rangle$ that show such terms are negligible unless $|x_1 - x_2| + |t_1 - t_2| \lesssim 1$. We can then adapt the proof of \cite{HeoandNazarovandSeeger2}, performing a density decomposition using the Euclidean metric on $\RR^{d+1}$, and thus obtain single scale bounds for the quasi-radial multipliers. An atomic decomposition analogous to that discussed in Section \ref{sec:combiningscaleswithatomicdecompositions} then yields Jongchon Kim's result.
+where $\widehat{w}_t(\xi) = e^{i t r(\xi)}$. As $t$ varies, $u = w_t * f$ solves the wave equation $\partial_t u = i P u$, where $P$ is the Fourier multiplier operator whose symbol is the function $r$. Define
+%
+\begin{equation}
+  \chi_{x,t} = \text{Trans}_x \left( \int_{-\infty}^\infty \psi(s) w_{t - s}\; ds \right),
+\end{equation}
+%
+where the Fourier transform of $\psi$ is non-negative and vanishing to high order at the origin. Then, using oscillatory integral techniques akin to Lemma \ref{lemma4}, one can obtain inner product estimates on the quantities $\langle \chi_{x_1,t_1}, \chi_{x_2,t_2} \rangle$ that show such terms are negligible unless $|x_1 - x_2| + |t_1 - t_2| \lesssim 1$. We can then adapt the proof of \cite{HeoandNazarovandSeeger2}, performing a density decomposition using the Euclidean metric on $\RR^{d+1}$, and thus obtain single scale bounds for the quasi-radial multipliers. An atomic decomposition analogous to that discussed in Section \ref{sec:combiningscaleswithatomicdecompositions} then yields Jongchon Kim's result.
 
 We note that the endpoint analysis of radial multipliers we have been discussing is very closely related to the regularity of solutions to wave equations. In particular, if $\widehat{w}_t = e^{i t |\xi|}$, then for any $f$, the function $u = w_t * f$ solves the half-wave equation $\partial_t u = i P u$ where $P = \sqrt{-\Delta}$. The Littlewood-Paley pieces $(P_k u)(\cdot,t)$ are Fourier multipliers with symbol $\chi(\cdot / 2^k) e^{i t |\xi|}$, which are radial, and thus can be written in terms of spherical averages. The analysis of Proposition \ref{lemma1} can then be used to show that for $1/2 - 1/q > 1/(d-1)$,
 %
@@ -1336,7 +1350,7 @@ With some more work, involving the atomic decomposition methods discussed in Sec
   \| u \|_{L^q(\RR^d \times [1,2])} \lesssim \| f \|_{W^{s,q}(\RR^d)}.
 \end{equation}
 %
-These are the current sharpest \emph{endpoint} local smoothing bounds for the wave equation in any dimension. Local smoothing is thus closely connected to radial multiplier bounds, and we will exploit this relation to bound spectral multipliers in Chapter \ref{chap:boundedsinglefrequencyscale}.
+These are the current sharpest \emph{endpoint} local smoothing bounds for the wave equation in any dimension. Local smoothing is thus closely connected to radial multiplier bounds. In Chapter \ref{chap:boundedsinglefrequencyscale} we reverse this connection, using local smoothing bounds to bound spectral multipliers.
 
 To end our discussion of radial multipliers, notice that the Fourier multiplier operator $P$ is above is an elliptic operator on $\RR^d$, satisfying the Assumption A we introduced in Chapter \ref{cha:multipliers_of_an_elliptic_operator}. For such an operator, the equation $\partial_t u = i P u$ is hyperbolic, and it's solutions have wavelike properties. We will rely on a similar decomposition method used for the quasi-radial multiplier with symbol $a \circ r$ on manifolds, together with a study of the geometry of the manifold upon which we study these multipliers, to extend the methods we have discussed in the previous three sections to compact manifolds. Such a method has been used by Jongchon Kim to study certain spectral multipliers on compact manifolds \cite{KimSpectral}, but the results here do not come close to a full characterization of boundedness. We will now return to discuss this setting in more detail.
 
@@ -1367,7 +1381,7 @@ Thus if $P$ satisfies Assumption A, it follows from Theorem \ref{Pawdiojwaoij123
 %
 with $s = (d-1)(1/p - 1/2)$.
 
-We might conjecture that one can reverse \eqref{upperboundawdoiwjdoawi} in the same range as for the radial multiplier conjecture, i.e. proving that $\| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{p,s}(\RR^d)}$ for $1/p - 1/2 > 1/2d$. However, this is unlikely to be possible on a general manifold. Such a result would imply the Bochner-Riesz conjecture in the full range, i.e. that if $m^\delta(\lambda) = (1 - \lambda^2)^{\delta/2}$, then $\| m^\delta \|_{M^p_{\text{Dil}}(X)} < \infty$ for $\delta > d(1/p - 1/2) - 1/2$. But results of Shaoming Guo, Hong Wang, and Ruixiang Zhang \cite{GuoWangZhang} and Song Dai, Liuwei Gong, Shaoming Guo, and Ruixiang Zhang \cite{DaiGongGuoZhang}, with related work of Minicozzi and Sogge \cite{Minicozzi}, prove that certain oscillatory integral operators associated with Bochner-Riesz operators on $3$-dimensional Riemannian manifolds fail to be bounded appropriately when the geometry of $X$ induced on $P$, which we introduce in the next section, does not have constant sectional curvature. This provides weak evidence that the Bochner-Riesz conjecture may fail on a general manifold in the full range. On the other hand, it is likely that the conjecture holds in the full range on manifolds with constant sectional curvature; results of \cite{Alladi}, which obtain the full range of the conjecture on $S^d$ for \emph{zonal inputs}, provide some evidence for the truth of the conjecture. Nonetheless, in this thesis we do describe positive results for this analogue of the radial multiplier conjecture, and our results can be applied on certaom manifolds, such as zonal manifolds and the rank one symmetric spaces, which do not have constant sectional curvature.
+We might conjecture that one can reverse \eqref{upperboundawdoiwjdoawi} in the same range as for the radial multiplier conjecture, i.e. proving that $\| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{p,s}(\RR^d)}$ for $1/p - 1/2 > 1/2d$. However, this is unlikely to be possible on a general manifold. Such a result would imply the Bochner-Riesz conjecture in the full range, i.e. that if $m^\delta(\lambda) = (1 - \lambda^2)^{\delta/2}$, then $\| m^\delta \|_{M^p_{\text{Dil}}(X)} < \infty$ for $\delta > d(1/p - 1/2) - 1/2$. But results of Shaoming Guo, Hong Wang, and Ruixiang Zhang \cite{GuoWangZhang} and Song Dai, Liuwei Gong, Shaoming Guo, and Ruixiang Zhang \cite{DaiGongGuoZhang}, with related work of Minicozzi and Sogge \cite{Minicozzi}, prove that certain oscillatory integral operators associated with Bochner-Riesz operators on $3$-dimensional Riemannian manifolds fail to be bounded appropriately when the geometry of $X$ induced on $P$, which we introduce in the next section, does not have constant sectional curvature. This provides weak evidence that the Bochner-Riesz conjecture may fail on a general manifold in the full range. On the other hand, it is likely that the conjecture holds in the full range on manifolds with constant sectional curvature; results of \cite{Alladi}, which obtain the full range of the conjecture on $S^d$ for \emph{zonal inputs}, provide some evidence for the truth of the conjecture. Nonetheless, in this thesis we do describe positive results for this analogue of the radial multiplier conjecture, and our results can be applied to compact manifolds, such as zonal manifolds and the rank one symmetric spaces, which do not have constant sectional curvature.
 
 % It is unclear what the correct range the analogue of the radial multiplier conjecture should be in the worst case, nor the quantitative features of a manifold (aside from some aspect of curvature) which determine the range of exponents under which the conjecture should hold. 
 
@@ -1441,14 +1455,14 @@ The Legendre transform is the Finsler variant of the musical isomorphism in Riem
 Now let $P \in \COP{1}(X)$ satisfy Assumption A. The principal symbol of $P$ is a function $p: T^* M \to [0,\infty)$, and the following lemma applies.
 
 \begin{lemma}
-  Suppose $p: T^* M \to [0,\infty)$ is homogeneous, and for each $x \in M$, the cosphere $S_x^* = \{ \xi \in T_x^* M : p(x,\xi) = 1 \}$ has non-vanishing Gaussian curvature. Then
+  Suppose $p: T^* M \to [0,\infty)$ is homogeneous, and for each $x \in M$, the co-sphere $S_x^* = \{ \xi \in T_x^* M : p(x,\xi) = 1 \}$ has non-vanishing Gaussian curvature. Then
   %
   \[ F(x,v) = \{ \xi(v) : p(x,\xi) = 1 \} \]
   %
   is a Finsler metric on $M$, and the dual metric $F_*$ on $T^*M$ is equal to $p$.
 \end{lemma}
 \begin{proof}
-  For each $x \in U_0$, the cosphere $S_x^* = \{ \xi \in T_x^* M : p(x,\xi) = 1 \}$ has non-vanishing Gaussian curvature. We claim that all principal curvatures of $S_x^*$ must actually be \emph{positive}. This follows from a simple modification of an argument found in Chapter 2 of \cite{HeinzHopf}. Indeed, if we fix an arbitrary point $v_0 \in T_x^*M$, and consider the smallest closed ball $B \subset T_x^* M$ centered at $v_0$ and containing $S_x^*$, then the sphere $\partial B$ must share the same tangent plane as $S_x^*$ at some point. All principal curvatures of $\partial B$ are positive, and at this point all principal curvatures of $S_x^*$ must be greater than the principal curvatures of $\partial B$, since $S_x^*$ curves away faster than $\partial B$ in all directions. By continuity, we conclude that the principal curvatures are everywhere positive.  Thus for each $x \in M$ and $\xi \in T_x^* M - \{ 0 \}$, the coefficients
+  For each $x \in U_0$, the co-sphere $S_x^* = \{ \xi \in T_x^* M : p(x,\xi) = 1 \}$ has non-vanishing Gaussian curvature. We claim that all principal curvatures of $S_x^*$ must actually be \emph{positive}. This follows from a simple modification of an argument found in Chapter 2 of \cite{HeinzHopf}. Indeed, if we fix an arbitrary point $v_0 \in T_x^*M$, and consider the smallest closed ball $B \subset T_x^* M$ centered at $v_0$ and containing $S_x^*$, then the sphere $\partial B$ must share the same tangent plane as $S_x^*$ at some point. All principal curvatures of $\partial B$ are positive, and at this point all principal curvatures of $S_x^*$ must be greater than the principal curvatures of $\partial B$, since $S_x^*$ curves away faster than $\partial B$ in all directions. By continuity, we conclude that the principal curvatures are everywhere positive.  Thus for each $x \in M$ and $\xi \in T_x^* M - \{ 0 \}$, the coefficients
   %
   \begin{equation}
     g^{ij}(x,\xi) = (1/2) (\partial^2 p^2 / \partial \xi_i \partial \xi_j)
@@ -1493,11 +1507,11 @@ A Finsler metric gives a length to each tangent vector on the manifold, and can 
   L(c) = \int_I F(c,\dot{c}),
 \end{equation}
 %
-which is invariant under reparameterization. An analysis of length minimizing curves naturally leads to a theory of geodesics on a Finsler manifold, i.e. to a theory of critical points in the space of paths between two points. The theory of geodesics on Finsler manifolds is similar to the Riemannian case, except for the interesting quirk that a geodesic from a point $p$ to a point $q$ need not necessarily be a geodesic when considered as a curve from $q$ to $p$, and so we must consider \emph{forward} and \emph{backward} geodesics\footnote{If walking up a hill is more strenuous than walking down a hill, then the optimal path to climb from the bottom of a mountain to it's summit need not be the optimal path to descend from the peak to the bottom. Indeed, Makoto Matsumoto formulated such a problem by constructing a Finsler metric upon the surface of the mountain such that geodesics correspond to optimal paths of ascent and descent \cite{Matsumoto}. Similar Finsler manifolds can be constructed to model optimal paths taken sailing under the influence of varying wind conditions, the theory being known as Zermelo's navigation problem.}. We define the \emph{forward distance} $d_+: X \times X \to [0,\infty)$ by taking the infima of paths between points. This function is a \emph{quasi-metric}, as it satisfies the triangle inequality, but is not necessarily symmetric. We define the \emph{backward distance} $d_-: X \times X \to [0,\infty)$ by setting $d_-(p,q) = d_+(q,p)$. On a general Finsler manifold one has $d_+ \neq d_-$, and these functions are distinct quasi-metrics on $M$ (though a compactness argument shows both are proportional to one another on compact manifolds). Geodesics from a point $p_0$ to a point $p_1$ need not be geodesics from $p_1$ to $p_0$ when reversed. A metric can be obtained by setting $d_X = d_X^+ + d_X^-$, and we will use this definition as the canonical metric on a Finsler manifold $X$ in the rest of this thesis.
+which is invariant under re-parameterization. An analysis of length minimizing curves naturally leads to a theory of geodesics on a Finsler manifold, i.e. to a theory of critical points in the space of paths between two points. The theory of geodesics on Finsler manifolds is similar to the Riemannian case, except for the interesting quirk that a geodesic from a point $p$ to a point $q$ need not necessarily be a geodesic when considered as a curve from $q$ to $p$, and so we must consider \emph{forward} and \emph{backward} geodesics\footnote{If walking up a hill is more strenuous than walking down a hill, then the optimal path to climb from the bottom of a mountain to it's summit need not be the optimal path to descend from the peak to the bottom. Indeed, Makoto Matsumoto formulated such a problem by constructing a Finsler metric upon the surface of the mountain such that geodesics correspond to optimal paths of ascent and descent \cite{Matsumoto}. Similar Finsler manifolds can be constructed to model optimal paths taken sailing under the influence of varying wind conditions, the theory being known as Zermelo's navigation problem.}. We define the \emph{forward distance} $d_+: X \times X \to [0,\infty)$ by taking the infima of paths between points. This function is a \emph{quasi-metric}, as it satisfies the triangle inequality, but is not necessarily symmetric. We define the \emph{backward distance} $d_-: X \times X \to [0,\infty)$ by setting $d_-(p,q) = d_+(q,p)$. On a general Finsler manifold one has $d_+ \neq d_-$, and these functions are distinct quasi-metrics on $M$ (though a compactness argument shows both are proportional to one another on compact manifolds). Geodesics from a point $p_0$ to a point $p_1$ need not be geodesics from $p_1$ to $p_0$ when reversed. A metric can be obtained by setting $d_X = d_X^+ + d_X^-$, and we will use this definition as the canonical metric on a Finsler manifold $X$ in the rest of this thesis.
 
 A standard approach to an analysis of geodesics in Riemannian geometry is to rely on the \emph{fundamental theorem of Riemannian geometry}, which posits the existence of a torsion-free linear connection on the tangent bundle of a Riemannian manifold $X$ compatible with the metric, and using the connection to derive a first variation formula. A similar approach works for Finsler geometry, aside from the fact that (a) the connection is not defined on the tangent bundle and (b) the analogue of the fundamental theorem in general \emph{fails}. Because of this, there is no canonical connection that is used in the Finsler geometry literature, and depending on the application and personal preference one of several can be used, the most popular being the Cartan, Berwald, and Chern connections, the first being metric-compatible, but which can have torsion, and the latter two being torsion free, but which are almost metric-compatible. We use the Chern connection in what follows.
 
-To define the Chern connection, recall that for a vector bundle $B$ over a manifold $X$, a connection on $B$ is an association, with each $s \in \Gamma(B)$ and $v \in T_x X$, of a vector $\nabla_v(s) \in B_x$, which is linear in $v$ and $s$, and such that for each $X \in \Gamma(X)$ and a section $s \in \Gamma(B)$, $\nabla_X(s) \in \Gamma(B)$ is smooth. We will be studying connections on the pullback bundle $\pi^*(TX)$, viewed as a vector bundle over $TX$, where $\pi: TX \to X$ is the projection map. The bundle $\pi^*(TX)$ can be viewed as a subbundle of $T(TX)$. This bundle has a distinguished section $l \in \Gamma(\pi^*(TX))$, given in coordinates by $l(x,v)_i = v_i$. Define the Cartan tensor $A$, a symmetric 3-tensor given in coordinates by
+To define the Chern connection, recall that for a vector bundle $B$ over a manifold $X$, a connection on $B$ is an association, with each $s \in \Gamma(B)$ and $v \in T_x X$, of a vector $\nabla_v(s) \in B_x$, which is linear in $v$ and $s$, and such that for each $X \in \Gamma(X)$ and a section $s \in \Gamma(B)$, $\nabla_X(s) \in \Gamma(B)$ is smooth. We will be studying connections on the pullback bundle $\pi^*(TX)$, viewed as a vector bundle over $TX$, where $\pi: TX \to X$ is the projection map. The bundle $\pi^*(TX)$ can be viewed as a sub-bundle of $T(TX)$. This bundle has a distinguished section $l \in \Gamma(\pi^*(TX))$, given in coordinates by $l(x,v)_i = v_i$. Define the Cartan tensor $A$, a symmetric 3-tensor given in coordinates by
 %
 \begin{equation}
   A_{ijk} = \frac{F}{2} \frac{\partial^3 F^2}{\partial v^i \partial v^j \partial v^k}. 
@@ -1515,37 +1529,37 @@ Note that if $X$ is a Riemannian manifold, and $F(x,v) = \langle v,v \rangle$ is
   \[ X(g(Y,Z)) = g(\nabla_X Y, Z) + g(Y, \nabla_X Z) + A(\nabla_X l, Y, Z). \]
 \end{prop}
 \begin{proof}
-  We do not prove this proposition, but merely define the connection. Define the formal Christoffel symbols
+  %We do not prove this proposition, but merely define the connection. Define the formal Christoffel symbols
   %
-  \begin{equation}
-    \gamma^l_{jk} = \sum\nolimits_i \frac{g^{li}}{2} \left( \frac{\partial g_{ij}}{\partial x^k} + \frac{\partial g_{ki}}{\partial x^j} - \frac{\partial g_{jk}}{\partial x^i} \right),
-  \end{equation}
+  %\begin{equation}
+  %  \gamma^l_{jk} = \sum\nolimits_i \frac{g^{li}}{2} \left( \frac{\partial g_{ij}}{\partial x^k} + \frac{\partial g_{ki}}{\partial x^j} - \frac{\partial g_{jk}}{\partial x^i} \right),
+  %\end{equation}
   %
-  the geodesic spray coefficients and nonlinear connection coefficients
+  %the geodesic spray coefficients and nonlinear connection coefficients
   %
-  \begin{equation}
-    G^i = \sum\nolimits_{j,k} \gamma^i_{jk} v^j v^k \quad\text{and}\quad N^i_j = \frac{1}{2} \frac{\partial G^i}{\partial v^j},
-  \end{equation}
+  %\begin{equation}
+  %  G^i = \sum\nolimits_{j,k} \gamma^i_{jk} v^j v^k \quad\text{and}\quad N^i_j = \frac{1}{2} \frac{\partial G^i}{\partial v^j},
+  %\end{equation}
   %
-  the horizontal vectors
+  %the horizontal vectors
   %
-  \begin{equation}
-    \frac{\delta}{\delta x^a} = \frac{\partial}{\partial x^a} - \sum\nolimits_b N^b_a \frac{\partial}{\partial v^b},
-  \end{equation}
+  %\begin{equation}
+  %  \frac{\delta}{\delta x^a} = \frac{\partial}{\partial x^a} - \sum\nolimits_b N^b_a \frac{\partial}{\partial v^b},
+  %\end{equation}
   %
-  and the Chern connection coefficients
+  %and the Chern connection coefficients
   %
-  \begin{equation}
-    \Gamma^i_{jk} = \sum\nolimits_s \frac{g^{is}}{2} \left( \frac{\delta g_{sj}}{\delta x^k} + \frac{\delta g_{ks}}{\delta x^j} - \frac{\delta g_{jk}}{\delta x^s} \right).
-  \end{equation}
+  %\begin{equation}
+  %  \Gamma^i_{jk} = \sum\nolimits_s \frac{g^{is}}{2} \left( \frac{\delta g_{sj}}{\delta x^k} + \frac{\delta g_{ks}}{\delta x^j} - \frac{\delta g_{jk}}{\delta x^s} \right).
+  %\end{equation}
   %
-  Finally, the connection is defined by setting
+  %Finally, the connection is defined by setting
   %
-  \begin{equation}
-    \left(\nabla_{\partial_{x^j}} X \right)^i = \frac{\partial X^i}{\partial x^j} + \Gamma^i_{jk} X^k \quad\text{and}\quad \left( \nabla_{\partial_{v^j}} X \right)^i = \frac{\partial X^I}{\partial v^j}.
-  \end{equation}
+  %\begin{equation}
+  %  \left(\nabla_{\partial_{x^j}} X \right)^i = \frac{\partial X^i}{\partial x^j} + \Gamma^i_{jk} X^k \quad\text{and}\quad \left( \nabla_{\partial_{v^j}} X \right)^i = \frac{\partial X^I}{\partial v^j}.
+  %\end{equation}
   %
-  See Theorem 2.4.1 of \cite{BaoChern} for details of the proof that this connection is torsion free and almost metric compatible, as well as the uniqueness of the connection.
+  See Theorem 2.4.1 of \cite{BaoChern}. % for details. of the proof that this connection is torsion free and almost metric compatible, as well as the uniqueness of the connection.
 \end{proof}
 
 Now we derive a first variation formula for the energy of a curve.
@@ -1671,7 +1685,7 @@ holds, in a certain sense made precise in the lemma below.
 Provided that $\widehat{a} \in L^1(\RR)$, the double integral is absolutely integrable, and so we may apply Fubini's theorem to interchange the order of integration, which gives the required result.
 \end{proof}
 
-Thus spectral multipliers of a self-adjoint operator $P$ can be written as averages of the semigroup $\{ e^{2 \pi i t P} \}$ under very weak assumptions on the operator. The catch is that for a general operator $P$, it is difficult to understand the behavior of the operator $e^{i t P}$ given it's abstract definition via the functional calculus. Nonetheless, in this chapter we will see that if $P \in \COP{1}(X)$, then $e^{i t P}$ is a \emph{Fourier integral operator}, which roughly means that the kernel of the operator is well approximated by oscillatory integral representation \emph{for high frequency inputs}, which is something we can exploit to obtain both geometric and frequential information about the operator. In this section, we briefly describe the relevant components we will need from the theory of Fourier integral operators for the proofs in the latter part of the thesis.
+Thus spectral multipliers of a self-adjoint operator $P$ can be written as averages of the semigroup $\{ e^{2 \pi i t P} \}$ under very weak assumptions on the operator. The catch is that for a general operator $P$, it is difficult to understand the behavior of the operator $e^{i t P}$ given it's abstract definition via spectral theory. Nonetheless, in this chapter we will see that if $P \in \COP{1}(X)$, then $e^{i t P}$ is a \emph{Fourier integral operator}, which roughly means that the kernel of the operator is well approximated by oscillatory integral representation \emph{for high frequency inputs}, which is something we can exploit to obtain both geometric and frequential information about the operator. In this section, we briefly describe the relevant components we will need from the theory of Fourier integral operators for the proofs in the latter part of the thesis.
 
 We will require methods of decomposition of functions in space and frequency simultaneously (a decomposition in \emph{phase space}). Temporarily define a \emph{micro-localization operator at a point $(x_0,\xi_0) \in T^* \RR^d$} to be an operator of the form
 %
@@ -1681,10 +1695,10 @@ We will require methods of decomposition of functions in space and frequency sim
 %
 where $\phi,\psi$ are smooth functions, with $\phi$ homogeneous of order zero, equal to one in a neighborhood of $\xi_0$, and $\psi$ with compact support equal to one in a neighborhood of $x_0$. Such an operator is precisely a composition of a Fourier multiplier that localized it's input in a particular frequency direction, with an operator that takes a smooth cutoff of a function. We will say such a multiplier is \emph{microlocally supported} on $\text{supp}(\psi) \times \text{supp}(\phi)$.
 
-To motivate the definition of Fourier integral operators, consider an operator $A$ from $\RR^m$ to $\RR^n$, whose kernel is a distribution given by an oscillatory integral of the form
+To motivate the definition of Fourier integral operators, consider a Schwartz operator $A$ from $\RR^m$ to $\RR^n$, whose kernel is an oscillatory integral defined by an expression of the form
 %
 \begin{equation}
-  A(x,y) = \int_{\RR^p} s(x,y,\theta) e^{i \Phi(x,y,\theta)}\; d\theta,
+  K_A(x,y) = \int_{\RR^p} s(x,y,\theta) e^{i \Phi(x,y,\theta)}\; d\theta,
 \end{equation}
 %
 where $s$ is a symbol of some fixed order, and $\Phi$ is smooth, and homogeneous of order one in the $\theta$ variable. Define the \emph{canonical relation} of $A$, the set
@@ -1693,7 +1707,7 @@ where $s$ is a symbol of some fixed order, and $\Phi$ is smooth, and homogeneous
   \mathcal{C}_\Phi = \Big\{ \big(x, \nabla_x \Phi(x,y,\theta) ,y, -\nabla_y \Phi(x,y,\theta) \big) : \nabla_\theta \Phi(x,y,\theta) = 0 \Big\},
 \end{equation}
 %
-Under the assumption that the vectors $\partial_{\theta_1} \{ \nabla_{x,y,\theta} \Phi \}, \dots \partial_{\theta_N} \{ \nabla_{x,y,\theta} \Phi \}$ are everywhere linearly independent when $\nabla_\theta \Phi = 0$, $\mathcal{C}_\Phi$ is a smooth, $n + m$ dimensional manifold\footnote{It is actually a \emph{Lagrangian submanifold} of $T^* \RR^n \times T^* \RR^m$. Thus the canonical relation of any Fourier integral operator must be a Lagrangian submanifold, though we will only use this fact implicitly}. Such a phase $\Phi$ is called \emph{nondegenerate}, and we will only deal with such phases in the sequel. If $(x_0,\xi_0,y_0,\eta_0) \not \in \mathcal{C}_\Phi$, then for micro-localization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ of suitably small support, integration by parts justifies that the Fourier transform of $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is rapidly decaying, and thus the kernel of the operator $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is smooth. The canonical relation of an oscillatory integral operator thus tells us pairs of points in phase space the location where high-frequency wave packets are mapped in phase space. The main lesson of the theory of Fourier integral operators is that, to a large extent, the canonical relation \emph{determines} the behavior of the operator $A$, rather than other features of the phase $\Phi$.
+Under the assumption that the vectors $\partial_{\theta_1} \{ \nabla_{x,y,\theta} \Phi \}, \dots \partial_{\theta_N} \{ \nabla_{x,y,\theta} \Phi \}$ are everywhere linearly independent when $\nabla_\theta \Phi = 0$, $\mathcal{C}_\Phi$ is a smooth, $n + m$ dimensional manifold\footnote{It is actually a \emph{Lagrangian submanifold} of $T^* \RR^n \times T^* \RR^m$, i.e. for any $p \in \mathcal{C}_\phi$ and any tangent vectors $v,w \in T_p \mathcal{C}_\phi$, $d\theta(v,w) = 0$, where $\theta$ is the \emph{canonical one form} on $T^*(\RR^m \times \RR^n)$ (see e.g. Proposition 0.5.4 of \cite{Sogge}, the form also being called the \emph{tautological one form} or \emph{Liouville one form}). Thus the canonical relation of any Fourier integral operator must be a Lagrangian submanifold, though we will only use this fact implicitly}. Such a phase $\Phi$ is called \emph{non degenerate}, and we will only deal with such phases in the sequel. If $(x_0,\xi_0,y_0,\eta_0) \not \in \mathcal{C}_\Phi$, then for micro-localization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ of suitably small support, integration by parts justifies that the Fourier transform of $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is rapidly decaying, and thus the kernel of the operator $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is smooth. The canonical relation of an oscillatory integral operator thus tells us pairs of points in phase space the location where the majority of the support of high-frequency wave packets are mapped to in phase space. The main lesson of the theory of Fourier integral operators is that, to a large extent, the canonical relation \emph{determines} the behavior of the operator $A$, rather than other features of the phase $\Phi$.
 
 
 %
@@ -1792,39 +1806,57 @@ Under the assumption that the vectors $\partial_{\theta_1} \{ \nabla_{x,y,\theta
 %
 %which is a Lagrangian submanifold of $T^* \RR^d$. This manifold is `where the high frequency parts of $I$ live'.
 
-A Fourier integral operator is precisely an operator whose kernel is microlocally expressible in oscillatory integrals of the form above. A \emph{Fourier integral operator} of order $\mu$ from $\RR^m$ to $\RR^n$ associated with a $n + m$ dimensional `Lagrangian' submanifold $\mathcal{C}$ of $T^* \RR^n \times T^* \RR^m$ is an operator $A$ such that for each $(x_0,\xi_0) \in T^* \RR^n$ and $(y_0,\eta_0) \in T^* \RR^m$, there exists micro-localization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ at $(x_0,\xi_0)$ and at $(y_0,\eta_0)$ such that the operator $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is expressed as an oscillatory integral operator of the kind studied in the previous paragraph, with an amplitude given by a symbol of order $\nu + p/2 - (n+m)/4$.
+A Fourier integral operator is precisely an operator whose kernel is microlocally expressible in oscillatory integrals of the form above. A \emph{Fourier integral operator} of order $\mu$ from $\RR^m$ to $\RR^n$ associated with a $n + m$ dimensional `Lagrangian' submanifold $\mathcal{C}$ of $T^* \RR^n \times T^* \RR^m$ is an operator $A$ such that for each $(x_0,\xi_0) \in T^* \RR^n$ and $(y_0,\eta_0) \in T^* \RR^m$, there exists micro-localization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ at $(x_0,\xi_0)$ and at $(y_0,\eta_0)$ such that the operator $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ is expressed as an oscillatory integral operator of the kind studied in the previous paragraph, with an amplitude given by a symbol of order $\mu + p/2 - (n+m)/4$. We denote an operator of this form by $I^\mu(\RR^n \times \RR^m,\mathcal{C})$.
 
-A Fourier integral operator from an $m$-dimensional manifold $Y$ to an $n$-dimensional manifold $X$ associated with an $n + m$ dimensional Lagrangian submanifold $\mathcal{C}$ of $T^* X \times T^* Y$ is precisely an operator which, when localized in any pair of coordinate systems for $X$ and $Y$, is a Fourier integral operator of the form above. The manifold $\mathcal{C}$ is truly a geometric invariant of the operator $A$, because it is in direct correspondence to the \emph{wavefront set} of the operator $A$, which gives the location and direction of singularities of the kernel of the operator. The \emph{equivalence of phase theorem} for Fourier integral operators tells us that the particular phase used to define Fourier integral operators is largely irrelevant to the analysis of the operator, as long as the canonical relation is shared by the phase.
+A Fourier integral operator from an $m$-dimensional manifold $Y$ to an $n$-dimensional manifold $X$ of order $\mu$, associated with an $n + m$ dimensional Lagrangian submanifold $\mathcal{C}$ of $T^* X \times T^* Y$ is precisely an operator which, when localized in any pair of coordinate systems for $X$ and $Y$, is a Fourier integral operator of the form above. The manifold $\mathcal{C}$ is truly a geometric invariant of the operator $A$, because it is in direct correspondence to the \emph{wavefront set} of the operator $A$, which gives the location and direction of singularities of the kernel of the operator. We denote the family of Fourier integral operators of order $\mu$ associated with a given manifold $\mathcal{C}$ by $I^\mu(X \times Y,\mathcal{C})$.
+
+The \emph{equivalence of phase theorem} for Fourier integral operators tells us that the particular phase used to define Fourier integral operators is largely irrelevant to the analysis of the operator, as long as the canonical relation is shared by the phase.
 
 \begin{theorem} \label{thm:equivalenceofphase}
-  Let $A$ be a Fourier integral operator of order $\nu$ between two manifolds $Y^m$ and $X^n$, associated with the canonical relation $\mathcal{C}$. Localize $A$ around $x_0 \in X$ and $y_0 \in Y$, so we may consider the operator as a Fourier integral operator from $\RR^m$ to $\RR^n$. Fix $(x_0,\xi_0,y_0,\eta_0) \in \mathcal{C}$, and consider two microlocalization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ microlocally supported on two sets $\Gamma_{x_0,\xi_0} \subset T^* \RR^n$ and $\Gamma_{y_0,\eta_0} \subset T^* \RR^m$. Consider $p \geq 0$, and a non-degenerate phase $\Phi: \Gamma_{x_0,\xi_0} \times \Gamma_{y_0,\eta_0} \times \RR^p$ with $\mathcal{C}_\Phi = \mathcal{C} \cap (\Gamma_{x_0,\xi_0} \times \Gamma_{y_0,\eta_0})$. Then there exists a symbol $s$ of order $\nu + p/2 - (n+m)/4$, such that
+  Suppose $A \in I^\mu(X^n \times Y^m, \mathcal{C})$, and consider open sets
   %
-  \[ \Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0} = \int s(\cdot,\cdot,\theta) e^{i \Phi(x,y,\theta)}\; d\theta + C^\infty(\RR^n \times \RR^m), \]
+  \[ U_X \Subset V_X \subset X \quad\text{and}\quad U_Y \Subset V_Y \subset Y, \]
   %
-  i.e. the kernel of $\Psi_{x_0,\xi_0} \circ A \circ \Psi_{y_0,\eta_0}$ differs from the oscillatory integral operator on the right hand side by a smoothing operator.
+  together with diffeomorphisms $F^X: V_X \to W_X$ and $F^Y: V_Y \to W_Y$, where $W_X$ and $W_Y$ are pre-compact subsets of $\RR^n$ and $\RR^m$. Consider smooth, compactly supported functions $\phi_X \in C_c^\infty(X)$ and $\phi_Y \in C_c^\infty(Y)$, where $\phi_X$ is equal to one on $U_X$ but supported on $V_X$, and $\phi_Y$ is equal to one on $U_Y$ but supported on $V_Y$. Define a Schwartz operator from $\RR^m$ to $\RR^n$ by setting
+  %
+  \[ (A^\#\! f)(x) = \phi_X(x)\; A \{ \phi_Y \cdot (f \circ F_Y) \} ( F_X^{-1}(x) ) \]
+  %
+  If we define
+  %
+  \[ \mathcal{C}^\# = \{ (x,\xi;y,\eta) : (x, F^X_{\!*}(x)^T \xi, y, F^Y_*(y)^T \eta) \in \mathcal{C} \}, \]
+  %
+  then $A^\# \in I^\mu(\RR^n \times \RR^m, \mathcal{C}^\#)$. Moreover, suppose we fix $(x_0,\xi_0,y_0,\eta_0) \in \mathcal{C}^\#$, and consider two microlocalization operators $\Psi_{x_0,\xi_0}$ and $\Psi_{y_0,\eta_0}$ microlocally supported on $\Gamma_{x_0,\xi_0} \subset T^* \RR^n$ and $\Gamma_{y_0,\eta_0} \subset T^* \RR^m$ respectively. Consider a non-degenerate phase function
+  %
+  \[ \Phi: \Gamma_{x_0,\xi_0} \times {\Gamma_{y_0,\eta_0}} \times {\dot{\RR}{\vphantom{\RR}}^p} \to \RR \]
+  %
+  with $\mathcal{C}_\Phi = \mathcal{C} \cap (\Gamma_{x_0,\xi_0} \times \Gamma_{y_0,\eta_0})$. Then there exists a smooth symbol $s: \RR^n \times {\RR^m} \times {\dot{\RR}{\vphantom{\RR}}^p} \to \CC$ of order $\mu + p/2 - (n+m)/4$, with $\text{supp}_{x,y}(s)$ compact, and with $s$ supported within $\Gamma_{x_0,\xi_0} \times \Gamma_{y_0,\eta_0} \times {\dot{\RR}{\vphantom{\RR}}^p}$, and a smooth function $R_A \in C^\infty(\RR^n \times \RR^m)$, such that the kernel $K_{x_0,\xi_0,y_0,\eta_0}$ of $\Psi_{x_0,\xi_0} \circ A^\# \circ \Psi_{y_0,\eta_0}$ is given by
+  %
+  \[ K_{x_0,\xi_0,y_0,\eta_0}(x,y) = \left( \int_{\RR^p} s(x,y,\theta) e^{i \Phi(x,y,\theta)}\; d\theta \right) + R_A(x,y). \]
 \end{theorem}
 \begin{proof}
   See Theorem 25.1.5 of \cite{Hormander4}.
 \end{proof}
 
-The simplest class of Fourier integral operators are the \emph{pseudo-differential operators}. They are precisely the Fourier integral operators from a manifold $X$ to itself, whose canonical relation is the diagonal $\Delta_X = \{ (x,\xi,x,\xi): (x,\xi) \in T^* X \}$. In any coordinate system, and for any diffeomorphism $\phi: \RR^d \to \RR^d$, the phase function $\Phi(x,y,\xi) = \xi \cdot (\phi(x) - \phi(y))$ parameterizes $\Delta_X$, and so since $p = d$, $n = d$, and $m = d$, any pseudo-differential operator of order $\nu$ on $\RR^d$ can be written, modulo a smooth operator, as an oscillatory integral operator of the form
+The simplest class of Fourier integral operators are the \emph{pseudo-differential operators} of order $\mu$ on a manifold $X$. They are precisely the elements of $I^\mu( X \times X, \Delta_X )$, whose canonical relation is the diagonal $\Delta_X = \{ (x,\xi,x,\xi): (x,\xi) \in T^* X \}$. In any coordinate system, and for any diffeomorphism $\phi: \RR^d \to \RR^d$, $\Phi(x,y,\xi) = \xi \cdot (\phi(x) - \phi(y))$ parameterizes $\Delta_X$, and so since $p = d$, $n = d$, and $m = d$, we conclude from Theorem \ref{thm:equivalenceofphase} that for any pseudo-differential operator $T$ of order $\mu$ on $\RR^d$, there exists a symbol $s$ of order $\mu$, and $R_T \in C^\infty(\RR^d \times \RR^d)$, so that
 %
 \begin{equation}
-  \int s(x,y,\xi) e^{i \xi \cdot (\phi(x) - \phi(y))}\; d\xi,
+  K_T(x,x') = \int s(x,x',\xi) e^{i \xi \cdot (\phi(x) - \phi(x'))}\; d\xi + R_T(x,x'),
 \end{equation}
 %
-where $s$ is a symbol of order $\nu$.
+where $s$ is a symbol of order $\mu$.
 
 For our purposes, the most important Fourier integral operators are associated with solutions to wave equations on manifolds.
 
 \begin{theorem} \label{waveisanFIOTheorem}
-  Let $P$ be an elliptic operator on a manifold $X$ satisfying Assumption $A$, with principal symbol $p: T^* X \to \RR$. Let $\{ \alpha_t \}$ be the (co) geodesic flow on $T^* X$ given by the Finsler metric on $X$ induced by $p$.  Define the canonical relation $\mathcal{C} \subset T^* (X \times \RR) \times T^* X$ by setting
+  Fix $P \in \COP{1}(X)$ satisfying Assumption $A$, and let $p: T^* X \to \RR$ denote it's principal symbol. Let $\{ \alpha_t \}$ be the co-geodesic flow on $T^* X$ given by the Finsler metric on $X$ induced by $p$.  Define the canonical relation $\mathcal{C} \subset T^* (X \times \RR) \times T^* X$ by setting
   %
   \[ \mathcal{C} = \{ (x,t,\xi,\tau,x',\xi') : (x,\xi) = \alpha_t(x',\xi') \quad\text{and}\quad \tau = p(x',\xi') \}. \]
   %
-  Then the solution operator $Af(x,t) = e^{i t P}f(x)$ from $X$ to $X \times \RR$, which takes an initial condition $f$ on $X$ to a solution $u$ to the wave equation $\partial_t u = i P u$ is a Fourier integral operator of order $1/4$ associated with the canonical relation $\mathcal{C}$. For each fixed $t$, the operator $e^{i t P}$ is a Fourier integral operator of order $0$ associated with the canonical relation
+  and define
   %
   \[ \mathcal{C}_t = \{ (x,\xi;x',\xi') : (x,\xi) = \alpha_t(x',\xi') \}. \]
+  %
+  Then $e^{itP} \in I^0(X \times X, \mathcal{C}_t)$, and if we define the solution operator $Af(x,t) = e^{i t P}\!f(x)$ from $X$ to $X \times \RR$, which solves the wave equation $\partial_t = i P$, then $A \in I^{1/4}((X \times \RR) \times X, \mathcal{C})$.
 \end{theorem}
 \begin{proof}
   It suffices to construct a parametrix for the half-wave equation given by oscillatory integrals that fit into the canonical relations above. One can find such parametrices in many sources, such as Theorem 29.1.1 of \cite{Hormander4} or Theorem 4.1.2 of \cite{Sogge}.
@@ -1838,9 +1870,9 @@ Given this theorem, the equivalence of phase theorem implies multiple useful osc
     p(x, \nabla_x \phi(x,x',\xi)) = p(x',\xi)
   \end{equation}
   %
-  and such that for $x' \in \Sigma_{x,\xi}$, $\phi(x,x',\xi) = 0$ and $\nabla \phi(x,x',\xi)$ is conormal to $\Sigma_{x,\xi}$. If we define $\Phi(x,t,x',\xi) = \phi(x,x',\xi) + t p(x,\xi)$, then $\mathcal{C}_\Phi$ agrees with the canonical relation $\mathcal{C}$ for the solution operator $A$, and so there exists a symbol $s$ of order zero such that, in coordinates, for $x'$ in a neighborhood of $x$, and suitably small $t$, and modulo a smooth kernel,
+  such that for $x' \in \Sigma_{x,\xi}$, the co-vector $d_\xi \phi(x,x',\xi)$ is co-normal to $\Sigma_{x,\xi}$ and $\phi(x,x',\xi) = 0$. If we define $\Phi(x,t,x',\xi) = \phi(x,x',\xi) + t p(x,\xi)$, then $\mathcal{C}_\Phi$ agrees with the canonical relation $\mathcal{C}$ for the solution operator $A$, and so for the operator $A^\#$ in coordinates, there exists a symbol $s$ of order zero and $R_A \in C^\infty(\RR^{d+1} \times \RR^d)$, such that, for the operator $A^\#$ in coordinates, for $x'$ in a neighborhood of $x$, and for suitably small $t$,
   %
-  \begin{equation} A(x,t,x') = \int s(x,t,x',\xi) e^{i [ \phi(x,x',\xi) + t p(x,\xi) ]}\; d \xi. \end{equation}
+  \begin{equation} K_{A^\#}(x,t,x') = \int s(x,t,x',\xi) e^{i [ \phi(x,x',\xi) + t p(x,\xi) ]}\; d \xi + R_A(x,t,x'). \end{equation}
 
   \item Suppose that $t > 0$ is smaller than the injectivity radius on the manifold $X$ with respect to it's Finsler metric. Then the phase 
   %
@@ -1848,13 +1880,13 @@ Given this theorem, the equivalence of phase theorem implies multiple useful osc
     \Phi(x,x',t,\tau) = \tau ( |t| - d_+(x',x) )
   \end{equation}
   %
-  for $\tau > 0$, has canonical relation agreeing with $\mathcal{C}_t$, and so there exists a symbol $s$ of order $\tfrac{d-1}{2}$ such that, modulo a smooth kernel,
+  for $\tau > 0$, has canonical relation agreeing with $\mathcal{C}_t$ for $t \neq 0$, and so there exists a symbol $s$ of order $\tfrac{d-1}{2}$, and $R_A \in C^\infty(\RR^{d+1} \times \RR^d)$ such that
   %
   \begin{equation}
-    A(x,t,x') = \int_0^\infty s(x,t,x',\tau) e^{i \tau ( |t| - d_+(x',x) )}\; d\tau.
+    K_{A^\#}(x,t,x') = \int_0^\infty s(x,t,x',\tau) e^{i \tau ( |t| - d_+(x',x) )}\; d\tau + R_A(x,t,x').
   \end{equation}
   %
-  The problem with this oscillatory integral representation is that it begins to break down as $t \to 0$, and as $t$ approaches times at which cut points develop on $X$.
+  The problem with this oscillatory integral representation is that it begins to break down as $t \to 0$, and as $t$ approaches times near the injectivity radius of the manifold.
 
   \item Because of the semigroup property $\mathcal{C}_t \circ \mathcal{C}_s = \mathcal{C}_{t+s}$, we can obtain oscillatory integral representations of $e^{i t P}$ by composing the oscillatory integral representations here. We do not carry out the details, because as $t \to \infty$ the number of compositions required grows linearly, which means the oscillatory integrals are harder and harder to control in a uniform way as $t \to \infty$, and we will not use such compositions in our arguments.
   %For instance, we can write
@@ -1869,10 +1901,10 @@ Given this theorem, the equivalence of phase theorem implies multiple useful osc
   %\[ \int e^{i \tau_1 d(x,w) + \tau_2 d(w,y)}\; dw \]
 \end{itemize}
 %
-We conclude this section with some technical calculations, that result in some useful estimates for certain Fourier integral operators that will arise later in the thesis. Our first calculation concerns `Littlewood-Paley projections' on a manifold.
+We conclude this section with some technical calculations, that result in some useful estimates for certain Fourier integral operators that will arise later in the thesis. Our first calculation concerns `Littlewood-Paley projections' on a manifold with respect to an eigenfunction decomposition of an elliptic operator.
 
 \begin{theorem} \label{PseudoOsicllatoryLemma}
-  Let $X$ be a compact manifold, and consider any $P \in \COP{1}(X)$. Consider a coordinate system $V$, with a set $U$ compactly contained in $V$. Fix $q \in C_c^\infty(0,\infty)$ and $R > 0$, and define $Q = q(P/R)$. Then we can find an operator $Q_\alpha$ such that for any function $u$ supported on $U$, $\| Qu - Q_\alpha u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}$ for arbitrarily large $M$ and $N$, such that $Q_\alpha u$ is supported on $V$ for any input $u$, and in the coordinate system $U$, $Q_\alpha$ is a pseudo-differential operator whose symbol $\sigma_\alpha$ is supported on $\{ (x,\xi): R/4 \leq \xi \leq 4R \}$.
+  Let $X$ be a compact manifold, and consider any $P \in \COP{1}(X)$. Consider a coordinate system $V$, and an open set $U$ compactly contained in $V$. Fix $q \in C_c^\infty(0,\infty)$ and $R > 0$, and define $Q = q(P/R)$. Then we can find an operator $Q_\alpha$ such that for any function $u$ supported on $U$, $\| Qu - Q_\alpha u \|_{C^M(X)} \lesssim_{N,M} R^{-N} \| u \|_{L^1(X)}$ for arbitrarily large $M$ and $N$, such that $Q_\alpha u$ is supported on $V$ for any input $u$, and in the coordinate system $U$, $Q_\alpha$ is a pseudo-differential operator whose symbol $\sigma_\alpha$ is supported on $\{ (x,\xi): R/4 \leq \xi \leq 4R \}$.
 \end{theorem}
 \begin{proof}
   We proceed with a similar approach to Theorem 4.3.1 of \cite{Sogge}. It will be helpful to introduce a basis $\{ e_k \}$ for $L^2(X)$, with $e_k \in C^\infty(X)$ for each $k$ and $Pe_k = \lambda_k e_k$. Using \ref{waveisanFIOTheorem}, there exists $\varepsilon > 0$ such that for any function $u$ supported on $U$, for $|t| < \varepsilon$ and $u$ supported on $U$, we can write
@@ -2081,7 +2113,7 @@ Using the Fourier integral operator methods we have described, we can now discus
 The converse is \emph{almost} true.
 
 \begin{theorem}
-  Let $X$ be a compact manifold, let $P \in \COP{1}(X)$, and suppose that all geodesics are closed and have length $1/bn$. Let $a \in \ZZ$ denote the \emph{Maslov index} of the geodesics  on $X$ (a cohomological invariant of these curves). Then there exists $\tilde{P} \in \COP{1}(X)$ commuting with $P$, such that $P - \tilde{P}$ is order zero and $e^{2 \pi i \tilde{P} / b} = I$. If the \emph{subprincipal symbol} of $P$ is equal to $\pi a / 2 b$, then $P - \tilde{P}$ is order $-1$.
+  Let $X$ be a compact manifold, let $P \in \COP{1}(X)$, and suppose that all geodesics are closed and have length $1/bn$. Let $a \in \ZZ$ denote the \emph{Maslov index} of the geodesics  on $X$ (a cohomological invariant of these curves). Then there exists $\tilde{P} \in \COP{1}(X)$ commuting with $P$, such that $P - \tilde{P}$ is order zero and $e^{2 \pi i \tilde{P} / b} = I$. If the \emph{sub-principal symbol} of $P$ is equal to $\pi a / 2 b$, then $P - \tilde{P}$ is order $-1$.
 \end{theorem}
 \begin{proof}
   See Section 29.2 of \cite{Hormander4}.
@@ -2091,7 +2123,7 @@ The eigenvalues of $\tilde{P}$ must be integer multiples of $b$. In the second c
 %
 \[ |\lambda - n / b| = \| (P - \tilde{P}) e_\lambda \|_{L^2(X)} \lesssim \| e_n \|_{H^{-1}(X)} \lesssim n^{-1}. \]
 %
-It follows from this inequality that the eigenvalues of $P$ must lie in eigenbands of the form $[n/b - C/n, n/b + C/n]$, and thus `almost' lie in arithmetic progression $\ZZ$. In the case where the subprincipal symbol is a constant not equal to $\pi a / 2b$, then the eigenvalues of $P$ will lie in a shifted arithmetic progression; this is the case, for instance, when $P = \sqrt{-\Delta}$ on a Riemannian manifold; for instance, on the sphere, the eigenvalues of $P$ are equal to
+It follows from this inequality that the eigenvalues of $P$ must lie in eigenbands of the form $[n/b - C/n, n/b + C/n]$, and thus `almost' lie in arithmetic progression $\ZZ$. In the case where the sub-principal symbol is a constant not equal to $\pi a / 2b$, then the eigenvalues of $P$ will lie in a shifted arithmetic progression; this is the case, for instance, when $P = \sqrt{-\Delta}$ on a Riemannian manifold; for instance, on the sphere, the eigenvalues of $P$ are equal to
 %
 \begin{equation}
   \sqrt{k(k+d)} = k + \frac{d-1}{2} + O(k^{-1}),

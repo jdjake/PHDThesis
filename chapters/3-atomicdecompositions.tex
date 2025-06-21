@@ -94,7 +94,7 @@ uniformly in $k$. The main result of this section is that one can also `sum thes
 Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem} is invariant under dilations of $a$, it suffices to prove a bound of the form $\| a(P) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,q}[0,\infty)}$. To prove Theorem \ref{atomicscalestheorem}, we use an analogue of the technique of atomic decompositions introduced in Section \ref{sec:combiningscaleswithatomicdecompositions}. The following lemma describes the properties of this atomic decomposition useful to us, and is proved in an appendix.
 
 \begin{lemma} \label{atomicdecompositionlemma}
-    Consider coordinate charts $\{ U_\alpha \}$ covering $X$. Then, for any measurable function $u: X \to \CC$, if we consider the dyadic decomposition $u = \sum u_k$, where $u_k = Q_k u$ is a quasimode with eigenvalue $2^k$, then we have a further decomposition
+    Consider coordinate charts $\{ U_\alpha \}$ covering $X$. Then, for any measurable function $u: X \to \CC$, if we consider the dyadic decomposition $u = \sum u_k$, where $u_k = Q_k u$ is a quasi-mode with eigenvalue $2^k$, then we have a further decomposition
     %
     \[ u_k = \sum\nolimits_\alpha \sum\nolimits_H \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} A_{\alpha,k,H,W}, \]
     %
@@ -103,7 +103,7 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
     \begin{itemize}
         \item The 10-fold dilates $\{ W^* : W \in \mathcal{W}_{\alpha,H} \}$ have the bounded overlap property.
 
-        \item Let $l(W)$ denote the sidelength of the cube $W$. If $l(W) = 2^l$, then $A_{\alpha,k,H,W} = 0$ for $k < -l$.
+        \item Let $l(W)$ denote the side-length of the cube $W$. If $l(W) = 2^l$, then $A_{\alpha,k,H,W} = 0$ for $k < -l$.
 
         \item For each $W$, $\text{supp}(A_{\alpha,k,H,W}) \subset W$, but as $H$ varies, the functions $\{ A_{\alpha,k,H,W} \}$ have almost disjoint support.
 
@@ -129,13 +129,13 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
     %
     Then, adapting a Euclidean result of Peetre \cite{Peetre}, Seeger \cite{SeegerEndpointEstimatesMultipliers} proved that $\mathfrak{S}$ is bounded on $L^p(X)$ for all $1 < p < \infty$.
 
-    Consider a partition of unity $\{ \eta_\alpha \}$, with $\eta_\alpha$ supported on a precompact subset $V_\alpha$ of $U_\alpha$. For each dyadic $H$, define $\Omega_{\alpha,H} = \{ x \in V_\alpha : \mathfrak{S} u(x) > H \}$. In the coordinate system $U_\alpha$, define the set $\mathcal{Q}_{\alpha, H,k}$ to be the set of all dyadic cubes $Q$ of sidelength $2^{-k}$ such that $|Q \cap \Omega_{\alpha,H}| \geq |Q| / 2$ but $|Q \cap \Omega_{\alpha,2H}| < |Q|/2$. Define
+    Consider a partition of unity $\{ \eta_\alpha \}$, with $\eta_\alpha$ supported on a pre-compact subset $V_\alpha$ of $U_\alpha$. For each dyadic $H$, define $\Omega_{\alpha,H} = \{ x \in V_\alpha : \mathfrak{S} u(x) > H \}$. In the coordinate system $U_\alpha$, define the set $\mathcal{Q}_{\alpha, H,k}$ to be the set of all dyadic cubes $Q$ of side-length $2^{-k}$ such that $|Q \cap \Omega_{\alpha,H}| \geq |Q| / 2$ but $|Q \cap \Omega_{\alpha,2H}| < |Q|/2$. Define
     %
     \begin{equation}
         \Omega_{\alpha,H}^* = \{ x \in V_\alpha : M \mathbb{I}_{\Omega_{\alpha,H}}(x) > 100^{-d} \}.
     \end{equation}
     %
-    Then $\Omega_{\alpha,H}^*$ is open, and by the weak $L^1$ boundedness of the Hardy-Littlewood maximal funcition, $|\Omega_{\alpha,H}^*| \lesssim |\Omega_{\alpha,H}|$. We perform a Whitney decomposition of the  set $\Omega_{\alpha,H}^*$. Let $\mathcal{W}_{\alpha,H}$ be the set of all dyadic cubes $W$ which are maximal among cubes whose $50$-fold dilate of $W$ is contained in $\Omega_{\alpha,H}^*$. If we let $W^*$ denote the 10-fold dilate of $W$, then the sets $\{ W^* : W \in \mathcal{W}_{\alpha,H} \}$ have the bounded overlap property.
+    Then $\Omega_{\alpha,H}^*$ is open, and by the weak $L^1$ boundedness of the Hardy-Littlewood maximal function, $|\Omega_{\alpha,H}^*| \lesssim |\Omega_{\alpha,H}|$. We perform a Whitney decomposition of the  set $\Omega_{\alpha,H}^*$. Let $\mathcal{W}_{\alpha,H}$ be the set of all dyadic cubes $W$ which are maximal among cubes whose $50$-fold dilate of $W$ is contained in $\Omega_{\alpha,H}^*$. If we let $W^*$ denote the 10-fold dilate of $W$, then the sets $\{ W^* : W \in \mathcal{W}_{\alpha,H} \}$ have the bounded overlap property.
     
     For each $W \in \mathcal{W}_{\alpha,H}$, define
     %
@@ -143,7 +143,7 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
         A_{\alpha,k,H,W} = \eta_\alpha u_k \sum\nolimits_{\substack{Q \in \mathcal{Q}_{\alpha,H,k}\\Q \subset W}} \mathbb{I}_Q.
     \end{equation}
     %
-    Each dyadic cube $Q \in \mathcal{Q}_{\alpha,H,k}$ is contained in some $W$, because the 50-fold dilate of $Q$ is contained in $\Omega_{\alpha,H}^*$. Since all dyadic sidelength $2^{-k}$ cubes are contained in $\mathcal{Q}_{\alpha,H,k}$ for a unique $H$, modulo sets of measure zero, we have
+    Each dyadic cube $Q \in \mathcal{Q}_{\alpha,H,k}$ is contained in some $W$, because the 50-fold dilate of $Q$ is contained in $\Omega_{\alpha,H}^*$. Since all dyadic side-length $2^{-k}$ cubes are contained in $\mathcal{Q}_{\alpha,H,k}$ for a unique $H$, modulo sets of measure zero, we have
     %
     \begin{equation}
         \eta_\alpha u_k = \sum \nolimits_H \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} A_{\alpha,k,H,W}.
@@ -154,7 +154,7 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
     \begin{itemize}
         \item The sets $\{ W^* \}$ have the bounded overlap property.
 
-        \item This property follows immediately from the fact that $A_{\alpha,k,H,W}$ is a sum over sidelength $2^{-k}$ cubes contained in $W$.
+        \item This property follows immediately from the fact that $A_{\alpha,k,H,W}$ is a sum over side-length $2^{-k}$ cubes contained in $W$.
 
         \item The sets $\mathcal{Q}_{\alpha,H,k}$ are disjoint as $H$ varies, which implies the supports of the atoms $A_{\alpha,k,H,W}$ are disjoint as $H$ varies.
 
@@ -172,7 +172,7 @@ Since the right hand side of the inequality in Theorem \ref{atomicscalestheorem}
     %
     Integrating this pointwise bound over $\Omega_{\alpha,H}^*$ gives the relevant $L^2$ estimates.
 
-    \item The pointwise estimates of the last section imply that $|A_{\alpha,k,H,W}| \lesssim H$, and since the supports of the cubes in $\mathcal{W}_{\alpha,H}$ are disjoint for each $H$ and have $\Omega_{\alpha,H}$ as thei union, the required estimate follows immediately.
+    \item The pointwise estimates of the last section imply that $|A_{\alpha,k,H,W}| \lesssim H$, and since the supports of the cubes in $\mathcal{W}_{\alpha,H}$ are disjoint for each $H$ and have $\Omega_{\alpha,H}$ as their union, the required estimate follows immediately.
 
     \item The last property automatically follows from the $L^p$ boundedness of $\mathfrak{S}$.
     \end{itemize}
@@ -221,7 +221,7 @@ and analyze each part using separate techniques.
 
 \section{Short Range Bounds}
 
-To obtain short range bounds, we exploit the propogation speed of the operators $\cos(2 \pi i t P)$, and the bounded overlap of the sets $W_{\alpha,H}$ for a fixed $H$. To obtain an $L^q$ bound for $f_{\text{Short}}$, we interpolate between an $L^2$ bound and an $L^1$ bound, at a fixed quantity $H$. So write $f_{\text{Short}} = \sum_\alpha \sum_k \sum_H f_{\alpha,k,H}$.
+To obtain short range bounds, we exploit the propagation speed of the operators $\cos(2 \pi i t P)$, and the bounded overlap of the sets $W_{\alpha,H}$ for a fixed $H$. To obtain an $L^q$ bound for $f_{\text{Short}}$, we interpolate between an $L^2$ bound and an $L^1$ bound, at a fixed quantity $H$. So write $f_{\text{Short}} = \sum_\alpha \sum_k \sum_H f_{\alpha,k,H}$.
 %To obtain $L^2$ estimates, it becomes necessary to estimate the inner products $\langle f_{\alpha,k,H,W}, f_{\alpha,k,H,W'} \rangle$.
 %
 %\[ \sum\nolimits_{W' \cap W^* = \emptyset} \langle f_{\alpha,k,H,W}, f_{\alpha,k,H,W'} \rangle \]
@@ -233,7 +233,7 @@ In $L^2$, different frequencies are orthogonal, so that
 \end{split}
 \end{equation}
 %
-We note that by the finite propogation speed of $\cos(2 \pi t P)$, $\langle f_{\alpha,k,H,W,\text{Short}}, f_{\alpha,k,H,W',\text{Short}} \rangle = 0$ if $W^* \cap (W')^* = \emptyset$. By the bounded overlap property of the sets $\{ W^* \}$, these functions are almost orthogonal, and so we conclude that
+We note that by the finite propagation speed of $\cos(2 \pi t P)$, $\langle f_{\alpha,k,H,W,\text{Short}}, f_{\alpha,k,H,W',\text{Short}} \rangle = 0$ if $W^* \cap (W')^* = \emptyset$. By the bounded overlap property of the sets $\{ W^* \}$, these functions are almost orthogonal, and so we conclude that
 %
 \begin{equation}
     \| f_{H,\text{Short}} \|_{L^2(X)} \lesssim \left( \sum\nolimits_k \sum\nolimits_{W \in \mathcal{W}_{\alpha,H}} \left\| f_{\alpha,k,H,W,\text{Short}} \right\|_{L^2(X)}^2 \right)^{1/2}.
@@ -263,7 +263,7 @@ So
     \| f_{H,\text{Short}} \|_{L^2(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} H |\Omega_H|^{1/2}.
 \end{equation}
 %
-By the finite propogation speed of the wave equation, $f_{H,\text{Short}}$ is supported on the set $\{ x: (M \chi_{\Omega_H})(x) \geq 1/10^d \}$, where $M$ is the Hardy-Littlewood maximal function; by the weak $L^1$ boundedness of $M$, this set has measure $O(|\Omega_H|)$. Thus we can use H\"{o}lder's inequality to conclude that for any $r \in [1,2]$,
+By the finite propagation speed of the wave equation, $f_{H,\text{Short}}$ is supported on the set $\{ x: (M \chi_{\Omega_H})(x) \geq 1/10^d \}$, where $M$ is the Hardy-Littlewood maximal function; by the weak $L^1$ boundedness of $M$, this set has measure $O(|\Omega_H|)$. Thus we can use H\"{o}lder's inequality to conclude that for any $r \in [1,2]$,
 %
 \begin{equation}
     \| f_{H,\text{Short}} \|_{L^1(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} |\Omega_H|^{1/2} H |\Omega_H|^{1/2} = \| a \|_{R^{s,p}[0,\infty)} H |\Omega_H|.
@@ -303,7 +303,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(
     which, in particular, is positive for $p < q$.
 \end{lemma}
 \begin{proof}
-    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique sidelength cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}(q)$ and H\"{o}lder's inequality to conclude that
+    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique side-length cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}(q)$ and H\"{o}lder's inequality to conclude that
     %
     \begin{equation}
     \begin{split}
@@ -449,5 +449,5 @@ We end this chapter with a proof that $\text{Wave-Bound}(p)$ holds on $S^d$ for 
 \end{proof}
 
 \begin{remark}
-    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $S^d$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absense of information about the geometric properties of conjugate points.
+    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $S^d$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absence of information about the geometric properties of conjugate points.
 \end{remark}

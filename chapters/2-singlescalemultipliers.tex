@@ -96,7 +96,7 @@ where $b_R: I_0 \to \CC$ is the periodic function
 % Sphere 1, but we scale is by 1/2pi
 % Sphere of radius 1/2 pi, has sectional curvatures kappa = 2 pi
 % so 1/4
-We split our analysis of $T_R$ into two regimes: regime $\text{I}$ and regime $\text{II}$. In regime $\text{I}$, we analyze the behaviour of the wave equation over times $0 \leq |t| \leq \varepsilon_X$ by decomposing this time interval into length $1/R$ pieces, and analyzing the interactions of the wave equations between the different intervals. In regime $\text{II}$, we analyze the behaviour of the wave equation over times $\varepsilon_X \leq |t| \leq 1$. Here we need not perform such a decomposition, since the $R^{s,p}$ norm gives better control on the function $b_R$ over these times.
+We split our analysis of $T_R$ into two regimes: regime $\text{I}$ and regime $\text{II}$. In regime $\text{I}$, we analyze the behavior of the wave equation over times $0 \leq |t| \leq \varepsilon_X$ by decomposing this time interval into length $1/R$ pieces, and analyzing the interactions of the wave equations between the different intervals. In regime $\text{II}$, we analyze the behavior of the wave equation over times $\varepsilon_X \leq |t| \leq 1$. Here we need not perform such a decomposition, since the $R^{s,p}$ norm gives better control on the function $b_R$ over these times.
 %Heuristically, the result is just a discretization of the condition that $C_p(m) < \infty$, but using the additional fact that $b_j$ was obtained from a periodization of the Fourier transform of a function with `frequency support' on an annulus of radius $2^j$, and thus locally constant at a scale $1/2^j$. This allows us to replace $L^p$ norms with $L^1$ norms on intervals of length $1/2^j$ without incurring any loss.
 
 \begin{lemma} \label{decompositionLemma}
@@ -233,10 +233,10 @@ A proof of these facts using more modern notation is given in Theorem 7 of \cite
 
 \section{Quasi-Orthogonality Estimates For Wave-Packets} \label{estimatesforwavepackets}
 
-The discussion at the end of Section \ref{PrelimSetup} motivates us to consider estimates for functions obtained by taking averages of the wave equation over a small time interval, with initial conditions localized to a particular part of space. In this section, we study the $L^2$ orthogonality of such quantities. One should compare the results of this section to the results of Lemma \ref{lemma4}. We do not exploit periodicity of the Hamiltonian flow in this section since we are only dealing with estimates for the half wave-equation for \emph{small times}. Our results here thus hold for any manifold $X$, and any operator $P$ whose principal symbol has cospheres with non-vanishing Gaussian curvature. In order to prove the required quasi-orthogonality estimates of the functions $\{ f_{x_0,t_0} \}$, we find a new connection between the Finsler geometry we introduced in section \ref{sec:geometriesinduced} and the behaviour of the operator $P$. In particular, recall the quasimetrics $d_+$ and $d_-$ introduced in that section.
+The discussion at the end of Section \ref{PrelimSetup} motivates us to consider estimates for functions obtained by taking averages of the wave equation over a small time interval, with initial conditions localized to a particular part of space. In this section, we study the $L^2$ orthogonality of such quantities. One should compare the results of this section to the results of Lemma \ref{lemma4}. We do not exploit periodicity of the Hamiltonian flow in this section since we are only dealing with estimates for the half wave-equation for \emph{small times}. Our results here thus hold for any manifold $X$, and any operator $P$ whose principal symbol has co-spheres with non-vanishing Gaussian curvature. In order to prove the required quasi-orthogonality estimates of the functions $\{ f_{x_0,t_0} \}$, we find a new connection between the Finsler geometry we introduced in section \ref{sec:geometriesinduced} and the behavior of the operator $P$. In particular, recall the quasi-metrics $d_+$ and $d_-$ introduced in that section.
 
 \begin{prop} \label{theMainEstimatesForWave}
-    Let $X$ be a compact manifold of dimension $d$, and suppose $P \in \COP{1}(X)$ satisfies the curvature assumptions of Theorem \ref{maintheorem}. Suppose $\varepsilon_X > 0$ is chosen smaller thant he injectivity radius of $X$. Then for all $R \geq 0$, the following estimates hold:
+    Let $X$ be a compact manifold of dimension $d$, and suppose $P \in \COP{1}(X)$ satisfies the curvature assumptions of Theorem \ref{maintheorem}. Suppose $\varepsilon_X > 0$ is chosen smaller than the injectivity radius of $X$. Then for all $R \geq 0$, the following estimates hold:
     %
     \begin{itemize}%[leftmargin=8mm]
         \item (Pointwise Estimates) Fix  $|t_0| \leq \varepsilon_X$ and $x_0 \in X$. Consider any two $L^1$ normalized functions $c: \RR \to \CC$ and $u: X \to \CC$ with $\supp(c) \subset I_{t_0}$ and $\supp(u) \subset B(x_0,1/R)$. Define $S\!_{x_0,t_0}: X \to \CC$ by setting
@@ -546,7 +546,7 @@ Define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0, \lambda(x_0,\
 %
 %Now the oscillatory integral has two critical points, at values $\eta$ such that $F_{x_0}(\eta)$ points directly towards or away the flow from $x_0$ to $x$. Thus the integral above can be written as
 %
-We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\xi$ variable, $\Phi$ has exactly two critical points $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, where $\xi^+ \in S\!_{x_0}^*$ is the covector corresponding to the forward geodesic from $x_0$ to $x$, and $\xi^- \in S\!_{x_0}^*$ is the covector corresponding to the backward geodesic from $x_0$ to $x$. Moreover,
+We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\xi$ variable, $\Phi$ has exactly two critical points $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, where $\xi^+ \in S\!_{x_0}^*$ is the co-vector corresponding to the forward geodesic from $x_0$ to $x$, and $\xi^- \in S\!_{x_0}^*$ is the co-vector corresponding to the backward geodesic from $x_0$ to $x$. Moreover,
 %
 \begin{equation}
     \Phi(|\xi^+|^{-1} \xi^+) = d_X^+(x_0,x) \quad\text{and}\quad \Phi(|\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x),
@@ -611,7 +611,7 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
     %
     \[ F_* ( x, \nabla_x \phi(x,y,\xi) ) = F_*(y,\xi), \]
     %
-    such that $\phi(x,y,\xi) = 0$ for $x \in H(y,\xi)$, where $H(y, \xi) = \{ x \in U : \xi \cdot (x - y) = 0 \}$. For each $x_0,x_1 \in U$, let $S\!_{x_0}^* = \{ \xi \in \RR^d: F_*(x_0,\xi) = 1 \}$ be the cosphere at $x_0$, and define $\Psi: S\!_{x_0}^* \to \RR$ by setting
+    such that $\phi(x,y,\xi) = 0$ for $x \in H(y,\xi)$, where $H(y, \xi) = \{ x \in U : \xi \cdot (x - y) = 0 \}$. For each $x_0,x_1 \in U$, let $S\!_{x_0}^* = \{ \xi \in \RR^d: F_*(x_0,\xi) = 1 \}$ be the co-sphere at $x_0$, and define $\Psi: S\!_{x_0}^* \to \RR$ by setting
     %
     \[ \Psi(\xi) = \phi(x_1,x_0,\xi). \]
     %
@@ -626,7 +626,7 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
     where the implicit constant is uniform in $x_0$ and $x_1$.
 \end{prop}
 
-If $\Psi$ is as above, then the function $\Phi: S^{d-1} \to \RR$ obtained by setting $\Phi(\xi) = \phi( x, x_0, F_*(x,\xi)^{-1} \xi  )$ is precisely the kind of function that arose as a phase in Proposition \ref{theMainEstimatesForWave}, where $F_*$ was the principal symbol $p$ of the pseudodifferential operator we were considering. Since critical points and the Hessians of maps at critical points are stable under diffeomorphisms, %(see Chapter 5, Problem 17 of \cite{Spivak1}),
+If $\Psi$ is as above, then the function $\Phi: S^{d-1} \to \RR$ obtained by setting $\Phi(\xi) = \phi( x, x_0, F_*(x,\xi)^{-1} \xi  )$ is precisely the kind of function that arose as a phase in Proposition \ref{theMainEstimatesForWave}, where $F_*$ was the principal symbol $p$ of the pseudo-differential operator we were considering. Since critical points and the Hessians of maps at critical points are stable under diffeomorphisms, %(see Chapter 5, Problem 17 of \cite{Spivak1}),
 and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S\!_{x_0}^*$ to $S^{d-1}$, classifying the critical points of the map $\Psi$ implies the required properties of the map $\Phi$ used in Proposition \ref{theMainEstimatesForWave}.
 
 % then, because critical points and the Hessians of maps at critical points are stable under diffeor
@@ -691,7 +691,7 @@ In order to prove \ref{triangleLemma}, we rely on a geometric interpretation of 
     \[ |\Psi(\xi)| = \begin{cases} \text{the length of the shortest curve from $H(x_0,\xi)$ to $x_1$} & : \text{if}\ \Psi(\xi) > 0, \\ \text{the length of the shortest curve from $x_1$ to $H(x_0,\xi)$} & : \text{if}\ \Psi(\xi) < 0. \end{cases} \]
 \end{lemma}
 \begin{proof}
-    We rely on a construction of $\phi$ from Proposition 3.7 of \cite{Treves2}, which we briefly describe. Fix $x_0$ and $\xi$. Then there is a unique covector field $\omega: H(x_0,\xi) \to \RR^d$ which is everywhere perpendicular to $H(x_0,\xi)$, with $\omega(x_0) = \xi$ and with $F_*(x,\omega(x)) = F_*(x_0,\xi)$ for all $x \in H(x_0,\xi)$. There exists a unique point $x(\xi) \in H(x_0,\xi)$ and a unique $t(\xi) \in \RR$, such that the unit speed geodesic $\gamma$ on $X$ with $\gamma(0) = x(\xi)$ and $\gamma'(0) = \mathcal{L}^{-1}( x(\xi), \omega(x(\xi)) )$ satisfies $\gamma( t(\xi) ) = x_1$. We then have $\Psi(\xi) = t(\xi)$. If $t(\xi)$ is negative, then $\gamma|_{[t(\xi),0]}$ is a geodesic from $x_1$ to $x_0$, and if $t(\xi)$ is positive, $\gamma|_{[0,t(\xi)]}$ is a geodesic from $x_0$ to $x_1$. Because $\gamma$ is a geodesic, the geometric interpretation then follows if $U$ is a suitably small neighborhood such that geodesics are length minimizing.
+    We rely on a construction of $\phi$ from Proposition 3.7 of \cite{Treves2}, which we briefly describe. Fix $x_0$ and $\xi$. Then there is a unique co-vector field $\omega: H(x_0,\xi) \to \RR^d$ which is everywhere perpendicular to $H(x_0,\xi)$, with $\omega(x_0) = \xi$ and with $F_*(x,\omega(x)) = F_*(x_0,\xi)$ for all $x \in H(x_0,\xi)$. There exists a unique point $x(\xi) \in H(x_0,\xi)$ and a unique $t(\xi) \in \RR$, such that the unit speed geodesic $\gamma$ on $X$ with $\gamma(0) = x(\xi)$ and $\gamma'(0) = \mathcal{L}^{-1}( x(\xi), \omega(x(\xi)) )$ satisfies $\gamma( t(\xi) ) = x_1$. We then have $\Psi(\xi) = t(\xi)$. If $t(\xi)$ is negative, then $\gamma|_{[t(\xi),0]}$ is a geodesic from $x_1$ to $x_0$, and if $t(\xi)$ is positive, $\gamma|_{[0,t(\xi)]}$ is a geodesic from $x_0$ to $x_1$. Because $\gamma$ is a geodesic, the geometric interpretation then follows if $U$ is a suitably small neighborhood such that geodesics are length minimizing.
 \end{proof}
 
 % and relies on the fact discussed in the introduction that the Hamiltonian flow of the principal symbol $p$ of $P$ on $M$ is the geodesic flow of the Finsler metric induced by $p$ on $M$. Namely, for $\xi \in S\!_{x_0}$, the value $\psi(\xi)$ is the length of the unique geodesic starting at $x_1$ and ending at a point on $\Sigma(x_0,\xi)$, passing through $\Sigma(x_0,\xi)$ orthogonally. More precisely, there exists a unique point $x(\xi) \in \Sigma(x_0,\xi)$ and a unique value $t(\xi) \in \RR$, such that if $\eta = \eta(\xi)$ is the unique unit covector orthogonal to $\Sigma(x_0,\xi)$ at $x(\xi)$ and oriented outward from $\Sigma(x_0,\xi)$ in the same direction as $\xi$, then $x_1 = \exp_{x(\xi)}(t(\xi) \eta(\xi) )$, and we then have $\psi(\xi) = t(\xi)$.
@@ -714,7 +714,7 @@ It follows immediately from Lemma \ref{HamiltonLemma} that
     \Psi(\xi_+) = d_X^+(x_0,x_1) \quad\text{and}\quad \Psi(\xi_-) = - d_X^-(x_0,x_1).
 \end{equation}
 %
-A simple geometric argument also shows $\Psi(\xi^+)$ is the maximum value of $\Psi$ on $S\!_{x_0}^*$, and $\Psi(\xi^-)$ is the minimum value on $S\!_{x_0}^*$, so that these two points are both critical. Indeed, the point $x_0$ lies in $H(x_0,\xi)$ for all $\xi \in \RR^d - \{ 0 \}$. Thus the shortest curve from $x_0$ to $x_1$ is always longer than the shortest curve from $H(x_0,\xi)$ to $x_1$. Similarily, the shortest curve from $x_1$ to $x_0$ is always longer than the shortest curve from $x_1$ to $H(x_0,\xi)$. Thus
+A simple geometric argument also shows $\Psi(\xi^+)$ is the maximum value of $\Psi$ on $S\!_{x_0}^*$, and $\Psi(\xi^-)$ is the minimum value on $S\!_{x_0}^*$, so that these two points are both critical. Indeed, the point $x_0$ lies in $H(x_0,\xi)$ for all $\xi \in \RR^d - \{ 0 \}$. Thus the shortest curve from $x_0$ to $x_1$ is always longer than the shortest curve from $H(x_0,\xi)$ to $x_1$. Similarly, the shortest curve from $x_1$ to $x_0$ is always longer than the shortest curve from $x_1$ to $H(x_0,\xi)$. Thus
 %
 \begin{equation}
     - d_X^-(x_0,x_1) \leq \Psi(\xi) \leq d_X^+(x_0,x_1),
@@ -857,7 +857,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
 \begin{proof}[Proof that $\xi^+$ and $\xi^-$ are non-degenerate]
     Using symmetry, it suffices without loss of generality to analyze the critical point $\xi^-$ rather than $\xi^+$. Let $H_-: T_{\xi^-} S\!_{x_0}^* \to \RR$ be the Hessian of $\Psi$ at $\xi^-$. Let $v_0 = \mathcal{L}_{x_0}^{-1} \xi^-$, and using the notation of the last argument, let $l = t(\xi^-)$. Consider a curve $\xi(a)$ valued in $S\!_{x_0}^*$ with $\xi(0) = \xi^-$ and $\zeta = \xi'(0)$ for some $\zeta \in T_{\xi^-}^* S\!_{x_0}$. Then the second derivative of $\Psi(\xi(a))$ at $a = 0$ is $H_-( \zeta )$, and so our proof would be complete if we could show that the function $L(a) = - \Psi( \xi(a) )$, which is the length of the shortest geodesic from $x_1$ to $H(x_0,\xi(a))$, satisfies $L''(0) \geq C l |\zeta|$, for a constant $C > 0$ uniform in $x_0$, $x_1$, and $\zeta$.
 
-    Consider the partial function $\text{Exp}_{x_1}: \RR^d \to U_0$ obtained from the exponential map at $x_1$. If $r$ is chosen suitably small, there exists a neighborhood $V$ of the origin in $\RR^d$ such that $E = \text{Exp}_{x_1}|_V$ is a diffeomorphism between $V$ and $U$. Unlike in Riemannian manifolds, in general $E$ is only $C^1$ at the origin, though smooth on $V - \{ 0 \}$. However, for $|v| = 1$ and $t > 0$ we can write $E(tv) = (\pi \circ \varphi)( x_1, \mathcal{L}_{x_1} v, t)$, where the partial function $\varphi: (T^* U_0 - 0) \times \RR \to (T^* U_0 - 0)$ is the flow induced by the the Hamiltonian vector field $( \partial_\xi F_*, - \partial_x F_*)$ on $T^* U_0 - 0$, and $\pi$ is the projection map from $T^* U_0 - 0$ to $U_0$. Where defined, $\varphi$ is a smooth function since the Hamiltonian vector field is smooth, and so it follows by homogeneity and the precompactness of $U$ that the partial derivatives $(\partial^\alpha E_x)(v)$ are uniformly bounded for $v \neq 0$ and $x \in U$. It thus follows from the inverse function theorem that there exists a constant $A > 0$ such that for all $x_1$ and $x$ in $U$ with $x \neq x_1$,
+    Consider the partial function $\text{Exp}_{x_1}: \RR^d \to U_0$ obtained from the exponential map at $x_1$. If $r$ is chosen suitably small, there exists a neighborhood $V$ of the origin in $\RR^d$ such that $E = \text{Exp}_{x_1}|_V$ is a diffeomorphism between $V$ and $U$. Unlike in Riemannian manifolds, in general $E$ is only $C^1$ at the origin, though smooth on $V - \{ 0 \}$. However, for $|v| = 1$ and $t > 0$ we can write $E(tv) = (\pi \circ \varphi)( x_1, \mathcal{L}_{x_1} v, t)$, where the partial function $\varphi: (T^* U_0 - 0) \times \RR \to (T^* U_0 - 0)$ is the flow induced by the the Hamiltonian vector field $( \partial_\xi F_*, - \partial_x F_*)$ on $T^* U_0 - 0$, and $\pi$ is the projection map from $T^* U_0 - 0$ to $U_0$. Where defined, $\varphi$ is a smooth function since the Hamiltonian vector field is smooth, and so it follows by homogeneity and the pre-compactness of $U$ that the partial derivatives $(\partial^\alpha E_x)(v)$ are uniformly bounded for $v \neq 0$ and $x \in U$. It thus follows from the inverse function theorem that there exists a constant $A > 0$ such that for all $x_1$ and $x$ in $U$ with $x \neq x_1$,
     %
     \begin{equation} \label{GBounds}
         |\partial_j G_{x_1}(x)| \leq A \quad\text{and}\quad |(\partial_j \partial_k G_{x_1})(x)| \leq A.
@@ -1582,7 +1582,7 @@ Since $1/p - 1/2 > 1/(d-1)$, so that $s > 1$, H\"{o}lder's inequality implies th
 \end{split}
 \end{equation}
 %
-for some suitable small $\varepsilon > 0$. For each $(x_0,t_0) \in \mathcal{E}_{k,a,b}(u) \cap B_{k,u,n}$, using the poitnwise bounds of Proposition \ref{theMainEstimatesForWave} we calculate that
+for some suitable small $\varepsilon > 0$. For each $(x_0,t_0) \in \mathcal{E}_{k,a,b}(u) \cap B_{k,u,n}$, using the pointwise bounds of Proposition \ref{theMainEstimatesForWave} we calculate that
 %
 %\begin{align*}
 %        \| 2^{-(l+r)} f_{x_0,t_0} \|_{L^q(\text{Ann}_n^c)}^q &= 2^{jdq} \int_{\text{Ann}_j^c} \langle 2^j d_X(x,x_0) \rangle^{- q \left( \frac{d-1}{2} \right)} \langle 2^j |t_0 - d_X(x,x_0)| \rangle^{-qM}\; dx \\
@@ -2025,7 +2025,7 @@ In this section, we bound the operators $\{ T^{II} \}$, by a reduction to an end
     \| e^{2\pi i t P} f \|_{L^{p'}(X) L^{p'}_t(I_0)} \lesssim \| f \|_{L^{p'}_{s - 1/p'}}.
 \end{equation}
 %
-This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-1)/(d+1)$ for $P \in \COP{1}(X)$ satisfying the cosphere assumption of Theorem \ref{maintheorem}. The range of $p$ here is also precisely the range of $p$ in Theorem \ref{maintheorem}. Alternatively, Lemma \ref{LpBoundLemma} can be used to prove \eqref{thelocalsmoothinginequality} independently of \cite{LeeSeeger} in the same range by a generalization of the method of Section 10 of \cite{HeoandNazarovandSeeger}.
+This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-1)/(d+1)$ for $P \in \COP{1}(X)$ satisfying the co-sphere assumption of Theorem \ref{maintheorem}. The range of $p$ here is also precisely the range of $p$ in Theorem \ref{maintheorem}. Alternatively, Lemma \ref{LpBoundLemma} can be used to prove \eqref{thelocalsmoothinginequality} independently of \cite{LeeSeeger} in the same range by a generalization of the method of Section 10 of \cite{HeoandNazarovandSeeger}.
 
 \begin{lemma} \label{LocalSmoothingLargeTimesTheorem}
     Using the notation of Proposition \ref{TjbLemma}, let

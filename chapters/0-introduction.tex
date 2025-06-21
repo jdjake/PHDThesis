@@ -1,32 +1,35 @@
 %!TEX root = ../main.tex
 
-Let $T$ be a Schwartz operator on $S^d$ commuting with rotations. Then $T$ is diagonalized by the spherical harmonics; we can find a complex-valued function $a$ known as the \emph{symbol} of $T$, such that for any degree $k$ spherical harmonic $f$,
+\vspace{-1em}
+Let $T$ be a Schwartz operator on $\Sd{d}$ commuting with rotations. Then $T$ is diagonalized by the spherical harmonics; we can find a complex-valued function $a$ known as the \emph{symbol} of $T$, such that for any degree $k$ spherical harmonic $f$ on $\Sd{d}$,
 %
 \[ Tf = a(k) f. \]
 %
-For a function $a: [0,\infty) \to \CC$, we can consider a family of operators $\{ T_\rho : \rho > 0 \}$ on $S^d$, where $T_\rho$ commutes with rotations and has a symbol obtained by a dilation of $a$ by a factor $\rho$. In this thesis, we study the following question:  
+For a function $a: [0,\infty) \to \CC$, we can consider a family of operators $\{ T_{\!\rho} : \rho > 0 \}$ on $\Sd{d}$, where $T_{\!\rho}$ commutes with rotations and has a symbol obtained by dilating $a$ by a factor $\rho$. In this thesis, we study the following question:  
 %
 \begin{changemargin}{3cm}{3cm}
 \begin{center}
-  \emph{What conditions on a function $a$ ensure that the operators $\{ T_\rho \}$ are uniformly bounded.}
+  \emph{What conditions on a function $a$ ensure that the operators $\{ T_{\!\rho} \}$ are uniformly bounded.}
 \end{center}
 \end{changemargin}
 %
-Aside from testing our ability to understand interactions between spherical harmonics, this question is closely related to smoothing phenomena for waves on $S^d$, and naturally arises when studying the convergence of spherical harmonic expansions of a function. For $d \geq 4$ and $1 < p < 2(d-1)/(d+1)$, this thesis obtains necessary and sufficient conditions for uniform boundedness of the operators $\{ T_\rho \}$ on $L^p(S^d)$. These results are the first of their kind, aside from the relatively simple study of uniform\ boundedness on $L^2(S^d)$.
+Aside from testing our ability to understand interactions between spherical harmonics, this question is closely related to smoothing phenomena for waves on $\Sd{d}$, and naturally arises when studying the convergence of spherical harmonic expansions of a function. For $d \geq 4$ and $1 < p < 2(d-1)/(d+1)$, this thesis obtains necessary and sufficient conditions for uniform boundedness of the operators $\{ T_{\!\rho} \}$ on $L^p(\Sd{d})$. These results are the first of their kind, aside from the relatively simple study of uniform\ boundedness on $L^2(\Sd{d})$.
 
-%In particular, we focus on a more specific problem. Fix a function $a: [0,\infty) \to \CC$, and consider a family of operators $\{ T_\rho: \rho > 0 \}$ on $S^d$, where $T_\rho$ commutes with rotations and has a symbol  We then ask
+%In particular, we focus on a more specific problem. Fix a function $a: [0,\infty) \to \CC$, and consider a family of operators $\{ T_\rho: \rho > 0 \}$ on $\Sd{d}$, where $T_\rho$ commutes with rotations and has a symbol  We then ask
 
 %
 
 
-The sphere $S^d$ lacks a family of dilation symmetries, which makes uniform control on the operators $\{ T_\rho \}$ difficult when compared to the study of analogous operators on $\RR^d$. From this perspective, the study of such operators provides a useful setting with which to test and develop methods of harmonic analysis in a `variable-coefficient setting', where a lack of certain symmetries forces us to introduce more robust methods than are required in the Euclidean setting.
+The sphere $\Sd{d}$ lacks a family of dilation symmetries, which makes uniform control on the operators $\{ T_{\!\rho} \}$ difficult when compared to the study of analogous operators on $\RR^d$. From this perspective, the study of such operators provides a useful setting with which to test and develop methods of harmonic analysis in a `variable-coefficient setting', where a lack of certain symmetries forces us to introduce more robust methods than are required in the Euclidean setting.
 %
 %These difficulties have prevented a full understanding of the problem. Sufficient conditions that ensure uniform boundedness had been established (see BLEH), but no characterization of boundedness was known. This thesis describes such a characterization, giving necessary and sufficient conditions for boundedness for a limited range of Lebesgue spaces.
 %
-%Over the years, sufficient conditions for uniform boundedness had been established, but no characterizations of boundedness were known, on any compact manifold, aside from the translation invariant setting which occurs when studying the Laplace operator on the torus. This thesis describes the first characterization of uniform boundedness beyond this setting, for a limited range of Lebesgue spaces, and on manifolds all of whose geodesics are closed and have commensurable length. In particular, we find characterizations of functions $a$ whose dilates induce uniformly bounded multiplier operators for spherical harmonic expansions on $S^d$. We obtain these results by expanding on techniques for understanding Fourier integral operators on manifolds.
+%Over the years, sufficient conditions for uniform boundedness had been established, but no characterizations of boundedness were known, on any compact manifold, aside from the translation invariant setting which occurs when studying the Laplace operator on the torus. This thesis describes the first characterization of uniform boundedness beyond this setting, for a limited range of Lebesgue spaces, and on manifolds all of whose geodesics are closed and have commensurable length. In particular, we find characterizations of functions $a$ whose dilates induce uniformly bounded multiplier operators for spherical harmonic expansions on $\Sd{d}$. We obtain these results by expanding on techniques for understanding Fourier integral operators on manifolds.
 %
-In fact, the methods of this thesis not only get around the lack of dilation symmetry on $S^d$, but also do not exploit the rotational symmetry of $S^d$ in any way. We thus obtain results for analogous spectral multipliers operators on more general compact manifolds.
+In fact, the methods of this thesis not only get around the lack of dilation symmetry on $\Sd{d}$, but also do not exploit the rotational symmetry of $\Sd{d}$ in any explicit way. We thus obtain results for analogous spectral multipliers operators on more general compact manifolds lacking any symmetries appropriate to the study of such operators.
 %
 %We look at this problem from a more general viewpoint. Given an elliptic, positive-definite operator $P$ on a compact manifold $M$, we can associate a functional calculus $a \mapsto a(P)$ for functions $a$ defined on $[0,\infty)$. With $T$ as above, we can then write $T = a(P_{\text{SH}})$ for an appropriate elliptic operator $P_{\text{SH}}$. 
 
 In Chapter \ref{cha:multipliers_of_an_elliptic_operator}, we describe the problem of the thesis in more detail, and relate it to the study of spectral multipliers of an elliptic operator on a compact manifold. In Chapter \ref{sec:radmult}, we discuss results known for radial and quasi-radial multipliers which are analogue to the endpoint bounds we will establish for spectral multipliers on manifolds. In Chapter \ref{chap:waveequation}, we return to the study of spectral multipliers on manifolds, introducing the background on Finsler geometry and Fourier integral operators we will need in the proofs to come. In Chapters \ref{chap:boundedsinglefrequencyscale} and \ref{chap:spectralatomicdchapter}, we obtain the new necessary and sufficient conditions for uniform boundedness.% discuss new results about combining different frequency scales to bound more general spectral multiplier operators.
+
+\pagebreak[3]

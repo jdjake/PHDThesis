@@ -89,9 +89,46 @@ Schur's Test for integral kernels is a simple, but often optimal method, for obt
 \end{comment}
 \end{proof}
 
+We will rely on the following `$L^p$ orthogonality' result.
+
+\begin{lemma} \label{lem:LpOrthogonalityEasyLemma}
+    Let $X$ be a measure space. Suppose $\{ T_j \}$ are operators on $X$ which satisfy
+    %
+    \[ \| T_j \|_{L^1(X) \to L^{1,\infty}(X)} \lesssim 1, \]
+    %
+    uniformly in $j$, and suppose that the bound
+    %
+    \[ \left\| \sum T_j f_j \right\|_{L^2(X) \to L^2(X)} \lesssim \left( \sum\nolimits_j \| f_j \|_{L^2(X)}^2 \right)^{1/2} \]
+    %
+    holds. Then for $1 < p \leq 2$,
+    %
+    \[ \left\| \sum T_j f_j \right\|_{L^p(X)} \lesssim \left( \sum \| f_j \|_{L^p(X)}^p \right)^{1/p}. \]
+\end{lemma}
+\begin{proof}
+    Define a vector-valued operator $T$ from sequences of functions on $X$ to functions on $X$, such that for a sequence $f = \{ f_j \}$, $Tf = \sum T_j f_j$. Then by assumption,
+    %
+    \begin{equation}
+        \| Tf \|_{L^2(X)} \lesssim \| f \|_{l^2(\NN) L^2(X)},
+    \end{equation}
+    %
+    and by the triangle inequality,
+    %
+    \begin{equation}
+        \| Tf \|_{L^{1,\infty}(X)} \lesssim \| f \|_{l^1(\NN) L^1(X)}.
+    \end{equation}
+    %
+    Real interpolation (i.e. the Marcinkiewicz interpolation theorem) thus tells us that for $1 < p < \infty$,
+    %
+    \begin{equation}
+        \| Tf \|_{L^p(X)} \lesssim \| f \|_{l^p(\NN) L^p(X)},
+    \end{equation}
+    %
+    which implies the required result.
+\end{proof}
+
 Finally, we will often use a helpful interpolation lemma.
 
-\begin{theorem}[A Real Interpolation Lemma] \label{theoremrealinterpolation}
+\begin{lemma}[A Real Interpolation Lemma] \label{theoremrealinterpolation}
     Consider a family of functions $\{ f_H \}$, where $H$ ranges over the dyadic numbers, and fix $0 < p_0 < p_1 < \infty$. If for each $H$,
     %
     \[ \| f_H \|_{L^{p_0}(X)} \lesssim H W_H^{1/p_0} \quad\text{and}\quad \| f_H \|_{L^{p_1}(X)} \lesssim H W_H^{1/p_1}, \]
@@ -99,23 +136,138 @@ Finally, we will often use a helpful interpolation lemma.
     with implicit constants uniform in $H$, then for any $p_0 < p < p_1$,
     %
     \[ \left\| \sum\nolimits_H f_H \right\|_{L^p(X)} \lesssim \left( \sum\nolimits_H H^p W_H \right)^{1/p}. \]
-\end{theorem}
+\end{lemma}
 \begin{proof}
     See Lemma 2.2 of \cite{HeoandNazarovandSeeger}.
 \end{proof}
 
-In an application of \ref{theoremrealinterpolation}, the quantities $H$ normally stand for the `height' of a given input, and the quantities $\{ W_H \}$ the `width', and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for a fixed `height scale'.
+In an application of Lemma \ref{theoremrealinterpolation}, the quantities $H$ normally stand for the `height' of a given input, and the quantities $\{ W_H \}$ the `width', and so this interpolation result shows that if we are not proving results at an endpoint, it suffices to prove bounds for `a fixed height scale'.
+
+
+
+
+
+
+
+
 
 \renewcommand{\thechapter}{B}
-\chapter{Pseudo-Differential Operators} \label{appendixpsueiodjaweiodj}
+\chapter{Distributions Defined by Oscillatory Distributions} \label{cha:distributions_defined_by_oscillatory_distributions}
 
-In this appendix we briefly introduce the theory of pseudodifferential operators relevant to this thesis. Recall that a \emph{pseudo-differential operator} on $\RR^d$ of order $s \in \RR$ is a bounded operator $T$ on the space $\mathcal{S}(\RR^d)$ of Schwartz functions such that
+The kernels of many of the Schwartz operators $T$ we study in this thesis have kernels which are defined by certain formal expression of the form
 %
 \begin{equation}
-    Tf(x) = \int_{\RR^d} a(x,\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi,
+    K_T(x,y) = \int_{\RR^p} a(x,y,\theta) e^{i \phi(x,y,\theta)}\; d\theta,
 \end{equation}
 %
-where $a: \RR^d \times {\dot{\RR}^d} \to \CC$ is a fixed symbol of order $s$. The operator $T$ is often written $a(x,D)$, because if $a$ is a polynomial in $\xi$, i.e.
+where $a: \RR^m \times \RR^n \times\; \dot{\RR}{\vphantom{\RR}}^p \to \CC$ is a symbol of some fixed order, and $\phi: \RR^m \times \RR^n \times\; \dot{\RR}{\vphantom{\RR}}^p \to \RR$ is smooth and homogeneous of order one in the $\theta$ variable. In this appendix we show how these formal expressions can be interpreted in a way that ensures these expressions are well defined as distributions, provided that $\nabla_{x,y} \phi$ and $\nabla_\theta \phi$ have no common zeros. This ensures that, when $K_T$ is integrated against a pair of test functions on $\RR^m$ and $\RR^n$, the phase becomes rapidly oscillatory at high frequencies, which ensures convergence of appropriate integrals. We call a smooth, homogeneous function $\phi$ such that $\nabla_{x,y,\theta} \phi$ is non-vanishing a \emph{phase function}.
+
+\begin{theorem}
+    Let $a: \RR^d \times\; \dot{\RR}{\vphantom{\RR}}^p \to \CC$ is a symbol, and let $\phi: \RR^d \times\; \dot{\RR}{\vphantom{\RR}}^p \to \RR$ be a phase function. Fix $\chi \in C_c^\infty(\RR^p)$, equal to one in a neighborhood of the origin. The smooth functions
+    %
+    \[ I^{a,\theta}_R = \int_{\RR^p} a(x,\theta) \chi(\theta / R) e^{2 \pi i \phi(x,\theta)}\; d\theta \]
+    %
+    converge in the weak $*$ topology to a distribution $I$, independent of the choice of $\chi$. 
+\end{theorem}
+\begin{proof}
+    If $\mu < -p$, then
+    %
+    \begin{equation}
+        \int_{\RR^p} a(x,\theta) e^{2 \pi i \phi(x,\theta)}\; d\theta
+    \end{equation}
+    %
+    is absolutely integrable, and the result follows from the dominated convergence theorem. For $\mu \geq -p$, fix $f \in C_c^\infty(\RR^d)$ supported on a compact set $K \subset \Omega$. Our goal is to show the quantities
+    %
+    \begin{equation}
+        \langle I^{a,\theta}_R, f \rangle = \int a(x,\theta) \chi(\theta / R) e^{2 \pi i \phi(x,\theta)}\; d\theta
+    \end{equation}
+    %
+    converges as $R \to \infty$ to a quantity independent of the choice of $\chi$, and that moreover,
+    %
+    \begin{equation}
+        |\langle I^{a,\theta}_R, f \rangle| \lesssim_K 1,
+    \end{equation}
+    %
+    uniformly in $R$. Write
+    %
+    \begin{equation}
+        a_R(x,\theta) = a(x, \theta) \chi(\theta / R).
+    \end{equation}
+    %
+    We will assume without loss of generality that $a(x,\theta) = 0$ for $|\theta| \leq 1$, since the quantity
+    %
+    \begin{equation}
+        \int a(x,\theta) \mathbb{I} \big(|\theta| \leq 1 \big) e^{2 \pi i \phi(x,\theta)}\; d\theta
+    \end{equation}
+    %
+    defines a function in $C^\infty(\RR^d)$. We now apply the principle of non-stationary phase, i.e. integrating by parts. Consider the \emph{homogenized gradient}
+    %
+    \begin{equation}
+        (\nabla^H\! \phi)(x,\theta) = ( \nabla_x \phi, |\theta| \nabla_\theta \phi(x,\theta) ).
+    \end{equation}
+    %
+    Then $\nabla_{x,\theta}^H \phi$ is homogeneous of degree one in the $\theta$ variable, and $|\nabla_{x,\theta}^H \phi| > 0$. We note that
+    %
+    \begin{equation}
+        (\nabla_{x,\theta}^H e^{2 \pi i \phi} ) = (2 \pi i) e^{2 \pi i \phi} \nabla_{x,\theta}^H \phi.
+    \end{equation}
+    %
+    Note also that the \emph{formal transpose} of $\nabla_{x,\theta}^H$ is the differential operator $L$ given for pairs of functions $F_1: \RR^d \times \RR^p \to \RR^d$ and $F_2: \RR^d \times \RR^p \to \RR^p$ by the formula
+    %
+    \begin{equation}
+    \begin{split}
+        L(F_1, F_2) &= - ( \nabla_x \cdot F_1 + \nabla_\theta \cdot ( |\theta| F_2 ))\\
+        &= - \left( \nabla_x \cdot F_1 + |\theta|^{-1} (\theta \cdot F_2) + |\theta| (\nabla_\theta \cdot F_2) \right),
+    \end{split}
+    \end{equation}
+    i.e. so that for smooth, compactly supported functions $F_1$, $F_2$, and $G$,
+    %
+    \begin{equation}
+        \int_{\RR^d \times \RR^p} (F_1,F_2) \cdot \nabla^H_{x,\theta} G = \int_{\RR^d \times \RR^p} L(F_1,F_2) \cdot G.
+    \end{equation}
+    %
+    Thus we conclude that
+    %
+    \begin{equation}
+    \begin{split}
+        \langle I^{a,\theta}_R, f \rangle &= \frac{1}{2 \pi i} \int \frac{a \cdot f}{|\nabla_{x,\theta}^H \phi|^2} \left( \nabla_{x,\theta}^H e^{2 \pi i \phi} \right) \cdot (\nabla_{x,\theta}^H \phi)\\
+        &= \frac{1}{2 \pi i} \int L \left\{ \frac{a \cdot f}{|\nabla_{x,\theta}^H \phi|^2} \nabla_{x,\theta}^H \phi \right\} e^{2 \pi i \phi}.
+    \end{split}
+    \end{equation}
+    %
+    Expanding out the differential operator $L$, we see we can write
+    %
+    \begin{equation}
+        \langle I^{a,\phi}_R, f \rangle = \sum\nolimits_{|\alpha| \leq 1} \langle I^{a_\alpha, \phi}_R, \partial^\alpha \! f \rangle,
+    \end{equation}
+    %
+    where $a_\alpha$ is a symbol of order at most $\mu - 1$. Iterating this argument, we find that for any $N > 0$, we can write
+    %
+    \begin{equation}
+        \langle I^{a,\theta}_R, f \rangle = \sum\nolimits_{|\alpha| \leq N} \langle I^{a_\alpha, \phi}_{R}, \partial^\alpha\! f \rangle,
+    \end{equation}
+    %
+    where $a_{\alpha}$ is a symbol of order at most $\mu - N$. If $N > \mu + p$, then we can apply the dominated convergence theorem to each term on the right hand side, from which the result follows.
+\end{proof}
+
+
+
+
+
+
+
+
+
+\renewcommand{\thechapter}{C}
+\chapter{Pseudo-Differential Operators} \label{appendixpsueiodjaweiodj}
+
+In this appendix we briefly introduce the theory of pseudo-differential operators relevant to this thesis. Recall that a \emph{pseudo-differential operator} on $\RR^d$ of order $s \in \RR$ is a bounded Schwartz operator $T$ whose kernel is an oscillatory integral distribution of the form
+%
+\begin{equation}
+    K_T(x,y) = \int_{\RR^d \times \RR^d} a(x,\xi) e^{2 \pi i \xi \cdot (x - y)}\; d\xi,
+\end{equation}
+%
+where $a: {\RR^d} \times {\dot{\RR}{\vphantom{\RR}}^d} \to \CC$ is a fixed symbol of order $s$. The operator $T$ is often written $a(x,D)$, because if $a$ is a polynomial in $\xi$, i.e.
 %
 \begin{equation}
     a(x,\xi) = \sum\nolimits_\alpha c_\alpha(x) \xi^\alpha,
@@ -123,7 +275,14 @@ where $a: \RR^d \times {\dot{\RR}^d} \to \CC$ is a fixed symbol of order $s$. Th
 %
 then the pseudo-differential operator $a(x,D)$ is really the differential operator $\sum c_\alpha(x) D^\alpha$.
 
-An important property of pseudo-differential operators is that they are \emph{pseudo-local}, in the sense that the Schwartz kernel $K_T$ is a smooth function, rapidly decaying away from the diagonal $\Delta_{\RR^d} = \{ (x,x): x \in \RR^d \}$. % and satisfies, for $|x - y| \geq 1$, estimates of the form
+An important property of pseudo-differential operators is that they are \emph{pseudo-local}, in the sense that the Schwartz kernel $K_T$ is a smooth function away from the diagonal $\Delta_{\RR^d} = \{ (x,x): x \in \RR^d \}$, and $K_T$ and all of it's derivatives rapidly decay away from the diagonal\footnote{See e.g. Proposition 1 of Chapter 5, Second 4 of \cite{BigStein} for details}, i.e. if we write $k_T(x,z) = K_T(x,x+z)$, then
+%
+\begin{equation} \label{eq1029312094312093821094u29th}
+    | \partial_x^\alpha \partial_z^\beta k_T(x,z)| \lesssim_{\alpha,\beta,N} |z|^{-d-s-|\beta| - N} \quad\text{for all $N > 0$}.
+\end{equation}
+%
+Using duality, one can extend the definition of the operator $T$ to the space of tempered distributions, and the estimates in \eqref{eq1029312094312093821094u29th} imply that if $f$ is a distribution smooth in a neighborhood of a given point, then $Tf$ is smooth in a neighborhood of this point.
+ % and satisfies, for $|x - y| \geq 1$, estimates of the form
 %
 %\[ |\partial_x^\alpha \partial_y^\beta K_T(x,y)| \lesssim_{\alpha,\beta,N} \langle x - y \rangle^{-N} \]
 %
@@ -135,11 +294,9 @@ A symbol $a$ of order $s$ is \emph{classical} if it has an expansion of the form
     a \sim \sum\nolimits_{k = 0}^\infty a_{s - k},
 \end{equation}
 %
-where $a_{s-k}: \RR^d \times {\dot{\RR}^d} \to \CC$ is a smooth function which is homogeneous of order $s - k$ in the second variable. A pseudo-differential operator $T = a(x,D)$ is then \emph{classical} if the symbol $a$ is classical. We then call $a_s$ the \emph{principal symbol} of the operator $T$. A classical pseudo-differential operator is \emph{elliptic} if it's principal symbol is non-vanishing.
+where $a_{s-k}: {\RR^d} \times  {\dot{\RR}{\vphantom{\RR}}^d} \to \CC$ is a smooth function which is homogeneous of order $s - k$ in the second variable. A pseudo-differential operator $T = a(x,D)$ is then \emph{classical} if the symbol $a$ is classical. We then call $a_s$ the \emph{principal symbol} of the operator $T$. A classical pseudo-differential operator is \emph{elliptic} if it's principal symbol is non-vanishing.
 
-All this generalizes to the setting of compact manifolds by working in coordinates. Let $X$ be a compact manifold, and consider a cover of $X$ by open sets $\{ U_\alpha \}$, where the closure of $U_\alpha$ is contained in an open set $V_\alpha$ which is diffeomorphic to a precompact subset $W_\alpha$ of $\RR^d$ by a diffeomorphism $F_\alpha: V_\alpha \to W_\alpha$. Consider a partition of unity $\{ \psi_\alpha \}$ of $X$, subordinate to the cover $\{ U_\alpha \}$, and also consider a smooth function $\phi_\alpha$ on $\RR^d$, equal to one on $F_\alpha(U_\alpha)$ but vanishing outside of $W_\alpha$.
-
-A Schwartz operator $T$ on a compact $d$-dimensional manifold $X$ is a pseudo-differential operator of order $s > 0$ if it's Schwartz kernel $K_T$ (with respect to any fixed smooth volume density on $X$) agrees with a smooth function away from the diagonal $\Delta_X = \{ (x,x): x \in X \}$, and if for each $\alpha$, the operators $T_\alpha$ on $\RR^d$ given by
+All this generalizes to the setting of compact manifolds by working in coordinates. Let $X$ be a compact manifold, and consider a cover of $X$ by open sets $\{ U_\alpha \}$, where the closure of $U_\alpha$ is contained in an open set $V_\alpha$ which is diffeomorphic to a pre-compact subset $W_\alpha$ of $\RR^d$ by a diffeomorphism $F_\alpha: V_\alpha \to W_\alpha$. Consider a partition of unity $\{ \psi_\alpha \}$ of $X$, subordinate to the cover $\{ U_\alpha \}$, and also consider a smooth function $\phi_\alpha$ on $\RR^d$, equal to one on $F_\alpha(U_\alpha)$ but vanishing outside of $W_\alpha$. A Schwartz operator $T$ on a compact $d$-dimensional manifold $X$ is a \emph{pseudo-differential operator} of order $s > 0$ if it's Schwartz kernel $K_T$, defined with respect to any fixed smooth volume density on $X$, agrees with a smooth function away from the diagonal $\Delta_X = \{ (x,x): x \in X \}$, and if for each $\alpha$, the operators $T_\alpha$ on $\RR^d$ given by
 %
 \begin{equation}
     (T_\alpha f)(x) = \phi_\alpha(x)\; T \{ \psi_\alpha \cdot (f \circ F_\alpha) \} (F_\alpha^{-1}(x))
@@ -151,4 +308,4 @@ are pseudo-differential operators on $\RR^d$. The operator $T$ is classical if e
     p(x,\xi) = \sum \psi_\alpha(x) p_\alpha(x, DF_\alpha(x)^{-T} \xi).
 \end{equation}
 %
-One verifies using the change-of-variable formulas for pseudo-differential operators\footnote{See Theorem 18.1.17 of \cite{Hormander3}.} that if $T$ is a pseudo-differential operator for one choice of cover $\{ U_\alpha \}$, then it is a pseudo-differential operator for \emph{all} choices of covers, and that for a classical pseudo-differential operator the function $p$ is invariant of this choice. A classical pseudo-differential operator $T$ on a compact manifold is then \emph{elliptic} if it's principal symbol is non-vanishing.
+One verifies using the change-of-variable formulas for pseudo-differential operators\footnote{See Theorem 18.1.17 of \cite{Hormander3}.} that if $T$ is a pseudo-differential operator for one choice of cover $\{ U_\alpha \}$, then it is a pseudo-differential operator for \emph{all} choices of covers, and that for a classical pseudo-differential operator the function $p$ is invariant of this choice when it is interpreted as defined on the cotangent bundle of $X$. A classical pseudo-differential operator $T$ on a compact manifold is then \emph{elliptic} if it's principal symbol is non-vanishing.
