@@ -299,6 +299,34 @@
       \field{title}{Multipliers for Spherical Harmonic Expansions}
       \field{year}{2024}
     \endentry
+    \entry{DuistermaatMorse}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c331325777b1f0b3bc5c7ad6f52db2aa}{%
+           family={Duistermaat},
+           familyi={D\bibinitperiod},
+           given={Johannes\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{fullhash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{fullhashraw}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{bibnamehash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{authorbibnamehash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{authornamehash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{authorfullhash}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \strng{authorfullhashraw}{c331325777b1f0b3bc5c7ad6f52db2aa}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Math.}
+      \field{number}{2}
+      \field{title}{On the {M}orse index in variational calculus}
+      \field{volume}{21}
+      \field{year}{1976}
+      \field{pages}{173\bibrangedash 195}
+      \range{pages}{23}
+    \endentry
     \entry{Folland}{book}{}{}
       \name{author}{1}{}{%
         {{hash=54ed1ea6613484fcbe214674026f96d6}{%
@@ -621,7 +649,7 @@
       \field{pages}{155\bibrangedash 202}
       \range{pages}{48}
     \endentry
-    \entry{Hormander3}{book}{}{}
+    \entry{HormanderVol1}{book}{}{}
       \name{author}{1}{}{%
         {{hash=c2553b671df63eec279a1059ab372509}{%
            family={Hörmander},
@@ -641,6 +669,35 @@
       \strng{authorfullhash}{c2553b671df63eec279a1059ab372509}
       \strng{authorfullhashraw}{c2553b671df63eec279a1059ab372509}
       \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{Grundlehren der mathematischen Wissenschaften}
+      \field{title}{The Analysis of Linear Partial Differential Operators. {I}: Distribution Theory and {F}ourier Analysis}
+      \field{volume}{256}
+      \field{year}{1990}
+    \endentry
+    \entry{Hormander3}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=c2553b671df63eec279a1059ab372509}{%
+           family={Hörmander},
+           familyi={H\bibinitperiod},
+           given={Lars},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag, Berlin}%
+      }
+      \strng{namehash}{c2553b671df63eec279a1059ab372509}
+      \strng{fullhash}{c2553b671df63eec279a1059ab372509}
+      \strng{fullhashraw}{c2553b671df63eec279a1059ab372509}
+      \strng{bibnamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorbibnamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authornamehash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorfullhash}{c2553b671df63eec279a1059ab372509}
+      \strng{authorfullhashraw}{c2553b671df63eec279a1059ab372509}
+      \field{extraname}{4}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -669,7 +726,7 @@
       \strng{authornamehash}{c2553b671df63eec279a1059ab372509}
       \strng{authorfullhash}{c2553b671df63eec279a1059ab372509}
       \strng{authorfullhashraw}{c2553b671df63eec279a1059ab372509}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -678,6 +735,44 @@
       \field{title}{The Analysis of Linear Partial Differential Operators. {IV}: {F}ourier Integral Operators}
       \field{volume}{275}
       \field{year}{1985}
+    \endentry
+    \entry{KenigStantonTomas}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=63916c5f9dcb302349c8ea095c153629}{%
+           family={Kenig},
+           familyi={K\bibinitperiod},
+           given={Carlos\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=80d5c9fcc5e42723a96110bb3d6ca8be}{%
+           family={Stanton},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0cfd36f10a04ddffb395bad156d9051e}{%
+           family={Tomas},
+           familyi={T\bibinitperiod},
+           given={Peter\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{fullhash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{fullhashraw}{d650948fc52b54432b91a06f0404fdde}
+      \strng{bibnamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorbibnamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authornamehash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorfullhash}{d650948fc52b54432b91a06f0404fdde}
+      \strng{authorfullhashraw}{d650948fc52b54432b91a06f0404fdde}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Funct. Anal.}
+      \field{number}{1}
+      \field{title}{Divergence of Eigenfunction Expansions}
+      \field{volume}{46}
+      \field{year}{1982}
+      \field{pages}{28\bibrangedash 44}
+      \range{pages}{17}
     \endentry
     \entry{KimSpectral}{article}{}{}
       \name{author}{1}{}{%

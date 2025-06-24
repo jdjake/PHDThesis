@@ -6,7 +6,7 @@ Fix $k \geq 0$, and consider a pair of maximal $2^{-k}$ separated subsets $\math
 
 \vspace{0.5em}
 
-\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}(p)$:
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}(p,P)$:
 There exists a constant $C_0 > 0$ such that
 %
 \begin{align*}
@@ -24,7 +24,7 @@ uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$, with $s = (d-1)(1/p - 1/2)
 }}
 \vspace{0.4em}
 
-As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}(p,d)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then
+As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}(p,P)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then
 %
 \begin{equation}
     \| a_k(P/2^k) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \quad\text{for $s = (d-1)(1/p - 1/2)$},
@@ -75,7 +75,7 @@ uniformly in $k$. The main result of this section is that one can also `sum thes
 
 %\[ Tu = \sum\nolimits_k m_k( P / 2^k ) \{ u \}, \]
 %
-%where $\sup_k C_p(m_k) < \infty$, and $\text{supp}(m_k) \subset (1/2,2)$. It is conjectured that under these assumptions, for $|1/p - 1/2| > 1/2d$, the operator $T$ is bounded on $L^p(S^d)$. The goal of this paper is to obtain such bounds, under the assumption that certain bounds associated with the wave equation on $S^d$ hold uniformly at each frequency scale. The novelty in this paper is thus in obtaining a general method to efficiently combine bounds on operators at each frequency scale together.
+%where $\sup_k C_p(m_k) < \infty$, and $\text{supp}(m_k) \subset (1/2,2)$. It is conjectured that under these assumptions, for $|1/p - 1/2| > 1/2d$, the operator $T$ is bounded on $L^p(\Sd{d})$. The goal of this paper is to obtain such bounds, under the assumption that certain bounds associated with the wave equation on $\Sd{d}$ hold uniformly at each frequency scale. The novelty in this paper is thus in obtaining a general method to efficiently combine bounds on operators at each frequency scale together.
 
 % The finiteness of $C_p(m)$ is also necessary to control `the high frequency behaviour' of the function, in a certain sense. Namely, if the functions $\{ \chi_k \}$ are adapted to $(1/2,2)$, uniformly in $k$, then one can show that for $1/p - 1/2 > 1/2d$,
 %
@@ -269,7 +269,7 @@ By the finite propagation speed of the wave equation, $f_{H,\text{Short}}$ is su
     \| f_{H,\text{Short}} \|_{L^1(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} |\Omega_H|^{1/2} H |\Omega_H|^{1/2} = \| a \|_{R^{s,p}[0,\infty)} H |\Omega_H|.
 \end{equation}
 %
-Performing a real interpolation between $r = 1$ and $r = 2$, which allows us to sum over the dyadic height scales $H$, we conclude that
+If we interpolate between $r = 1$ and $r = 2$ using Lemma \ref{theoremrealinterpolation}, which allows us to sum over the dyadic height scales $H$, we conclude that
 %
 \begin{equation}
     \| f_{\text{Short}} \|_{L^p(X)} \lesssim  \| a \|_{R^{s,p}[0,\infty)} \left( \sum H^p |\Omega_H| \right)^{1/p} \lesssim \| a \|_{R^{s,p}[0,\infty)} \| u \|_{L^p(X)}.
@@ -287,10 +287,10 @@ The long range interactions require slightly more work. Define an operator
 \end{split}
 \end{equation}
 %
-where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(t) \cos(2 \pi t P) \{ U_{z_0} \}\; dt$ for $L^1$ normalized functions $\{ b_{t_0} \}$. The bound $\text{Wave-Bound}(q)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
+where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(t) \cos(2 \pi t P) \{ U_{z_0} \}\; dt$ for $L^1$ normalized functions $\{ b_{t_0} \}$. The bound $\text{Wave-Bound}(q,P)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
 
 \begin{lemma} \label{lemma:scaleupbound}
-    Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q)$ is true. Then
+    Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q,P)$ is true. Then
     % |b_{t_0}|_{L^1} << 2^{-k/q}
     \begin{align*}
         &\| S_{l,k} \{ C \} \|_{L^p(X)}  \lesssim 2^{- l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} \left[ \langle 2^k t_0 \rangle^s |C(z_0,t_0)| 2^{(l-k)d/p} \| U_{z_0,t_0} \|_{L^\infty(X)} \right]^p \right)^{1/p},
@@ -303,7 +303,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(
     which, in particular, is positive for $p < q$.
 \end{lemma}
 \begin{proof}
-    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique side-length cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}(q)$ and H\"{o}lder's inequality to conclude that
+    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique side-length cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}(q,P)$ and H\"{o}lder's inequality to conclude that
     %
     \begin{equation}
     \begin{split}
@@ -348,7 +348,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(
     \end{split}
     \end{equation}
     %
-    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( \cos(2 \pi t P) \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that $\| \cos(2 \pi t P) \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. On the other hand, we can use Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} to prove that $(\cos(2 \pi t P) \circ Q_k)(x,y) \lesssim_N [2^k |d(x,y) - t|]^{-N}$, uniformly for $|t| \lesssim 1$, and thus that
+    Here we used the fact that $F_{t_0,z_0} = \int b_{t_0}(t) ( \cos(2 \pi t P) \circ Q_k ) \{ U_{z_0} \}$, that $\| b_{t_0} \|_{L^1(\RR)} \leq 1$,  and that $\| \cos(2 \pi t P) \circ Q_k \|_{L^2(X) \to L^2(X)} \lesssim 1$. so that we can apply the triangle inequality to conclude that $\| T_{t_0}^I \|_{L^2(X) \to L^2(X)} \lesssim \| b_{t_0} \|_{L^1(X)} \leq 1$. On the other hand, we can use Lemmas \ref{PseudoOsicllatoryLemma} and \ref{lemma:WaveOscillatoryLemmaddw} to prove that $(\cos(2 \pi t P) \circ Q_k)(x,y) \lesssim_N [2^k |d(x,y) - t|]^{-N}$, uniformly for $|t| \lesssim 1$ and $k$, and thus that
     %
     \begin{equation}
         \| F_{t_0,z_0} \|_{L^1(\text{Ann}_{t_0,z_0}^c)} \lesssim_N 2^{-lN} 2^{-k} t_0^{d-1} \| U_{z_0} \|_{L^1(X)} \lesssim 2^{-lN} 2^{-k(d+1)} t_0^{d-1} \| U_{z_0} \|_{L^\infty(X)}.
@@ -401,7 +401,7 @@ Applying Lemma \ref{lemma:scaleupbound} with $l$ and $k$ as above, $C(z_0,t_0) =
 \end{equation}
 % L^1 = H W
 % L^p = 
-Summing in $k$ using $L^p$ orthogonality, and summing over $\alpha$ trivially, we find that
+Summing in $k$ using $L^p$ orthogonality (Lemma \ref{lem:LpOrthogonalityEasyLemma}), and summing over $\alpha$ trivially, we find that
 %
 \begin{equation}
     \| f_{\text{Long},l} \|_{L^p(X)} \lesssim 2^{-l \varepsilon}  \| a \|_{R^{s,p}[0,\infty)} \left( \sum\nolimits_H H^p |\Omega_H| \right) \lesssim 2^{-l \varepsilon}  \| a \|_{R^{s,p}[0,\infty)} \| u \|_{L^p(X)}. 
@@ -411,17 +411,17 @@ Summing in $l$ trivially gives $\| f_{\text{Long}} \|_{L^p(X)} \lesssim \| a \|_
 
 \section{Wave Bounds on the Sphere}
 
-We end this chapter with a proof that $\text{Wave-Bound}(p)$ holds on $S^d$ for $1/p - 1/2 > 1/(d-1)$, which completes the proof of Theorem \ref{maintheoremsphere}.
+We end this chapter with a proof that $\text{Wave-Bound}(p,P)$ holds on $\Sd{d}$ for $1/p - 1/2 > 1/(d-1)$, which completes the proof of Theorem \ref{maintheoremsphere} involving the uniform boundedness of the operators $\{ T_\rho \}$.
 
-\begin{lemma}
-    The operator $P_{\text{SH}}$ satisfies $\text{Wave-Bound}(p)$ for $1/p - 1/2 > (d-1)^{-1}$.
+\begin{lemma} \label{lemdoiajoidjwaio13123}
+    The operator $P_{\text{SH}}$ satisfies $\text{Wave-Bound}(p,P)$ for $1/p - 1/2 > (d-1)^{-1}$.
 \end{lemma}
 \begin{proof}
-    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; indeed, it follows from Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$. Applying Lemma \ref{LpBoundLemma} to each piece of the exponential, we have that, if $f_{x_0,t_0}$ is as in the definition of the assumption $\text{Wave-Bound}(p)$,
+    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; indeed, it follows from Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$. Applying Lemma \ref{LpBoundLemma} to each piece of the exponential, we have that, if $f_{x_0,t_0}$ is as in the definition of the assumption $\text{Wave-Bound}(p,P)$,
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \leq 1/2 - \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(S^d)} \lesssim 2^{kd/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \leq 1/2 - \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \lesssim 2^{kd/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}
     \end{split}
     \end{equation}
     %
@@ -429,25 +429,52 @@ We end this chapter with a proof that $\text{Wave-Bound}(p)$ holds on $S^d$ for 
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(S^d)} \\
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \\
         &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1) \rangle^{s} \Big]^p \right)^{1/p}\\
         &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}.
     \end{split}
     \end{equation}
     %
-    It remains to prove the result for $c$ supported on $[1/2 - \varepsilon, 1/2 + \varepsilon]$. To obtain this result, if $Ux = -x$ is the reflection operator on $S^d$, then for $t \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, for small $t$ the operators $U \circ e^{2 \pi i (t + 1/2) P}$ have the same conical relation as $e^{2 \pi i t P}$, and so writing out these operators using oscillatory integrals following the proof of Proposition \ref{theMainEstimatesForWave}, one can prove that the operators $S\!_{x_0,t_0} = U \circ \int b_{1/2 + t_0} e^{2 \pi i t P} \{ u_{x_0} \}$ satisfy the pointwise and orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Thus we can apply Lemma \ref{LpBoundLemma} to obtain bounds of the form
+    It remains to prove the result for $c$ supported on $[1/2 - \varepsilon, 1/2 + \varepsilon]$. To obtain this result, if $Ux = -x$ is the reflection operator on $\Sd{d}$, then for $t \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, for small $t$ the operators $U \circ e^{2 \pi i (t + 1/2) P}$ have the same conical relation as $e^{2 \pi i t P}$, and so writing out these operators using oscillatory integrals following the proof of Proposition \ref{theMainEstimatesForWave}, one can prove that the operators $S\!_{x_0,t_0} = U \circ \int b_{1/2 + t_0} e^{2 \pi i t P} \{ u_{x_0} \}$ satisfy the pointwise and orthogonality estimates of Proposition \ref{theMainEstimatesForWave}. Thus we can apply Lemma \ref{LpBoundLemma} to obtain bounds of the form
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]}} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(S^d)} \\
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]}} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \\
         &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1/2) \rangle^{s} \Big]^p \right)^{1/p}\\
         &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}.
     \end{split}
     \end{equation}
     %
-    Combining these three bounds proves that $\text{Wave-Bound}(p)$ holds.
+    Combining these three bounds proves that $\text{Wave-Bound}(p,P)$ holds.
 \end{proof}
 
 \begin{remark}
-    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $S^d$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absence of information about the geometric properties of conjugate points.
+    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $\Sd{d}$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absence of information about the geometric properties of conjugate points.
 \end{remark}
+
+\begin{proof}[Proof of Theorem \ref{maintheorem}]
+Together with Theorem \ref{atomicdecompositionlemma}, Lemma \ref{lemdoiajoidjwaio13123} shows that for $1 < p < 2(d-1)/(d+1)$, and any regulated function $a$,
+%
+\[ \| a \|_{M^p_{\text{Dil}}(\Sd{d})} = \| a \|_{M^p_{\text{Dil}}(\Sd{d},P_{\text{SH}})} \sim \| a \|_{R^{s,p}[0,\infty]}. \]
+%
+All that remains is to finish the proof of Theorem \ref{maintheoremsphere} is to prove that $\| a \|_{M^p(\Sd{d})} \lesssim \| a \|_{R^{s,p}[0,\infty)}$. Choose a function $\beta \in C_c^\infty[0,\infty)$ with $\beta(t) = 1$ for $|t| \leq 10d$, and write $a = a_0 + a_1$, where $a_0 = \beta a$ and $a_1 = (1 - \beta) a$. Then a simple argument as in Lemma \ref{lowjLemma} shows that
+%
+\begin{equation} \label{wiodjoiq3432412}
+    \| a_0 \|_{M^p(\Sd{d})} \lesssim \| a_0 \|_{L^\infty[0,\infty)} \lesssim \| a \|_{L^\infty[0,\infty)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
+\end{equation}
+%
+We can write $T_{a_1} = \tilde{a}_1(P_{\text{SH}})$, where $\tilde{a}_1 = \text{Trans}_{-c}\{ a_1 \}$ with $c = \tfrac{d-1}{2}$. Thus Theorem \ref{atomicdecompositionlemma} implies that
+%
+\begin{equation} \label{8u90u12413}
+    \| a_1 \|_{M^p(\Sd{d})} = \| \tilde{a}_1 \|_{M^p(\Sd{d}, P_{\text{SH}})} \leq \| \tilde{a}_1 \|_{M^p_{\text{Dil}}(\Sd{d}, P_{\text{SH}})} \lesssim \| \tilde{a}_1 \|_{R^{s,p}[0,\infty)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
+\end{equation}
+%
+Together, \eqref{wiodjoiq3432412} and \eqref{8u90u12413} imply $\| a \|_{M^p(\Sd{d})} \lesssim \| a \|_{R^{s,p}[0,\infty)}$, which completes the proof.
+% If Pf = kf
+%
+% P_{\text{SH}} f = (k + (d-1)/2)
+% So if an operator is equal to a(P)
+% it is also equal to a'(P_{SH})
+%
+% where a'(k) = a(k - (d-1)/2)
+\end{proof}

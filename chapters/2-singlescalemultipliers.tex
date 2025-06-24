@@ -4,16 +4,21 @@ In this chapter, we prove Theorem \ref{maintheorem}, which we restate below:
 
 \thmmaintheorem*
 
-In Section \ref{sec:AnAnalogueOf} we saw that for operators $P$ satisfying Assumption A, $\| a \|_{M^p_{\text{Dil}}(X)} \gtrsim \| a \|_{R^{s,p}[0,\infty)}$, and so it suffices to prove that $\| a \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}$. Define $a_R(\lambda) = a(\lambda / R)$. In Section \ref{PrelimSetup}, we will see from elementary functional analysis that
+In Section \ref{sec:AnAnalogueOf} we saw that for $P \in \COP{1}(X)$ satisfying Assumption A,
+%
+\begin{equation}
+    \| a \|_{M^p_{\text{Dil}}(X,P)} \gtrsim \| a \|_{R^{s,p}[0,\infty)},
+\end{equation}
+and so it suffices to prove that $\| a \|_{M^p_{\text{Dil}}(X,P)} \lesssim \| a \|_{R^{s,p}[0,\infty)}$. Define $a_R(\lambda) = a(\lambda / R)$. In Section \ref{PrelimSetup}, we will see from elementary functional analysis that
 %
 \begin{equation} \label{TrivialLowFrequencyBound}
-    \sup\nolimits_{R \leq 1} \left\| a_R \right\|_{M^p(X)} \lesssim \| a \|_{l^\infty[0,\infty)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
+    \sup\nolimits_{R \leq 1} \left\| a_R \right\|_{M^p(X,P)} \lesssim \| a \|_{l^\infty[0,\infty)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
 \end{equation}
 %
 On the other hand, the upper bound
 %
 \begin{equation} \label{dyadicMainReulst}
-    \sup\nolimits_{R \geq 1} \| a_R \|_{M^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
+    \sup\nolimits_{R \geq 1} \| a_R \|_{M^p(X,P)} \lesssim \| a \|_{R^{s,p}[0,\infty)}.
 \end{equation}
 %
 requires a more in depth analysis than \eqref{TrivialLowFrequencyBound}. It is here we apply the wave equation transform, writing
@@ -36,12 +41,12 @@ Equations \eqref{TrivialLowFrequencyBound} and \eqref{dyadicMainReulst} thus imp
 
 \section{Preliminary Setup} \label{PrelimSetup}
 
-Without loss of generality, by translating and dilating our multiplier, we can assume that the eigenvalues of the operator $P$ are all integers. Fix a constant $\varepsilon_X > 0$, strictly smaller than the injectivity radius of the geodesic flow on the manifold $X$ induced by the geometry of $P$. Our goal is to prove inequalities \eqref{TrivialLowFrequencyBound} and \eqref{dyadicMainReulst}. Proving \eqref{TrivialLowFrequencyBound} is simple because the operators $a_R(P)$ are smoothing operators, uniformly for $0 < R < 1$, because the spectrum of $X$ is discrete, low eigenvalue eigenfunctions are uniformly smooth, and $X$ is compact.
+Without loss of generality, by translating and dilating our multiplier, we can assume that the eigenvalues of the operator $P$ are all integers. Fix a constant $\varepsilon_X > 0$, strictly smaller than the injectivity radius of the geodesic flow on the manifold $X$ induced by the geometry of $P$. Our goal is to prove inequalities \eqref{TrivialLowFrequencyBound} and \eqref{dyadicMainReulst}. Proving \eqref{TrivialLowFrequencyBound} is simple because the operators $a_R(P)$ are smoothing operators, uniformly for $0 < R < 1$.
 
 \begin{lemma} \label{lowjLemma}
     Let $X$ be a compact $d$-dimensional manifold, and suppose $P \in \COP{1}(X)$. If $1/2d < 1/p - 1/2 \leq 1/2$, and if $a$ is a regulated function, then
     %
-    \[ \sup\nolimits_{R \leq 1} \| a_R \|_{M^p_{\text{Dil}}(X)} \lesssim \| a \|_{l^\infty(\Lambda)} \lesssim \| a \|_{R^{p,s}[0,\infty)}. \]
+    \[ \sup\nolimits_{R \leq 1} \| a_R \|_{M^p_{\text{Dil}}(X,P)} \lesssim \| a \|_{l^\infty(\Lambda)} \lesssim \| a \|_{R^{p,s}[0,\infty)}. \]
 \end{lemma}
 \begin{proof}
     Let $T_R = m_R(P)$. Recall that $\Lambda$ is the set of eigenvalues of $P$. The set $\Lambda \cap [0,2]$ is finite. For each $\lambda \in \Lambda$, choose a finite orthonormal basis $\mathcal{E}_\lambda$. Then we can write
@@ -61,7 +66,7 @@ Without loss of generality, by translating and dilating our multiplier, we can a
     But this means that
     %
     \begin{equation}
-        \left\| T_R f \right\|_{L^p(X)} \leq \sum\nolimits_{\lambda \in \Lambda_P \cap [0,2]} \sum\nolimits_{e \in \mathcal{E}_\lambda} |m(\lambda/R)| \| \langle f, e \rangle e \|_{L^p(X)} \lesssim \| m \|_{l^\infty(\Lambda)}.
+        \left\| T_R f \right\|_{L^p(X)} \leq \sum\nolimits_{\lambda \in \Lambda_P \cap [0,2]} \sum\nolimits_{e \in \mathcal{E}_\lambda} |m(\lambda/R)| \| \langle f, e \rangle e \|_{L^p(X)} \lesssim \| m \|_{l^\infty(\Lambda)} \| f \|_{L^p(X)}.
     \end{equation}
     %
     For $1/p - 1/2 > 1/2d$, the Sobolev embedding theorem and \eqref{equation12980u21u89eqiwjqwiou} imply that
@@ -183,7 +188,7 @@ The following proposition, a kind of $L^p$ square root cancellation bound, impli
 Since we already proved \eqref{TrivialLowFrequencyBound}, this proposition completes the proof of Theorem \ref{maintheorem}, and will take the remainder of the chapter.
 
 \begin{prop} \label{TjbLemma}
-    Let $X$ be a $d$-dimensional compact manifold, and consider $P \in \COP{1}(X)$ satisfying Assumptions A and B. Fix $R > 0$ and a constant $\varepsilon_X$ smaller than the injectivity radius of $X$ with respect to the geodesic flow induced by $P$, and suppose $1/(d-1) < 1/p - 1/2 < 1/2$. Consider any function $b: I_0 \to \CC$, and suppose we can write $b = \sum\nolimits_{t_0 \in \mathcal{T}_R} b_{t_0}^I + b^{II}$, where $\supp(b_{t_0}^I) \subset I_{t_0}$ and $\supp(b_R^{II}) \subset I_0 \smallsetminus [-\varepsilon_X,\varepsilon_X]$. Define operators $T^I = \sum\nolimits_{t_0 \in \mathcal{T}_R} T^I_{t_0}$ and $T^{II}$, where
+    Let $X$ be a $d$-dimensional compact manifold, and consider $P \in \COP{1}(X)$ satisfying Assumptions A and B. Fix $R > 0$ and a constant $\varepsilon_X$ smaller than the injectivity radius of $X$ with respect to the geodesic flow on $X$ with respect to the Finsler metric induced by $P$, and suppose $1/(d-1) < 1/p - 1/2 < 1/2$. Consider any function $b: I_0 \to \CC$, and write $b = \sum\nolimits_{t_0 \in \mathcal{T}_R} b_{t_0}^I + b^{II}$, where $\supp(b_{t_0}^I) \subset I_{t_0}$ and $\supp(b_R^{II}) \subset I_0 \smallsetminus [-\varepsilon_X,\varepsilon_X]$. Define operators $T^I = \sum\nolimits_{t_0 \in \mathcal{T}_R} T^I_{t_0}$ and $T^{II}$, where
     %
     \[ T_{t_0}^I = \int b_{t_0}^I(t) ( e^{2 \pi i tP} \circ Q_R )\; dt\ \ \text{and}\ \ T^{II} = \int b^{II}(t) ( e^{2 \pi i tP} \circ Q_R)\; dt. \]
     %
@@ -303,7 +308,9 @@ Let us first address the case where $\varepsilon_X' \leq |t_0| \leq \varepsilon_
 %
 where $Q_\alpha$ is a pseudo-differential operator whose symbol in the coordinate system $U_\alpha$ is supported on $\{ R/4 \leq |\xi| \leq 4R \}$, and
 %
-\[ W_\alpha(x,y) = R^{\frac{d+1}{2}} \int_{-\infty}^\infty s(t,x,y,R\tau) e^{i R \tau \Phi(x,t,x',\tau)}\; d\xi, \]
+\begin{equation}
+    K_{W_\alpha}(x,y) = R^{\frac{d+1}{2}} \int_{-\infty}^\infty s(t,x,y,R\tau) e^{i R \tau \Phi(x,t,x',\tau)}\; d\xi,
+\end{equation}
 % t = d(x,y)
 % 
 % 
@@ -313,7 +320,7 @@ where $s$ is smooth, and compactly supported on $L^{-1} \leq |\tau| \leq L$, and
     \left\| S - \textstyle\sum\nolimits_\alpha S\!_\alpha \right\|_{L^\infty(X)} \lesssim_N R^{-N}.
 \end{equation}
 %
-This error is negligible to our analysis if $N$ is chosen appropriately large. Integrating by parts if $|t| - d^+(y,x)$ and $|t| - d^-(y,x)$ is suitably large, and then taking in absolute values gives the required bounds for each of the terms $S\!_\alpha$, completing the proof of the required bounds.
+This error is negligible to our analysis if $N$ is chosen appropriately large. Integrating by parts if $|t| - d^+(y,x)$ and $|t| - d^-(y,x)$ is suitably large, and then taking in absolute values gives the required bounds for each of the terms $S\!_\alpha$, completing the proof of the required bounds in this range.
 
 % If d(x_0,x) << 1, then the bound says << R^{-N} for all N
 % If d(x_0,x) >> 1, then the bound says << R^{(d+1)/2} < ... >^{-N}
@@ -326,7 +333,7 @@ Now we address the case $|t_0| \leq \varepsilon_X$. Lemmas \ref{PseudoOsicllator
 %
 where $Q_\alpha$ is as above, and
 %
-\[ W_\alpha(x,y) = R^d \int s(t,x,y,\theta) e^{i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \]
+\[ K_{W_\alpha}(x,y) = R^d \int s(t,x,y,\theta) e^{i [ \phi(x,y,\xi) + t p(y,\xi) ]}\; d\xi, \]
 %
 where $s$ is smooth and supported on $L^{-1} \leq |\theta| \leq L$, and $\phi$ is a solution to the Eikonal equation \eqref{awiodjawoidhjioq23412341234234}, then for all $N \geq 0$,
 %
@@ -388,7 +395,7 @@ Integrating by parts in $\eta$ and $\theta$ in \eqref{DIOAJVIOEJAV8318923} and \
 %
 Using the bounds in \eqref{ioqejfoieqjf13412} with the fact that $\text{supp}(c)$ is contained in a $O(1/R)$ neighborhood of $t_0$ in \eqref{oaisdjoai9091390} then implies $|\partial_\xi^\alpha a(x,\xi)| \lesssim_\alpha 1$ for all $\alpha$.
 %
-%We now find $\lambda: V_\alpha^* \times S^{d-1} \to (0,\infty)$ such that
+%We now find $\lambda: V_\alpha^* \times \Sd{d-1} \to (0,\infty)$ such that
 %
 %\[ p(x_0, \lambda(x_0,\xi) \xi ) = 1, \]
 %
@@ -402,7 +409,7 @@ Using the bounds in \eqref{ioqejfoieqjf13412} with the fact that $\text{supp}(c)
 %\end{align*}
 %
 
-We now account for angular oscillation of the integral by working in a kind of 'polar coordinate' system. First we find $\lambda: V_\alpha \times S^{d-1} \to (0,\infty)$ such that for all $|\xi| = 1$,
+We now account for angular oscillation of the integral by working in a kind of 'polar coordinate' system. First we find $\lambda: V_\alpha \times \Sd{d-1} \to (0,\infty)$ such that for all $|\xi| = 1$,
 %
 \begin{equation}
     p(x_0, \lambda(x_0,\xi) \xi) = 1.
@@ -417,7 +424,7 @@ If $\tilde{a}(x,\rho, \eta) = a(x, \rho \lambda(x_0) \xi ) \det [ \lambda(x_0,\x
     S\!_\alpha(x) = R^d \int_0^\infty \rho^{d-1} \int_{|\xi| = 1} \tilde{a}(x,\rho, \xi) e^{2 \pi i R \rho [ t_0 + \phi(x, x_0, \lambda(x_0,\xi) \xi) ]}\; d\xi\; d\rho.
 \end{equation}
 %
-Define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0, \lambda(x_0,\xi) \xi)$.    
+Define $\Phi: \Sd{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0, \lambda(x_0,\xi) \xi)$.    
 %
 %\[ \text{Hess}_\xi(\Phi) = \text{Hess}_\xi(\phi) + t_0 \text{Hess}_\xi(p). \]
 %
@@ -555,7 +562,7 @@ We claim that, if $\varepsilon_X'$ is chosen appropriately small, then in the $\
 and the Hessian at each of these points is non-degenerate, with each eigenvalue of the Hessian having magnitude exceeding a constant multiple of $d_X^{\pm}(x_0,x)$. We prove that these properties hold for $\Phi$ in Proposition \ref{triangleLemma} of the following section, via a series of geometric arguments. It then follows from the principle of stationary phase that
 %
 \begin{equation}
-    S\!_\alpha(x) = \sum_{\pm} \frac{R^{d}}{\left\langle R d_X^{\pm}(x_0,x) \right\rangle^{\frac{d-1}{2}}} \int_0^\infty \rho^{\frac{d-1}{2}} a_{\pm}(x,\rho) e^{2 \pi i R \rho [ t_0 \pm d_X^{\pm}(x_0,x)]}\; d\rho,
+    S\!_\alpha(x) = \sum\nolimits_{\pm} \frac{R^{d}}{\left\langle R d_X^{\pm}(x_0,x) \right\rangle^{\frac{d-1}{2}}} \int_0^\infty \rho^{\frac{d-1}{2}} a_{\pm}(x,\rho) e^{2 \pi i R \rho [ t_0 \pm d_X^{\pm}(x_0,x)]}\; d\rho,
 \end{equation}
 %
 where $a_{\pm}$ is supported on $|\rho| \sim 1$, and for all $\alpha$, $|\partial_\rho^\alpha a_{\pm}| \lesssim_\alpha 1$. Integrating by parts in the $\rho$ variable if $t_0 \pm d_X^{\pm}(x_0,x)$ is large, we conclude that
@@ -626,14 +633,14 @@ In remains to classify the critical points that arose in Proposition \ref{theMai
     where the implicit constant is uniform in $x_0$ and $x_1$.
 \end{prop}
 
-If $\Psi$ is as above, then the function $\Phi: S^{d-1} \to \RR$ obtained by setting $\Phi(\xi) = \phi( x, x_0, F_*(x,\xi)^{-1} \xi  )$ is precisely the kind of function that arose as a phase in Proposition \ref{theMainEstimatesForWave}, where $F_*$ was the principal symbol $p$ of the pseudo-differential operator we were considering. Since critical points and the Hessians of maps at critical points are stable under diffeomorphisms, %(see Chapter 5, Problem 17 of \cite{Spivak1}),
-and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S\!_{x_0}^*$ to $S^{d-1}$, classifying the critical points of the map $\Psi$ implies the required properties of the map $\Phi$ used in Proposition \ref{theMainEstimatesForWave}.
+If $\Psi$ is as above, then the function $\Phi: \Sd{d-1} \to \RR$ obtained by setting $\Phi(\xi) = \phi( x, x_0, F_*(x,\xi)^{-1} \xi  )$ is precisely the kind of function that arose as a phase in Proposition \ref{theMainEstimatesForWave}, where $F_*$ was the principal symbol $p$ of the pseudo-differential operator we were considering. Since critical points and the Hessians of maps at critical points are stable under diffeomorphisms, %(see Chapter 5, Problem 17 of \cite{Spivak1}),
+and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S\!_{x_0}^*$ to $\Sd{d-1}$, classifying the critical points of the map $\Psi$ implies the required properties of the map $\Phi$ used in Proposition \ref{theMainEstimatesForWave}.
 
 % then, because critical points and the Hessians of maps at critical points are stable under diffeor
 
-%Define a function $\lambda: U \times S^{d-1} \to \RR$ by setting $\lambda(x,v) = F_*( x,v )^{-1}$ and then define $\Phi: S^{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0,\lambda(x_0,\xi) \xi)$. Let $\xi^+$ and $\xi^-$ are the two points in $S\!_{x_0}^*$ such that $\mathcal{L}^{-1}(x_0,\xi^+)$ is the unit tangent vector of the forward geodesic from $x_0$ to $x$, and $-\mathcal{L}^{-1}(x_0,\xi^-)$ is the unit tangent vector to the backward geodesic from $x_0$ to $x$. In this subsection, we will verify that the only critical points of $\Phi$ occur at $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, that $\Phi( |\xi^+|^{-1} \xi^+) = d_X^+(x_0,x)$ and $\Phi( |\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x)$, and that if we let $V_+$ and $V_-$ be the subspaces of $\RR^d$ which give the tangent spaces of $S^{d-1}$ at each critical point, then the Hessians $H_{\pm} : V_{\pm} \to \RR$ of $\Phi$ at each critical point are non-degenerate, with $|H_{\pm}(\omega)| \gtrsim d_X^{\pm}(x_0,x) |\omega|$, where the implicit constant is locally uniform in $x_0$ and $x$. These properties precisely prove the properties we needed to analyze the function $\Phi$ occuring in Proposition \ref{theMainEstimatesForWave}, where $F_*$ is the principal symbol $p$ of the pseudodifferential operator we are considering.
+%Define a function $\lambda: U \times \Sd{d-1} \to \RR$ by setting $\lambda(x,v) = F_*( x,v )^{-1}$ and then define $\Phi: \Sd{d-1} \to \RR$ by setting $\Phi(\xi) = \phi(x,x_0,\lambda(x_0,\xi) \xi)$. Let $\xi^+$ and $\xi^-$ are the two points in $S\!_{x_0}^*$ such that $\mathcal{L}^{-1}(x_0,\xi^+)$ is the unit tangent vector of the forward geodesic from $x_0$ to $x$, and $-\mathcal{L}^{-1}(x_0,\xi^-)$ is the unit tangent vector to the backward geodesic from $x_0$ to $x$. In this subsection, we will verify that the only critical points of $\Phi$ occur at $|\xi^+|^{-1} \xi^+$ and $|\xi^-|^{-1} \xi^-$, that $\Phi( |\xi^+|^{-1} \xi^+) = d_X^+(x_0,x)$ and $\Phi( |\xi^-|^{-1} \xi^-) = - d_X^-(x_0,x)$, and that if we let $V_+$ and $V_-$ be the subspaces of $\RR^d$ which give the tangent spaces of $\Sd{d-1}$ at each critical point, then the Hessians $H_{\pm} : V_{\pm} \to \RR$ of $\Phi$ at each critical point are non-degenerate, with $|H_{\pm}(\omega)| \gtrsim d_X^{\pm}(x_0,x) |\omega|$, where the implicit constant is locally uniform in $x_0$ and $x$. These properties precisely prove the properties we needed to analyze the function $\Phi$ occuring in Proposition \ref{theMainEstimatesForWave}, where $F_*$ is the principal symbol $p$ of the pseudodifferential operator we are considering.
 
-%We will find it more geometrically natural to work with the function $\Psi: S\!_{x_0}^* \to \RR$ given by $\Psi(\xi) = \phi(x,x_0,\xi)$. Then $\Phi( \xi ) = \Psi( \lambda(x_0,\xi) \xi )$. The map $\xi \mapsto \lambda(x_0,\xi) \xi$ is a diffeomorphism from $S^{d-1}$ to $S\!_{x_0}^*$. Both critical points . Thus it suffices to prove that the only critical points of $\Psi$ occur at $\xi^+$ and $\xi^-$, that $\Psi(\xi_{\pm}) = \pm d_X^{\pm}(x_0,x)$, and that the Hessian of $\Psi$ is appropriately non-degenerate.
+%We will find it more geometrically natural to work with the function $\Psi: S\!_{x_0}^* \to \RR$ given by $\Psi(\xi) = \phi(x,x_0,\xi)$. Then $\Phi( \xi ) = \Psi( \lambda(x_0,\xi) \xi )$. The map $\xi \mapsto \lambda(x_0,\xi) \xi$ is a diffeomorphism from $\Sd{d-1}$ to $S\!_{x_0}^*$. Both critical points . Thus it suffices to prove that the only critical points of $\Psi$ occur at $\xi^+$ and $\xi^-$, that $\Psi(\xi_{\pm}) = \pm d_X^{\pm}(x_0,x)$, and that the Hessian of $\Psi$ is appropriately non-degenerate.
 
 %It is simpler to define $\Sigma(x_0,\xi)$ when there is a Riemannian metric $g$ on $U_0$ such that $F(x,v)^2 = \sum g_{ij}(x) v^i v^j$. In this case we take a system of normal coordinates around $x_0$, and define $\Sigma(x_0,\xi)$ to be the hyperplane through the origin in these coordinates perpendicular to $\xi$.  More precisely, we consider the exponential map $\exp: W \to U$, where $W$ is an open subset of $U_0 \times \RR^d$ containing $U_0 \times \{ 0 \}$, defined so that for each $x_0 \in U_0$ and each $u \in \RR^d$, the curve $c(t) = \exp(x_0,tv)$ is a geodesic where it is well defined, i.e. solving the system
 %
@@ -678,7 +685,7 @@ and the map $\xi \mapsto F_*(x,\xi)^{-1} \xi$ is a diffeomorphism from $S\!_{x_0
 %with the initial conditions $c(0) = x_0$, $c'(0) = z$, and $s(0) = \xi$ has $c(1) = x$. If 
 
 %\begin{remark}
-%    Using the notation in Proposition \ref{theMainEstimatesForWave}, if $\alpha: S^{d-1} \to S\!_x^*$ is given by $\alpha(\xi) = \lambda(x_0,\xi) \xi$, then $(\Psi \circ \alpha)(\xi) = \Phi(\xi)$. Then $\alpha$ is a diffeomorphism, and so it follows from Proposition \ref{triangleLemma} that the critical points of $\Phi$ are equal to $\alpha^{-1}(\pm \xi_0)$, where $\xi_0$ is the unique covector in $S\!_x^*$ corresponding to the geodesic from $x_0$ to $x_1$. Since the Hessian of a function is a diffeomorphism invariant at critical points of a manifold, it also follows from Proposition \ref{theMainEstimatesForWave} that the Hessian of $\Phi$ at $\alpha^{-1}(\pm \xi_0)$ is non-degenerate, with each eigenvalue having magnitude exceeding a constant multiple of 
+%    Using the notation in Proposition \ref{theMainEstimatesForWave}, if $\alpha: \Sd{d-1} \to S\!_x^*$ is given by $\alpha(\xi) = \lambda(x_0,\xi) \xi$, then $(\Psi \circ \alpha)(\xi) = \Phi(\xi)$. Then $\alpha$ is a diffeomorphism, and so it follows from Proposition \ref{triangleLemma} that the critical points of $\Phi$ are equal to $\alpha^{-1}(\pm \xi_0)$, where $\xi_0$ is the unique covector in $S\!_x^*$ corresponding to the geodesic from $x_0$ to $x_1$. Since the Hessian of a function is a diffeomorphism invariant at critical points of a manifold, it also follows from Proposition \ref{theMainEstimatesForWave} that the Hessian of $\Phi$ at $\alpha^{-1}(\pm \xi_0)$ is non-degenerate, with each eigenvalue having magnitude exceeding a constant multiple of 
 
 %    In the statement of Proposition \ref{triangleLemma}, we have applied a change of coordinates as compared to the application
 %\end{remark}
@@ -691,7 +698,7 @@ In order to prove \ref{triangleLemma}, we rely on a geometric interpretation of 
     \[ |\Psi(\xi)| = \begin{cases} \text{the length of the shortest curve from $H(x_0,\xi)$ to $x_1$} & : \text{if}\ \Psi(\xi) > 0, \\ \text{the length of the shortest curve from $x_1$ to $H(x_0,\xi)$} & : \text{if}\ \Psi(\xi) < 0. \end{cases} \]
 \end{lemma}
 \begin{proof}
-    We rely on a construction of $\phi$ from Proposition 3.7 of \cite{Treves2}, which we briefly describe. Fix $x_0$ and $\xi$. Then there is a unique co-vector field $\omega: H(x_0,\xi) \to \RR^d$ which is everywhere perpendicular to $H(x_0,\xi)$, with $\omega(x_0) = \xi$ and with $F_*(x,\omega(x)) = F_*(x_0,\xi)$ for all $x \in H(x_0,\xi)$. There exists a unique point $x(\xi) \in H(x_0,\xi)$ and a unique $t(\xi) \in \RR$, such that the unit speed geodesic $\gamma$ on $X$ with $\gamma(0) = x(\xi)$ and $\gamma'(0) = \mathcal{L}^{-1}( x(\xi), \omega(x(\xi)) )$ satisfies $\gamma( t(\xi) ) = x_1$. We then have $\Psi(\xi) = t(\xi)$. If $t(\xi)$ is negative, then $\gamma|_{[t(\xi),0]}$ is a geodesic from $x_1$ to $x_0$, and if $t(\xi)$ is positive, $\gamma|_{[0,t(\xi)]}$ is a geodesic from $x_0$ to $x_1$. Because $\gamma$ is a geodesic, the geometric interpretation then follows if $U$ is a suitably small neighborhood such that geodesics are length minimizing.
+    We rely on a construction of $\phi$ from Proposition 3.7 of \cite{Treves2}, which we briefly describe. Fix $x_0$ and $\xi$. Then there is a unique co-vector field $\omega: H(x_0,\xi) \to \RR^d$ which is everywhere perpendicular to $H(x_0,\xi)$, with $\omega(x_0) = \xi$ and with $F_*(x,\omega(x)) = F_*(x_0,\xi)$ for all $x \in H(x_0,\xi)$. There exists a unique point $x(\xi) \in H(x_0,\xi)$ and a unique $t(\xi) \in \RR$, such that the unit speed geodesic $\gamma$ on $X$ with $\gamma(0) = x(\xi)$ and $\gamma'(0) = \omega(x(\xi))_\sharp$ satisfies $\gamma( t(\xi) ) = x_1$. We then have $\Psi(\xi) = t(\xi)$. If $t(\xi)$ is negative, then $\gamma|_{[t(\xi),0]}$ is a geodesic from $x_1$ to $x_0$, and if $t(\xi)$ is positive, $\gamma|_{[0,t(\xi)]}$ is a geodesic from $x_0$ to $x_1$. Because $\gamma$ is a geodesic, the geometric interpretation then follows if $U$ is a suitably small neighborhood such that geodesics are length minimizing.
 \end{proof}
 
 % and relies on the fact discussed in the introduction that the Hamiltonian flow of the principal symbol $p$ of $P$ on $M$ is the geodesic flow of the Finsler metric induced by $p$ on $M$. Namely, for $\xi \in S\!_{x_0}$, the value $\psi(\xi)$ is the length of the unique geodesic starting at $x_1$ and ending at a point on $\Sigma(x_0,\xi)$, passing through $\Sigma(x_0,\xi)$ orthogonally. More precisely, there exists a unique point $x(\xi) \in \Sigma(x_0,\xi)$ and a unique value $t(\xi) \in \RR$, such that if $\eta = \eta(\xi)$ is the unique unit covector orthogonal to $\Sigma(x_0,\xi)$ at $x(\xi)$ and oriented outward from $\Sigma(x_0,\xi)$ in the same direction as $\xi$, then $x_1 = \exp_{x(\xi)}(t(\xi) \eta(\xi) )$, and we then have $\psi(\xi) = t(\xi)$.
@@ -855,9 +862,9 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
     % < A(tw),  
 
 \begin{proof}[Proof that $\xi^+$ and $\xi^-$ are non-degenerate]
-    Using symmetry, it suffices without loss of generality to analyze the critical point $\xi^-$ rather than $\xi^+$. Let $H_-: T_{\xi^-} S\!_{x_0}^* \to \RR$ be the Hessian of $\Psi$ at $\xi^-$. Let $v_0 = \mathcal{L}_{x_0}^{-1} \xi^-$, and using the notation of the last argument, let $l = t(\xi^-)$. Consider a curve $\xi(a)$ valued in $S\!_{x_0}^*$ with $\xi(0) = \xi^-$ and $\zeta = \xi'(0)$ for some $\zeta \in T_{\xi^-}^* S\!_{x_0}$. Then the second derivative of $\Psi(\xi(a))$ at $a = 0$ is $H_-( \zeta )$, and so our proof would be complete if we could show that the function $L(a) = - \Psi( \xi(a) )$, which is the length of the shortest geodesic from $x_1$ to $H(x_0,\xi(a))$, satisfies $L''(0) \geq C l |\zeta|$, for a constant $C > 0$ uniform in $x_0$, $x_1$, and $\zeta$.
+    Using symmetry, it suffices without loss of generality to analyze the critical point $\xi^-$ rather than $\xi^+$. Let $H_-: T_{\xi^-} S\!_{x_0}^* \to \RR$ be the Hessian of $\Psi$ at $\xi^-$. Let $v_0 = \xi^-_\sharp$, and using the notation of the last argument, let $l = t(\xi^-)$. Consider a curve $\xi(a)$ valued in $S\!_{x_0}^*$ with $\xi(0) = \xi^-$ and $\zeta = \xi'(0)$ for some $\zeta \in T_{\xi^-}^* S\!_{x_0}$. Then the second derivative of $\Psi(\xi(a))$ at $a = 0$ is $H_-( \zeta )$, and so our proof would be complete if we could show that the function $L(a) = - \Psi( \xi(a) )$, which is the length of the shortest geodesic from $x_1$ to $H(x_0,\xi(a))$, satisfies $L''(0) \geq C l |\zeta|$, for some $C > 0$ uniform in $x_0$, $x_1$, and $\zeta$.
 
-    Consider the partial function $\text{Exp}_{x_1}: \RR^d \to U_0$ obtained from the exponential map at $x_1$. If $r$ is chosen suitably small, there exists a neighborhood $V$ of the origin in $\RR^d$ such that $E = \text{Exp}_{x_1}|_V$ is a diffeomorphism between $V$ and $U$. Unlike in Riemannian manifolds, in general $E$ is only $C^1$ at the origin, though smooth on $V - \{ 0 \}$. However, for $|v| = 1$ and $t > 0$ we can write $E(tv) = (\pi \circ \varphi)( x_1, \mathcal{L}_{x_1} v, t)$, where the partial function $\varphi: (T^* U_0 - 0) \times \RR \to (T^* U_0 - 0)$ is the flow induced by the the Hamiltonian vector field $( \partial_\xi F_*, - \partial_x F_*)$ on $T^* U_0 - 0$, and $\pi$ is the projection map from $T^* U_0 - 0$ to $U_0$. Where defined, $\varphi$ is a smooth function since the Hamiltonian vector field is smooth, and so it follows by homogeneity and the pre-compactness of $U$ that the partial derivatives $(\partial^\alpha E_x)(v)$ are uniformly bounded for $v \neq 0$ and $x \in U$. It thus follows from the inverse function theorem that there exists a constant $A > 0$ such that for all $x_1$ and $x$ in $U$ with $x \neq x_1$,
+    Consider the partial function $\text{Exp}_{x_1}: \RR^d \to U_0$ obtained from the exponential map at $x_1$. If $r$ is chosen suitably small, there exists a neighborhood $V$ of the origin in $\RR^d$ such that $E = \text{Exp}_{x_1}|_V$ is a diffeomorphism between $V$ and $U$. Unlike in Riemannian manifolds, in general $E$ is only $C^1$ at the origin, though smooth on $V - \{ 0 \}$. However, for $|v| = 1$ and $t > 0$ we can write $E(tv) = (\pi \circ \varphi)( x_1, v^\flat, t)$, where the partial function $\varphi: (T^* U_0 - 0) \times \RR \to (T^* U_0 - 0)$ is the flow induced by the the Hamiltonian vector field $( \partial_\xi F_*, - \partial_x F_*)$ on $T^* U_0 - 0$, and $\pi$ is the projection map from $T^* U_0 - 0$ to $U_0$. Where defined, $\varphi$ is a smooth function since the Hamiltonian vector field is smooth, and so it follows by homogeneity and the pre-compactness of $U$ that for each $\alpha$, the partial derivatives $(\partial^\alpha E_x)(v)$ are uniformly bounded for $v \neq 0$ and $x \in U$. It thus follows from the inverse function theorem that there exists a constant $A > 0$ such that for all $x_1$ and $x$ in $U$ with $x \neq x_1$,
     %
     \begin{equation} \label{GBounds}
         |\partial_j G_{x_1}(x)| \leq A \quad\text{and}\quad |(\partial_j \partial_k G_{x_1})(x)| \leq A.
@@ -942,7 +949,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
         V^i(s) = \sum\nolimits_{i,j,k} (\partial_j E^i) (y(s)) (\partial_k G^j)( x(s)) u^k(a) = u^i(a).
     \end{equation}
     %
-    In particular, $T(0) = v_0$, so $R'(0) = \sum g_{ij}(x_0, v_0) u^i(a) v_0^j = 1 - c(a)^2$. Cauchy-Schwartz applied to \eqref{RSFirstDerivativeEquation} also tells us that
+    In particular, $T(0) = v_0$, so $R'(0) = \sum g_{ij}(x_0, v_0) u^i(a) v_0^j = 1 - c(a)^2$. The Cauchy-Schwarz inequality applied to \eqref{RSFirstDerivativeEquation} also tells us that
     %
     \begin{equation} \label{wdkawoidj141}
         |R'(s)| \lesssim_A |u(a)|.
@@ -976,7 +983,7 @@ We now analyze the non-degeneracy of the critical points $\xi^+$ and $\xi^-$.
         \text{II} = 0.
     \end{equation}
     %
-    Applying Cauchy-Schwarz and \eqref{GBounds}, we find
+    Applying the Cauchy-Schwarz inequality and \eqref{GBounds}, we find
     %
     \begin{equation} \label{IIIBound}
         |\text{III}| \lesssim |u(a)| |T'(s)| \lesssim |u(a)|^2 [|y(s)| + 1] \lesssim (l + 1) |u(a)|^2.
@@ -1081,7 +1088,7 @@ Write $F = \sum_k F_k$, where
     F_k = 2^{k \frac{d-1}{2}} \sum\nolimits_{(x_0,t_0) \in \mathcal{E}_k} {S\!}_{x_0,t_0}.
 \end{equation}
 %
-Our goal is to bound $\| F \|_{L^2(M)}$. Applying Cauchy-Schwarz, we have
+Our goal is to bound $\| F \|_{L^2(M)}$. Applying the Cauchy-Schwarz inequality, we have
 %
 \begin{equation} \label{loglossbound}
     \| F \|_{L^2(X)}^2 \leq \log(D) \left( \sum\nolimits_{k \leq \log(D)} \| F_k \|_{L^2(X)}^2 + \left\| \sum\nolimits_{k \geq \log(D)} F_k \right\|_{L^2(X)}^2 \right).
@@ -1385,13 +1392,13 @@ We now bound the constants $B'_l$. Pick a constant $r$ such that $d_X \leq 2^r d
         \| F_k \|_{L^2(X)}^2 \lesssim \sum\nolimits_\mu \| F_{k,\mu} \|_{L^2(X)}^2 + R^{d} \left( 1 + 2^{k(d-1)} D^{1 - a \left( \frac{d-3}{2} \right)} \right) \# \mathcal{E}_k.
     \end{equation}
 %
-The functions in the sum defining $F_{k,\mu}$ are highly coupled, and it is difficult to use anything except Cauchy-Schwarz to break them apart. Since $\# ( \mathcal{T}_R \cap I_{k,\mu}) \sim D^a$, if we set $F_{k,\mu} = \sum_{t \in \mathcal{T}_R \cap I_{k,\mu}} F_{k,\mu,t}$, where
+The functions in the sum defining $F_{k,\mu}$ are highly coupled, and it is difficult to use anything except the Cauchy-Schwarz inequality to break them apart. Since $\# ( \mathcal{T}_R \cap I_{k,\mu}) \sim D^a$, if we set $F_{k,\mu} = \sum_{t \in \mathcal{T}_R \cap I_{k,\mu}} F_{k,\mu,t}$, where
 %
 \begin{equation}
     F_{k,\mu,t} = \sum\nolimits_{(x_0,t) \in \mathcal{E}_{k,\mu}} 2^{k \frac{d-1}{2}} {S\!}_{x_0,t}.
 \end{equation}
 %
-Then Cauchy-Schwarz implies that
+Then the Cauchy-Schwarz inequality implies that
 %
 \begin{equation} \label{IOJDAOIWDJAWOIJF}
     \| F_{k,\mu} \|_{L^2(X)}^2 \lesssim D^a \sum\nolimits_{t \in \mathcal{T}_R \cap I_{k,\mu}} \| F_{k,\mu,t} \|_{L^2(X)}^2.
@@ -1502,7 +1509,7 @@ Thus we have proved Lemma \ref{regime1Lemma}. We take the remainder of this sect
 
 \begin{proof}[Proof of Lemma \ref{LpBoundLemma}]
 
-For $p = 1$, this inequality follows simply by applying the triangle inequality and applying the pointwise estimates of Proposition \ref{theMainEstimatesForWave}. By methods of interpolation, to prove the result for $p > 1$, we thus only need only prove a restricted strong type version of this inequality. In other words, we can restrict $c$ to be the indicator function of a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. Write $\mathcal{E} = \bigcup_{k \geq 0} \mathcal{E}_k$, where
+For $p = 1$, this inequality follows simply by applying the triangle inequality and applying the pointwise estimates of Proposition \ref{theMainEstimatesForWave}. By the Marcinkiewicz interpolation theorem, to prove the result for $p > 1$, we thus only need only prove a restricted strong type version of this inequality. In other words, we can restrict $c$ to be the indicator function of a set $\mathcal{E} \subset \mathcal{X}_R \times \mathcal{T}_R$. Write $\mathcal{E} = \bigcup_{k \geq 0} \mathcal{E}_k$, where
 %
 \begin{equation}
     \mathcal{E}_0 = \{ (x,t) \in \mathcal{E} : |t| \leq 1/R \}
@@ -1526,7 +1533,7 @@ Our proof will be completed if we can show that
     \Big\| \sum\nolimits_k F_k \Big\|_{L^p(X)} \lesssim R^{d ( 1 - 1/p )} \Big( \sum\nolimits_k 2^{k(d-1)} \# \mathcal{E}_k \Big)^{1/p}.
 \end{equation}
 %
-To prove \eqref{oDOIAWJCVOIEJOIJER1312s}, we perform a density decomposition on the sets $\{ \mathcal{E}_k \}$. Applying a rescaled version of Lemma \ref{DecompositionTheorem}, we can obtain a disjoint union
+To prove \eqref{oDOIAWJCVOIEJOIJER1312s}, we perform a density decomposition on the sets $\{ \mathcal{E}_k \}$. Applying Lemma \ref{DecompositionTheorem}, rescaling our metric so $\mathcal{E}$ is $1$-separated, we can obtain a disjoint union
 %
 \begin{equation}
     \mathcal{E}_k = \bigcup\nolimits_{u \geq 0} \mathcal{E}_k(u),
@@ -2062,7 +2069,7 @@ This inequality is proved in Corollary 1.2 of \cite{LeeSeeger} for $1 < p < 2(d-
     \end{split}
     \end{equation}
     %
-    The operator $L_R = R^{1/p' - s} \langle P \rangle^{s - 1/p'} Q_R$ can be written as $l_R(P)$, where $l_R(\lambda) = R^{1/p' - s} \langle \lambda \rangle^{s - 1/p'} q(\lambda/R)$. Since the functions $l_R$ are \emph{uniformly} symbols of order zero, i.e. for $R \geq 1$ we have uniform estimates $(\partial^\alpha l_R)(\lambda) \lesssim_\alpha \langle \lambda \rangle^{- \alpha}$, Corollary 4.3.2 of \cite{Sogge} implies that the operators $\{ L_R \}$ are uniformly bounded on $L^p(X)$. But this means that
+    The operator $L_R = R^{1/p' - s} \langle P \rangle^{s - 1/p'} Q_R$ can be written as $l_R(P)$, where $l_R(\lambda) = R^{1/p' - s} \langle \lambda \rangle^{s - 1/p'} q(\lambda/R)$. Since the functions $l_R$ are \emph{uniformly} symbols of order zero, i.e. for $R \geq 1$ we have estimates $(\partial^\alpha l_R)(\lambda) \lesssim_\alpha \langle \lambda \rangle^{- \alpha}$ which are uniform in $R$, Corollary 4.3.2 of \cite{Sogge} implies that the operators $\{ L_R \}$ are uniformly bounded on $L^p(X)$. But this means that
     %
     \begin{equation}
         \| Q_R u \|_{L^{q}_{s - 1/p'}(X)} = R^{s - 1/p'} \| L_R u \|_{L^q(X)} \lesssim R^{s - 1/p'} \| u \|_{L^p(X)}.
@@ -2093,7 +2100,7 @@ Let $m: [0,\infty) \to \CC$ be a function such that the spectral multiplier oper
 %
 \[ \{ m(\sqrt{-\Delta} / R) \} \]
 %
-are uniformly bounded on $L^p(S^d)$. Define $\psi: [0,\infty) \to [0,\infty)$ such that $\sqrt{-\Delta} = \psi(P)$ for an elliptic pseudodifferential operator $P$ commuting with $\sqrt{-\Delta}$, and with $\sigma(P) \subset \NN$. Define $m_R(\lambda) = m(\psi(\lambda)/R)$, so that 
+are uniformly bounded on $L^p(\Sd{d})$. Define $\psi: [0,\infty) \to [0,\infty)$ such that $\sqrt{-\Delta} = \psi(P)$ for an elliptic pseudodifferential operator $P$ commuting with $\sqrt{-\Delta}$, and with $\sigma(P) \subset \NN$. Define $m_R(\lambda) = m(\psi(\lambda)/R)$, so that 
 %
 \[ m(\sqrt{-\Delta} / R) = m_R(P). \]
 %
@@ -2105,7 +2112,7 @@ then we can write
 %
 \[ m_R(P) = 2 \int_0^{1/2} b_R(t) \cos(2 \pi P t)\; dt \]
 %
-Consider a normal coordinate system $\mathfrak{x}$ centered at a point $x_0 \in S^d$, and use it to define a family of bump functions $f_R: S^d \to \CC$ for $R \geq 1$ by setting $f_R = R^{d/p} f(R \mathfrak{x})$ for some fixed $f \in C_c^\infty(\RR^d)$ supported in a small neighbourhood of the origin. If we consider a partition of unity $\chi_0, \chi_1, \chi_2$ subordinate to the cover $[0,10/R)$, $(5/R, 1/2 - 5/R)$, $(1/2 - 10/R, 1/2]$, then we can write
+Consider a normal coordinate system $\mathfrak{x}$ centered at a point $x_0 \in \Sd{d}$, and use it to define a family of bump functions $f_R: \Sd{d} \to \CC$ for $R \geq 1$ by setting $f_R = R^{d/p} f(R \mathfrak{x})$ for some fixed $f \in C_c^\infty(\RR^d)$ supported in a small neighbourhood of the origin. If we consider a partition of unity $\chi_0, \chi_1, \chi_2$ subordinate to the cover $[0,10/R)$, $(5/R, 1/2 - 5/R)$, $(1/2 - 10/R, 1/2]$, then we can write
 %
 \[ m_R(P) \{ f_R \} = 2(g_{R,0} + g_{R,1} + g_{R,2} + g_{R,\infty}) \]
 %
@@ -2117,7 +2124,7 @@ and
 %
 \[ g_{R,\infty} = \int_0^{1/2} b_R(t) C_\infty(t) \{ f_R \}\; dt, \]
 %
-where $C_j(t)$ is a parametrix for $\cos(2 \pi P t)$, and $C_\infty(t)$ is an operator with a smooth kernel in $C^\infty([0,1/2] \times S^d \times S^d)$. Now applying Fourier series, we can write
+where $C_j(t)$ is a parametrix for $\cos(2 \pi P t)$, and $C_\infty(t)$ is an operator with a smooth kernel in $C^\infty([0,1/2] \times \Sd{d} \times \Sd{d})$. Now applying Fourier series, we can write
 %
 \[ g_{R,\infty} = \sum_{n = 0}^\infty m_R(n) \widehat{C}_\infty(n) \{ f_R \}\; dt, \]
 %
@@ -2127,17 +2134,17 @@ where $\widehat{C}_\infty(n)$ is rapidly decaying in $n$. But since $m_R(n)$ is 
 %
 and thus
 %
-\[ \| g_{R,\infty} \|_{L^\infty(S^d)} \lesssim_N R^{-N} \| m \|_{L^\infty}\quad\text{for all $N \geq 0$}. \]
+\[ \| g_{R,\infty} \|_{L^\infty(\Sd{d})} \lesssim_N R^{-N} \| m \|_{L^\infty}\quad\text{for all $N \geq 0$}. \]
 %
-One can show (via a Fourier inversion, interpolation, and pseudodifferential operator argument) that for $x \in S^d$ with $d(x,x_0) \geq C_0 / R$,
+One can show (via a Fourier inversion, interpolation, and pseudodifferential operator argument) that for $x \in \Sd{d}$ with $d(x,x_0) \geq C_0 / R$,
 %
 \[ |g_{R,0}(x)| \lesssim_N \| m \|_{L^\infty} R^{d/p} |R d(x,x_0) |^{-d-N} \quad\text{for all $N \geq 0$}. \]
 %
-Similarily, if $x_0^* \in S^d$ is the antipode of $x_0$, then for $d(x,x_0^*) \geq C_0 / R$,
+Similarily, if $x_0^* \in \Sd{d}$ is the antipode of $x_0$, then for $d(x,x_0^*) \geq C_0 / R$,
 %
 \[ |g_{R,2}(x)| \lesssim_N \| m \|_{L^\infty} R^{d/p} |R d(x,x_0^*) |^{-d-N} \quad\text{for all $N \geq 0$}. \]
 %
-If we let $\Omega = \{ x \in S^d: d(x,x_0) \geq C_0 / R\ \text{and}\ d(x,x_0^*) \geq C_0 / R \}$, then
+If we let $\Omega = \{ x \in \Sd{d}: d(x,x_0) \geq C_0 / R\ \text{and}\ d(x,x_0^*) \geq C_0 / R \}$, then
 %
 \[ \| g_{R,0} \|_{L^p(\Omega)} + \| g_{R,2} \|_{L^p(\Omega)} \lesssim \| m \|_{L^\infty} R^{-d/p^*} \]
 %

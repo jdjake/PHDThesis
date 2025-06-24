@@ -1,6 +1,6 @@
 %!TEX root = ../main.tex
 
-\chapter*{Notation}
+\chapter*{Notation} \label{not:not}
 
 \vspace{-1em}
 
@@ -13,25 +13,33 @@
 
     \item For $p \in [1,\infty]$, we let $p' \in [1,\infty]$ be it's dual exponent, satisfying $1/p + 1/p' = 1$.
 
-    \item We use the translation operators $\text{Trans}_y f(x) = f(x - y)$, and $L^\infty$-normalized dilations $\text{Dil}_t f(x) = f(x/t)$, chosen so that if a function $f$ is supported on a set $A$, then $\text{Trans}_y f$ is supported on $A + y$, and $\text{Dil}_t f$ is supported on $tA$. %Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that conventionally stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
+    \item We use the translation and $L^\infty$-normalized dilation operators
+    %
+    \[ \text{Trans}_y f(x) = f(x - y) \quad\text{and}\quad \text{Dil}_t f(x) = f(x/t), \]
+    %
+    defined so that if a function $f$ is supported on a closed set $A$, then $\text{Trans}_y f$ is supported on $A + y$, and $\text{Dil}_t f$ is supported on $tA$. %Overloading notation, we also consider dyadic dilations of the form $\text{Dil}_j f(x) = f(x/2^j)$. The dyadic dilation operator will only be used along with symbols that conventionally stand for integers, like $n$, $m$, $j$, or $k$, whereas the other dilation operator will be used in all other cases, so the operator used should be clear from context.
 
-    \item On $\RR^d$, we use $\partial_j$ to denote the usual partial derivative operators by the $j$th coordinate, and use $D_j$ to denote the self-adjoint normalization $D_j f = (2 \pi i)^{-1} \partial_j$. This normalization has the convenience that for a $d$-variate polynomial $P: \RR^d \to \CC$,
+    \item On $\RR^d$, we let $\partial_i$ denote the usual partial derivative operators in the $i$th coordinate direction (if we are using a variable $x = (x_1,\dots,x_n)$ to denote these coordinates, we might also write this derivative as $\partial_{x_i}$), and use $D_j$ to denote the self-adjoint normalization $D_j f = (2 \pi i)^{-1} \partial_j$. This normalization has the convenience that for a $d$-variate polynomial $P: \RR^d \to \CC$,
     %
     \[ P(D_j) \{ f \} = \int P(\xi) \widehat{f}(\xi) e^{2 \pi i \xi \cdot x}\; d\xi, \]
     %
-    and simplifies many formulas associated with Fourier integral operators. We also consider the compositions of these operators $\partial^\alpha$ and $D^\alpha$ given by multi-indices $\alpha$. For a differentiable function $F: \RR^m \to \RR^n$ and $x \in \RR^m$, we let $F_{\!*}(x) = \{ \partial_j F_k(x) \}$ denote the $n \times m$ matrix of partial derivatives of the components of $F$.
+    and simplifies many formulas associated with Fourier integral operators. We also consider the compositions of these operators $\partial^\alpha$ and $D^\alpha$ given by multi-indices $\alpha$.
+
+    \item For a differentiable function $F: \RR^m \to \RR^n$ and $x \in \RR^m$, we let $F_{\!*}(x) = \{ \partial_j F_k(x) \}$ denote the $n \times m$ matrix of partial derivatives of the components of $F$. If $F: X \to Y$ is a smooth map between two manifolds, we also let $F_*: TX \to TY$ denote the map, which is a linear map from $T_x X$ to $T_{f(x)} Y$ for each $x \in X$, given by the matrix of partial derivatives of $F$ in any particular pair of coordinate systems.
 
     \item We will often use the Japanese bracket $\langle x \rangle = (1 + |x|^2)^{1/2}$ for $x \in \RR^d$.
 
+    \item Given a topological space $X$ and two sets $U$ and $V$, we write $U \Subset V$ if the closure of $U$ is a compact subset of $V$.
+
     \item Let $\Omega \subset \RR^d$ be a bounded open set. For each affine transformation $T: \RR^d \to \RR^d$, consider a smooth function $\phi_T$ supported on $T(\Omega)$. We say these functions are \emph{adapted} if $|\partial_x^\alpha \{ \phi_T \circ T \}| \lesssim_\alpha 1$, uniformly in $T$. We will apply this definition when $\Omega$ is a cube (to obtain functions adapted to certain rectangles), and when $\Omega$ is an annulus (to obtain functions adapted to various annuli).
 
-    \item We let $\dot{\RR}^p = \RR^p - \{ 0 \}$. A function $f: {\RR^n} \times {\dot{\RR}^p} \to \CC$ is a \emph{symbol of order $s$} if it satisfies bounds of the form
+    \item We let ${\dot{\RR}{\vphantom{\RR}}^p} = \RR^p - \{ 0 \}$. A smooth function $f: {\RR^n} \times {\dot{\RR}{\vphantom{\RR}}^p} \to \CC$ is a \emph{symbol of order $s$} if it satisfies bounds of the form $| \partial_x^\alpha \partial_\theta^\lambda f (x,\theta) | \lesssim_{\alpha,\beta} \langle \theta \rangle^{s - |\lambda|}$ for all multi-indices $\alpha$ and $\lambda$, and all $x \in \RR^n$ and $\theta \in {\dot{\RR}{\vphantom{\RR}}^p}$, where $\langle \cdot \rangle$ is the Japanese bracket defined above. More generally, symbols $s: \Gamma \to \CC$ can be defined for \emph{conical subsets} $\Gamma$ of ${\RR^n} \times {\dot{\RR}{\vphantom{\RR}}^p}$, i.e. sets $\Gamma$ with the property that if $(x,\theta) \in \Gamma$ and $\rho > 0$, then $(x,\rho \theta) \in \Gamma$. For a sequence of symbols $\{ a_k : k \geq 0 \}$, we write
     %
-    \[ | \partial_x^\alpha \partial_\theta^\beta f (x,\theta) | \lesssim_{\alpha,\beta} \langle \theta \rangle^{s - |\beta|} \]
+    \[ a \sim \sum\nolimits_k a_k \]
     %
-    for all multi-indices $\alpha$ and $\beta$. More generally, symbols $s: \Gamma \to \CC$ can be defined for \emph{conical subsets} $\Gamma$ of $\RR^n \times \dot{\RR}^p$, i.e. sets $\Gamma$ with the property that if $(x,\theta) \in \Gamma$ and $\rho > 0$, then $(x,\rho \theta) \in \Gamma$. For a sequence of symbols $\{ a_k : k \geq 0 \}$, we write $a \sim \sum_{k = 0}^\infty a_k$ if, for any $l > 0$, there exists $N_0$ such that for $N \geq N_0$, $a - \sum_{k = 0}^N a_k$ is a symbol of order $s - l$. We view this relation as an asymptotic expansion of the function $a$
+    if, for any $l > 0$, there exists $N_0$ such that for $N \geq N_0$, $a - \sum_{k = 0}^N a_k$ is a symbol of order $s - l$. We view this relation as an asymptotic expansion of the function $a$
 
-    \item We let $\mathcal{S}(\RR^d)$ denote the Schwartz space of rapidly decreasing smooth functions on $\RR^d$, i.e. the functions $f: \RR^d \to \CC$ such that for any multi-index $\alpha$ and any $N > 0$, $|\partial^\alpha f(x)| \lesssim_{\alpha,N} \langle x \rangle^{-N}$.
+    \item We let $\mathcal{S}(\RR^d)$ denote the Schwartz space of rapidly decreasing smooth functions on $\RR^d$, i.e. the functions $f: \RR^d \to \CC$ such that for any multi-index $\alpha$ and any $N \geq 0$, the inequality $|\partial^\alpha f(x)| \lesssim_{\alpha,N} \langle x \rangle^{-N}$ holds for all $x \in \RR^d$.
 
     \item For a measure space $X$, $L^\infty(X)$ is the Banach space of essentially-bounded functions, defined almost everywhere. For a set $X$, $l^\infty(X)$ is the Banach space of bounded functions on $X$, defined everywhere. We also used mixed norm spaces; for a function $f(x,y)$ defined on the Cartesian product of two measure spaces $X$ and $Y$, we define
     %
@@ -39,9 +47,11 @@
     %
     Similarly, we can define the interchanged norm $L^q(Y) L^p(X)$ by swapping the order of application of the norms. It follows from Minkowski's inequality that if $p \geq q$ then $\| f \|_{L^p(X) L^q(Y)} \leq \| f \|_{L^q(Y) L^p(X)}$ and if $p \leq q$, then $\| f \|_{L^p(X) L^q(Y)} \geq \| f \|_{L^q(Y) L^p(X)}$.
 
-    \item If $T$ is a Schwartz operator from a manifold $Y$ to a manifold $X$, we let $K_T$ denote the Schwartz distribution on $Y \times X$ which is the integral kernel for $T$, i.e. such that for any $f \in C_c^\infty(X)$ and $g \in C_c^\infty(Y)$,
+    \item If $T$ is a Schwartz operator from a manifold $Y$ to a manifold $X$, each equipped with some smooth density, we let $K_T$ denote the Schwartz distribution on $X \times Y$ which is the integral kernel for $T$, i.e. such that for any $f \in C_c^\infty(X)$ and $g \in C_c^\infty(Y)$,
     %
     \[ \int_X f(x) (Tg)(x)\; dx = \int_{X \times Y} K_T(x,y) f(x) g(y)\; dx\; dy. \]
+    %
+    We define the \emph{support} of a Schwartz operator $T$ from a manifold $Y$ to a manifold $X$ to be the smallest closed set $\text{supp}(T) \subset X \times Y$ such that $\langle Tf, g \rangle = 0$ whenever $f \in C_c^\infty(X)$ and $g \in C_c^\infty(Y)$ are such that $\text{supp}(g) \times \text{supp}(f)$ is disjoint from $\text{supp}(T)$.
 
 %    All operators we consider are Schwartz operators between manifolds equipped with a canonical measure. Abusing notation, we thus identify an operator with the distribution that gives it's Schwartz kernel. Thus, for a Schwartz operator $A$ from a manifold $Y$ to a manifold $X$, we might write
     %
@@ -55,9 +65,9 @@
     %
     and for $1 \leq r \leq \infty$, we consider the (homogeneous) Besov spaces
     %
-    \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k \in \ZZ} \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}, \]
+    \[ \| f \|_{\dot{B}^{s,p}_r(\RR^d)} = \left( \sum\nolimits_{k \in \ZZ} \left[ 2^{ks} \| P_k f \|_{L^p(\RR^d)} \right]^r \right)^{1/r}. \]
     %
-    where $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( |\cdot| / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev and Besov spaces $W^{s,p}(X)$ and $\dot{B}^{s,p}_r(X)$ of functions on a compact manifold $X$.
+    Here $(1 - \Delta)^{s/2}$ is the Fourier multiplier operator with symbol $(1 + |\xi|^2)^{s/2}$, and the operators $\{ P_k \}$ are Littlewood-Paley projection operators, i.e. Fourier multiplier operators with compactly supported symbols $\chi( |\cdot| / 2^k )$, where $\chi$ is compactly supported and $\sum \chi(t/2^k) = 1$ for all $t > 0$. By working in coordinate systems, these definitions can also be used to define Sobolev spaces $W^{s,p}(X)$ of functions on a compact manifold $X$. We write $H^s(X)$ for $W^{s,2}(X)$.
 
     \item If $X$ is a compact manifold equipped with a smooth volume density, we let $\COP{s}(X)$ denote the family of all classical, elliptic pseudo-differential operators of order $s$ on $X$ which are positive-semidefinite in the sense that $\langle Pf, g \rangle = \langle f, Pg \rangle$ and $\langle Pf, f \rangle \geq 0$ hold for all $f,g \in C^\infty(X)$.
 \end{itemize}

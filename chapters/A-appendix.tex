@@ -1,11 +1,20 @@
 %!TEX root = ../main.tex
 
 \renewcommand{\thechapter}{A}
-\chapter{Elementary Theorems}
+\chapter{Elementary Theorems} \label{cha:elementary_theorems}
 
-In this appendix, we list several results that occur so frequently in the harmonic analysis literature that they are often used without comment. In this appendix, we briefly list those results that will be used in this thesis. The first result, the Sobolev embedding theorem, allows us to trade smoothness for integrability.
+In this appendix, we list several results that occur frequently in the harmonic analysis literature. The first result, Euler's homogeneous function theorem, provides a way to relate a homogeneous function and it's derivatives.
 
-\begin{theorem}[The Sobolev Embedding Theorem]
+\begin{theorem}[Euler's Homogeneous Function Theorem] \label{thm:Euler}
+    Suppose $f: {\dot{\RR}{\vphantom{\RR}}^p} \to \CC$ is a smooth, homogeneous function of order $s$. Then for any $x \in {\dot{\RR}{\vphantom{\RR}}^p}$, $x \cdot \nabla f(x) = s f(x)$.
+\end{theorem}
+\begin{proof}
+    Differentiate the relation $f(ax) = a^s f(x)$ with respect to $a$, and then set $a = 1$.
+\end{proof}
+
+The Sobolev embedding theorem allows us to trade smoothness for integrability.
+
+\begin{theorem}[The Sobolev Embedding Theorem] \label{Chp:Sobolev}
     Suppose $X$ is a $d$-dimensional manifold, or $X = \RR^d$. Fix $1 \leq p \leq q < \infty$ and let $r = d(1/p - 1/q)$. Then for any $s \in \RR$, $W^{s,q}(X) \subset W^{s-r,p}(X)$, and if $s > d/p$, $W^{s,p}(X) \subset C_b(X)$, the space of continuous, bounded functions, where these inclusions are continuous.
 \end{theorem}
 \begin{proof}
@@ -26,13 +35,32 @@ In this appendix, we list several results that occur so frequently in the harmon
 \end{proof}
 \end{comment}
 
-Schur's Test for integral kernels is a simple, but often optimal method, for obtaining the boundedness of integral operators from an $L^1$ norm, or into an $L^\infty$ norm. Interpolation can then be used to obtain simple bounds for operators with respect to other norms.
+Interpolation is essential for reducing bounds to Lebesgue norms in which the boundedness of the operators is simpler to understand. If $X$ and $Y$ are measure spaces, recall that an operator $T$ mapping elements of $L^p(X)$ to measurable functions on $Y$ is said to be of \emph{restricted weak type} $(p,q)$ if it has the property that for any measurable set $E \subset X$,
+%
+\begin{equation}
+    \| T \mathbb{I}_E \|_{L^{q,\infty}(Y)} \lesssim \| \mathbb{I}_E \|_{L^p(X)} = |E|^{1/p}.
+\end{equation}
+%
+where $\mathbb{I}_E$ is the indicator function of $E$, and the implicit constant is uniform in $E$.
 
-\begin{theorem}[Schur's Test for Integral Kernels]
+\begin{theorem}[The Marcinkiewicz Interpolation Theorem] \label{thm:marci}
+    Let $X$ and $Y$ be measure spaces, and fix exponents $1 \leq p_0,p_1 < \infty$ and $1 \leq q_0,q_1 < \infty$. For $\theta \in [0,1]$, define $p_\theta$ and $q_\theta$ so that
+    %
+    \[ 1/p_\theta = \theta/p_1 + (1-\theta)/p_0 \quad\text{and}\quad 1/q_\theta = \theta/q_1 + (1-\theta)/q_0. \]
+    %
+    Let $T$ be a linear operator mapping elements of $L^{p_0}(X) + L^{p_1}(X)$ to measurable functions on $Y$. Then if $T$ is of restricted weak type $(p_0,q_0)$ and $(p_1,q_1)$, then for any $\theta \in (0,1)$, the operator $T$ is bounded from $L^{p_\theta}(X)$ to $L^{q_\theta}(Y)$.
+\end{theorem}
+\begin{proof}
+    See Theorem 1.4.19 of \cite{Grafakos}.
+\end{proof}
+
+Schur's Test for integral kernels is a simple, but often optimal method, for obtaining the boundedness of integral operators from an $L^1$ norm, or into an $L^\infty$ norm. Interpolation can then be used to obtain certain bounds for operators with respect to other norms.
+
+\begin{theorem}[Schur's Test for Integral Kernels] \label{thm:Schurl}
     Let $X$ and $Y$ be measure spaces.
     %
     \begin{itemize}
-        \item If $K_T \in L^\infty(Y) L^p(X)$, then for each $f \in L^1(Y)$, and for almost every $x$, the integral
+        \item If $K_T \in L^\infty(Y) L^p(X)$ and $f \in L^1(Y)$, then for almost every $x$, the integral
         %
         \[ Tf(x) = \int K_T(x,y) f(y)\; dy \]
         %
@@ -160,10 +188,10 @@ The kernels of many of the Schwartz operators $T$ we study in this thesis have k
     K_T(x,y) = \int_{\RR^p} a(x,y,\theta) e^{i \phi(x,y,\theta)}\; d\theta,
 \end{equation}
 %
-where $a: \RR^m \times \RR^n \times\; \dot{\RR}{\vphantom{\RR}}^p \to \CC$ is a symbol of some fixed order, and $\phi: \RR^m \times \RR^n \times\; \dot{\RR}{\vphantom{\RR}}^p \to \RR$ is smooth and homogeneous of order one in the $\theta$ variable. In this appendix we show how these formal expressions can be interpreted in a way that ensures these expressions are well defined as distributions, provided that $\nabla_{x,y} \phi$ and $\nabla_\theta \phi$ have no common zeros. This ensures that, when $K_T$ is integrated against a pair of test functions on $\RR^m$ and $\RR^n$, the phase becomes rapidly oscillatory at high frequencies, which ensures convergence of appropriate integrals. We call a smooth, homogeneous function $\phi$ such that $\nabla_{x,y,\theta} \phi$ is non-vanishing a \emph{phase function}.
+where $a$ is a symbol, and $\phi$ is smooth and homogeneous of order one.  In this appendix we show how these formal expressions can be interpreted in a way that ensures these expressions are well defined as distributions, provided that $\nabla_{x,y} \phi$ and $\nabla_\theta \phi$ have no common zeros. This ensures that, when $K_T$ is integrated against a pair of test functions on $\RR^m$ and $\RR^n$, the phase becomes rapidly oscillatory at high frequencies, which ensures convergence of appropriate integrals. We call a smooth, homogeneous function $\phi$ such that $\nabla_{x,y,\theta} \phi$ is non-vanishing a \emph{phase function}.
 
 \begin{theorem}
-    Let $a: \RR^d \times\; \dot{\RR}{\vphantom{\RR}}^p \to \CC$ is a symbol, and let $\phi: \RR^d \times\; \dot{\RR}{\vphantom{\RR}}^p \to \RR$ be a phase function. Fix $\chi \in C_c^\infty(\RR^p)$, equal to one in a neighborhood of the origin. The smooth functions
+    Let $\Omega$ be an open subset of $\RR^n$. Let $a: {\Omega} \times\; {\dot{\RR}{\vphantom{\RR}}^p} \to \CC$ be a symbol, and let $\phi: W\times\; \dot{\RR}{\vphantom{\RR}}^p \to \RR$ be a phase function. Fix $\chi \in C_c^\infty(\RR^p)$, equal to one in a neighborhood of the origin. The smooth functions
     %
     \[ I^{a,\theta}_R = \int_{\RR^p} a(x,\theta) \chi(\theta / R) e^{2 \pi i \phi(x,\theta)}\; d\theta \]
     %
@@ -182,10 +210,10 @@ where $a: \RR^m \times \RR^n \times\; \dot{\RR}{\vphantom{\RR}}^p \to \CC$ is a 
         \langle I^{a,\theta}_R, f \rangle = \int a(x,\theta) \chi(\theta / R) e^{2 \pi i \phi(x,\theta)}\; d\theta
     \end{equation}
     %
-    converges as $R \to \infty$ to a quantity independent of the choice of $\chi$, and that moreover,
+    converges as $R \to \infty$ to a quantity independent of the choice of $\chi$, and that moreover, there exists $N > 0$ such that
     %
     \begin{equation}
-        |\langle I^{a,\theta}_R, f \rangle| \lesssim_K 1,
+        |\langle I^{a,\theta}_R, f \rangle| \lesssim \| f \|_{C^M(\RR^d)},
     \end{equation}
     %
     uniformly in $R$. Write
@@ -273,9 +301,9 @@ where $a: {\RR^d} \times {\dot{\RR}{\vphantom{\RR}}^d} \to \CC$ is a fixed symbo
     a(x,\xi) = \sum\nolimits_\alpha c_\alpha(x) \xi^\alpha,
 \end{equation}
 %
-then the pseudo-differential operator $a(x,D)$ is really the differential operator $\sum c_\alpha(x) D^\alpha$.
+then the pseudo-differential operator $a(x,D)$ is really the differential operator $\sum c_\alpha(x) D^\alpha$, where $D_j = (2\pi i)^{-1} \partial_j$ is a self-adjoint normalization of the partial derivative operator.
 
-An important property of pseudo-differential operators is that they are \emph{pseudo-local}, in the sense that the Schwartz kernel $K_T$ is a smooth function away from the diagonal $\Delta_{\RR^d} = \{ (x,x): x \in \RR^d \}$, and $K_T$ and all of it's derivatives rapidly decay away from the diagonal\footnote{See e.g. Proposition 1 of Chapter 5, Second 4 of \cite{BigStein} for details}, i.e. if we write $k_T(x,z) = K_T(x,x+z)$, then
+An important property of pseudo-differential operators is that they are \emph{pseudo-local}, in the sense that the Schwartz kernel $K_T$ is a smooth function away from the diagonal $\Delta_{\RR^d} = \{ (x,x): x \in \RR^d \}$, and $K_T$ and all of it's derivatives rapidly decay away from the diagonal\footnote{See e.g. Proposition 1 of Chapter 5, Section 4 of \cite{BigStein} for a proof of this rapid decay.}, i.e. if we write $k_T(x,z) = K_T(x,x+z)$, then
 %
 \begin{equation} \label{eq1029312094312093821094u29th}
     | \partial_x^\alpha \partial_z^\beta k_T(x,z)| \lesssim_{\alpha,\beta,N} |z|^{-d-s-|\beta| - N} \quad\text{for all $N > 0$}.
