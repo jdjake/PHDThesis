@@ -112,7 +112,7 @@ Interest in bounding multiplier operators for spherical harmonics has a long his
   \| a \|_{M^p_{\text{Dil}}(\Sd{d})} \lesssim \| a \|_{\dot{B}^{s+1/p - 1/2,2}_p[0,\infty)}.
 \end{equation}
 %
-Theorem \ref{maintheorem} needs $1/p - 1/2$ fewer derivatives than required for \eqref{dioawdjoai213213} to apply. The methods we use to prove Theorem \ref{maintheoremsphere} also follow the line of attack originating in the work of H\"{o}rmander, but are also heavily inspired by recent results characterizing $L^p$ boundedness for radial Fourier multiplier operators on $\RR^d$ \cite{Cladek,GarrigosandSeeger,HeoandNazarovandSeeger,KimQuasiradial}, especially \cite{HeoandNazarovandSeeger}, which might be expected since transplantation methods of Mitjagin \cite{Mitjagin} shows the main results of \cite{HeoandNazarovandSeeger} are a corollary of Theorem \ref{maintheoremsphere}.
+Theorem \ref{maintheorem} needs $1/p - 1/2$ fewer derivatives than required for \eqref{dioawdjoai213213} to apply. The methods we use to prove Theorem \ref{maintheoremsphere} also follow the line of attack originating in the work of H\"{o}rmander, but are also heavily inspired by recent results characterizing $L^p$ boundedness for radial Fourier multiplier operators on $\RR^d$ due to Yaryong Heo, Fedor Nazarov, and Andreas Seeger \cite{HeoandNazarovandSeeger2}, Laura Cladek \cite{Cladek}, Gustavo Garrigos and Seeger \cite{GarrigosandSeeger}, and Jongchon Kim \cite{KimQuasiradial}. This might be expected since transplantation methods of Boris Mitjagin \cite{Mitjagin}, which we will discuss in more detail in Section \ref{sec:AnAnalogueOf}, show any results uniformly which give necessary conditions for containment in $M^p_{\text{Dil}}(\Sd{d})$ also give necessary conditions for the boundedness of associated radial multipliers. In particular, the main results of \cite{HeoandNazarovandSeeger} are a corollary of Theorem \ref{maintheoremsphere}.
 
 To prove Theorem \ref{maintheoremsphere}, we will now switch our point of view to a more general setting, which is essential for us to apply the Fourier integral operator methods mentioned above.
 
@@ -182,7 +182,7 @@ is a hypersurface in $T^*_{\!\!x} M$ with non-vanishing Gauss curvature, where $
   %
   Thus we can write $P_{\text{SH}} = \alpha(P)$, where $\alpha(\lambda) = \sqrt{ \lambda^2 + c^2 }$ with $c = \tfrac{d-1}{2}$. Since $\alpha$ is a symbol\footnote{See the notation section for a definition of classes of symbols of a certain order.} of order $1$ with principal symbol $|\lambda|$, it follows that $P_{\text{SH}} \in \COP{1}(\Sd{d})$, and $P_{\text{SH}}$ and $P$ share the same principal symbol\footnote{See Theorem 4.3.1 of \cite{Sogge} for a proof that $P_{\text{SH}} = \alpha(P)$ is a pseudo-differential operator with the same principal symbol as $P$.}. Thus $P_{\text{SH}}$ satisfies Assumption A. The operator also satisfies Assumption B by definition since $P_{\text{SH}}$ is diagonalized by the spherical harmonics, and it's eigenvalues form the arithmetic progression $\NN + \tfrac{d-1}{2}$.
 
-  Now we prove Assumption C. Fix $c \in \RR$, and let $Lu = (\Delta + c) u$. Then as $t$ varies, for each input $f$ the functions $u = \cos(t P_{\text{SH}}) f$ solve the differential equation $\partial_t^2 u = Lu$, and so it suffices to show solutions to this partial differential equation have finite propagation speed. This follows if we can find $t_0 > 0$ so that for $0 < t < t_0$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the result for $|t| \leq t_0$ then follows by time inversion symmetry, and then the result for all $t$ then follows by repeatedly composing the result with itself, using the time invariance of the equation. We prove this result by using standard energy methods. See Theorem 2.4.2 of \cite{SoggeHangzhou} for another example of this approach.
+  Now we prove Assumption C. Fix $a \in \RR$, and let $Lu = (\Delta + c) u$. Then as $t$ varies, for each input $f$ the functions $u = \cos(t P_{\text{SH}}) f$ solve the differential equation $\partial_t^2 u = Lu$ with $c = (d-1)^2/4$, and so it suffices to show solutions to this partial differential equation have finite propagation speed. This follows if we can find $t_0 > 0$ so that for $0 < t < t_0$, if $u(x,0) = 0$ for $d(x,x_0) \leq t$, then $u(x,s) = 0$ for $d(x,x_0) \leq t - s$ and $s \leq t$, since the result for $|t| \leq t_0$ then follows by time inversion symmetry, and then the result for all $t$ then follows by repeatedly composing the result with itself, using the time invariance of the equation. We prove this result by using standard energy methods. See Theorem 2.4.2 of \cite{SoggeHangzhou} for another example of this approach.
 
   Fix $x_0 \in X$ and $0 < t < 1/2$. Define a geodesic normal coordinate ball\footnote{See Theorem 31 of \cite{spivakvol4} for a proof that the exponential map from $T_{x_0} \Sd{d}$ to $\Sd{d}$ is an embedding when restricted to a ball of radius $t$ at the origin in $T_{x_0} \Sd{d}$, provided $t$ is smaller than the cut time of $\Sd{d}$, which is $\pi$.} $B_t(x_0)$ in $\Sd{d}$, and set $e = u^2 + (\partial_t u)^2 + |\nabla_g u|_g^2$. Then define $E(s) = \int_{B_{t-s}(x_0)} e\; dV$. For solutions to $\partial_t^2 u = Lu$, we have $\partial_t e = 2[ (c + 1) u \partial_t u + \text{div}_g \{ \partial_t u\; \nabla_g u \} ]$.
   %
@@ -239,7 +239,7 @@ The statement of these estimates is somewhat technical, but relates to control o
 
 \vspace{0.5em}
 
-\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\textbf{Wave-Bound}(P,p)$: There exists a constant $C_0 > 0$ such that
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\textbf{Wave-Bound}_p(P)$: There exists a constant $C_0 > 0$ such that
 %
 \begin{align*}
     \left\| A_k \{ c \} \right\|_{L^p(X)} \leq C_0\; 2^{kd/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \left[ |c(x_0,t_0)| \langle 2^k t_0 \rangle^s \right]^p \right)^{1/p}.
@@ -257,12 +257,12 @@ uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$, where $s = (d-1)(1/q - 1/2
 \vspace{0.4em}
 
 \begin{restatable}{theorem}{thmatomicscalestheorem} \label{atomicscalestheorem}
-  Let $X$ be a compact manifold, and let $P \in \COP{1}(X)$ satisfy Assumptions A, B, and C. Fix $1 < p < q < 2$ with $q < 2d/(d+1)$, and suppose that $\text{Wave-Bound}(P,q)$ holds. Then for any regulated function $a$, if $s = (d-1)(1/p - 1/2)$,
+  Let $X$ be a compact manifold, and let $P \in \COP{1}(X)$ satisfy Assumptions A, B, and C. Fix $1 < p < q < 2$ with $q < 2d/(d+1)$, and suppose that $\text{Wave-Bound}_q(P)$ holds. Then for any regulated function $a$, if $s = (d-1)(1/p - 1/2)$,
   %
   \[ \| a \|_{M^p_{\text{Dil}}(X,P)} \sim \| a \|_{R^{s,p}[0,\infty)}. \]
 \end{restatable}
 
-In Chapter \ref{chap:spectralatomicdchapter}, we verify that $\text{Wave-Bound}(p)$ holds for $1/p - 1/2 > 1/(d-1)$ when $P = P_{\text{SH}}$. Theorem \ref{maintheoremsphere} then follows from Theorem \ref{atomicscalestheorem}.% We thus obtain the following characterization of boundedness.
+In Chapter \ref{chap:spectralatomicdchapter}, we verify that $\text{Wave-Bound}_p(P)$ holds for $1/p - 1/2 > 1/(d-1)$ when $P = P_{\text{SH}}$. Theorem \ref{maintheoremsphere} then follows from Theorem \ref{atomicscalestheorem}.% We thus obtain the following characterization of boundedness.
 
 %\begin{restatable}{theorem}{thmmaintheoremsphere} \label{maintheoremsphere}
 %  Consider $\Sd{d}$, equipped with the operator $P_{\text{SH}}$. Then if $1/p - 1/2 > 1/(d-1)$, $s = (d-1)(1/p - 1/2)$, and $a$ is any regulated function, then $\| a \|_{M^p_{\text{Dil}}(\Sd{d})} \sim \| a \|_{R^{s,p}[0,\infty)}$.
@@ -1810,7 +1810,7 @@ To motivate the definition of Fourier integral operators, let $\Omega_X$ and $\O
   K_A(x,y) = \int_{\RR^p} s(x,y,\theta) e^{i \Phi(x,y,\theta)}\; d\theta,
 \end{equation}
 %
-where $s: \Omega_X \times {\Omega_Y} \times {{\dot{\RR}{\vphantom{\RR}}^p}} \to \CC$ is a symbol of some fixed order, and $\Phi: \Omega_X \times \Omega_Y \times {\dot{\RR}{\vphantom{\RR}}^p} \to \RR$ is a \emph{phase function} in the sense of Chapter \ref{cha:distributions_defined_by_oscillatory_distributions}. Define the \emph{canonical relation} of $A$, the set
+where $s: \Omega_X \times {\Omega_Y} \times {{\dot{\RR}{\vphantom{\RR}}^p}} \to \CC$ is a symbol of some fixed order, and $\Phi: \Omega_X \times \Omega_Y \times {\dot{\RR}{\vphantom{\RR}}^p} \to \RR$ is a \emph{phase function} in the sense of Appendix \ref{cha:distributions_defined_by_oscillatory_distributions}. Define the \emph{canonical relation} of $A$, the set
 %
 \begin{equation}
   \mathcal{C}_\Phi = \Big\{ \big(x, \nabla_x \Phi(x,y,\theta) ,y, -\nabla_y \Phi(x,y,\theta) \big) : \nabla_\theta \Phi(x,y,\theta) = 0 \Big\},

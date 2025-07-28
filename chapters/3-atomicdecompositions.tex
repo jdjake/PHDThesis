@@ -6,15 +6,15 @@ Fix $k \geq 0$, and consider a pair of maximal $2^{-k}$ separated subsets $\math
 
 \vspace{0.5em}
 
-\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}(p,P)$:
+\noindent \fbox{\parbox{\textwidth}{\textbf{Assumption} $\text{Wave-Bound}_q(P)$:
 There exists a constant $C_0 > 0$ such that
 %
 \begin{align*}
-    \left\| A_k \{ c \} \right\|_{L^p(X)} \leq C_0\; 2^{k d/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \left[ |c(x_0,t_0)| \langle 2^k t_0 \rangle^{s} \right]^p \right)^{1/p}.
+    \left\| A_k \{ c \} \right\|_{L^q(X)} \leq C_0\; 2^{k d/q'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \left[ |c(x_0,t_0)| \langle 2^k t_0 \rangle^{s} \right]^q \right)^{1/q}.
 \end{align*}
 % but with 2^{kd/p'}          < 2^k t_0 >^{ (d-1)/2 }
 %
-uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$, with $s = (d-1)(1/p - 1/2)$.
+uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$, with $s = (d-1)(1/q - 1/2)$.
 %
 %\begin{align*}
 %    \left\| A_k \{ c \} \right\|_{L^{p_*}(X)} \leq C\; 2^{kd} \left( 2^{-k(2d+1)} \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} |c(x_0,t_0)|^{p_*} \langle 2^k t_0 \rangle^{d-1} \right)^{1/p_*}.
@@ -24,13 +24,13 @@ uniformly in $k$, $\mathfrak{b}$, and $\mathfrak{u}$, with $s = (d-1)(1/p - 1/2)
 }}
 \vspace{0.4em}
 
-As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}(p,P)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then
+As we have seen in the previous chapter, such a bound naturally arises in the study of averages of the wave equation. In particular, $\text{Wave-Bound}_q(P)$ implies that for any function $a$, if $a_k = \chi(t) a(2^k t)$ for some $\chi \in C_c^\infty(\RR)$ with $1 = \sum \chi(\lambda/2^k)$ for $\lambda \neq 0$, then for any $1 < p \leq q$,
 %
 \begin{equation}
     \| a_k(P/2^k) \|_{L^p(X) \to L^p(X)} \lesssim \| a \|_{R^{s,p}[0,\infty)} \quad\text{for $s = (d-1)(1/p - 1/2)$},
 \end{equation}
 %
-uniformly in $k$. The main result of this section is that one can also `sum these bounds' to bound $a(P) = \sum a_k(P/2^k)$.
+uniformly in $k$. The main result of this section is that the interactions between these operators is not significant enough for control on the operator $a(P) = \sum a_k(P/2^k)$.
 
 \thmatomicscalestheorem*
 
@@ -287,10 +287,10 @@ The long range interactions require slightly more work. Define an operator
 \end{split}
 \end{equation}
 %
-where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(t) \cos(2 \pi t P) \{ U_{z_0} \}\; dt$ for $L^1$ normalized functions $\{ b_{t_0} \}$. The bound $\text{Wave-Bound}(q,P)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
+where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(t) \cos(2 \pi t P) \{ U_{z_0} \}\; dt$ for $L^1$ normalized functions $\{ b_{t_0} \}$. The bound $\text{Wave-Bound}_q(P)$ implies an exponential decay in $l$ on the $L^p$ operator norm of $S_{l,k}$.
 
 \begin{lemma} \label{lemma:scaleupbound}
-    Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}(q,P)$ is true. Then
+    Suppose $1 \leq p \leq q$, and that $\text{Wave-Bound}_q(P)$ is true. Then
     % |b_{t_0}|_{L^1} << 2^{-k/q}
     \begin{align*}
         &\| S_{l,k} \{ C \} \|_{L^p(X)}  \lesssim 2^{- l \varepsilon} \left( \sum\nolimits_{z_0} \sum\nolimits_{t_0 \geq 2^{l-k}} \left[ \langle 2^k t_0 \rangle^s |C(z_0,t_0)| 2^{(l-k)d/p} \| U_{z_0,t_0} \|_{L^\infty(X)} \right]^p \right)^{1/p},
@@ -303,7 +303,7 @@ where $U_{z_0} = \sum_{x_0 \in Q(z_0)} u_{x_0}$ and $F_{x_0,t_0} = \int b_{t_0}(
     which, in particular, is positive for $p < q$.
 \end{lemma}
 \begin{proof}
-    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique side-length cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}(q,P)$ and H\"{o}lder's inequality to conclude that
+    By applying the triangle inequality, we may assume that the support of $C$ is $10$-separated in the $z_0$ variable. Thus any point $x_0$ is contained in a unique side-length cube $Q(z(x_0))$ with $z(x_0)$ in $\text{supp}_z(C)$, or is not contained in any such cube. If we define $c(x_0,t_0) = C(z(x_0),t_0) \| u_{x_0} \|_{L^1(X)}$, then we can apply $\text{Wave-Bound}_q(P)$ and H\"{o}lder's inequality to conclude that
     %
     \begin{equation}
     \begin{split}
@@ -411,17 +411,17 @@ Summing in $l$ trivially gives $\| f_{\text{Long}} \|_{L^p(X)} \lesssim \| a \|_
 
 \section{Wave Bounds on the Sphere}
 
-We end this chapter with a proof that $\text{Wave-Bound}(p,P)$ holds on $\Sd{d}$ for $1/p - 1/2 > 1/(d-1)$, which completes the proof of Theorem \ref{maintheoremsphere} involving the uniform boundedness of the operators $\{ T_\rho \}$.
+We end this chapter with a proof that $\text{Wave-Bound}_q(P)$ holds on $\Sd{d}$ for $1 < q < 2(d-1)/(d+1)$, which completes the proof of Theorem \ref{maintheoremsphere}.
 
 \begin{lemma} \label{lemdoiajoidjwaio13123}
-    The operator $P_{\text{SH}}$ satisfies $\text{Wave-Bound}(p,P)$ for $1/p - 1/2 > (d-1)^{-1}$.
+    The operator $P_{\text{SH}}$ satisfies $\text{Wave-Bound}_q(P)$ for $1 < q < 2(d-1)/(d+1)$.
 \end{lemma}
 \begin{proof}
-    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; indeed, it follows from Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$. Applying Lemma \ref{LpBoundLemma} to each piece of the exponential, we have that, if $f_{x_0,t_0}$ is as in the definition of the assumption $\text{Wave-Bound}(p,P)$,
+    Here $\Pi = 1$. If $\varepsilon > 0$, and a given function $c$ satisfies $c(x_0,t_0) = 0$ for $t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]$, then the bound has already been proven in this paper; indeed, it follows from Lemma \ref{LpBoundLemma}, where $R = 2^k$, since for $t_0 \leq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i t P} + e^{-2 \pi i t P}$, and for $t_0 \geq 1/2$ we can write $2 \cos(2 \pi t P) = e^{2 \pi i (t - 1) P} + e^{-2 \pi i (t - 1) P}$. Applying Lemma \ref{LpBoundLemma} to each piece of the exponential, we have that, if $f_{x_0,t_0}$ is as in the definition of the assumption $\text{Wave-Bound}_q(P)$,
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \leq 1/2 - \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \lesssim 2^{kd/p'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \leq 1/2 - \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^q(\Sd{d})} \lesssim 2^{kd/q'} \left( \sum\nolimits_{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^q \right)^{1/q}
     \end{split}
     \end{equation}
     %
@@ -429,9 +429,9 @@ We end this chapter with a proof that $\text{Wave-Bound}(p,P)$ holds on $\Sd{d}$
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \\
-        &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1) \rangle^{s} \Big]^p \right)^{1/p}\\
-        &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}.
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^q(\Sd{d})} \\
+        &\quad\quad \lesssim 2^{kd/q'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1) \rangle^{s} \Big]^q \right)^{1/q}\\
+        &\quad\quad \lesssim 2^{kd/q'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^q \right)^{1/q}.
     \end{split}
     \end{equation}
     %
@@ -439,21 +439,21 @@ We end this chapter with a proof that $\text{Wave-Bound}(p,P)$ holds on $\Sd{d}$
     %
     \begin{equation}
     \begin{split}
-        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]}} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^p(\Sd{d})} \\
-        &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1/2) \rangle^{s} \Big]^p \right)^{1/p}\\
-        &\quad\quad \lesssim 2^{kd/p'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^p \right)^{1/p}.
+        &\left\| \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\t_0 \in [1/2 - \varepsilon, 1/2 + \varepsilon]}} \langle 2^k t_0 \rangle^{\frac{d-1}{2}} c(x_0,t_0) f_{x_0,t_0} \right\|_{L^q(\Sd{d})} \\
+        &\quad\quad \lesssim 2^{kd/q'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R (t_0 - 1/2) \rangle^{s} \Big]^q \right)^{1/q}\\
+        &\quad\quad \lesssim 2^{kd/q'} \left( \sum\nolimits_{\substack{(x_0,t_0) \in \mathcal{X}_k \times \mathcal{T}_k\\|t_0| \geq 1/2 + \varepsilon}} \Big[ |c(x_0,t_0)| \langle R t_0 \rangle^{s} \Big]^q \right)^{1/q}.
     \end{split}
     \end{equation}
     %
-    Combining these three bounds proves that $\text{Wave-Bound}(p,P)$ holds.
+    Combining these three bounds proves that $\text{Wave-Bound}_q(P)$ holds.
 \end{proof}
 
 \begin{remark}
-    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $\Sd{d}$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}(p)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absence of information about the geometric properties of conjugate points.
+    We note that this analysis requires an understanding of the global geometric of the geodesic flow on $\Sd{d}$, in particular, that points flow into a conjugate point exactly as they exit a starting point. A similar analysis may yield $\text{Wave-Bound}_q(P)$ for operators on the rank one symmetric spaces, but is unlikely to be easy to obtain on an arbitrary Zoll manifold with periodic geodesic flow, due to the absence of information about the geometric properties of conjugate points on such a manifold.
 \end{remark}
 
-\begin{proof}[Proof of Theorem \ref{maintheorem}]
-Together with Theorem \ref{atomicdecompositionlemma}, Lemma \ref{lemdoiajoidjwaio13123} shows that for $1 < p < 2(d-1)/(d+1)$, and any regulated function $a$,
+\begin{proof}[Proof of Theorem \ref{maintheoremsphere}]
+Together with Theorem \ref{atomicscalestheorem}, Lemma \ref{lemdoiajoidjwaio13123} shows that for $1 < p < 2(d-1)/(d+1)$, and any regulated function $a$,
 %
 \[ \| a \|_{M^p_{\text{Dil}}(\Sd{d})} = \| a \|_{M^p_{\text{Dil}}(\Sd{d},P_{\text{SH}})} \sim \| a \|_{R^{s,p}[0,\infty]}. \]
 %
