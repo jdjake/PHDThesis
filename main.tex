@@ -29,6 +29,8 @@
 \usepackage{thmtools}
 \usepackage{thm-restate}
 
+\setlength{\footnotesep}{0.5cm}
+
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
 \let\endchangemargin=\endlist 
 
@@ -127,28 +129,26 @@
 %\listoffigures
 %\listoftables
 
+\doublespacing
 \input{chapters/0-notation}
 
-%\doublespacing
 \chapter*{Introduction}
 \pagenumbering{arabic} 
 
 \input{chapters/0-introduction}
 
-\part{Background}
+%\part{Background}
 \input{chapters/1-background}
 
-%\part{Review of Literature}
-%\input{chapters/chapter03}
 
-\part{New Results}
+%\part{New Results}
 \chapter{The Boundedness of Spectral Multipliers with Compact Support} \label{chap:boundedsinglefrequencyscale}
 \input{chapters/2-singlescalemultipliers}
 
 \chapter{Combining Scales Via Atomic Decompositions} \label{chap:spectralatomicdchapter}
 \input{chapters/3-atomicdecompositions}
 
-\part{Appendices}
+%\part{Appendices}
 \renewcommand\chaptername{Appendix}
 \input{chapters/A-appendix}
 
@@ -156,7 +156,7 @@
 %\input{chapters/4-futurework}
 
 %\appendix
-%\chapter{Appendix Title}
+%\chapter{Appendix }
 %\input{chapters/appendix}
 
 \singlespacing

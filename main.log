@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  16 JUL 2025 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.19)  8 AUG 2025 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,7 +1070,7 @@ File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \@quotelevel=\count460
 \@quotereset=\count461
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 1
-03.
+05.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -1078,44 +1078,44 @@ File: ot1txr.fd 2000/12/15 v3.1
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 103.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 105.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-103.
+105.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 105.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-103.
+105.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 105.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-103.
+105.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 105.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 1
-03.
+05.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    ... okay on input line 105.
 
 (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -1196,20 +1196,19 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 103.
-Package biblatex Info: Reference segment=0 on input line 103.
+Package biblatex Info: Reference section=0 on input line 105.
+Package biblatex Info: Reference segment=0 on input line 105.
  (titlepage.tex
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20.74> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 16.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 8.
 
 
 [1
 
 {C:/Users/Patron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Pat
-ron/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}])
-(abstract.tex
+ron/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+
+[2]) (abstract.tex
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
@@ -1245,7 +1244,7 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 2
 
 [1] (main.toc
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 2.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 1.
 
 
 [2
@@ -1257,9 +1256,10 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
  (chapters/0-notation.tex
 
 [3]
+Chapter 1.
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 8
 .
- (C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
+(C:\Users\Patron\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 
@@ -1267,18 +1267,18 @@ File: ts1txr.fd 2000/12/15 v3.1
 
 ]
 
-[5])
+[5]
 
-[6] (chapters/0-introduction.tex)
+[6])
+
+[7] (chapters/0-introduction.tex
 
 [1
 
-]
+]) (chapters/1-background.tex
 
-[2
-
-] (chapters/1-background.tex
-Chapter 1.
+[2]
+Chapter 2.
 
 
 [3
@@ -1290,6 +1290,12 @@ Chapter 1.
 [5]
 
 [6]
+
+[7]
+
+[8]
+
+[9]
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 157--162
 [] 
  []
@@ -1306,75 +1312,65 @@ Overfull \hbox (6.79999pt too wide) in paragraph at lines 169--170
 
 
 
-[7]
+[10]
 
-[8]
+[11]
 
-[9]
+[12]
+
+[13]
+
+[14]
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 242--256
 [] 
  []
 
 
 
-[10]
-
-[11]
-Chapter 2.
+[15]
+Chapter 3.
 
 
-[12
+[16
 
 ]
 
-[13]
+[17]
 
-[14]
-Overfull \hbox (1.5795pt too wide) in paragraph at lines 617--617
-[]\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
- []
-
-
-
-[15]
-Overfull \hbox (1.47348pt too wide) in paragraph at lines 638--639
-[]\OT1/txr/m/n/12 We re-duce Propo-si-tion 2.3[] to an in-equal-ity for sums of
- func-tions os-cil-lat-ing on spheres.
- []
-
-
-
-[16]
-
-[17] Excluding 'comment' comment.
-
-[18] Excluding 'comment' comment.
+[18]
 
 [19]
 
 [20]
 
 [21]
+Overfull \hbox (1.5795pt too wide) in paragraph at lines 617--617
+[]\OT1/txr/bx/n/17.28 Radial-Multiplier Bounds by Den-sity De-com-po-si-tions 
+ []
+
+
 
 [22]
+Overfull \hbox (1.47348pt too wide) in paragraph at lines 638--639
+[]\OT1/txr/m/n/12 We re-duce Propo-si-tion 3.3[] to an in-equal-ity for sums of
+ func-tions os-cil-lat-ing on spheres.
+ []
+
+
 
 [23]
 
 [24]
 
-[25]
+[25] Excluding 'comment' comment.
 
 [26]
 
 [27]
 
-[28]
-Chapter 3.
+[28] Excluding 'comment' comment.
 
-
-[29
-
-]
+[29]
 
 [30]
 
@@ -1401,24 +1397,22 @@ Chapter 3.
 [41]
 
 [42]
+Chapter 4.
 
-[43]
+
+[43
+
+]
 
 [44]
 
-[45])
+[45]
 
 [46]
 
-[47
+[47]
 
-]
-Chapter 4.
-(chapters/2-singlescalemultipliers.tex
-
-[48
-
-]
+[48]
 
 [49]
 
@@ -1426,7 +1420,7 @@ Chapter 4.
 
 [51]
 
-[52] Excluding 'comment' comment.
+[52]
 
 [53]
 
@@ -1439,11 +1433,6 @@ Chapter 4.
 [57]
 
 [58]
-Overfull \hbox (0.23956pt too wide) in paragraph at lines 865--866
-[]\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
- []
-
-
 
 [59]
 
@@ -1465,11 +1454,96 @@ Overfull \hbox (0.23956pt too wide) in paragraph at lines 865--866
 
 [68]
 
-[69]
+[69])
 
-[70] Excluding 'comment' comment.
+[70]
 
 [71]
+Chapter 5.
+(chapters/2-singlescalemultipliers.tex
+
+[72
+
+]
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+
+[77]
+
+[78] Excluding 'comment' comment.
+
+[79]
+
+[80]
+
+[81]
+
+[82]
+
+[83]
+
+[84]
+
+[85]
+
+[86]
+
+[87]
+Overfull \hbox (0.23956pt too wide) in paragraph at lines 865--866
+[]\OT1/txr/m/n/12 Using sym-me-try, it suf-fices with-out loss of gen-
+ []
+
+
+
+[88]
+
+[89]
+
+[90]
+
+[91]
+
+[92]
+
+[93]
+
+[94]
+
+[95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+
+[100]
+
+[101]
+
+[102]
+
+[103]
+
+[104]
+
+[105]
+
+[106]
+
+[107] Excluding 'comment' comment.
+
+[108]
+
+[109]
 Overfull \hbox (36.84962pt too wide) in paragraph at lines 2070--2074
 \OT1/txr/m/n/12 The op-er-a-tor $\OML/txmi/m/it/12 L[] \OT1/txr/m/n/12 = \OML/t
 xmi/m/it/12 R[]\OMS/txsy/m/n/12 h\OML/txmi/m/it/12 P\OMS/txsy/m/n/12 i[]\OML/tx
@@ -1482,22 +1556,26 @@ T1/txr/m/n/12 (\OML/txmi/m/it/12 ^^U=R\OT1/txr/m/n/12 )$.
 
 Excluding 'comment' comment.)
 
-[72]
-Chapter 5.
+[110]
+Chapter 6.
 (chapters/3-atomicdecompositions.tex
+
+[111
+
+]
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 9--26
 []
  []
 
 
 
-[73
+[112]
 
-]
+[113]
 
-[74]
+[114]
 
-[75]
+[115]
 Overfull \hbox (3.19264pt too wide) in paragraph at lines 224--230
 \OT1/txr/m/n/12 To ob-tain short range bounds, we ex-ploit the prop-a-ga-tion s
 peed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
@@ -1505,13 +1583,17 @@ peed of the op-er-a-tors $[](2\OML/txmi/m/it/12 ^^YitP\OT1/txr/m/n/12 )$,
 
 
 
-[76]
+[116]
 
-[77]
+[117]
 
-[78]
+[118]
+
+[119]
+
+[120]
 Overfull \hbox (20.46962pt too wide) in paragraph at lines 392--396
-\OT1/txr/m/n/12 Applying Lemma 5.2[] with $\OML/txmi/m/it/12 l$ \OT1/txr/m/n/12
+\OT1/txr/m/n/12 Applying Lemma 6.2[] with $\OML/txmi/m/it/12 l$ \OT1/txr/m/n/12
  and $\OML/txmi/m/it/12 k$ \OT1/txr/m/n/12 as above, $\OML/txmi/m/it/12 C\OT1/t
 xr/m/n/12 (\OML/txmi/m/it/12 z[]; t[]\OT1/txr/m/n/12 ) = \OMS/txsy/m/n/12 k\OML
 /txmi/m/it/12 b[]\OMS/txsy/m/n/12 k[]$\OT1/txr/m/n/12 , and with $\OML/txmi/m/i
@@ -1520,41 +1602,49 @@ t/12 U[] \OT1/txr/m/n/12 = [][] \OML/txmi/m/it/12 A[]$\OT1/txr/m/n/12 ,
 
 
 
-[79]
+[121]
 
-[80])
+[122]
 
-[81]
+[123]) (chapters/A-appendix.tex
 
-[82
-
-] (chapters/A-appendix.tex
-Appendix A.
+[124]
+Appendix 7.
 Excluding 'comment' comment.
 
-[83
-
-] Excluding 'comment' comment.
-
-[84]
-
-[85]
-Appendix B.
-
-
-[86
+[125
 
 ]
 
-[87]
-Appendix C.
+[126] Excluding 'comment' comment.
+
+[127]
+
+[128]
+
+[129]
+Appendix 8.
 
 
-[88
+[130
 
-])
+]
 
-[89]
+[131]
+
+[132]
+
+[133]
+Appendix 9.
+
+
+[134
+
+]
+
+[135])
+
+[136]
 Overfull \hbox (8.0689pt too wide) in paragraph at lines 164--164
 []\OT1/txr/m/n/12 Vladimir I. Arnol'd. \OT1/txr/m/it/12 Math-e-mat-i-cal Meth-o
 ds of Clas-si-cal Me-chan-ics\OT1/txr/m/n/12 . Sec-ond. Vol. 60.
@@ -1566,7 +1656,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 
-[90
+[137
 
 ]
 Overfull \hbox (2.39072pt too wide) in paragraph at lines 164--164
@@ -1582,11 +1672,11 @@ en der math-e-ma-tis-chen Wis-senschaften.
 
 
 
-[91]
+[138]
 
-[92]
+[139]
 
-[93] (main.aux)
+[140] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -1596,11 +1686,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27509 strings out of 469941
+ 27506 strings out of 469941
  546832 string characters out of 5468946
- 1324201 words of memory out of 5000000
- 53798 multiletter control sequences out of 15000+600000
- 683321 words of font info for 167 fonts, out of 8000000 for 9000
+ 1321277 words of memory out of 5000000
+ 53797 multiletter control sequences out of 15000+600000
+ 680804 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,22n,91p,2146b,1364s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Patron/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtc
@@ -1620,9 +1710,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/Patron/A
 ppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Patron/
 AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Patron
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (100 pages, 495340 bytes).
+Output written on main.pdf (149 pages, 542180 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
+ 564 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
