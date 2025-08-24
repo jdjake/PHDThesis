@@ -52,7 +52,6 @@
 
 \usepackage{comment}
 
-%\usepackage[style=authoryear,sorting=none]{biblatex}
 \usepackage[style=numeric]{biblatex}
 \addbibresource{references.bib}
 
@@ -62,6 +61,24 @@
 \usetikzlibrary{matrix}
 \usetikzlibrary{calc}
 
+% \usepackage{titletoc} 						%
+% \titlecontents{chapter} 					% <section-type>
+%   [0pt] 									% <left>
+%   {\bfseries} 								% <above-code>
+%   {\chaptername\ \thecontentslabel:\quad} 	% <numbered-entry-format>
+%   {} 										% <numberless-entry-format>
+%   {\hfill\contentspage} 					% <filler-page-format>
+
+\usepackage{ifthen}
+\newcommand\editedchaptername[1]{ \ifthenelse{#1 < 7}{Chapter}{Appendix} }
+
+\usepackage{titletoc}% http://ctan.org/pkg/titletoc
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {\addvspace{1em}}% <above-code>
+  {\bfseries\editedchaptername{\thecontentslabel}\ \thecontentslabel\quad}% <numbered-entry-format>
+  {}% <numberless-entry-format>
+  {\bfseries\hfill\contentspage}% <filler-page-format>
 
 \DeclareMathOperator{\QQ}{\mathbb{Q}}
 \DeclareMathOperator{\ZZ}{\mathbb{Z}}
@@ -118,7 +135,26 @@
 
 %I declare that..
 
-%\chapter*{Acknowledgements}
+\chapter*{Acknowledgements}
+
+\doublespacing
+First and foremost, I am deeply indebted to my advisor Andreas Seeger for his patience, guidance, and generosity with both his time and mathematical insight over the past five years. I am very grateful for all the mathematical and professional insight he has gifted me. His encouragement helped me persevere through the slow and often frustrating process of mathematical research.
+
+I would also like to express my gratitude to the many teachers and mentors who have guided me along the way to my PhD. To Shaoming Guo, who provided much advice, especially during my initial years in Madison, and for broadening my perspective with the organization of the Harmonic Analysis summer schools in Madison during my time here. To Betsy Stovall, for organizing many of the student seminars which enriched my semesters here at Madison. To Christoph Thiele, for his summer schools in Bonn, which provided a space for me to meet the European community of harmonic analysts. To David Beltran, who first introduced me to the field of analysis on manifolds. And To Sergey Denisov, Mihaela Ifrim, and Brian Street, for their courses and insights over the years.
+
+I sincerely thank my committee members, Sean Paul, Andreas Seeger, Brian Street, and Betsy Stovall, for their time and feedback, especially for accommodating my defense, despite the complications of summer schedules.
+
+I owe an immeasurable debt of gratitude to my parents, whose support, and belief in me laid the foundation for my academic work. I would also like to thank for grandfather. Without his influence and conversations through my undergraduate and postgraduate years, it is unlikely I would have found my passion for higher mathematics.
+
+Thank you to my partner Annabel, for being there for me every step of the way, and for bringing me so much joy and balance to my life during my PhD years.
+
+Thank you to all my fellow students in the harmonic analysis group, for making our group so supportive and collegial during my time here.
+
+Thank you to all the friends I have had the fortune of meeting during my PhD, for your friendship and support through the years. Because of you, the city of Madison will always hold a special place in my heart.
+
+% And in the, especially Dimas, Diego and Katie, Liam, Patrick, Peter, Emma and Stephen, Eren and Jayant, Gautam, Lars, and Chiara. Because of you, the city of Madison will always hold a special place in my heart.
+
+Finally, I thank the National Science Foundation, for supporting my research through their grants DMS-2037851, DMS-2054220, and DMS-2348797.
 
 %I want to thank...
 
@@ -129,10 +165,12 @@
 %\listoffigures
 %\listoftables
 
+\newpage
 \doublespacing
+\addcontentsline{toc}{chapter}{\hspace{0.07em} \textbf{Notation}}
 \input{chapters/0-notation}
 
-\chapter*{Introduction}
+\chapter{Introduction}
 \pagenumbering{arabic} 
 
 \input{chapters/0-introduction}
@@ -159,7 +197,9 @@
 %\chapter{Appendix }
 %\input{chapters/appendix}
 
+\newpage
 \singlespacing
+\addcontentsline{toc}{chapter}{\hspace{0.05em} \textbf{Bibliography}}
 \printbibliography
 
 \end{document}
