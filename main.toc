@@ -9,22 +9,22 @@
 \contentsline {section}{\numberline {3.3}Radial-Multiplier Bounds by Density Decompositions}{22}{}%
 \contentsline {section}{\numberline {3.4}Combining Scales with Atomic Decompositions}{35}{}%
 \contentsline {section}{\numberline {3.5}Quasi-Radial Multipliers and Local Smoothing}{40}{}%
-\contentsline {chapter}{\numberline {4}Wave Equations on Compact Manifolds}{44}{}%
-\contentsline {section}{\numberline {4.1}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{44}{}%
-\contentsline {section}{\numberline {4.2}Geometries Induced by Elliptic Operators}{46}{}%
-\contentsline {section}{\numberline {4.3}Fourier Integral Operator Techniques}{56}{}%
-\contentsline {section}{\numberline {4.4}Periodic Geodesics and Assumption B}{70}{}%
-\contentsline {chapter}{\numberline {5}The Boundedness of Spectral Multipliers with Compact Support}{73}{}%
-\contentsline {section}{\numberline {5.1}Preliminary Setup}{74}{}%
-\contentsline {section}{\numberline {5.2}Quasi-Orthogonality Estimates For Wave-Packets}{80}{}%
-\contentsline {section}{\numberline {5.3}Analysis of Regime I via Density Methods}{94}{}%
-\contentsline {section}{\numberline {5.4}Analysis of Regime II via Local Smoothing}{110}{}%
-\contentsline {chapter}{\numberline {6}Combining Scales Via Atomic Decompositions}{112}{}%
-\contentsline {section}{\numberline {6.1}Short Range Bounds}{118}{}%
-\contentsline {section}{\numberline {6.2}Long Range Bounds}{119}{}%
-\contentsline {section}{\numberline {6.3}Wave Bounds on the Sphere}{122}{}%
-\contentsline {chapter}{\numberline {7}Elementary Theorems}{126}{}%
-\contentsline {chapter}{\numberline {8}Distributions Defined by Oscillatory Distributions}{131}{}%
-\contentsline {chapter}{\numberline {9}Pseudo-Differential Operators}{135}{}%
-\contentsline {chapter}{\hspace {0.05em} \textbf {Bibliography}}{138}{}%
+\contentsline {chapter}{\numberline {4}Wave Equations on Compact Manifolds}{43}{}%
+\contentsline {section}{\numberline {4.1}An Analogue of the Radial Multiplier Conjecture on Compact Manifolds}{43}{}%
+\contentsline {section}{\numberline {4.2}Geometries Induced by Elliptic Operators}{45}{}%
+\contentsline {section}{\numberline {4.3}Fourier Integral Operator Techniques}{55}{}%
+\contentsline {section}{\numberline {4.4}Periodic Geodesics and Assumption B}{69}{}%
+\contentsline {chapter}{\numberline {5}The Boundedness of Spectral Multipliers with Compact Support}{72}{}%
+\contentsline {section}{\numberline {5.1}Preliminary Setup}{73}{}%
+\contentsline {section}{\numberline {5.2}Quasi-Orthogonality Estimates For Wave-Packets}{79}{}%
+\contentsline {section}{\numberline {5.3}Analysis of Regime I via Density Methods}{93}{}%
+\contentsline {section}{\numberline {5.4}Analysis of Regime II via Local Smoothing}{109}{}%
+\contentsline {chapter}{\numberline {6}Combining Scales Via Atomic Decompositions}{111}{}%
+\contentsline {section}{\numberline {6.1}Short Range Bounds}{117}{}%
+\contentsline {section}{\numberline {6.2}Long Range Bounds}{118}{}%
+\contentsline {section}{\numberline {6.3}Wave Bounds on the Sphere}{121}{}%
+\contentsline {chapter}{\numberline {7}Elementary Theorems}{125}{}%
+\contentsline {chapter}{\numberline {8}Distributions Defined by Oscillatory Distributions}{130}{}%
+\contentsline {chapter}{\numberline {9}Pseudo-Differential Operators}{134}{}%
+\contentsline {chapter}{\hspace {0.05em} \textbf {Bibliography}}{137}{}%
 \contentsfinish 
